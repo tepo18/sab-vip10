@@ -1,0 +1,2708 @@
+[
+  {
+    "remarks": "ARISTA💥",
+    "log": {
+      "loglevel": "warning"
+    },
+    "dns": {
+      "servers": [
+        {
+          "address": "https://8.8.8.8/dns-query",
+          "tag": "remote-dns"
+        },
+        {
+          "address": "8.8.8.8",
+          "domains": [
+            "full:www.speedtest.net"
+          ],
+          "skipFallback": true
+        }
+      ],
+      "queryStrategy": "UseIP",
+      "tag": "dns"
+    },
+    "inbounds": [
+      {
+        "port": 10808,
+        "protocol": "socks",
+        "settings": {
+          "auth": "noauth",
+          "udp": true,
+          "userLevel": 8
+        },
+        "sniffing": {
+          "destOverride": [
+            "http",
+            "tls"
+          ],
+          "enabled": true,
+          "routeOnly": true
+        },
+        "tag": "socks-in"
+      },
+      {
+        "port": 10853,
+        "protocol": "dokodemo-door",
+        "settings": {
+          "address": "1.1.1.1",
+          "network": "tcp,udp",
+          "port": 53
+        },
+        "tag": "dns-in"
+      }
+    ],
+    "outbounds": [
+      {
+        "tag": "proxy",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "www.speedtest.net",
+              "port": 443,
+              "users": [
+                {
+                  "id": "117a6f94-26ca-5879-8b3d-e45c5f14cee7",
+                  "encryption": "none",
+                  "flow": ""
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "ws",
+          "security": "tls",
+          "sockopt": {
+            "dialerProxy": "fragment"
+          },
+          "tlsSettings": {
+            "serverName": "se-1-ssm.medicaldream.ir",
+            "fingerprint": "chrome",
+            "alpn": [
+              "http/1.1"
+            ]
+          },
+          "wsSettings": {
+            "path": "/vless",
+            "headers": {
+              "Host": "se-1-ssm.medicaldream.ir"
+            }
+          }
+        }
+      },
+      {
+        "tag": "fragment",
+        "protocol": "freedom",
+        "settings": {
+          "fragment": {
+            "packets": "tlshello",
+            "length": "100-200",
+            "interval": "1-1"
+          },
+          "domainStrategy": "UseIPv4v6"
+        }
+      }
+    ],
+    "routing": {
+      "domainStrategy": "IPIfNonMatch",
+      "rules": [
+        {
+          "inboundTag": [
+            "dns-in"
+          ],
+          "outboundTag": "dns-out",
+          "type": "field"
+        },
+        {
+          "network": "tcp",
+          "outboundTag": "proxy",
+          "type": "field"
+        }
+      ]
+    }
+  },
+  {
+    "remarks": "ARISTA💥",
+    "log": {
+      "loglevel": "warning"
+    },
+    "dns": {
+      "servers": [
+        {
+          "address": "https://8.8.8.8/dns-query",
+          "tag": "remote-dns"
+        },
+        {
+          "address": "8.8.8.8",
+          "domains": [
+            "full:www.speedtest.net"
+          ],
+          "skipFallback": true
+        }
+      ],
+      "queryStrategy": "UseIP",
+      "tag": "dns"
+    },
+    "inbounds": [
+      {
+        "port": 10808,
+        "protocol": "socks",
+        "settings": {
+          "auth": "noauth",
+          "udp": true,
+          "userLevel": 8
+        },
+        "sniffing": {
+          "destOverride": [
+            "http",
+            "tls"
+          ],
+          "enabled": true,
+          "routeOnly": true
+        },
+        "tag": "socks-in"
+      },
+      {
+        "port": 10853,
+        "protocol": "dokodemo-door",
+        "settings": {
+          "address": "1.1.1.1",
+          "network": "tcp,udp",
+          "port": 53
+        },
+        "tag": "dns-in"
+      }
+    ],
+    "outbounds": [
+      {
+        "tag": "proxy",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "www.speedtest.net",
+              "port": 443,
+              "users": [
+                {
+                  "id": "11296c5f-93b7-5655-8704-f6d82e33d9f3",
+                  "encryption": "none",
+                  "flow": ""
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "ws",
+          "security": "tls",
+          "sockopt": {
+            "dialerProxy": "fragment"
+          },
+          "tlsSettings": {
+            "serverName": "pl-1-ssm.medicaldream.ir",
+            "fingerprint": "chrome",
+            "alpn": [
+              "http/1.1"
+            ]
+          },
+          "wsSettings": {
+            "path": "/vless",
+            "headers": {
+              "Host": "pl-1-ssm.medicaldream.ir"
+            }
+          }
+        }
+      },
+      {
+        "tag": "fragment",
+        "protocol": "freedom",
+        "settings": {
+          "fragment": {
+            "packets": "tlshello",
+            "length": "100-200",
+            "interval": "1-1"
+          },
+          "domainStrategy": "UseIPv4v6"
+        }
+      }
+    ],
+    "routing": {
+      "domainStrategy": "IPIfNonMatch",
+      "rules": [
+        {
+          "inboundTag": [
+            "dns-in"
+          ],
+          "outboundTag": "dns-out",
+          "type": "field"
+        },
+        {
+          "network": "tcp",
+          "outboundTag": "proxy",
+          "type": "field"
+        }
+      ]
+    }
+  },
+  {
+    "remarks": "ARISTA💥",
+    "log": {
+      "loglevel": "warning"
+    },
+    "dns": {
+      "servers": [
+        {
+          "address": "https://8.8.8.8/dns-query",
+          "tag": "remote-dns"
+        },
+        {
+          "address": "8.8.8.8",
+          "domains": [
+            "full:www.speedtest.net"
+          ],
+          "skipFallback": true
+        }
+      ],
+      "queryStrategy": "UseIP",
+      "tag": "dns"
+    },
+    "inbounds": [
+      {
+        "port": 10808,
+        "protocol": "socks",
+        "settings": {
+          "auth": "noauth",
+          "udp": true,
+          "userLevel": 8
+        },
+        "sniffing": {
+          "destOverride": [
+            "http",
+            "tls"
+          ],
+          "enabled": true,
+          "routeOnly": true
+        },
+        "tag": "socks-in"
+      },
+      {
+        "port": 10853,
+        "protocol": "dokodemo-door",
+        "settings": {
+          "address": "1.1.1.1",
+          "network": "tcp,udp",
+          "port": 53
+        },
+        "tag": "dns-in"
+      }
+    ],
+    "outbounds": [
+      {
+        "tag": "proxy",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "www.speedtest.net",
+              "port": 443,
+              "users": [
+                {
+                  "id": "516769ce-9e49-58fe-8d56-34606e8c468b",
+                  "encryption": "none",
+                  "flow": ""
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "ws",
+          "security": "tls",
+          "sockopt": {
+            "dialerProxy": "fragment"
+          },
+          "tlsSettings": {
+            "serverName": "uk-1-ssm.medicaldream.ir",
+            "fingerprint": "chrome",
+            "alpn": [
+              "http/1.1"
+            ]
+          },
+          "wsSettings": {
+            "path": "/vless",
+            "headers": {
+              "Host": "uk-1-ssm.medicaldream.ir"
+            }
+          }
+        }
+      },
+      {
+        "tag": "fragment",
+        "protocol": "freedom",
+        "settings": {
+          "fragment": {
+            "packets": "tlshello",
+            "length": "100-200",
+            "interval": "1-1"
+          },
+          "domainStrategy": "UseIPv4v6"
+        }
+      }
+    ],
+    "routing": {
+      "domainStrategy": "IPIfNonMatch",
+      "rules": [
+        {
+          "inboundTag": [
+            "dns-in"
+          ],
+          "outboundTag": "dns-out",
+          "type": "field"
+        },
+        {
+          "network": "tcp",
+          "outboundTag": "proxy",
+          "type": "field"
+        }
+      ]
+    }
+  },
+  {
+    "remarks": "ARISTA💥",
+    "log": {
+      "loglevel": "warning"
+    },
+    "dns": {
+      "servers": [
+        {
+          "address": "https://8.8.8.8/dns-query",
+          "tag": "remote-dns"
+        },
+        {
+          "address": "8.8.8.8",
+          "domains": [
+            "full:www.speedtest.net"
+          ],
+          "skipFallback": true
+        }
+      ],
+      "queryStrategy": "UseIP",
+      "tag": "dns"
+    },
+    "inbounds": [
+      {
+        "port": 10808,
+        "protocol": "socks",
+        "settings": {
+          "auth": "noauth",
+          "udp": true,
+          "userLevel": 8
+        },
+        "sniffing": {
+          "destOverride": [
+            "http",
+            "tls"
+          ],
+          "enabled": true,
+          "routeOnly": true
+        },
+        "tag": "socks-in"
+      },
+      {
+        "port": 10853,
+        "protocol": "dokodemo-door",
+        "settings": {
+          "address": "1.1.1.1",
+          "network": "tcp,udp",
+          "port": 53
+        },
+        "tag": "dns-in"
+      }
+    ],
+    "outbounds": [
+      {
+        "tag": "proxy",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "www.speedtest.net",
+              "port": 443,
+              "users": [
+                {
+                  "id": "110ac6e9-f62b-5bd3-9d74-adbb4ec62f65",
+                  "encryption": "none",
+                  "flow": ""
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "ws",
+          "security": "tls",
+          "sockopt": {
+            "dialerProxy": "fragment"
+          },
+          "tlsSettings": {
+            "serverName": "nl-1-ssm.medicaldream.ir",
+            "fingerprint": "chrome",
+            "alpn": [
+              "http/1.1"
+            ]
+          },
+          "wsSettings": {
+            "path": "/vless",
+            "headers": {
+              "Host": "nl-1-ssm.medicaldream.ir"
+            }
+          }
+        }
+      },
+      {
+        "tag": "fragment",
+        "protocol": "freedom",
+        "settings": {
+          "fragment": {
+            "packets": "tlshello",
+            "length": "100-200",
+            "interval": "1-1"
+          },
+          "domainStrategy": "UseIPv4v6"
+        }
+      }
+    ],
+    "routing": {
+      "domainStrategy": "IPIfNonMatch",
+      "rules": [
+        {
+          "inboundTag": [
+            "dns-in"
+          ],
+          "outboundTag": "dns-out",
+          "type": "field"
+        },
+        {
+          "network": "tcp",
+          "outboundTag": "proxy",
+          "type": "field"
+        }
+      ]
+    }
+  },
+  {
+    "remarks": "ARISTA💥",
+    "log": {
+      "loglevel": "warning"
+    },
+    "dns": {
+      "servers": [
+        {
+          "address": "https://8.8.8.8/dns-query",
+          "tag": "remote-dns"
+        },
+        {
+          "address": "8.8.8.8",
+          "domains": [
+            "full:www.speedtest.net"
+          ],
+          "skipFallback": true
+        }
+      ],
+      "queryStrategy": "UseIP",
+      "tag": "dns"
+    },
+    "inbounds": [
+      {
+        "port": 10808,
+        "protocol": "socks",
+        "settings": {
+          "auth": "noauth",
+          "udp": true,
+          "userLevel": 8
+        },
+        "sniffing": {
+          "destOverride": [
+            "http",
+            "tls"
+          ],
+          "enabled": true,
+          "routeOnly": true
+        },
+        "tag": "socks-in"
+      },
+      {
+        "port": 10853,
+        "protocol": "dokodemo-door",
+        "settings": {
+          "address": "1.1.1.1",
+          "network": "tcp,udp",
+          "port": 53
+        },
+        "tag": "dns-in"
+      }
+    ],
+    "outbounds": [
+      {
+        "tag": "proxy",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "www.speedtest.net",
+              "port": 2087,
+              "users": [
+                {
+                  "id": "914ed56d-08ce-442f-8f03-3778b5d57685",
+                  "encryption": "none",
+                  "flow": ""
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "ws",
+          "security": "tls",
+          "sockopt": {
+            "dialerProxy": "fragment"
+          },
+          "tlsSettings": {
+            "serverName": "se-1-cbt.medicaldream.ir",
+            "fingerprint": "chrome",
+            "alpn": [
+              "http/1.1"
+            ]
+          },
+          "wsSettings": {
+            "path": "/vless",
+            "headers": {
+              "Host": "se-1-cbt.medicaldream.ir"
+            }
+          }
+        }
+      },
+      {
+        "tag": "fragment",
+        "protocol": "freedom",
+        "settings": {
+          "fragment": {
+            "packets": "tlshello",
+            "length": "100-200",
+            "interval": "1-1"
+          },
+          "domainStrategy": "UseIPv4v6"
+        }
+      }
+    ],
+    "routing": {
+      "domainStrategy": "IPIfNonMatch",
+      "rules": [
+        {
+          "inboundTag": [
+            "dns-in"
+          ],
+          "outboundTag": "dns-out",
+          "type": "field"
+        },
+        {
+          "network": "tcp",
+          "outboundTag": "proxy",
+          "type": "field"
+        }
+      ]
+    }
+  },
+  {
+    "remarks": "ARISTA💥",
+    "log": {
+      "loglevel": "warning"
+    },
+    "dns": {
+      "servers": [
+        {
+          "address": "https://8.8.8.8/dns-query",
+          "tag": "remote-dns"
+        },
+        {
+          "address": "8.8.8.8",
+          "domains": [
+            "full:vinted.fr"
+          ],
+          "skipFallback": true
+        }
+      ],
+      "queryStrategy": "UseIP",
+      "tag": "dns"
+    },
+    "inbounds": [
+      {
+        "port": 10808,
+        "protocol": "socks",
+        "settings": {
+          "auth": "noauth",
+          "udp": true,
+          "userLevel": 8
+        },
+        "sniffing": {
+          "destOverride": [
+            "http",
+            "tls"
+          ],
+          "enabled": true,
+          "routeOnly": true
+        },
+        "tag": "socks-in"
+      },
+      {
+        "port": 10853,
+        "protocol": "dokodemo-door",
+        "settings": {
+          "address": "1.1.1.1",
+          "network": "tcp,udp",
+          "port": 53
+        },
+        "tag": "dns-in"
+      }
+    ],
+    "outbounds": [
+      {
+        "tag": "proxy",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "vinted.fr",
+              "port": 443,
+              "users": [
+                {
+                  "id": "4e1f0fc6-a7f8-4642-bd35-6a3aa0bb2fc8",
+                  "encryption": "none",
+                  "flow": ""
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "ws",
+          "security": "tls",
+          "sockopt": {
+            "dialerProxy": "fragment"
+          },
+          "tlsSettings": {
+            "serverName": "hdfynpv2c1.farvaharforever.com",
+            "fingerprint": "chrome",
+            "alpn": [
+              "http/1.1"
+            ]
+          },
+          "wsSettings": {
+            "path": "/Iyq035lnud9R8ruNNrqGxZZ2",
+            "headers": {
+              "Host": "hdfynpv2c1.farvaharforever.com"
+            }
+          }
+        }
+      },
+      {
+        "tag": "fragment",
+        "protocol": "freedom",
+        "settings": {
+          "fragment": {
+            "packets": "tlshello",
+            "length": "100-200",
+            "interval": "1-1"
+          },
+          "domainStrategy": "UseIPv4v6"
+        }
+      }
+    ],
+    "routing": {
+      "domainStrategy": "IPIfNonMatch",
+      "rules": [
+        {
+          "inboundTag": [
+            "dns-in"
+          ],
+          "outboundTag": "dns-out",
+          "type": "field"
+        },
+        {
+          "network": "tcp",
+          "outboundTag": "proxy",
+          "type": "field"
+        }
+      ]
+    }
+  },
+  {
+    "remarks": "ARISTA💥",
+    "log": {
+      "loglevel": "warning"
+    },
+    "dns": {
+      "servers": [
+        {
+          "address": "https://8.8.8.8/dns-query",
+          "tag": "remote-dns"
+        },
+        {
+          "address": "8.8.8.8",
+          "domains": [
+            "full:www.speedtest.net"
+          ],
+          "skipFallback": true
+        }
+      ],
+      "queryStrategy": "UseIP",
+      "tag": "dns"
+    },
+    "inbounds": [
+      {
+        "port": 10808,
+        "protocol": "socks",
+        "settings": {
+          "auth": "noauth",
+          "udp": true,
+          "userLevel": 8
+        },
+        "sniffing": {
+          "destOverride": [
+            "http",
+            "tls"
+          ],
+          "enabled": true,
+          "routeOnly": true
+        },
+        "tag": "socks-in"
+      },
+      {
+        "port": 10853,
+        "protocol": "dokodemo-door",
+        "settings": {
+          "address": "1.1.1.1",
+          "network": "tcp,udp",
+          "port": 53
+        },
+        "tag": "dns-in"
+      }
+    ],
+    "outbounds": [
+      {
+        "tag": "proxy",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "www.speedtest.net",
+              "port": 2087,
+              "users": [
+                {
+                  "id": "f4b98c37-d661-490c-9ca7-27c13c750bb6",
+                  "encryption": "none",
+                  "flow": ""
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "ws",
+          "security": "tls",
+          "sockopt": {
+            "dialerProxy": "fragment"
+          },
+          "tlsSettings": {
+            "serverName": "de-1-cbt.medicaldream.ir",
+            "fingerprint": "chrome",
+            "alpn": [
+              "http/1.1"
+            ]
+          },
+          "wsSettings": {
+            "path": "/vless",
+            "headers": {
+              "Host": "de-1-cbt.medicaldream.ir"
+            }
+          }
+        }
+      },
+      {
+        "tag": "fragment",
+        "protocol": "freedom",
+        "settings": {
+          "fragment": {
+            "packets": "tlshello",
+            "length": "100-200",
+            "interval": "1-1"
+          },
+          "domainStrategy": "UseIPv4v6"
+        }
+      }
+    ],
+    "routing": {
+      "domainStrategy": "IPIfNonMatch",
+      "rules": [
+        {
+          "inboundTag": [
+            "dns-in"
+          ],
+          "outboundTag": "dns-out",
+          "type": "field"
+        },
+        {
+          "network": "tcp",
+          "outboundTag": "proxy",
+          "type": "field"
+        }
+      ]
+    }
+  },
+  {
+    "remarks": "ARISTA💥",
+    "log": {
+      "loglevel": "warning"
+    },
+    "dns": {
+      "servers": [
+        {
+          "address": "https://8.8.8.8/dns-query",
+          "tag": "remote-dns"
+        },
+        {
+          "address": "8.8.8.8",
+          "domains": [
+            "full:www.speedtest.net"
+          ],
+          "skipFallback": true
+        }
+      ],
+      "queryStrategy": "UseIP",
+      "tag": "dns"
+    },
+    "inbounds": [
+      {
+        "port": 10808,
+        "protocol": "socks",
+        "settings": {
+          "auth": "noauth",
+          "udp": true,
+          "userLevel": 8
+        },
+        "sniffing": {
+          "destOverride": [
+            "http",
+            "tls"
+          ],
+          "enabled": true,
+          "routeOnly": true
+        },
+        "tag": "socks-in"
+      },
+      {
+        "port": 10853,
+        "protocol": "dokodemo-door",
+        "settings": {
+          "address": "1.1.1.1",
+          "network": "tcp,udp",
+          "port": 53
+        },
+        "tag": "dns-in"
+      }
+    ],
+    "outbounds": [
+      {
+        "tag": "proxy",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "www.speedtest.net",
+              "port": 2087,
+              "users": [
+                {
+                  "id": "585aa12b-b7b6-4944-9628-f4b01350bfc0",
+                  "encryption": "none",
+                  "flow": ""
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "ws",
+          "security": "tls",
+          "sockopt": {
+            "dialerProxy": "fragment"
+          },
+          "tlsSettings": {
+            "serverName": "fr-1-cbt.medicaldream.ir",
+            "fingerprint": "chrome",
+            "alpn": [
+              "http/1.1"
+            ]
+          },
+          "wsSettings": {
+            "path": "/vless",
+            "headers": {
+              "Host": "fr-1-cbt.medicaldream.ir"
+            }
+          }
+        }
+      },
+      {
+        "tag": "fragment",
+        "protocol": "freedom",
+        "settings": {
+          "fragment": {
+            "packets": "tlshello",
+            "length": "100-200",
+            "interval": "1-1"
+          },
+          "domainStrategy": "UseIPv4v6"
+        }
+      }
+    ],
+    "routing": {
+      "domainStrategy": "IPIfNonMatch",
+      "rules": [
+        {
+          "inboundTag": [
+            "dns-in"
+          ],
+          "outboundTag": "dns-out",
+          "type": "field"
+        },
+        {
+          "network": "tcp",
+          "outboundTag": "proxy",
+          "type": "field"
+        }
+      ]
+    }
+  },
+  {
+    "remarks": "ARISTA💥",
+    "log": {
+      "loglevel": "warning"
+    },
+    "dns": {
+      "servers": [
+        {
+          "address": "https://8.8.8.8/dns-query",
+          "tag": "remote-dns"
+        },
+        {
+          "address": "8.8.8.8",
+          "domains": [
+            "full:w3.org"
+          ],
+          "skipFallback": true
+        }
+      ],
+      "queryStrategy": "UseIP",
+      "tag": "dns"
+    },
+    "inbounds": [
+      {
+        "port": 10808,
+        "protocol": "socks",
+        "settings": {
+          "auth": "noauth",
+          "udp": true,
+          "userLevel": 8
+        },
+        "sniffing": {
+          "destOverride": [
+            "http",
+            "tls"
+          ],
+          "enabled": true,
+          "routeOnly": true
+        },
+        "tag": "socks-in"
+      },
+      {
+        "port": 10853,
+        "protocol": "dokodemo-door",
+        "settings": {
+          "address": "1.1.1.1",
+          "network": "tcp,udp",
+          "port": 53
+        },
+        "tag": "dns-in"
+      }
+    ],
+    "outbounds": [
+      {
+        "tag": "proxy",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "w3.org",
+              "port": 443,
+              "users": [
+                {
+                  "id": "4e1f0fc6-a7f8-4642-bd35-6a3aa0bb2fc8",
+                  "encryption": "none",
+                  "flow": ""
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "ws",
+          "security": "tls",
+          "sockopt": {
+            "dialerProxy": "fragment"
+          },
+          "tlsSettings": {
+            "serverName": "hdfynpv2c1.farvaharforever.com",
+            "fingerprint": "chrome",
+            "alpn": [
+              "http/1.1"
+            ]
+          },
+          "wsSettings": {
+            "path": "/Iyq035lnud9R8ruNNrqGxZZ2",
+            "headers": {
+              "Host": "hdfynpv2c1.farvaharforever.com"
+            }
+          }
+        }
+      },
+      {
+        "tag": "fragment",
+        "protocol": "freedom",
+        "settings": {
+          "fragment": {
+            "packets": "tlshello",
+            "length": "100-200",
+            "interval": "1-1"
+          },
+          "domainStrategy": "UseIPv4v6"
+        }
+      }
+    ],
+    "routing": {
+      "domainStrategy": "IPIfNonMatch",
+      "rules": [
+        {
+          "inboundTag": [
+            "dns-in"
+          ],
+          "outboundTag": "dns-out",
+          "type": "field"
+        },
+        {
+          "network": "tcp",
+          "outboundTag": "proxy",
+          "type": "field"
+        }
+      ]
+    }
+  },
+  {
+    "remarks": "ARISTA💥",
+    "log": {
+      "loglevel": "warning"
+    },
+    "dns": {
+      "servers": [
+        {
+          "address": "https://8.8.8.8/dns-query",
+          "tag": "remote-dns"
+        },
+        {
+          "address": "8.8.8.8",
+          "domains": [
+            "full:www.speedtest.net"
+          ],
+          "skipFallback": true
+        }
+      ],
+      "queryStrategy": "UseIP",
+      "tag": "dns"
+    },
+    "inbounds": [
+      {
+        "port": 10808,
+        "protocol": "socks",
+        "settings": {
+          "auth": "noauth",
+          "udp": true,
+          "userLevel": 8
+        },
+        "sniffing": {
+          "destOverride": [
+            "http",
+            "tls"
+          ],
+          "enabled": true,
+          "routeOnly": true
+        },
+        "tag": "socks-in"
+      },
+      {
+        "port": 10853,
+        "protocol": "dokodemo-door",
+        "settings": {
+          "address": "1.1.1.1",
+          "network": "tcp,udp",
+          "port": 53
+        },
+        "tag": "dns-in"
+      }
+    ],
+    "outbounds": [
+      {
+        "tag": "proxy",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "www.speedtest.net",
+              "port": 2087,
+              "users": [
+                {
+                  "id": "308ebcff-5446-4e52-86ad-70fcb1265344",
+                  "encryption": "none",
+                  "flow": ""
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "ws",
+          "security": "tls",
+          "sockopt": {
+            "dialerProxy": "fragment"
+          },
+          "tlsSettings": {
+            "serverName": "fi-1-cbt.medicaldream.ir",
+            "fingerprint": "chrome",
+            "alpn": [
+              "http/1.1"
+            ]
+          },
+          "wsSettings": {
+            "path": "/vless",
+            "headers": {
+              "Host": "fi-1-cbt.medicaldream.ir"
+            }
+          }
+        }
+      },
+      {
+        "tag": "fragment",
+        "protocol": "freedom",
+        "settings": {
+          "fragment": {
+            "packets": "tlshello",
+            "length": "100-200",
+            "interval": "1-1"
+          },
+          "domainStrategy": "UseIPv4v6"
+        }
+      }
+    ],
+    "routing": {
+      "domainStrategy": "IPIfNonMatch",
+      "rules": [
+        {
+          "inboundTag": [
+            "dns-in"
+          ],
+          "outboundTag": "dns-out",
+          "type": "field"
+        },
+        {
+          "network": "tcp",
+          "outboundTag": "proxy",
+          "type": "field"
+        }
+      ]
+    }
+  },
+  {
+    "remarks": "ARISTA💥",
+    "log": {
+      "loglevel": "warning"
+    },
+    "dns": {
+      "servers": [
+        {
+          "address": "https://8.8.8.8/dns-query",
+          "tag": "remote-dns"
+        },
+        {
+          "address": "8.8.8.8",
+          "domains": [
+            "full:autotrader.co.uk"
+          ],
+          "skipFallback": true
+        }
+      ],
+      "queryStrategy": "UseIP",
+      "tag": "dns"
+    },
+    "inbounds": [
+      {
+        "port": 10808,
+        "protocol": "socks",
+        "settings": {
+          "auth": "noauth",
+          "udp": true,
+          "userLevel": 8
+        },
+        "sniffing": {
+          "destOverride": [
+            "http",
+            "tls"
+          ],
+          "enabled": true,
+          "routeOnly": true
+        },
+        "tag": "socks-in"
+      },
+      {
+        "port": 10853,
+        "protocol": "dokodemo-door",
+        "settings": {
+          "address": "1.1.1.1",
+          "network": "tcp,udp",
+          "port": 53
+        },
+        "tag": "dns-in"
+      }
+    ],
+    "outbounds": [
+      {
+        "tag": "proxy",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "autotrader.co.uk",
+              "port": 443,
+              "users": [
+                {
+                  "id": "4e1f0fc6-a7f8-4642-bd35-6a3aa0bb2fc8",
+                  "encryption": "none",
+                  "flow": ""
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "ws",
+          "security": "tls",
+          "sockopt": {
+            "dialerProxy": "fragment"
+          },
+          "tlsSettings": {
+            "serverName": "hdfynpv2c1.farvaharforever.com",
+            "fingerprint": "chrome",
+            "alpn": [
+              "http/1.1"
+            ]
+          },
+          "wsSettings": {
+            "path": "/Iyq035lnud9R8ruNNrqGxZZ2",
+            "headers": {
+              "Host": "hdfynpv2c1.farvaharforever.com"
+            }
+          }
+        }
+      },
+      {
+        "tag": "fragment",
+        "protocol": "freedom",
+        "settings": {
+          "fragment": {
+            "packets": "tlshello",
+            "length": "100-200",
+            "interval": "1-1"
+          },
+          "domainStrategy": "UseIPv4v6"
+        }
+      }
+    ],
+    "routing": {
+      "domainStrategy": "IPIfNonMatch",
+      "rules": [
+        {
+          "inboundTag": [
+            "dns-in"
+          ],
+          "outboundTag": "dns-out",
+          "type": "field"
+        },
+        {
+          "network": "tcp",
+          "outboundTag": "proxy",
+          "type": "field"
+        }
+      ]
+    }
+  },
+  {
+    "remarks": "ARISTA💥",
+    "log": {
+      "loglevel": "warning"
+    },
+    "dns": {
+      "servers": [
+        {
+          "address": "https://8.8.8.8/dns-query",
+          "tag": "remote-dns"
+        },
+        {
+          "address": "8.8.8.8",
+          "domains": [
+            "full:braze.com"
+          ],
+          "skipFallback": true
+        }
+      ],
+      "queryStrategy": "UseIP",
+      "tag": "dns"
+    },
+    "inbounds": [
+      {
+        "port": 10808,
+        "protocol": "socks",
+        "settings": {
+          "auth": "noauth",
+          "udp": true,
+          "userLevel": 8
+        },
+        "sniffing": {
+          "destOverride": [
+            "http",
+            "tls"
+          ],
+          "enabled": true,
+          "routeOnly": true
+        },
+        "tag": "socks-in"
+      },
+      {
+        "port": 10853,
+        "protocol": "dokodemo-door",
+        "settings": {
+          "address": "1.1.1.1",
+          "network": "tcp,udp",
+          "port": 53
+        },
+        "tag": "dns-in"
+      }
+    ],
+    "outbounds": [
+      {
+        "tag": "proxy",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "braze.com",
+              "port": 443,
+              "users": [
+                {
+                  "id": "4e1f0fc6-a7f8-4642-bd35-6a3aa0bb2fc8",
+                  "encryption": "none",
+                  "flow": ""
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "ws",
+          "security": "tls",
+          "sockopt": {
+            "dialerProxy": "fragment"
+          },
+          "tlsSettings": {
+            "serverName": "hdfynpv2c1.farvaharforever.com",
+            "fingerprint": "chrome",
+            "alpn": [
+              "http/1.1"
+            ]
+          },
+          "wsSettings": {
+            "path": "/Iyq035lnud9R8ruNNrqGxZZ2",
+            "headers": {
+              "Host": "hdfynpv2c1.farvaharforever.com"
+            }
+          }
+        }
+      },
+      {
+        "tag": "fragment",
+        "protocol": "freedom",
+        "settings": {
+          "fragment": {
+            "packets": "tlshello",
+            "length": "100-200",
+            "interval": "1-1"
+          },
+          "domainStrategy": "UseIPv4v6"
+        }
+      }
+    ],
+    "routing": {
+      "domainStrategy": "IPIfNonMatch",
+      "rules": [
+        {
+          "inboundTag": [
+            "dns-in"
+          ],
+          "outboundTag": "dns-out",
+          "type": "field"
+        },
+        {
+          "network": "tcp",
+          "outboundTag": "proxy",
+          "type": "field"
+        }
+      ]
+    }
+  },
+  {
+    "remarks": "ARISTA💥",
+    "log": {
+      "loglevel": "warning"
+    },
+    "dns": {
+      "servers": [
+        {
+          "address": "https://8.8.8.8/dns-query",
+          "tag": "remote-dns"
+        },
+        {
+          "address": "8.8.8.8",
+          "domains": [
+            "full:zula.ir"
+          ],
+          "skipFallback": true
+        }
+      ],
+      "queryStrategy": "UseIP",
+      "tag": "dns"
+    },
+    "inbounds": [
+      {
+        "port": 10808,
+        "protocol": "socks",
+        "settings": {
+          "auth": "noauth",
+          "udp": true,
+          "userLevel": 8
+        },
+        "sniffing": {
+          "destOverride": [
+            "http",
+            "tls"
+          ],
+          "enabled": true,
+          "routeOnly": true
+        },
+        "tag": "socks-in"
+      },
+      {
+        "port": 10853,
+        "protocol": "dokodemo-door",
+        "settings": {
+          "address": "1.1.1.1",
+          "network": "tcp,udp",
+          "port": 53
+        },
+        "tag": "dns-in"
+      }
+    ],
+    "outbounds": [
+      {
+        "tag": "proxy",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "zula.ir",
+              "port": 2096,
+              "users": [
+                {
+                  "id": "97909ffd-6da0-4893-9d63-00e72ad55256",
+                  "encryption": "none",
+                  "flow": ""
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "ws",
+          "security": "tls",
+          "sockopt": {
+            "dialerProxy": "fragment"
+          },
+          "tlsSettings": {
+            "serverName": "frAgteSt.JaHANGiRKh.eU.orG",
+            "fingerprint": "chrome",
+            "alpn": [
+              "http/1.1"
+            ]
+          },
+          "wsSettings": {
+            "path": "/",
+            "headers": {
+              "Host": "frAgteSt.JaHANGiRKh.eU.orG"
+            }
+          }
+        }
+      },
+      {
+        "tag": "fragment",
+        "protocol": "freedom",
+        "settings": {
+          "fragment": {
+            "packets": "tlshello",
+            "length": "100-200",
+            "interval": "1-1"
+          },
+          "domainStrategy": "UseIPv4v6"
+        }
+      }
+    ],
+    "routing": {
+      "domainStrategy": "IPIfNonMatch",
+      "rules": [
+        {
+          "inboundTag": [
+            "dns-in"
+          ],
+          "outboundTag": "dns-out",
+          "type": "field"
+        },
+        {
+          "network": "tcp",
+          "outboundTag": "proxy",
+          "type": "field"
+        }
+      ]
+    }
+  },
+  {
+    "remarks": "ARISTA💥",
+    "log": {
+      "loglevel": "warning"
+    },
+    "dns": {
+      "servers": [
+        {
+          "address": "https://8.8.8.8/dns-query",
+          "tag": "remote-dns"
+        },
+        {
+          "address": "8.8.8.8",
+          "domains": [
+            "full:51.178.42.187"
+          ],
+          "skipFallback": true
+        }
+      ],
+      "queryStrategy": "UseIP",
+      "tag": "dns"
+    },
+    "inbounds": [
+      {
+        "port": 10808,
+        "protocol": "socks",
+        "settings": {
+          "auth": "noauth",
+          "udp": true,
+          "userLevel": 8
+        },
+        "sniffing": {
+          "destOverride": [
+            "http",
+            "tls"
+          ],
+          "enabled": true,
+          "routeOnly": true
+        },
+        "tag": "socks-in"
+      },
+      {
+        "port": 10853,
+        "protocol": "dokodemo-door",
+        "settings": {
+          "address": "1.1.1.1",
+          "network": "tcp,udp",
+          "port": 53
+        },
+        "tag": "dns-in"
+      }
+    ],
+    "outbounds": [
+      {
+        "tag": "proxy",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "51.178.42.187",
+              "port": 443,
+              "users": [
+                {
+                  "id": "5609cab0-2ec2-4dd4-9a25-c38169a7019e",
+                  "encryption": "none",
+                  "flow": ""
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "ws",
+          "security": "tls",
+          "sockopt": {
+            "dialerProxy": "fragment"
+          },
+          "tlsSettings": {
+            "serverName": "zula.ir",
+            "fingerprint": "chrome",
+            "alpn": [
+              "http/1.1"
+            ]
+          },
+          "wsSettings": {
+            "path": "/ws",
+            "headers": {
+              "Host": "51.178.42.187"
+            }
+          }
+        }
+      },
+      {
+        "tag": "fragment",
+        "protocol": "freedom",
+        "settings": {
+          "fragment": {
+            "packets": "tlshello",
+            "length": "100-200",
+            "interval": "1-1"
+          },
+          "domainStrategy": "UseIPv4v6"
+        }
+      }
+    ],
+    "routing": {
+      "domainStrategy": "IPIfNonMatch",
+      "rules": [
+        {
+          "inboundTag": [
+            "dns-in"
+          ],
+          "outboundTag": "dns-out",
+          "type": "field"
+        },
+        {
+          "network": "tcp",
+          "outboundTag": "proxy",
+          "type": "field"
+        }
+      ]
+    }
+  },
+  {
+    "remarks": "ARISTA💥",
+    "log": {
+      "loglevel": "warning"
+    },
+    "dns": {
+      "servers": [
+        {
+          "address": "https://8.8.8.8/dns-query",
+          "tag": "remote-dns"
+        },
+        {
+          "address": "8.8.8.8",
+          "domains": [
+            "full:167.172.89.10"
+          ],
+          "skipFallback": true
+        }
+      ],
+      "queryStrategy": "UseIP",
+      "tag": "dns"
+    },
+    "inbounds": [
+      {
+        "port": 10808,
+        "protocol": "socks",
+        "settings": {
+          "auth": "noauth",
+          "udp": true,
+          "userLevel": 8
+        },
+        "sniffing": {
+          "destOverride": [
+            "http",
+            "tls"
+          ],
+          "enabled": true,
+          "routeOnly": true
+        },
+        "tag": "socks-in"
+      },
+      {
+        "port": 10853,
+        "protocol": "dokodemo-door",
+        "settings": {
+          "address": "1.1.1.1",
+          "network": "tcp,udp",
+          "port": 53
+        },
+        "tag": "dns-in"
+      }
+    ],
+    "outbounds": [
+      {
+        "tag": "proxy",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "167.172.89.10",
+              "port": 443,
+              "users": [
+                {
+                  "id": "e587638b-f49a-4ac4-8fea-22c3252bd2f8",
+                  "encryption": "none",
+                  "flow": ""
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "ws",
+          "security": "tls",
+          "sockopt": {
+            "dialerProxy": "fragment"
+          },
+          "tlsSettings": {
+            "serverName": "zula.ir",
+            "fingerprint": "chrome",
+            "alpn": [
+              "http/1.1"
+            ]
+          },
+          "wsSettings": {
+            "path": "/ws",
+            "headers": {
+              "Host": "167.172.89.10"
+            }
+          }
+        }
+      },
+      {
+        "tag": "fragment",
+        "protocol": "freedom",
+        "settings": {
+          "fragment": {
+            "packets": "tlshello",
+            "length": "100-200",
+            "interval": "1-1"
+          },
+          "domainStrategy": "UseIPv4v6"
+        }
+      }
+    ],
+    "routing": {
+      "domainStrategy": "IPIfNonMatch",
+      "rules": [
+        {
+          "inboundTag": [
+            "dns-in"
+          ],
+          "outboundTag": "dns-out",
+          "type": "field"
+        },
+        {
+          "network": "tcp",
+          "outboundTag": "proxy",
+          "type": "field"
+        }
+      ]
+    }
+  },
+  {
+    "remarks": "ARISTA💥",
+    "log": {
+      "loglevel": "warning"
+    },
+    "dns": {
+      "servers": [
+        {
+          "address": "https://8.8.8.8/dns-query",
+          "tag": "remote-dns"
+        },
+        {
+          "address": "8.8.8.8",
+          "domains": [
+            "full:ru.sfasti.ru"
+          ],
+          "skipFallback": true
+        }
+      ],
+      "queryStrategy": "UseIP",
+      "tag": "dns"
+    },
+    "inbounds": [
+      {
+        "port": 10808,
+        "protocol": "socks",
+        "settings": {
+          "auth": "noauth",
+          "udp": true,
+          "userLevel": 8
+        },
+        "sniffing": {
+          "destOverride": [
+            "http",
+            "tls"
+          ],
+          "enabled": true,
+          "routeOnly": true
+        },
+        "tag": "socks-in"
+      },
+      {
+        "port": 10853,
+        "protocol": "dokodemo-door",
+        "settings": {
+          "address": "1.1.1.1",
+          "network": "tcp,udp",
+          "port": 53
+        },
+        "tag": "dns-in"
+      }
+    ],
+    "outbounds": [
+      {
+        "tag": "proxy",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "ru.sfasti.ru",
+              "port": 443,
+              "users": [
+                {
+                  "id": "6fae85ca-395a-4f27-9eb2-75123befc475",
+                  "encryption": "none",
+                  "flow": "xtls-rprx-vision"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "security": "reality",
+          "sockopt": {
+            "dialerProxy": "fragment"
+          },
+          "tlsSettings": {
+            "serverName": "ru.sfasti.ru",
+            "fingerprint": "chrome",
+            "alpn": [
+              "http/1.1"
+            ]
+          },
+          "wsSettings": {
+            "path": "/",
+            "headers": {
+              "Host": "ru.sfasti.ru"
+            }
+          }
+        }
+      },
+      {
+        "tag": "fragment",
+        "protocol": "freedom",
+        "settings": {
+          "fragment": {
+            "packets": "tlshello",
+            "length": "100-200",
+            "interval": "1-1"
+          },
+          "domainStrategy": "UseIPv4v6"
+        }
+      }
+    ],
+    "routing": {
+      "domainStrategy": "IPIfNonMatch",
+      "rules": [
+        {
+          "inboundTag": [
+            "dns-in"
+          ],
+          "outboundTag": "dns-out",
+          "type": "field"
+        },
+        {
+          "network": "tcp",
+          "outboundTag": "proxy",
+          "type": "field"
+        }
+      ]
+    }
+  },
+  {
+    "remarks": "ARISTA💥",
+    "log": {
+      "loglevel": "warning"
+    },
+    "dns": {
+      "servers": [
+        {
+          "address": "https://8.8.8.8/dns-query",
+          "tag": "remote-dns"
+        },
+        {
+          "address": "8.8.8.8",
+          "domains": [
+            "full:31.169.127.40"
+          ],
+          "skipFallback": true
+        }
+      ],
+      "queryStrategy": "UseIP",
+      "tag": "dns"
+    },
+    "inbounds": [
+      {
+        "port": 10808,
+        "protocol": "socks",
+        "settings": {
+          "auth": "noauth",
+          "udp": true,
+          "userLevel": 8
+        },
+        "sniffing": {
+          "destOverride": [
+            "http",
+            "tls"
+          ],
+          "enabled": true,
+          "routeOnly": true
+        },
+        "tag": "socks-in"
+      },
+      {
+        "port": 10853,
+        "protocol": "dokodemo-door",
+        "settings": {
+          "address": "1.1.1.1",
+          "network": "tcp,udp",
+          "port": 53
+        },
+        "tag": "dns-in"
+      }
+    ],
+    "outbounds": [
+      {
+        "tag": "proxy",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "31.169.127.40",
+              "port": 2087,
+              "users": [
+                {
+                  "id": "f4b98c37-d661-490c-9ca7-27c13c750bb6",
+                  "encryption": "none",
+                  "flow": ""
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "ws",
+          "security": "tls",
+          "sockopt": {
+            "dialerProxy": "fragment"
+          },
+          "tlsSettings": {
+            "serverName": "zula.ir",
+            "fingerprint": "chrome",
+            "alpn": [
+              "http/1.1"
+            ]
+          },
+          "wsSettings": {
+            "path": "/vless",
+            "headers": {
+              "Host": "31.169.127.40"
+            }
+          }
+        }
+      },
+      {
+        "tag": "fragment",
+        "protocol": "freedom",
+        "settings": {
+          "fragment": {
+            "packets": "tlshello",
+            "length": "100-200",
+            "interval": "1-1"
+          },
+          "domainStrategy": "UseIPv4v6"
+        }
+      }
+    ],
+    "routing": {
+      "domainStrategy": "IPIfNonMatch",
+      "rules": [
+        {
+          "inboundTag": [
+            "dns-in"
+          ],
+          "outboundTag": "dns-out",
+          "type": "field"
+        },
+        {
+          "network": "tcp",
+          "outboundTag": "proxy",
+          "type": "field"
+        }
+      ]
+    }
+  },
+  {
+    "remarks": "ARISTA💥",
+    "log": {
+      "loglevel": "warning"
+    },
+    "dns": {
+      "servers": [
+        {
+          "address": "https://8.8.8.8/dns-query",
+          "tag": "remote-dns"
+        },
+        {
+          "address": "8.8.8.8",
+          "domains": [
+            "full:38.76.247.230"
+          ],
+          "skipFallback": true
+        }
+      ],
+      "queryStrategy": "UseIP",
+      "tag": "dns"
+    },
+    "inbounds": [
+      {
+        "port": 10808,
+        "protocol": "socks",
+        "settings": {
+          "auth": "noauth",
+          "udp": true,
+          "userLevel": 8
+        },
+        "sniffing": {
+          "destOverride": [
+            "http",
+            "tls"
+          ],
+          "enabled": true,
+          "routeOnly": true
+        },
+        "tag": "socks-in"
+      },
+      {
+        "port": 10853,
+        "protocol": "dokodemo-door",
+        "settings": {
+          "address": "1.1.1.1",
+          "network": "tcp,udp",
+          "port": 53
+        },
+        "tag": "dns-in"
+      }
+    ],
+    "outbounds": [
+      {
+        "tag": "proxy",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "38.76.247.230",
+              "port": 443,
+              "users": [
+                {
+                  "id": "5bf3bcc2-a3fd-5a96-94ed-04d787cdcea2",
+                  "encryption": "none",
+                  "flow": ""
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "ws",
+          "security": "tls",
+          "sockopt": {
+            "dialerProxy": "fragment"
+          },
+          "tlsSettings": {
+            "serverName": "zula.ir",
+            "fingerprint": "chrome",
+            "alpn": [
+              "http/1.1"
+            ]
+          },
+          "wsSettings": {
+            "path": "/vless",
+            "headers": {
+              "Host": "38.76.247.230"
+            }
+          }
+        }
+      },
+      {
+        "tag": "fragment",
+        "protocol": "freedom",
+        "settings": {
+          "fragment": {
+            "packets": "tlshello",
+            "length": "100-200",
+            "interval": "1-1"
+          },
+          "domainStrategy": "UseIPv4v6"
+        }
+      }
+    ],
+    "routing": {
+      "domainStrategy": "IPIfNonMatch",
+      "rules": [
+        {
+          "inboundTag": [
+            "dns-in"
+          ],
+          "outboundTag": "dns-out",
+          "type": "field"
+        },
+        {
+          "network": "tcp",
+          "outboundTag": "proxy",
+          "type": "field"
+        }
+      ]
+    }
+  },
+  {
+    "remarks": "ARISTA💥",
+    "log": {
+      "loglevel": "warning"
+    },
+    "dns": {
+      "servers": [
+        {
+          "address": "https://8.8.8.8/dns-query",
+          "tag": "remote-dns"
+        },
+        {
+          "address": "8.8.8.8",
+          "domains": [
+            "full:51.195.202.129"
+          ],
+          "skipFallback": true
+        }
+      ],
+      "queryStrategy": "UseIP",
+      "tag": "dns"
+    },
+    "inbounds": [
+      {
+        "port": 10808,
+        "protocol": "socks",
+        "settings": {
+          "auth": "noauth",
+          "udp": true,
+          "userLevel": 8
+        },
+        "sniffing": {
+          "destOverride": [
+            "http",
+            "tls"
+          ],
+          "enabled": true,
+          "routeOnly": true
+        },
+        "tag": "socks-in"
+      },
+      {
+        "port": 10853,
+        "protocol": "dokodemo-door",
+        "settings": {
+          "address": "1.1.1.1",
+          "network": "tcp,udp",
+          "port": 53
+        },
+        "tag": "dns-in"
+      }
+    ],
+    "outbounds": [
+      {
+        "tag": "proxy",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "51.195.202.129",
+              "port": 443,
+              "users": [
+                {
+                  "id": "3a1130d2-be97-4849-b22f-30efd55a4c6a",
+                  "encryption": "none",
+                  "flow": ""
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "ws",
+          "security": "tls",
+          "sockopt": {
+            "dialerProxy": "fragment"
+          },
+          "tlsSettings": {
+            "serverName": "zula.ir",
+            "fingerprint": "chrome",
+            "alpn": [
+              "http/1.1"
+            ]
+          },
+          "wsSettings": {
+            "path": "/ws",
+            "headers": {
+              "Host": "51.195.202.129"
+            }
+          }
+        }
+      },
+      {
+        "tag": "fragment",
+        "protocol": "freedom",
+        "settings": {
+          "fragment": {
+            "packets": "tlshello",
+            "length": "100-200",
+            "interval": "1-1"
+          },
+          "domainStrategy": "UseIPv4v6"
+        }
+      }
+    ],
+    "routing": {
+      "domainStrategy": "IPIfNonMatch",
+      "rules": [
+        {
+          "inboundTag": [
+            "dns-in"
+          ],
+          "outboundTag": "dns-out",
+          "type": "field"
+        },
+        {
+          "network": "tcp",
+          "outboundTag": "proxy",
+          "type": "field"
+        }
+      ]
+    }
+  },
+  {
+    "remarks": "ARISTA💥",
+    "log": {
+      "loglevel": "warning"
+    },
+    "dns": {
+      "servers": [
+        {
+          "address": "https://8.8.8.8/dns-query",
+          "tag": "remote-dns"
+        },
+        {
+          "address": "8.8.8.8",
+          "domains": [
+            "full:185.113.139.103"
+          ],
+          "skipFallback": true
+        }
+      ],
+      "queryStrategy": "UseIP",
+      "tag": "dns"
+    },
+    "inbounds": [
+      {
+        "port": 10808,
+        "protocol": "socks",
+        "settings": {
+          "auth": "noauth",
+          "udp": true,
+          "userLevel": 8
+        },
+        "sniffing": {
+          "destOverride": [
+            "http",
+            "tls"
+          ],
+          "enabled": true,
+          "routeOnly": true
+        },
+        "tag": "socks-in"
+      },
+      {
+        "port": 10853,
+        "protocol": "dokodemo-door",
+        "settings": {
+          "address": "1.1.1.1",
+          "network": "tcp,udp",
+          "port": 53
+        },
+        "tag": "dns-in"
+      }
+    ],
+    "outbounds": [
+      {
+        "tag": "proxy",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "185.113.139.103",
+              "port": 443,
+              "users": [
+                {
+                  "id": "affca828-5596-547c-82da-0c0a03239845",
+                  "encryption": "none",
+                  "flow": ""
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "ws",
+          "security": "tls",
+          "sockopt": {
+            "dialerProxy": "fragment"
+          },
+          "tlsSettings": {
+            "serverName": "zula.ir",
+            "fingerprint": "chrome",
+            "alpn": [
+              "http/1.1"
+            ]
+          },
+          "wsSettings": {
+            "path": "/vless",
+            "headers": {
+              "Host": "185.113.139.103"
+            }
+          }
+        }
+      },
+      {
+        "tag": "fragment",
+        "protocol": "freedom",
+        "settings": {
+          "fragment": {
+            "packets": "tlshello",
+            "length": "100-200",
+            "interval": "1-1"
+          },
+          "domainStrategy": "UseIPv4v6"
+        }
+      }
+    ],
+    "routing": {
+      "domainStrategy": "IPIfNonMatch",
+      "rules": [
+        {
+          "inboundTag": [
+            "dns-in"
+          ],
+          "outboundTag": "dns-out",
+          "type": "field"
+        },
+        {
+          "network": "tcp",
+          "outboundTag": "proxy",
+          "type": "field"
+        }
+      ]
+    }
+  },
+  {
+    "remarks": "ARISTA💥",
+    "log": {
+      "loglevel": "warning"
+    },
+    "dns": {
+      "servers": [
+        {
+          "address": "https://8.8.8.8/dns-query",
+          "tag": "remote-dns"
+        },
+        {
+          "address": "8.8.8.8",
+          "domains": [
+            "full:138.124.15.58"
+          ],
+          "skipFallback": true
+        }
+      ],
+      "queryStrategy": "UseIP",
+      "tag": "dns"
+    },
+    "inbounds": [
+      {
+        "port": 10808,
+        "protocol": "socks",
+        "settings": {
+          "auth": "noauth",
+          "udp": true,
+          "userLevel": 8
+        },
+        "sniffing": {
+          "destOverride": [
+            "http",
+            "tls"
+          ],
+          "enabled": true,
+          "routeOnly": true
+        },
+        "tag": "socks-in"
+      },
+      {
+        "port": 10853,
+        "protocol": "dokodemo-door",
+        "settings": {
+          "address": "1.1.1.1",
+          "network": "tcp,udp",
+          "port": 53
+        },
+        "tag": "dns-in"
+      }
+    ],
+    "outbounds": [
+      {
+        "tag": "proxy",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "138.124.15.58",
+              "port": 2087,
+              "users": [
+                {
+                  "id": "308ebcff-5446-4e52-86ad-70fcb1265344",
+                  "encryption": "none",
+                  "flow": ""
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "ws",
+          "security": "tls",
+          "sockopt": {
+            "dialerProxy": "fragment"
+          },
+          "tlsSettings": {
+            "serverName": "zula.ir",
+            "fingerprint": "chrome",
+            "alpn": [
+              "http/1.1"
+            ]
+          },
+          "wsSettings": {
+            "path": "/vless",
+            "headers": {
+              "Host": "138.124.15.58"
+            }
+          }
+        }
+      },
+      {
+        "tag": "fragment",
+        "protocol": "freedom",
+        "settings": {
+          "fragment": {
+            "packets": "tlshello",
+            "length": "100-200",
+            "interval": "1-1"
+          },
+          "domainStrategy": "UseIPv4v6"
+        }
+      }
+    ],
+    "routing": {
+      "domainStrategy": "IPIfNonMatch",
+      "rules": [
+        {
+          "inboundTag": [
+            "dns-in"
+          ],
+          "outboundTag": "dns-out",
+          "type": "field"
+        },
+        {
+          "network": "tcp",
+          "outboundTag": "proxy",
+          "type": "field"
+        }
+      ]
+    }
+  },
+  {
+    "remarks": "ARISTA💥",
+    "log": {
+      "loglevel": "warning"
+    },
+    "dns": {
+      "servers": [
+        {
+          "address": "https://8.8.8.8/dns-query",
+          "tag": "remote-dns"
+        },
+        {
+          "address": "8.8.8.8",
+          "domains": [
+            "full:148.113.207.224"
+          ],
+          "skipFallback": true
+        }
+      ],
+      "queryStrategy": "UseIP",
+      "tag": "dns"
+    },
+    "inbounds": [
+      {
+        "port": 10808,
+        "protocol": "socks",
+        "settings": {
+          "auth": "noauth",
+          "udp": true,
+          "userLevel": 8
+        },
+        "sniffing": {
+          "destOverride": [
+            "http",
+            "tls"
+          ],
+          "enabled": true,
+          "routeOnly": true
+        },
+        "tag": "socks-in"
+      },
+      {
+        "port": 10853,
+        "protocol": "dokodemo-door",
+        "settings": {
+          "address": "1.1.1.1",
+          "network": "tcp,udp",
+          "port": 53
+        },
+        "tag": "dns-in"
+      }
+    ],
+    "outbounds": [
+      {
+        "tag": "proxy",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "148.113.207.224",
+              "port": 443,
+              "users": [
+                {
+                  "id": "120594d1-5464-45bb-a79c-8271023578ba",
+                  "encryption": "none",
+                  "flow": ""
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "ws",
+          "security": "tls",
+          "sockopt": {
+            "dialerProxy": "fragment"
+          },
+          "tlsSettings": {
+            "serverName": "zula.ir",
+            "fingerprint": "chrome",
+            "alpn": [
+              "http/1.1"
+            ]
+          },
+          "wsSettings": {
+            "path": "/ws",
+            "headers": {
+              "Host": "148.113.207.224"
+            }
+          }
+        }
+      },
+      {
+        "tag": "fragment",
+        "protocol": "freedom",
+        "settings": {
+          "fragment": {
+            "packets": "tlshello",
+            "length": "100-200",
+            "interval": "1-1"
+          },
+          "domainStrategy": "UseIPv4v6"
+        }
+      }
+    ],
+    "routing": {
+      "domainStrategy": "IPIfNonMatch",
+      "rules": [
+        {
+          "inboundTag": [
+            "dns-in"
+          ],
+          "outboundTag": "dns-out",
+          "type": "field"
+        },
+        {
+          "network": "tcp",
+          "outboundTag": "proxy",
+          "type": "field"
+        }
+      ]
+    }
+  }
+]
