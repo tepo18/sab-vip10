@@ -1,0 +1,1347 @@
+proxies:
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-162.159.2.9:443"
+  type: vless
+  server: 162.159.2.9
+  port: 443
+  uuid: ee06e485-f3d1-46c0-97f4-e98040b828ed
+  tls: true
+  udp: true
+  servername: rayan-fg-4.sahel.filegear-sg.me
+  fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: rayan-fg-4.sahel.filegear-sg.me
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.21.75.120:2053"
+  type: vless
+  server: 104.21.75.120
+  port: 2053
+  uuid: 376734bc-4db8-4317-b451-af0262cb01c7
+  tls: true
+  udp: true
+  servername: InviNcIbLe.FAFA20.sHOp
+  fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: InviNcIbLe.FAFA20.sHOp
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-141.101.120.132:443"
+  type: vless
+  server: 141.101.120.132
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  udp: true
+  servername: 1750120447146.wk.by.ktff.ssl.com.kokk.cn.cdnktff.pp.ua
+  fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: 1750120447146.wk.by.ktff.ssl.com.kokk.cn.cdnktff.pp.ua
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-172.67.68.240:443"
+  type: vless
+  server: 172.67.68.240
+  port: 443
+  uuid: 4f024c96-8dce-4cbe-a94a-f069adc74d3c
+  tls: true
+  udp: true
+  servername: rayan-fg-8.parisa.filegear-sg.me
+  fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: rayan-fg-8.parisa.filegear-sg.me
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-190.93.246.169:443"
+  type: vless
+  server: 190.93.246.169
+  port: 443
+  uuid: 8ce6e2fe-23f5-4478-80b7-745779c52577
+  tls: true
+  udp: true
+  servername: lv.2138937.xyz
+  fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: lv.2138937.xyz
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.22.24.177:443"
+  type: vless
+  server: 104.22.24.177
+  port: 443
+  uuid: dfdf1c0a-5e52-4746-88bd-19d4e4ac7853
+  tls: true
+  udp: true
+  servername: tannaz.juveitaly.dpdns.org
+  fingerprint: random
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: tannaz.juveitaly.dpdns.org
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.17.147.22:8443"
+  type: vless
+  server: 104.17.147.22
+  port: 8443
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  tls: true
+  udp: true
+  servername: UUHuhyYgESDfgh.UyHjhgvgFCjgujhBuILbVFDXdxM.xYZ
+  fingerprint: randomized
+  network: ws
+  ws-opts:
+    path: /Telegram@V2ray_Alpha=?ed=2560
+    headers:
+      Host: UuhUHYygESDfgh.uYhJhGVgfCjgujhbUiLbVFdXDXM.XyZ
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.16.95.143:443"
+  type: vless
+  server: 104.16.95.143
+  port: 443
+  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+  tls: true
+  udp: true
+  servername: bitget1.asdasd.click
+  fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: bitget1.asdasd.click
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-172.67.187.190:2096"
+  type: vless
+  server: 172.67.187.190
+  port: 2096
+  uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+  tls: true
+  udp: true
+  servername: fREE.CFDNs.oNLiNE
+  fingerprint: randomized
+  network: ws
+  ws-opts:
+    path: /LEAHKkh1VHphBTvi
+    headers:
+      Host: free.cfdns.online
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-172.67.239.173:443"
+  type: vless
+  server: 172.67.239.173
+  port: 443
+  uuid: b55ec078-3b17-4ed1-a697-71f464cdcaaa
+  tls: true
+  udp: true
+  servername: kssepa.sabzipolobamahi.dpdns.org
+  fingerprint: random
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kssepa.sabzipolobamahi.dpdns.org
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.18.1.236:443"
+  type: vless
+  server: 104.18.1.236
+  port: 443
+  uuid: d0c798ee-d28b-4b9d-bb05-7ab81c490d73
+  tls: true
+  udp: true
+  servername: rangikumatsumoto.retsuunohana.ip-ddns.com
+  fingerprint: randomized
+  network: ws
+  ws-opts:
+    path: /proxyip=wizu.shorekeeper.ir
+    headers:
+      Host: rangikumatsumoto.retsuunohana.ip-ddns.com
+- name: "\U0001F512 VL-HTTPUPGRADE-TLS \U0001F1FA\U0001F1F8 US-199.34.229.86:443"
+  type: vless
+  server: 199.34.229.86
+  port: 443
+  uuid: 9ca79e0a-2c5c-4ac8-90e6-6642e41e6189
+  tls: true
+  udp: true
+  servername: uk1.blackismyfavorite.ir
+  fingerprint: chrome
+  network: httpupgrade
+  ws-opts:
+    path: /XRAYVPNHTTPUPGRADE
+    headers:
+      Host: uk1.blackismyfavorite.ir
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.17.148.22:2053"
+  type: vless
+  server: 104.17.148.22
+  port: 2053
+  uuid: 704198c4-37b9-473d-a5de-0333276f2f6c
+  tls: true
+  udp: true
+  servername: maHsA2.cFFoRM.sIte
+  fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /Telegram@Filter_breaker
+    headers:
+      Host: mahsa2.cfform.site
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-172.67.164.1:443"
+  type: vless
+  server: 172.67.164.1
+  port: 443
+  uuid: ec7de7e0-3f09-4ef4-8a34-e441917d65fa
+  tls: true
+  udp: true
+  servername: verina.ccantarella.dns-dynamic.net
+  fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: verina.ccantarella.dns-dynamic.net
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.19.169.191:443"
+  type: vless
+  server: 104.19.169.191
+  port: 443
+  uuid: 4e4768df-0fbb-4cc1-8fd3-7c6fea95742a
+  tls: true
+  udp: true
+  servername: rayan-10.parastoo.dpdns.org
+  fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Rayan_Config
+    headers:
+      Host: rayan-10.parastoo.dpdns.org
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.21.8.214:443"
+  type: vless
+  server: 104.21.8.214
+  port: 443
+  uuid: d4e52293-4a82-404c-ac29-93afc006dcbb
+  tls: true
+  udp: true
+  servername: crolindd.dearcarlotta.cloudns.org
+  fingerprint: randomized
+  network: ws
+  ws-opts:
+    path: /proxyip=citlali.shorekeeper.ir
+    headers:
+      Host: crolindd.dearcarlotta.cloudns.org
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-172.67.132.39:443"
+  type: vless
+  server: 172.67.132.39
+  port: 443
+  uuid: d0c798ee-d28b-4b9d-bb05-7ab81c490d73
+  tls: true
+  udp: true
+  servername: rangikumatsumoto.retsuunohana.ip-ddns.com
+  fingerprint: random
+  network: ws
+  ws-opts:
+    path: /proxyip=robin.yaemiko.ggff.net
+    headers:
+      Host: rangikumatsumoto.retsuunohana.ip-ddns.com
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-172.67.213.99:2053"
+  type: vless
+  server: 172.67.213.99
+  port: 2053
+  uuid: 704198c4-37b9-473d-a5de-0333276f2f6c
+  tls: true
+  udp: true
+  servername: MahsA2.cfFORm.sIte
+  fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /cf6egz6uo8ahojoo/emfuas55ywvtawtvlmdnzmyubmv0
+    headers:
+      Host: MahsA2.cfFORm.sIte
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-172.67.175.64:443"
+  type: vless
+  server: 172.67.175.64
+  port: 443
+  uuid: 26bc13af-e442-4956-afd4-b8f85744d26f
+  tls: true
+  udp: true
+  servername: fggerlad.gerald81.dpdns.org
+  fingerprint: random
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fggerlad.gerald81.dpdns.org
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.21.10.218:2053"
+  type: vless
+  server: 104.21.10.218
+  port: 2053
+  uuid: 3160087e-72a1-4f1e-b79a-7dabfd2539ba
+  tls: true
+  udp: true
+  servername: MIne.TOySBrasherra.Online
+  fingerprint: randomized
+  network: ws
+  ws-opts:
+    path: /X5tNsZXQoDHKWMSl/c2hpcmVuLnlhZW1pa28uZ2dmZi5uZXQ=
+    headers:
+      Host: mine.toysbrasherra.online
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.19.99.252:443"
+  type: vless
+  server: 104.19.99.252
+  port: 443
+  uuid: 8df60790-c903-4661-b85d-64c0009378e5
+  tls: true
+  udp: true
+  servername: F1.paRsa.fiLegEar-Sg.Me
+  fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: f1.parsa.filegear-sg.me
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.27.113.234:443"
+  type: vless
+  server: 104.27.113.234
+  port: 443
+  uuid: d1237c01-58b5-48f9-8a27-8a396b7f5422
+  tls: true
+  udp: true
+  servername: ey.nazanin.dpdns.org
+  fingerprint: random
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ey.nazanin.dpdns.org
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.18.14.201:2096"
+  type: vless
+  server: 104.18.14.201
+  port: 2096
+  uuid: 67c662fa-cd6a-474a-b55f-d50dc0a7e210
+  tls: true
+  udp: true
+  servername: iamdt.pages.dev
+  fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: iamdt.pages.dev
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-190.93.247.173:443"
+  type: vless
+  server: 190.93.247.173
+  port: 443
+  uuid: 8ce6e2fe-23f5-4478-80b7-745779c52577
+  tls: true
+  udp: true
+  servername: lv.2138937.xyz
+  fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: lv.2138937.xyz
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.19.120.225:443"
+  type: vless
+  server: 104.19.120.225
+  port: 443
+  uuid: 8df60790-c903-4661-b85d-64c0009378e5
+  tls: true
+  udp: true
+  servername: F1.paRsa.fiLegEar-Sg.Me
+  fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: f1.parsa.filegear-sg.me
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-172.67.213.99:2096"
+  type: vless
+  server: 172.67.213.99
+  port: 2096
+  uuid: 704198c4-37b9-473d-a5de-0333276f2f6c
+  tls: true
+  udp: true
+  servername: MAhsa2.CFfORm.sITE
+  fingerprint: randomized
+  network: ws
+  ws-opts:
+    path: /rKFmCsnAFPPrFbIQ/c2hpcmVuLnlhZW1pa28uZ2dmZi5uZXQ=
+    headers:
+      Host: mahsa2.cfform.site
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.18.12.149:443"
+  type: vless
+  server: 104.18.12.149
+  port: 443
+  uuid: fd9a3396-e9a4-45b5-93b9-a0bed3f8b309
+  tls: true
+  udp: true
+  servername: r2.sanam.dpdns.org
+  fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2550
+    headers:
+      Host: r2.sanam.dpdns.org
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-190.93.245.69:443"
+  type: vless
+  server: 190.93.245.69
+  port: 443
+  uuid: 8ce6e2fe-23f5-4478-80b7-745779c52577
+  tls: true
+  udp: true
+  servername: lv.2138937.xyz
+  fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: lv.2138937.xyz
+- name: "\U0001F512 VL-TCP-TLS \U0001F1EC\U0001F1E7 GB-51.89.229.8:443"
+  type: vless
+  server: 51.89.229.8
+  port: 443
+  uuid: c3e86d0c-bfe5-4bb5-a051-5e143df2024d
+  tls: true
+  udp: true
+  servername: o2.sigmamessenger.com
+  fingerprint: chrome
+  network: tcp
+  ws-opts:
+    path: /
+    headers:
+      Host: 51.89.229.8
+- name: "\U0001F512 VL-RAW-TLS \U0001F1EB\U0001F1EE FI-65.109.145.54:443"
+  type: vless
+  server: 65.109.145.54
+  port: 443
+  uuid: 8f82acbe-f328-471a-8000-fbea349e6ce0
+  tls: true
+  udp: true
+  servername: dedic.app-browser.org
+  fingerprint: chrome
+  network: tcp
+  ws-opts:
+    path: /
+    headers:
+      Host: 65.109.145.54
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-172.67.9.99:443"
+  type: vless
+  server: 172.67.9.99
+  port: 443
+  uuid: 7a80a8d9-92f9-4f0a-8352-9005a8215ab8
+  tls: true
+  udp: true
+  servername: rayan-07.leila.dpdns.org
+  fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: rayan-07.leila.dpdns.org
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-141.101.121.243:2053"
+  type: vless
+  server: 141.101.121.243
+  port: 2053
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  udp: true
+  servername: 1749734195126.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua
+  fingerprint: randomized
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: 1749734195126.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua
+- name: "\U0001F512 VL-WS-TLS \U0001F1FA\U0001F1F8 US-160.153.0.153:2087"
+  type: vless
+  server: 160.153.0.153
+  port: 2087
+  uuid: 376734bc-4db8-4317-b451-af0262cb01c7
+  tls: true
+  udp: true
+  servername: InvINCible.fAfA20.shOP
+  fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: invincible.fafa20.shop
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.17.177.51:443"
+  type: vless
+  server: 104.17.177.51
+  port: 443
+  uuid: 54c5f9f1-1f0d-4d61-9eb8-db65a1f62d56
+  tls: true
+  udp: true
+  servername: salad.1945157171.workers.dev
+  fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: salad.1945157171.workers.dev
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.24.163.164:443"
+  type: vless
+  server: 104.24.163.164
+  port: 443
+  uuid: 1f431db3-1918-4e7b-a855-c93485e11694
+  tls: true
+  udp: true
+  servername: pari.parinazz.dpdns.org
+  fingerprint: random
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: pari.parinazz.dpdns.org
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.26.8.156:443"
+  type: vless
+  server: 104.26.8.156
+  port: 443
+  uuid: c4587bda-09fc-4b3b-8221-4450fccc33d1
+  tls: true
+  udp: true
+  servername: yx.yushan.dpdns.org
+  fingerprint: random
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: yx.yushan.dpdns.org
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-188.114.97.6:443"
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 8df60790-c903-4661-b85d-64c0009378e5
+  tls: true
+  udp: true
+  servername: F1.paRsa.fiLegEar-Sg.Me
+  fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: f1.parsa.filegear-sg.me
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.21.57.206:443"
+  type: vless
+  server: 104.21.57.206
+  port: 443
+  uuid: dc50eb1d-244d-4711-b168-a101a5e6fb1b
+  tls: true
+  udp: true
+  servername: ddDDDDdDDrrrtTYu.4444926.XYz
+  fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /uCzP57N1QN26pXiNaWb
+    headers:
+      Host: dddddddddrrrttyu.4444926.xyz
+- name: "\U0001F512 VL-WS-TLS \U0001F1F0\U0001F1F7 KR-149.129.8.215:443"
+  type: vless
+  server: 149.129.8.215
+  port: 443
+  uuid: 948f6596-66f9-4707-aa92-3107a214ce53
+  tls: true
+  udp: true
+  servername: oops.shalamshorba.dpdns.org
+  fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: "Telegram\U0001F1E8\U0001F1F3 @WangCai2 /?ed=2560"
+    headers:
+      Host: oops.shalamshorba.dpdns.org
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.26.0.73:443"
+  type: vless
+  server: 104.26.0.73
+  port: 443
+  uuid: c93b1359-c570-4703-894a-ce18883faac3
+  tls: true
+  udp: true
+  servername: bsw8xmeczkaqznfcbu7sdx39baabahluzcnr9xyifcgpnzls6jsodqndaygtww3.yju9y2x.workers.Dev
+  fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: bsw8xmeczkaqznfcbu7sdx39baabahluzcnr9xyifcgpnzls6jsodqndaygtww3.yju9y2x.workers.Dev
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.18.12.229:8443"
+  type: vless
+  server: 104.18.12.229
+  port: 8443
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: true
+  udp: true
+  servername: azadnet-4nb.pages.dev
+  fingerprint: random
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: azadnet-4nb.pages.dev
+- name: "\U0001F512 VL-HTTPUPGRADE-TLS \U0001F1FA\U0001F1F8 US-199.34.229.63:443"
+  type: vless
+  server: 199.34.229.63
+  port: 443
+  uuid: 9ca79e0a-2c5c-4ac8-90e6-6642e41e6189
+  tls: true
+  udp: true
+  servername: uk1.blackismyfavorite.ir
+  fingerprint: chrome
+  network: httpupgrade
+  ws-opts:
+    path: /XRAYVPNHTTPUPGRADE
+    headers:
+      Host: uk1.blackismyfavorite.ir
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-190.93.245.66:443"
+  type: vless
+  server: 190.93.245.66
+  port: 443
+  uuid: 8ce6e2fe-23f5-4478-80b7-745779c52577
+  tls: true
+  udp: true
+  servername: lv.2138937.xyz
+  fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: lv.2138937.xyz
+- name: "\U0001F512 VL-WS-NA \U0001F3F4\u200D\u2620\uFE0F NA-188.114.99.14:443"
+  type: vless
+  server: 188.114.99.14
+  port: 443
+  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+  tls: true
+  udp: true
+  servername: bitget1.asdasd.click
+  fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: bitget1.asdasd.click
+- name: "\U0001F512 VL-WS-TLS \U0001F1ED\U0001F1F0 HK-47.76.218.163:443"
+  type: vless
+  server: 47.76.218.163
+  port: 443
+  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
+  tls: true
+  udp: true
+  servername: steep.skyfigure.top
+  fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: steep.skyfigure.top
+- name: "\U0001F512 VL-TCP-TLS \U0001F1FA\U0001F1F8 US-135.148.152.106:443"
+  type: vless
+  server: 135.148.152.106
+  port: 443
+  uuid: ea286109-d20f-415e-849e-4af20ab04b65
+  tls: true
+  udp: true
+  servername: 147135001195.sec22org.com
+  fingerprint: chrome
+  network: tcp
+  ws-opts:
+    path: /
+    headers:
+      Host: 135.148.152.106
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.21.57.88:443"
+  type: vless
+  server: 104.21.57.88
+  port: 443
+  uuid: 3d9741da-c0e4-47cc-a5e0-f1af3d337dae
+  tls: true
+  udp: true
+  servername: eEeeeEE4.iran.PP.Ua
+  fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /GLDvleH8RDu6ZqfwAwY2SNm
+    headers:
+      Host: eEeeeEE4.iran.PP.Ua
+- name: "\U0001F512 VL-TCP-TLS \U0001F1FA\U0001F1F8 US-135.148.74.145:443"
+  type: vless
+  server: 135.148.74.145
+  port: 443
+  uuid: 54694a33-a8dc-47dd-bc38-acd3971e0055
+  tls: true
+  udp: true
+  servername: 147135004002.sec20org.com
+  fingerprint: chrome
+  network: tcp
+  ws-opts:
+    path: /
+    headers:
+      Host: 135.148.74.145
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-172.67.157.34:443"
+  type: vless
+  server: 172.67.157.34
+  port: 443
+  uuid: 1dddb054-1d6d-4f33-831e-ea3a0cd3ebe8
+  tls: true
+  udp: true
+  servername: dce3fsg3hho43e4bxvbowf6jtnu2bhdewpvfysrzgv4pw7gqrtkgbuslfdsfsfs.aeh4d7u.workers.Dev
+  fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: 'Telegram channel : @pandavpntc'
+    headers:
+      Host: dce3fsg3hho43e4bxvbowf6jtnu2bhdewpvfysrzgv4pw7gqrtkgbuslfdsfsfs.aeh4d7u.workers.Dev
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-172.67.131.76:443"
+  type: vless
+  server: 172.67.131.76
+  port: 443
+  uuid: 662e38ba-8427-4955-94aa-76f5347a0ce8
+  tls: true
+  udp: true
+  servername: rrRRrrrRrnNNNNnnmM.222767.xyz
+  fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /6DuxYMYmrGrnGKRtF5UvWyyVQu
+    headers:
+      Host: rrrrrrrrrnnnnnnnmm.222767.xyz
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.21.38.90:443"
+  type: vless
+  server: 104.21.38.90
+  port: 443
+  uuid: 2d068083-2cb0-4ae3-a44a-6fc82f3039cc
+  tls: true
+  udp: true
+  servername: DDDCccdVfg.222856.xYZ
+  fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /laTDC7FYNlEa06b88JSo
+    headers:
+      Host: dddcccdvfg.222856.xyz
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-172.67.130.204:443"
+  type: vless
+  server: 172.67.130.204
+  port: 443
+  uuid: c226ac5d-65e9-4379-95c3-fb542bc242d8
+  tls: true
+  udp: true
+  servername: HHhhhHhhhhH.777198.xYz
+  fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /OjdW89Bpg4ykd4O
+    headers:
+      Host: hhhhhhhhhhh.777198.xyz
+- name: "\U0001F512 VL-WS-NA \U0001F3F4\u200D\u2620\uFE0F NA-104.16.0.21:2053"
+  type: vless
+  server: 104.16.0.21
+  port: 2053
+  uuid: 4527ff0c-8ac2-452a-95cb-c2d29e5a8421
+  tls: true
+  udp: true
+  servername: ghh.wsthh.site
+  fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ghh.wsthh.site
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-172.67.197.165:443"
+  type: vless
+  server: 172.67.197.165
+  port: 443
+  uuid: a7c9c017-db10-4d15-b01b-0634db498b57
+  tls: true
+  udp: true
+  servername: 4444R.0890604.xyZ
+  fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /xZjr7v1DqrYyamxeTh7sLJtI1
+    headers:
+      Host: 4444R.0890604.xyZ
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-172.67.143.76:443"
+  type: vless
+  server: 172.67.143.76
+  port: 443
+  uuid: db9d419e-3094-4942-9313-d39afd3dd163
+  tls: true
+  udp: true
+  servername: spx.lindak.dpdns.org
+  fingerprint: random
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: spx.lindak.dpdns.org
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.21.22.133:443"
+  type: vless
+  server: 104.21.22.133
+  port: 443
+  uuid: 4174b95d-115e-4d39-add6-1f8db95bb860
+  tls: true
+  udp: true
+  servername: dddddddfffrrrtyhju.20220420.pp.ua
+  fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /eAbAcRHV1QuhyXWGxgFnoFPw1
+    headers:
+      Host: dddddddfffrrrtyhju.20220420.pp.ua
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.22.8.154:443"
+  type: vless
+  server: 104.22.8.154
+  port: 443
+  uuid: 0fbf4f81-2598-4b6a-a623-0ead4cb9efa8
+  tls: true
+  udp: true
+  servername: privasi.turah.my.id
+  fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /Free-CF-Proxy-AD192.3.113.4-19318
+    headers:
+      Host: privasi.turah.my.id
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-172.67.163.102:443"
+  type: vless
+  server: 172.67.163.102
+  port: 443
+  uuid: a4e8ec0a-75d0-4fc5-837a-4973ed3a9d3e
+  tls: true
+  udp: true
+  servername: SssDCvFbgnjKi.931.PP.Ua
+  fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /JUnt3S1C1hYgCXNutkS5H
+    headers:
+      Host: sssdcvfbgnjki.931.pp.ua
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.16.125.228:443"
+  type: vless
+  server: 104.16.125.228
+  port: 443
+  uuid: 96806a27-3e67-4927-ac62-0557249be651
+  tls: true
+  udp: true
+  servername: qwa-d40.pages.dev
+  fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: qwa-d40.pages.dev
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.21.70.32:443"
+  type: vless
+  server: 104.21.70.32
+  port: 443
+  uuid: fa050497-fc2a-45ee-89c0-96670c4ecb65
+  tls: true
+  udp: true
+  servername: pPP0.89890604.xYZ
+  fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /0USILhLWoWgQPuXTwt
+    headers:
+      Host: ppp0.89890604.xyz
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.21.9.144:443"
+  type: vless
+  server: 104.21.9.144
+  port: 443
+  uuid: d4e52293-4a82-404c-ac29-93afc006dcbb
+  tls: true
+  udp: true
+  servername: crolindd.dearcarlotta.cloudns.org
+  fingerprint: randomized
+  network: ws
+  ws-opts:
+    path: /proxyip=citlali.shorekeeper.ir
+    headers:
+      Host: crolindd.dearcarlotta.cloudns.org
+- name: "\U0001F512 VL-HTTPUPGRADE-TLS \U0001F1FA\U0001F1F8 US-199.34.230.30:443"
+  type: vless
+  server: 199.34.230.30
+  port: 443
+  uuid: 9ca79e0a-2c5c-4ac8-90e6-6642e41e6189
+  tls: true
+  udp: true
+  servername: uk1.blackismyfavorite.ir
+  fingerprint: chrome
+  network: httpupgrade
+  ws-opts:
+    path: /XRAYVPNHTTPUPGRADE
+    headers:
+      Host: uk1.blackismyfavorite.ir
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.21.10.74:443"
+  type: vless
+  server: 104.21.10.74
+  port: 443
+  uuid: 1e610976-fef5-4ca4-a447-f3530e70603e
+  tls: true
+  udp: true
+  servername: escoffier.changli.ddns-ip.net
+  fingerprint: random
+  network: ws
+  ws-opts:
+    path: /proxyip=ayaka.shorekeeper.ir
+    headers:
+      Host: escoffier.changli.ddns-ip.net
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.22.32.142:443"
+  type: vless
+  server: 104.22.32.142
+  port: 443
+  uuid: 4e4768df-0fbb-4cc1-8fd3-7c6fea95742a
+  tls: true
+  udp: true
+  servername: rayan-11.parastoo.dpdns.org
+  fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Rayan_Config
+    headers:
+      Host: rayan-11.parastoo.dpdns.org
+- name: "\U0001F512 VL-HTTPUPGRADE-TLS \U0001F3F4\u200D\u2620\uFE0F NA-172.67.135.195:443"
+  type: vless
+  server: 172.67.135.195
+  port: 443
+  uuid: 9ca79e0a-2c5c-4ac8-90e6-6642e41e6189
+  tls: true
+  udp: true
+  servername: uk1.blackismyfavorite.ir
+  fingerprint: safari
+  network: httpupgrade
+  ws-opts:
+    path: /XRAYVPNHTTPUPGRADE
+    headers:
+      Host: uk1.blackismyfavorite.ir
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.18.15.201:2096"
+  type: vless
+  server: 104.18.15.201
+  port: 2096
+  uuid: 67c662fa-cd6a-474a-b55f-d50dc0a7e210
+  tls: true
+  udp: true
+  servername: iamdt.pages.dev
+  fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: iamdt.pages.dev
+- name: "\U0001F512 VL-WS-NA \U0001F1F8\U0001F1EC SG-164.52.2.100:443"
+  type: vless
+  server: 164.52.2.100
+  port: 443
+  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
+  tls: true
+  udp: true
+  servername: steep.skyfigure.top
+  fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /TelegramU0001F1E8U0001F1F3
+    headers:
+      Host: steep.skyfigure.top
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.16.53.11:8443"
+  type: vless
+  server: 104.16.53.11
+  port: 8443
+  uuid: 7c9e3c1d-a360-4429-9189-e45a98de7fde
+  tls: true
+  udp: true
+  servername: my.ski1plag.ir
+  fingerprint: random
+  network: ws
+  ws-opts:
+    path: /upload
+    headers:
+      Host: my.ski1plag.ir
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.21.30.37:443"
+  type: vless
+  server: 104.21.30.37
+  port: 443
+  uuid: 0f7070cd-c91d-4532-a51f-56da4f0e94be
+  tls: true
+  udp: true
+  servername: 3333e.444682.xyz
+  fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /nSABZLQbEUSLppj7jCmY
+    headers:
+      Host: 3333e.444682.xyz
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.19.85.249:443"
+  type: vless
+  server: 104.19.85.249
+  port: 443
+  uuid: dfdf1c0a-5e52-4746-88bd-19d4e4ac7853
+  tls: true
+  udp: true
+  servername: tannaz.juveitaly.dpdns.org
+  fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: tannaz.juveitaly.dpdns.org
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.21.78.243:443"
+  type: vless
+  server: 104.21.78.243
+  port: 443
+  uuid: c8eac4b7-95ba-4ce0-920d-c3279eb3b391
+  tls: true
+  udp: true
+  servername: 19U.7282728.xyz
+  fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /6r23FpdcA4KNAXX
+    headers:
+      Host: 19u.7282728.xyz
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-172.67.144.232:443"
+  type: vless
+  server: 172.67.144.232
+  port: 443
+  uuid: 1e610976-fef5-4ca4-a447-f3530e70603e
+  tls: true
+  udp: true
+  servername: escoffier.changli.ddns-ip.net
+  fingerprint: random
+  network: ws
+  ws-opts:
+    path: /proxyip=ayaka.shorekeeper.ir
+    headers:
+      Host: escoffier.changli.ddns-ip.net
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.21.74.214:443"
+  type: vless
+  server: 104.21.74.214
+  port: 443
+  uuid: 7a80a8d9-92f9-4f0a-8352-9005a8215ab8
+  tls: true
+  udp: true
+  servername: rayan-11.leila.dpdns.org
+  fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Rayan_Config
+    headers:
+      Host: rayan-11.leila.dpdns.org
+- name: "\U0001F512 VL-WS-NA \U0001F3F4\u200D\u2620\uFE0F NA-104.24.185.187:2053"
+  type: vless
+  server: 104.24.185.187
+  port: 2053
+  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+  tls: true
+  udp: true
+  servername: bitget1.asdasd.click
+  fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: bitget1.asdasd.click
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-172.67.200.11:443"
+  type: vless
+  server: 172.67.200.11
+  port: 443
+  uuid: 357b1bba-6400-4944-baff-1b933311ff28
+  tls: true
+  udp: true
+  servername: SsSSSSSsSSSD.890606.Xyz
+  fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /kSIHD28dr9nkaMBYIsgt
+    headers:
+      Host: SsSSSSSsSSSD.890606.Xyz
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.21.66.157:443"
+  type: vless
+  server: 104.21.66.157
+  port: 443
+  uuid: 662e38ba-8427-4955-94aa-76f5347a0ce8
+  tls: true
+  udp: true
+  servername: xxSSDfRt.666470.xyz
+  fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /6DuxYMYmrGrnGKRtF5UvWyyVQu
+    headers:
+      Host: xxssdfrt.666470.xyz
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-141.101.120.102:2053"
+  type: vless
+  server: 141.101.120.102
+  port: 2053
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  udp: true
+  servername: 1749734195126.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua
+  fingerprint: randomized
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: 1749734195126.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-172.67.149.202:443"
+  type: vless
+  server: 172.67.149.202
+  port: 443
+  uuid: 662e38ba-8427-4955-94aa-76f5347a0ce8
+  tls: true
+  udp: true
+  servername: OooIIi.222560.xyz
+  fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /6DuxYMYmrGrnGKRtF5UvWyyVQu
+    headers:
+      Host: oooiii.222560.xyz
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-172.67.155.140:443"
+  type: vless
+  server: 172.67.155.140
+  port: 443
+  uuid: 4b33b482-25bc-49e4-b866-878c914d945a
+  tls: true
+  udp: true
+  servername: iIiiIiiIiIIO.HuanGsHaNg.dpDns.ORG
+  fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /CpMgWdnDWahQyyQCjn8kmnN0ehd
+    headers:
+      Host: iiiiiiiiiiio.huangshang.dpdns.org
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-172.67.189.81:8443"
+  type: vless
+  server: 172.67.189.81
+  port: 8443
+  uuid: 268c3eaa-7768-4cfd-8b9d-10c755d6cfa1
+  tls: true
+  udp: true
+  servername: gl.ccccccccccccccccccccccccccccccccccccccccccc.cc
+  fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: gl.ccccccccccccccccccccccccccccccccccccccccccc.cc
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-172.67.163.103:443"
+  type: vless
+  server: 172.67.163.103
+  port: 443
+  uuid: c1da8253-1987-4501-9805-69fbb043742a
+  tls: true
+  udp: true
+  servername: rayan-fg-1.nastaran-joon.filegear-sg.me
+  fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: rayan-fg-1.nastaran-joon.filegear-sg.me
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.27.110.124:8443"
+  type: vless
+  server: 104.27.110.124
+  port: 8443
+  uuid: b55ec078-3b17-4ed1-a697-71f464cdcaaa
+  tls: true
+  udp: true
+  servername: kssepa.sabzipolobamahi.dpdns.org
+  fingerprint: random
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kssepa.sabzipolobamahi.dpdns.org
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-188.114.96.6:443"
+  type: vless
+  server: 188.114.96.6
+  port: 443
+  uuid: 8df60790-c903-4661-b85d-64c0009378e5
+  tls: true
+  udp: true
+  servername: F1.paRsa.fiLegEar-Sg.Me
+  fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: F1.paRsa.fiLegEar-Sg.Me
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-172.67.71.187:443"
+  type: vless
+  server: 172.67.71.187
+  port: 443
+  uuid: c4587bda-09fc-4b3b-8221-4450fccc33d1
+  tls: true
+  udp: true
+  servername: yx.yushan.dpdns.org
+  fingerprint: random
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: yx.yushan.dpdns.org
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.26.6.214:443"
+  type: vless
+  server: 104.26.6.214
+  port: 443
+  uuid: 7a80a8d9-92f9-4f0a-8352-9005a8215ab8
+  tls: true
+  udp: true
+  servername: rayan-07.leila.dpdns.org
+  fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Rayan_Config
+    headers:
+      Host: rayan-07.leila.dpdns.org
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.21.114.48:443"
+  type: vless
+  server: 104.21.114.48
+  port: 443
+  uuid: 1f431db3-1918-4e7b-a855-c93485e11694
+  tls: true
+  udp: true
+  servername: pari.parinazz.dpdns.org
+  fingerprint: random
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: pari.parinazz.dpdns.org
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.18.155.119:443"
+  type: vless
+  server: 104.18.155.119
+  port: 443
+  uuid: 60882caa-4e74-42a2-be70-220755fc1551
+  tls: true
+  udp: true
+  servername: rayan-karma.parvaneh.dpdns.org
+  fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: rayan-karma.parvaneh.dpdns.org
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.18.205.33:443"
+  type: vless
+  server: 104.18.205.33
+  port: 443
+  uuid: 4e4768df-0fbb-4cc1-8fd3-7c6fea95742a
+  tls: true
+  udp: true
+  servername: rayan-09.parastoo.dpdns.org
+  fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Rayan_Config
+    headers:
+      Host: rayan-09.parastoo.dpdns.org
+- name: "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-172.67.164.5:443"
+  type: vless
+  server: 172.67.164.5
+  port: 443
+  uuid: ec7de7e0-3f09-4ef4-8a34-e441917d65fa
+  tls: true
+  udp: true
+  servername: verina.ccantarella.dns-dynamic.net
+  fingerprint: randomized
+  network: ws
+  ws-opts:
+    path: /proxyip=robin.yaemiko.ggff.net
+    headers:
+      Host: verina.ccantarella.dns-dynamic.net
+proxy-groups:
+- name: "\u267B\uFE0F Auto"
+  type: url-test
+  proxies: &id001
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-162.159.2.9:443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.21.75.120:2053"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-141.101.120.132:443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-172.67.68.240:443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-190.93.246.169:443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.22.24.177:443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.17.147.22:8443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.16.95.143:443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-172.67.187.190:2096"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-172.67.239.173:443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.18.1.236:443"
+  - "\U0001F512 VL-HTTPUPGRADE-TLS \U0001F1FA\U0001F1F8 US-199.34.229.86:443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.17.148.22:2053"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-172.67.164.1:443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.19.169.191:443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.21.8.214:443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-172.67.132.39:443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-172.67.213.99:2053"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-172.67.175.64:443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.21.10.218:2053"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.19.99.252:443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.27.113.234:443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.18.14.201:2096"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-190.93.247.173:443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.19.120.225:443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-172.67.213.99:2096"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.18.12.149:443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-190.93.245.69:443"
+  - "\U0001F512 VL-TCP-TLS \U0001F1EC\U0001F1E7 GB-51.89.229.8:443"
+  - "\U0001F512 VL-RAW-TLS \U0001F1EB\U0001F1EE FI-65.109.145.54:443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-172.67.9.99:443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-141.101.121.243:2053"
+  - "\U0001F512 VL-WS-TLS \U0001F1FA\U0001F1F8 US-160.153.0.153:2087"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.17.177.51:443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.24.163.164:443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.26.8.156:443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-188.114.97.6:443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.21.57.206:443"
+  - "\U0001F512 VL-WS-TLS \U0001F1F0\U0001F1F7 KR-149.129.8.215:443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.26.0.73:443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.18.12.229:8443"
+  - "\U0001F512 VL-HTTPUPGRADE-TLS \U0001F1FA\U0001F1F8 US-199.34.229.63:443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-190.93.245.66:443"
+  - "\U0001F512 VL-WS-NA \U0001F3F4\u200D\u2620\uFE0F NA-188.114.99.14:443"
+  - "\U0001F512 VL-WS-TLS \U0001F1ED\U0001F1F0 HK-47.76.218.163:443"
+  - "\U0001F512 VL-TCP-TLS \U0001F1FA\U0001F1F8 US-135.148.152.106:443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.21.57.88:443"
+  - "\U0001F512 VL-TCP-TLS \U0001F1FA\U0001F1F8 US-135.148.74.145:443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-172.67.157.34:443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-172.67.131.76:443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.21.38.90:443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-172.67.130.204:443"
+  - "\U0001F512 VL-WS-NA \U0001F3F4\u200D\u2620\uFE0F NA-104.16.0.21:2053"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-172.67.197.165:443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-172.67.143.76:443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.21.22.133:443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.22.8.154:443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-172.67.163.102:443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.16.125.228:443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.21.70.32:443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.21.9.144:443"
+  - "\U0001F512 VL-HTTPUPGRADE-TLS \U0001F1FA\U0001F1F8 US-199.34.230.30:443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.21.10.74:443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.22.32.142:443"
+  - "\U0001F512 VL-HTTPUPGRADE-TLS \U0001F3F4\u200D\u2620\uFE0F NA-172.67.135.195:443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.18.15.201:2096"
+  - "\U0001F512 VL-WS-NA \U0001F1F8\U0001F1EC SG-164.52.2.100:443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.16.53.11:8443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.21.30.37:443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.19.85.249:443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.21.78.243:443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-172.67.144.232:443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.21.74.214:443"
+  - "\U0001F512 VL-WS-NA \U0001F3F4\u200D\u2620\uFE0F NA-104.24.185.187:2053"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-172.67.200.11:443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.21.66.157:443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-141.101.120.102:2053"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-172.67.149.202:443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-172.67.155.140:443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-172.67.189.81:8443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-172.67.163.103:443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.27.110.124:8443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-188.114.96.6:443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-172.67.71.187:443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.26.6.214:443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.21.114.48:443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.18.155.119:443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-104.18.205.33:443"
+  - "\U0001F512 VL-WS-TLS \U0001F3F4\u200D\u2620\uFE0F NA-172.67.164.5:443"
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: "\U0001F530 All"
+  type: select
+  proxies: *id001
+rules:
+- "MATCH,\U0001F530 All"
