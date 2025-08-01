@@ -1,7 +1,5 @@
-# لینک‌های ساب کانفیگ‌ها
+# لیست ساب لینک‌ها
 
-🔗 bnb90.json  
-https://raw.githubusercontent.com/tepo18/sab-vip10/main/bnb90.json
-
-🔗 vip-909090.json  
-https://raw.githubusercontent.com/tepo18/sab-vip10/main/vip-909090.json
+- [فایل fregment.json](https://raw.githubusercontent.com/tepo18/sab-vip10/main/fregment.json)
+- [فایل config.json](https://raw.githubusercontent.com/tepo18/sab-vip10/main/config.json)
+- [فایل config.yaml](https://raw.githubusercontent.com/tepo18/sab-vip10/main/config.yaml)
