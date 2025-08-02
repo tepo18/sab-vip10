@@ -120,7 +120,7 @@
       }
     ]
   }
-  }`
+},
 {
   "remarks": "🔒 VL-GRPC-TLS 🇯🇵 JP-156.238.18.155:443",
   "log": {
@@ -243,7 +243,7 @@
       }
     ]
   }
-    }`
+},
 {
   "remarks": "CA_2799_Surfboardv2ray (IRCF Fragment)",
   "log": {
