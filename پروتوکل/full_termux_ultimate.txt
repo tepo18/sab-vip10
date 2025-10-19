@@ -1,0 +1,4324 @@
+# نمایش مسیر فعلی
+pwd
+
+# لیست کامل فایل‌ها (نمایش مخفی/اجزا)
+ls -la --color=auto
+
+# لیست human readable (اندازه‌ها)
+ls -lh --group-directories-first
+
+# رفتن به مسیر مشخص
+cd /path/to/project
+
+# بازگشت به مسیر قبلی
+cd -
+
+# ساخت چند شاخه‌ای
+mkdir -p project/{src,bin,docs}
+
+# حذف پوشه خالی
+rmdir emptydir
+
+# حذف فایل
+rm file.txt
+
+# حذف پوشه و محتویات (خطرناک)
+rm -rf folder/
+
+# کپی دایرکتوری
+cp -a src/ dest/
+
+# تغییر نام/جابجایی فایل
+mv oldname newname
+
+# ایجاد فایل خالی
+touch file.txt
+
+# اطلاعات فایل متادیتا
+stat file.txt
+
+# تشخیص نوع فایل
+file somefile
+
+# نمایش فایل با صفحه‌بندی
+less file.txt
+
+# نمایش سر و ته فایل
+head -n 200 file.txt
+
+# نمایش انتهای فایل
+tail -n 200 file.txt
+
+# تقسیم فایل به قطعات
+split -b 4M bigfile part_
+
+# ادغام قطعات
+cat part_* > bigfile
+
+# پیدا کردن فایل‌های بزرگ
+find . -type f -size +100M -exec ls -lh {} \;
+
+# جستجوی متن در پروژه
+grep -RIn --color=auto "TODO" .
+
+# حذف CRLF
+dos2unix file.sh 2>/dev/null || true
+
+# تبدیل LF به CRLF
+unix2dos file.txt 2>/dev/null || true
+
+# اضافه کردن PATH به bashrc
+echo "export PATH=\$HOME/bin:\$PATH" >> ~/.bashrc
+
+# اضافه کردن alias به bashrc
+echo "alias ll='ls -la --color=auto'" >> ~/.bashrc
+
+# بارگذاری مجدد bashrc
+source ~/.bashrc
+
+# تابع کمکی تغییر پوشه پروژه
+pcd() { cd ~/projects/"\$1" || return; ls -la; }
+
+# نمایش تاریخچه شل
+history
+
+# اجرای دستور از تاریخچه با شماره
+!123
+
+# تنظیم ویرایشگر پیش‌فرض
+export EDITOR=nano
+
+# اعمال دسترسی اجرایی
+chmod +x script.sh
+
+# تغییر مالکیت فایل (در صورت نیاز root)
+chown user:group file 2>/dev/null || true
+
+# نصب ابزارهای پایه
+pkg install git curl wget -y
+
+# بروزرسانی کامل سیستم
+pkg update && pkg upgrade -y
+
+# نصب build-tools
+pkg install clang make pkg-config -y
+
+# نصب openssh
+pkg install openssh -y
+
+# راه‌اندازی sshd
+sshd || true
+
+# فشرده سازی پوشه tar.gz
+tar -czvf project_$(date +%F).tar.gz project/
+
+# استخراج فایل tar.gz
+tar -xzvf project.tar.gz -C outdir
+
+# zip کردن پروژه
+zip -r project.zip project/
+
+# unzip کردن پروژه
+unzip project.zip
+
+# اشتراک سریع با http.server
+python3 -m http.server 8000 --bind 0.0.0.0
+
+# راه‌اندازی سرور محلی
+python3 -m http.server 8000
+
+# اشتراک فایل با netcat
+nc -l -p 12345 > incoming.tar.gz &
+
+# همگام‌سازی فایل‌ها با rsync
+rsync -avz --progress ./ user@host:/backup/project/
+
+# تولید checksum (sha256)
+sha256sum file.tar.gz
+
+# بررسی صحت checksum
+sha256sum -c file.tar.gz.sha256 || true
+
+# پاکسازی فایل‌های موقت
+rm -rf /tmp/* || true
+
+# مدیریت لاگ‌ها (rotate ساده)
+logrotate /etc/logrotate.conf 2>/dev/null || true
+
+# حذف فایل‌های pyc در پروژه
+find . -name "*.pyc" -delete
+
+# پاکسازی کش pip
+pip cache purge || true
+
+# ویرایشگر nano — ایجاد فایل
+nano newfile.txt
+
+# نمایش استفاده از دیسک
+du -h --max-depth=1
+
+# بررسی فضای آزاد
+df -h
+
+# نمایش پردازش‌ها
+ps -aux
+
+# فیلتر پردازش با grep
+ps -aux | grep python
+
+# توقف پردازش با PID
+kill -9 1234
+
+# بستن برنامه ترموکس با exit
+exit
+
+# جستجو در bash history
+history | grep "pkg"
+
+# زمان اجرای دستور
+time ls -la
+
+# شمارش خطوط فایل
+wc -l file.txt
+
+# شمارش کلمات در فایل
+wc -w file.txt
+
+# پیدا کردن عبارت در چند فایل
+grep -R "pattern" .
+
+# تغییر متن در فایل با sed
+sed -i 's/old/new/g' file.txt
+
+# چاپ ستون خاص با awk
+awk '{print $1, $3}' data.txt
+
+# اتصال چند فایل متنی
+cat part1.txt part2.txt > merged.txt
+
+# حذف خطوط خالی از فایل
+grep -v '^$' file.txt > clean.txt
+
+# تبدیل حروف کوچک به بزرگ
+tr 'a-z' 'A-Z' < file.txt > upper.txt
+
+# شمارش تعداد فایل‌ها در پوشه
+ls | wc -l
+
+# بررسی وجود فایل قبل از حذف
+[ -f file.txt ] && rm file.txt
+
+# بررسی وجود پوشه قبل از ایجاد
+[ ! -d logs ] && mkdir logs
+
+# ساخت آرشیو از چند فایل
+tar -cvf archive.tar file1 file2 file3
+
+# نمایش محتوای آرشیو tar
+tar -tvf archive.tar
+
+# استخراج بخشی از فایل متنی
+head -n 20 file.txt | tail -n 10
+
+# کپی خروجی دستور در کلیپ‌بورد (ترموکس)
+echo "text" | termux-clipboard-set
+
+# خواندن متن از کلیپ‌بورد
+termux-clipboard-get
+
+# فهرست همه alias‌ها
+alias
+
+# حذف alias خاص
+unalias ll
+
+# تعریف alias جدید موقت
+alias gs='git status'
+
+# چاپ تاریخ و ساعت سیستم
+date "+%Y-%m-%d %H:%M:%S"
+
+# زمان‌سنج ۵ ثانیه‌ای
+sleep 5
+
+# حلقه چاپ اعداد ۱ تا ۵
+for i in {1..5}; do echo "$i"; done
+
+# شرط ساده if در bash
+if [ -f file.txt ]; then echo "exists"; fi
+
+# استفاده از متغیر در ترموکس
+NAME="Almasi"; echo "Hello $NAME"
+
+# بررسی پورت باز
+nc -zv 127.0.0.1 22
+
+# اجرای دستور در پس‌زمینه
+python3 server.py &
+
+# مشاهده پردازش‌های پس‌زمینه
+jobs
+
+# بازگرداندن پردازش به foreground
+fg %1
+
+# توقف موقت پردازش
+Ctrl + Z
+
+# ادامه اجرای پردازش متوقف‌شده
+bg %1
+
+# مشاهده وضعیت حافظه رم
+free -h
+
+# مشاهده مشخصات سیستم
+uname -a
+
+# نمایش فقط نام کرنل
+uname -r
+
+# مشاهده معماری دستگاه
+arch
+
+# نمایش اطلاعات CPU
+lscpu || cat /proc/cpuinfo
+
+# نمایش اطلاعات حافظه
+cat /proc/meminfo | head -n 10
+
+# مشاهده استفاده از حافظه و سواپ
+free -m
+
+# بررسی استفاده از دیسک در مسیر خاص
+du -sh /data/data/com.termux/files/home
+
+# لیست فایل‌های بزرگ‌تر از ۵۰ مگابایت
+find . -type f -size +50M -exec ls -lh {} \;
+
+# تغییر سطح دسترسی پوشه و زیرپوشه‌ها
+chmod -R 755 myfolder
+
+# تغییر مالکیت تمام فایل‌های مسیر
+chown -R $USER:$USER /data/data/com.termux/files/home
+
+# پیدا کردن فایل‌های خاص بر اساس پسوند
+find . -name "*.py"
+
+# جستجوی فایل در مسیر خاص
+find /storage/emulated/0 -iname "config.json"
+
+# مقایسه دو فایل متنی
+diff file1.txt file2.txt
+
+# مرتب‌سازی محتویات فایل
+sort names.txt
+
+# حذف خطوط تکراری
+sort names.txt | uniq
+
+# شمارش تعداد خطوط یکتا
+sort names.txt | uniq | wc -l
+
+# چاپ خط خاص از فایل
+sed -n '5p' file.txt
+
+# حذف خط خاص از فایل
+sed '5d' file.txt > new.txt
+
+# جایگزینی متن در تمام فایل‌ها با grep و sed
+grep -rl "old" . | xargs sed -i 's/old/new/g'
+
+# جستجوی رشته در فایل و نمایش شماره خط
+grep -n "pattern" file.txt
+
+# بررسی دسترسی به پورت خاص
+nc -zv google.com 443
+
+# بررسی پینگ سایت
+ping -c 3 google.com
+
+# بررسی زمان پاسخ سرور با curl
+curl -o /dev/null -s -w "%{time_total}\n" https://example.com
+
+# دریافت هدرهای HTTP
+curl -I https://example.com
+
+# ارسال داده POST با curl
+curl -X POST -d "key=value" https://httpbin.org/post
+
+# دانلود با قابلیت ادامه در wget
+wget -c https://example.com/file.zip
+
+# دانلود فایل با محدودیت سرعت
+wget --limit-rate=200k https://example.com/video.mp4
+
+# دریافت IP عمومی
+curl ifconfig.me
+
+# نمایش IP محلی
+ip addr show wlan0
+
+# بررسی وضعیت شبکه
+ping -c 2 1.1.1.1 && echo "Online" || echo "Offline"
+
+# بررسی باز بودن پورت SSH
+nc -zv 127.0.0.1 22
+
+# ایجاد SSH key جدید
+ssh-keygen -t ed25519 -C "termux@device"
+
+# نمایش کلید SSH عمومی
+cat ~/.ssh/id_ed25519.pub
+
+# اتصال SSH به سرور
+ssh user@host
+
+# کپی فایل با SCP
+scp file.txt user@host:/home/user/
+
+# دانلود فایل از سرور با SCP
+scp user@host:/home/user/file.txt .
+
+# کپی فولدر با SCP به‌صورت بازگشتی
+scp -r folder user@host:/var/www/
+
+# نمایش وضعیت SSH
+sshd || echo "sshd running or installed"
+
+# انتقال داده با rsync (فقط تغییرات)
+rsync -avz --update ./ user@host:/backup/
+
+# مانیتور پورت‌ها
+ss -tuln
+
+# نمایش IP و Gateway
+ip route show
+
+# flush کردن DNS cache
+ndc resolver flushdefaultif || echo "No resolver cache"
+
+# بررسی مسیر تا مقصد (traceroute)
+traceroute 8.8.8.8 || ping -R 8.8.8.8
+
+# اسکن پورت‌های باز با nmap
+nmap -p 1-1000 localhost
+
+# بررسی پورت خاص با nmap
+nmap -p 22 192.168.1.1
+
+# مشاهده گواهی SSL سایت
+openssl s_client -connect google.com:443 -showcerts
+
+# رمزنگاری فایل با openssl
+openssl enc -aes-256-cbc -in secret.txt -out secret.enc
+
+# رمزگشایی فایل رمزگذاری‌شده
+openssl enc -aes-256-cbc -d -in secret.enc -out secret.txt
+
+# تبدیل base64 به باینری
+base64 -d file.b64 > file.bin
+
+# تبدیل باینری به base64
+base64 file.bin > file.b64
+
+# تست سرعت دانلود curl
+curl -L -o /dev/null https://speed.hetzner.de/100MB.bin
+
+# نمایش زمان سیستم در قالب سفارشی
+date "+%A, %d %B %Y %H:%M:%S"
+
+# زمان بین دو نقطه در bash
+START=$(date +%s); sleep 3; END=$(date +%s); echo "$((END-START)) seconds"
+
+# تولید فایل تصادفی
+base64 /dev/urandom | head -c 100 > random.txt
+
+# شمارش تعداد کاراکترهای فایل
+wc -m file.txt
+
+# بررسی تعداد پوشه‌ها در مسیر فعلی
+find . -type d | wc -l
+
+# نصب پایتون در ترموکس
+pkg install python -y
+
+# بررسی نسخه پایتون
+python --version
+
+# اجرای فایل پایتون
+python script.py
+
+# اجرای مستقیم کد پایتون در ترموکس
+python -c "print('Hello Termux!')"
+
+# نصب pip در صورت نیاز
+pkg install python-pip -y
+
+# بروز‌رسانی pip به آخرین نسخه
+pip install --upgrade pip
+
+# نصب کتابخانه requests
+pip install requests
+
+# نمونه کد تست requests
+python - <<'PY'
+import requests
+r = requests.get("https://httpbin.org/get")
+print(r.status_code)
+PY
+
+# نصب کتابخانه rich برای خروجی رنگی
+pip install rich
+
+# نمونه اجرای rich برای نمایش رنگی
+python - <<'PY'
+from rich import print
+print("[bold green]Rich library OK[/bold green]")
+PY
+
+# نصب colorama برای رنگ‌بندی ساده‌تر ترمینال
+pip install colorama
+
+# نمونه استفاده colorama
+python - <<'PY'
+from colorama import Fore, Style, init
+init()
+print(Fore.CYAN + "Termux Color OK" + Style.RESET_ALL)
+PY
+
+# نصب tqdm برای نوار پیشرفت
+pip install tqdm
+
+# مثال استفاده از tqdm
+python - <<'PY'
+from tqdm import tqdm
+import time
+for i in tqdm(range(10)):
+    time.sleep(0.1)
+PY
+
+# نصب numpy برای محاسبات عددی
+pip install numpy
+
+# مثال numpy
+python - <<'PY'
+import numpy as np
+print(np.arange(1, 10).reshape(3, 3))
+PY
+
+# نصب pandas برای کار با داده‌ها
+pip install pandas
+
+# مثال pandas
+python - <<'PY'
+import pandas as pd
+print(pd.DataFrame({"A":[1,2,3],"B":[4,5,6]}))
+PY
+
+# نصب matplotlib برای ترسیم نمودار
+pip install matplotlib
+
+# نمونه ترسیم نمودار ساده
+python - <<'PY'
+import matplotlib.pyplot as plt
+plt.plot([1,2,3],[2,4,6])
+plt.title("Test Graph")
+plt.savefig("graph.png")
+PY
+
+# نصب scipy برای عملیات علمی
+pip install scipy
+
+# نصب scikit-learn برای یادگیری ماشین
+pip install scikit-learn
+
+# نصب pillow برای پردازش تصویر
+pip install pillow
+
+# نمونه pillow
+python - <<'PY'
+from PIL import Image
+print("Pillow import OK")
+PY
+
+# نصب fastapi برای وب‌سرویس
+pip install fastapi uvicorn
+
+# نمونه اجرای FastAPI
+python - <<'PY'
+from fastapi import FastAPI
+import uvicorn
+app = FastAPI()
+@app.get("/")
+def home():
+    return {"msg": "Hello Termux"}
+uvicorn.run(app, host="0.0.0.0", port=8000)
+PY
+
+# نصب flask فریم‌ورک سبک وب
+pip install flask
+
+# مثال Flask
+python - <<'PY'
+from flask import Flask
+app = Flask(__name__)
+@app.route("/")
+def index():
+    return "Hello Flask"
+app.run(host="0.0.0.0", port=5000)
+PY
+
+# نصب jupyter برای دفترچه پایتون
+pip install jupyter
+
+# اجرای jupyter notebook در ترموکس
+jupyter notebook --ip=0.0.0.0 --no-browser
+
+# نصب httpie برای درخواست HTTP از CLI
+pip install httpie
+
+# مثال درخواست ساده با httpie
+http https://httpbin.org/get
+
+# نصب poetry برای مدیریت پکیج‌ها
+curl -sSL https://install.python-poetry.org | python3 -
+
+# نصب pipx برای اجرای ابزارها بدون تداخل محیط
+pip install --user pipx
+
+# اطمینان از در دسترس بودن pipx
+python3 -m pipx ensurepath
+
+# نصب httpie با pipx
+pipx install httpie
+
+# اجرای برنامه نصب‌شده توسط pipx
+pipx run httpie https://example.com
+
+# نصب opencv-python برای بینایی ماشین
+pip install opencv-python
+
+# تست opencv
+python - <<'PY'
+import cv2
+print("OpenCV version:", cv2.__version__)
+PY
+
+# نصب beautifulsoup4 برای HTML parsing
+pip install beautifulsoup4
+
+# نمونه اجرای BeautifulSoup
+python - <<'PY'
+from bs4 import BeautifulSoup
+soup = BeautifulSoup("<html><b>OK</b></html>", "html.parser")
+print(soup.b.text)
+PY
+
+# نصب cryptography برای رمزنگاری
+pip install cryptography
+
+# نمونه رمزنگاری و هش
+python - <<'PY'
+from cryptography.fernet import Fernet
+key = Fernet.generate_key()
+f = Fernet(key)
+print(f.encrypt(b"hello termux"))
+PY
+
+# نصب SQLAlchemy برای پایگاه‌داده
+pip install sqlalchemy
+
+# نصب psycopg2 برای PostgreSQL
+pip install psycopg2-binary
+
+# نصب redis برای کش
+pip install redis
+
+# نصب boto3 برای کار با AWS
+pip install boto3
+
+# نصب pytest برای تست خودکار
+pip install pytest
+
+# نصب black برای فرمت کد
+pip install black
+
+# نصب mypy برای بررسی type
+pip install mypy
+
+# نصب flake8 برای lint کد
+pip install flake8
+
+# نصب ابزارهای پایه شبکه (net-tools, curl, wget, ping و غیره)
+pkg install net-tools curl wget openssh -y
+
+# نمایش IP سیستم
+ifconfig
+
+# پینگ به یک دامنه برای تست اتصال
+ping -c 4 google.com
+
+# بررسی پورت باز در سرور هدف
+nc -zv example.com 80
+
+# بررسی پینگ با خروجی مختصر
+ping -q -c 5 8.8.8.8
+
+# تست سرعت دانلود با wget
+wget --output-document=/dev/null http://speedtest.tele2.net/10MB.zip
+
+# تست سرعت با curl
+curl -o /dev/null -s -w "Total: %{time_total}s\n" https://example.com
+
+# دانلود یک فایل با curl و ذخیره در مسیر مشخص
+curl -L -o /storage/emulated/0/Download/test.zip https://example.com/file.zip
+
+# نمایش Header فقط با curl
+curl -I https://example.com
+
+# ارسال درخواست POST با داده JSON
+curl -X POST -H "Content-Type: application/json" -d '{"name":"ali"}' https://httpbin.org/post
+
+# اتصال SSH به سرور
+ssh user@192.168.1.10
+
+# اتصال SSH با پورت سفارشی
+ssh -p 2222 user@host
+
+# کپی فایل از گوشی به سرور با scp
+scp /storage/emulated/0/Download/file.txt user@server:/home/user/
+
+# کپی فایل از سرور به گوشی
+scp user@server:/etc/hosts /storage/emulated/0/Download/
+
+# تولید کلید SSH
+ssh-keygen -t rsa -b 4096 -C "termux_key"
+
+# نمایش کلید عمومی SSH
+cat ~/.ssh/id_rsa.pub
+
+# کپی خودکار کلید به سرور برای لاگین بدون رمز
+ssh-copy-id user@server
+
+# اتصال مجدد خودکار با autossh
+pkg install autossh -y
+autossh -M 0 -f -N user@server
+
+# بررسی باز بودن پورت
+nc -zv 127.0.0.1 22
+
+# نصب termux-api برای کنترل سخت‌افزار (دوربین، باتری، موقعیت)
+pkg install termux-api -y
+
+# نمایش سطح باتری
+termux-battery-status
+
+# نمایش موقعیت مکانی
+termux-location
+
+# فعال کردن GPS قبل از گرفتن موقعیت
+termux-location -p gps
+
+# خواندن پیامک‌ها (در صورت مجوز)
+termux-sms-list
+
+# ارسال SMS با Termux API
+termux-sms-send -n +989123456789 "سلام از ترموکس!"
+
+# باز کردن دوربین و گرفتن عکس
+termux-camera-photo /storage/emulated/0/DCIM/capture.jpg
+
+# ضبط صدا با Termux API
+termux-microphone-record -f /storage/emulated/0/Download/audio.mp3 -d 10
+
+# خواندن وضعیت حافظه دستگاه
+termux-storage-get
+
+# باز کردن یک فایل از حافظه
+termux-open /storage/emulated/0/Download/test.txt
+
+# باز کردن URL در مرورگر
+termux-open-url https://google.com
+
+# بررسی وضعیت شبکه (اتصال Wi-Fi یا Data)
+termux-wifi-connectioninfo
+
+# لیست شبکه‌های Wi-Fi اطراف
+termux-wifi-scaninfo
+
+# فعال کردن hotspot از طریق termux (نیاز به مجوز ریشه)
+termux-wifi-enable true
+
+# بررسی حافظه داخلی و خارجی
+df -h
+
+# بررسی حافظه رم
+free -h
+
+# بررسی اتصالات شبکه فعال
+netstat -tuln
+
+# مانیتور شبکه زنده
+pkg install bmon -y
+bmon
+
+# نمایش مسیر تا مقصد (traceroute)
+pkg install traceroute -y
+traceroute 8.8.8.8
+
+# مشاهده DNS فعلی
+cat /etc/resolv.conf
+
+# تغییر DNS به Cloudflare
+echo "nameserver 1.1.1.1" > /etc/resolv.conf
+
+# بررسی باز بودن پورت‌ها با nmap
+pkg install nmap -y
+nmap -p 22,80,443 192.168.1.1
+
+# اسکن کامل شبکه محلی
+nmap -sP 192.168.1.0/24
+
+# بررسی دستگاه‌های متصل به Wi-Fi
+arp -a
+
+# مشاهده log اتصال‌ها
+logcat | grep "Network"
+
+# ذخیره خروجی پینگ در فایل
+ping -c 10 google.com > /storage/emulated/0/Download/almasi98/ping_result.txt
+
+# گرفتن اطلاعات کامل شبکه و آدرس IP عمومی
+curl ifconfig.me/all
+
+# بررسی IP عمومی ساده
+curl ifconfig.me
+
+# گرفتن زمان دقیق اینترنتی
+curl -s https://worldtimeapi.org/api/timezone/Asia/Tehran | jq '.datetime'
+
+# نصب jq برای پردازش JSON
+pkg install jq -y
+
+# خواندن فایل JSON در ترموکس
+jq . file.json
+
+# تبدیل خروجی یک دستور به JSON
+ls | jq -R . | jq -s .
+
+# اجرای همزمان چند پینگ با parallel
+pkg install parallel -y
+parallel -j3 ping -c 2 ::: google.com yahoo.com cloudflare.com
+
+# شناسایی کارت شبکه و MAC address
+ip addr show
+
+# تغییر MAC address (در گوشی‌های روت)
+ifconfig wlan0 hw ether 00:11:22:33:44:55
+
+# نصب termux-services برای اجرای دائمی
+pkg install termux-services -y
+
+# فعال‌سازی سرویس‌ها
+sv-enable sshd
+
+# بررسی وضعیت سرویس SSH
+sv status sshd
+
+# شروع SSH daemon
+sshd
+
+# توقف SSH daemon
+pkill sshd
+
+# اتصال به سرور با کلید خصوصی خاص
+ssh -i ~/.ssh/id_rsa user@host
+
+# کپی کلید SSH در مقصد
+cat ~/.ssh/id_rsa.pub | ssh user@host "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"
+
+# استفاده از socks proxy با curl
+curl -x socks5h://127.0.0.1:1080 https://example.com
+
+# ذخیره خروجی دستور در مسیر ثابت
+ifconfig > /storage/emulated/0/Download/almasi98/network_info.txt
+
+# اجرای دستور و ذخیره خروجی همراه زمان
+echo "$(date)" >> /storage/emulated/0/Download/almasi98/netlog.txt && ifconfig >> /storage/emulated/0/Download/almasi98/netlog.txt
+
+# ===== بخش ۶ — مدیریت فایل، ویرایشگرها، بک‌آپ، فشرده‌سازی و بازیابی (دستورات ۲۰۱–260) =====
+
+# باز کردن فایل با ویرایشگر nano
+nano file.txt
+
+# باز کردن فایل با vim (در صورت نصب)
+vim file.txt
+
+# جستجوی سریع فایل با locate (در صورت نصب و راه‌اندازی mlocate)
+updatedb 2>/dev/null || true
+locate README.md | head
+
+# کپی امن با حفظ مجوزها و زمان تغییر
+cp -a source/ dest/
+
+# همگام‌سازی پوشه با rsync (نمایش پیشرفت)
+rsync -avh --progress ./src/ /storage/emulated/0/Backup/src/
+
+# پشتیبان‌گیری کامل پوشه به فایل tar.gz
+tar -czf backup_$(date +%F).tar.gz /data/data/com.termux/files/home/
+
+# فشرده‌سازی با فشرده‌سازی بالا (xz)
+tar -cJf backup_$(date +%F).tar.xz myproject/
+
+# استخراج فایل tar.gz در مسیر مشخص
+tar -xzf backup_2025-01-01.tar.gz -C /tmp/restore/
+
+# فهرست محتویات یک آرشیو
+tar -tf archive.tar.gz | less
+
+# ساخت آرشیو zip با فشرده‌سازی و حذف مسیر پایه
+( cd myproject && zip -r /storage/emulated/0/Download/myproject.zip . )
+
+# استخراج zip و بازنویسی فایل‌ها
+unzip -o /storage/emulated/0/Download/myproject.zip -d ./restore/
+
+# ساخت آرشیو چندبخشی (split) برای انتقال روی رسانه با محدودیت اندازه
+tar -czf - myproject/ | split -b 50M - backup_part_
+
+# ادغام قطعات و استخراج
+cat backup_part_* | tar -xzf - -C ./restore/
+
+# نمایش محتویات یک فایل zip بدون استخراج
+unzip -l archive.zip
+
+# گرفتن checksum SHA256 برای فایل‌ها قبل از انتقال
+sha256sum file.zip > file.zip.sha256
+
+# بررسی checksum در مقصد
+sha256sum -c file.zip.sha256 || echo "checksum failed"
+
+# گرفتن لیست فایل‌ها و تاریخ تغییر و ذخیره در فایل
+find . -type f -printf '%T@ %p\n' | sort -n > files_by_time.txt
+
+# گرفتن تفاوت بین دو دایرکتوری (فقط نام فایل‌ها)
+diff -qr dir1 dir2
+
+# گرفتن حجم دایرکتوری به صورت خلاصه
+du -sh myproject/
+
+# فشرده‌سازی با gzip یک فایل منفرد
+gzip -k large.log
+
+# خارج‌سازی gzip
+gunzip -k large.log.gz
+
+# تبدیل پوشه به tar و همزمان نمایش پیشرفت با pv (اگر نصب است)
+tar -czf - myproject/ | pv > myproject.tar.gz
+
+# حذف ایمن فایل‌ها (در صورت نیاز overwrite) — هشدار: غیرقابل بازگشت
+shred -u sensitive.txt 2>/dev/null || rm -f sensitive.txt
+
+# ساخت لینک نمادین (symlink)
+ln -s /path/to/target link_name
+
+# ساخت لینک سخت (hard link)
+ln /path/to/file hardlink_name
+
+# نمایش inode و لینک‌ها
+ls -li file
+
+# نمایش فهرست فایل‌ها با اندازه و زمان مرتب‌شده
+ls -lhS
+
+# حذف فایل‌ها بر اساس الگو با توجه به تاریخ (مثلاً فایل‌های قدیمی‌تر از 30 روز)
+find /storage/emulated/0/Download -type f -mtime +30 -delete
+
+# پاکسازی پوشه کش خاص پروژه
+rm -rf .cache/ || true
+
+# ساخت snapshot ساده از پوشه (copy)
+cp -a project project_snapshot_$(date +%F)
+
+# ساخت آرشیو incremental ساده با tar (لیست شده در snapshot.file)
+tar --listed-incremental=snapshot.file -czf incr_$(date +%F).tar.gz myproject/
+
+# نمایش مجوزها و مالکیت به صورت human readable
+stat -c "%A %U %G %s %y %n" file.txt
+
+# تغییر مجوز به حالت امن (فقط مالک خواندن/نوشتن)
+chmod 600 ~/.ssh/id_rsa
+
+# تغییر مجوز دایرکتوری (اجرایی برای پیمایش)
+chmod 755 ~/scripts
+
+# اصلاح زمان تغییر فایل (touch)
+touch -m -t 202501011200 file.txt
+
+# مقایسه دو فایل دودویی با md5sum برای مطابقت
+md5sum file1.bin file2.bin
+
+# گرفتن خروجی ls به صورت JSON (با jq wrapper اگر موجود باشد)
+ls -la | awk '{print "{\"perm\":\""$1"\",\"owner\":\""$3"\",\"size\":"$5",\"name\":\""$9"\"}"}' | jq -s .
+
+# پیدا کردن و حذف فایل‌های خالی
+find . -type f -empty -delete
+
+# توقف اسکریپت در صورت خطا در rsync (set -e قبل از اجرا)
+set -e
+rsync -av --delete src/ dest/
+set +e
+
+# پشتیبان‌گیری خودکار روزانه با cron (نمونه خط برای crontab -e)
+# 0 3 * * * /data/data/com.termux/files/home/backup.sh >> /data/data/com.termux/files/home/backup.log 2>&1
+
+# نمونه اسکریپت بکاپ ساده (یک خط) — اجرا کنید در backup.sh
+# tar -czf /storage/emulated/0/Backup/backup_$(date +%F).tar.gz /data/data/com.termux/files/home/
+
+# بررسی فضای خالی قبل از بکاپ و هشدار
+[ $(df /storage/emulated/0 | tail -1 | awk '{print $4}') -lt 1048576 ] && echo "Not enough space" && exit 1 || true
+
+# آرشیو incremental با rsync (همه فایل‌ها را به remote mirror می‌کند)
+rsync -av --delete --link-dest=../prev_backup ./ backup_host:/backups/$(date +%F)/
+
+# تهیه لیست فایل‌های تغییر کرده در 24 ساعت گذشته
+find . -type f -mtime -1 -print > changed_last_24h.txt
+
+# ساخت نسخه فشرده شده از لاگ‌ها با فشرده‌سازی و حذف اصلی
+tar -czf logs_$(date +%F).tar.gz logs/ && rm -rf logs/
+
+# تبدیل encoding فایل متنی به UTF-8
+iconv -f ISO-8859-1 -t UTF-8 in.txt -o out_utf8.txt
+
+# چاپ اندازه دقیق یک فایل با stat
+stat -c "%s" heavyfile.bin
+
+# ساخت فایل لیستی برای استفاده با rsync/zip
+find myproject -type f > files_list.txt
+
+# فشار دادن فهرست فایل‌ها به zip با -@ (stdin)
+zip -r project_from_list.zip -@ < files_list.txt
+
+# پاکسازی پوشه دانلود قدیمی در مطمئن‌ترین حالت
+find /storage/emulated/0/Download -maxdepth 1 -type f -mtime +90 -exec rm -f {} \;
+
+# اجرای بررسی صحت آرشیو (مثال tar)
+tar -tzf backup_2025-01-01.tar.gz >/dev/null && echo "Archive OK" || echo "Archive corrupted"
+
+# انتقال امن یک آرشیو به سرور و حذف محلی پس از موفقیت
+scp backup_2025-01-01.tar.gz user@remote:/backups/ && rm -f backup_2025-01-01.tar.gz
+
+# مشاهده دسته‌ای فایل‌ها با نمایش خطوط نخست هر فایل
+for f in *.log; do echo "=== $f ==="; head -n 3 "$f"; done
+
+# ساخت پوشه با سطح دسترسی ایمن و مالک مشخص
+mkdir -p /storage/emulated/0/Secret && chmod 700 /storage/emulated/0/Secret
+
+# تهیه گزارش فضای دیسک و ذخیره به فایل
+df -h > /storage/emulated/0/Download/almasi98/disk_report_$(date +%F).txt
+
+# پاکسازی بسته‌های غیرضروری و temp(در محیط بسته‌بندی)
+pkg clean 2>/dev/null || true
+
+# پایان بخش ۶ — تا اینجا حدود 60 دستور (۲۰۱–260)
+
+
+# ===== بخش ۷ — شبکه، SSH، curl، wget، nmap و ابزارهای ترموکس (دستورات ۲۶۱–۳۲۰) =====
+
+# بررسی اتصال اینترنت با ping
+ping -c 4 8.8.8.8
+
+# بررسی دسترسی DNS با ping دامنه
+ping -c 3 google.com
+
+# اجرای traceroute برای مسیر اتصال
+traceroute github.com || true
+
+# بررسی وضعیت IP و شبکه‌ها
+ip addr show
+
+# نمایش جدول مسیریابی
+ip route show
+
+# بررسی پورت‌های باز با ss
+ss -tuln
+
+# نصب و اجرای nmap برای بررسی پورت‌ها
+pkg install nmap -y || true
+nmap -p 22,80,443 localhost
+
+# بررسی بنر سرویس با nmap
+nmap -sV 127.0.0.1
+
+# اسکن شبکه محلی
+nmap -sn 192.168.1.0/24
+
+# بررسی گواهی SSL با openssl
+openssl s_client -connect google.com:443 -showcerts
+
+# بررسی اطلاعات دامنه با whois
+pkg install whois -y || true
+whois example.com
+
+# بررسی رکورد DNS با dig
+dig example.com
+
+# بررسی با nslookup
+nslookup example.com
+
+# دریافت فایل با wget
+wget -c https://example.com/file.zip
+
+# ادامه دانلود در wget
+wget -c https://example.com/large.zip -O large.zip
+
+# دانلود فایل با curl
+curl -L -o file.zip https://example.com/file.zip
+
+# نمایش header فقط
+curl -I https://example.com
+
+# دانلود با محدودیت سرعت
+wget --limit-rate=200k https://example.com/large.iso
+
+# HEAD request و زمان پاسخ
+curl -w "%{time_total}\n" -o /dev/null -s https://example.com
+
+# نمایش آدرس IP عمومی
+curl ifconfig.me
+
+# بررسی API ساده
+curl -sS https://api.github.com | head
+
+# ذخیره خروجی به فایل JSON
+curl -s https://api.github.com/repos/termux/termux-packages > repo.json
+
+# ارسال داده POST با curl
+curl -X POST -H "Content-Type: application/json" -d '{"a":1}' https://httpbin.org/post
+
+# ارسال فایل به سرور
+curl -F "file=@/path/to/file.txt" https://httpbin.org/post
+
+# اجرای یک سرور HTTP موقت روی پورت 8000
+python3 -m http.server 8000 --bind 0.0.0.0
+
+# بررسی باز بودن پورت در سرور دیگر
+nc -zv example.com 22
+
+# ارسال فایل با netcat
+nc remotehost 12345 < backup.tar.gz
+
+# دریافت فایل با netcat
+nc -l -p 12345 > incoming.tar.gz &
+
+# انتقال دایرکتوری از طریق ssh/scp
+scp -r project user@host:/path/
+
+# دریافت فایل از سرور با scp
+scp user@host:/backup/data.zip /storage/emulated/0/Download/
+
+# کپی کل پروژه با rsync
+rsync -avz --progress ./src/ user@remote:/srv/src/
+
+# ssh به سرور با پورت سفارشی
+ssh -p 2222 user@host
+
+# اضافه کردن کلید SSH به سرور
+ssh-copy-id -i ~/.ssh/id_rsa.pub user@host
+
+# اجرای دستور از راه دور
+ssh user@host "ls -la /var/www/"
+
+# باز کردن پورت و تست اتصال TCP
+nc -l 8080 & nc localhost 8080 <<< "test message"
+
+# بررسی ارتباط UDP
+nc -u -l 5000 & echo "ping" | nc -u localhost 5000
+
+# استفاده از termux-api برای بررسی وضعیت شبکه
+termux-wifi-connectioninfo || true
+
+# بررسی وضعیت باتری با termux
+termux-battery-status || true
+
+# نمایش هشدار (toast)
+termux-toast "Network OK" || true
+
+# نمایش اعلانات در ترموکس
+termux-notification --title "Termux" --content "Backup done" || true
+
+# لرزش گوشی کوتاه
+termux-vibrate -d 200 || true
+
+# کپی متن به کلیپ‌بورد
+termux-clipboard-set "Copied text" || true
+
+# خواندن از کلیپ‌بورد
+termux-clipboard-get || true
+
+# باز کردن فایل با termux
+termux-open /storage/emulated/0/Download/example.pdf || true
+
+# گرفتن عکس با دوربین جلو
+termux-camera-photo -c 1 /storage/emulated/0/DCIM/capture.jpg || true
+
+# ضبط صدا برای چند ثانیه
+termux-audio-record -o /storage/emulated/0/rec.wav -t 5 || true
+
+# نمایش مختصات جغرافیایی
+termux-location || true
+
+# باز کردن URL در مرورگر پیش‌فرض
+termux-open-url https://github.com || true
+
+# خواندن سطح صدا (microphone)
+termux-audio-info || true
+
+# اعلام متنی با tts (Text to Speech)
+termux-tts-speak "Hello from Termux" || true
+
+# دانلود مستقیم فایل به حافظه
+termux-download https://example.com/file.zip /storage/emulated/0/Download/file.zip || true
+
+# ارسال SMS (در صورت اجازه)
+termux-sms-send -n 09120000000 "Test message" || true
+
+# بررسی وضعیت سنسورهای گوشی
+termux-sensor -l 2 || true
+
+# بررسی CPU و سیستم
+termux-info | grep Device
+
+# نمایش فضای خالی
+termux-storage-get || true
+
+# اتصال به hotspot و مشاهده جزئیات
+termux-wifi-scaninfo || true
+
+# بررسی نسخه API ترموکس
+termux-version || true
+
+# پایان بخش ۷ — شبکه و termux-api (دستورات ۲۶۱–۳۲۰)
+
+# ===== بخش ۸ — کتابخانه‌های پایتون، پیش‌نیازها و مدیریت بسته‌ها (دستورات ۳۲۱–۴۰۰) =====
+
+# نصب کتابخانه requests برای ارسال HTTP
+pip install requests
+
+# اجرای تست GET ساده با requests
+python3 - <<'PY'
+import requests
+print(requests.get('https://httpbin.org/get').status_code)
+PY
+
+# نصب aiohttp برای ارتباطات async
+pip install aiohttp
+
+# نمونه استفاده از aiohttp برای درخواست async
+python3 - <<'PY'
+import aiohttp, asyncio
+async def main():
+    async with aiohttp.ClientSession() as s:
+        async with s.get('https://httpbin.org/get') as r:
+            print(await r.text())
+asyncio.run(main())
+PY
+
+# نصب و استفاده از rich برای چاپ رنگی
+pip install rich
+
+# مثال رنگی rich
+python3 - <<'PY'
+from rich import print
+print("[bold green]Rich Library Installed Successfully![/bold green]")
+PY
+
+# نصب termcolor برای چاپ رنگی ترمینال
+pip install termcolor
+
+# نصب colorama برای پشتیبانی رنگ در ویندوز
+pip install colorama
+
+# تست colorama
+python3 - <<'PY'
+from colorama import Fore, Style, init
+init()
+print(Fore.CYAN + "Colorama works!" + Style.RESET_ALL)
+PY
+
+# نصب tqdm برای نوار پیشرفت
+pip install tqdm
+
+# نمونه tqdm
+python3 - <<'PY'
+from tqdm import trange
+import time
+for i in trange(5):
+    time.sleep(0.5)
+PY
+
+# نصب numpy برای محاسبات عددی
+pip install numpy
+
+# نمونه آرایه numpy
+python3 - <<'PY'
+import numpy as np
+print(np.linspace(0, 10, 5))
+PY
+
+# نصب pandas برای داده‌ها
+pip install pandas
+
+# نمونه DataFrame
+python3 - <<'PY'
+import pandas as pd
+print(pd.DataFrame({"نام":["علی","رضا"],"سن":[25,30]}))
+PY
+
+# نصب matplotlib برای رسم نمودار
+pip install matplotlib
+
+# مثال رسم نمودار matplotlib
+python3 - <<'PY'
+import matplotlib.pyplot as plt
+plt.plot([1,2,3],[4,5,6])
+plt.title("نمودار نمونه")
+plt.show()
+PY
+
+# نصب pillow برای کار با تصاویر
+pip install pillow
+
+# نمونه ایجاد تصویر ساده
+python3 - <<'PY'
+from PIL import Image
+img = Image.new("RGB", (100,100), (255,0,0))
+img.save("/storage/emulated/0/Download/almasi98/red.png")
+PY
+
+# نصب lxml برای پردازش XML
+pkg install libxml2 libxslt -y
+pip install lxml
+
+# نصب beautifulsoup4 برای HTML Parsing
+pip install beautifulsoup4
+
+# نصب cryptography برای رمزنگاری
+pkg install rust openssl-dev -y
+pip install cryptography
+
+# نصب pyOpenSSL
+pip install pyOpenSSL
+
+# نصب sqlalchemy برای ORM
+pip install sqlalchemy
+
+# نصب psycopg2-binary برای PostgreSQL
+pip install psycopg2-binary
+
+# نصب redis
+pip install redis
+
+# نصب boto3 برای AWS
+pip install boto3
+
+# نصب fastapi برای ساخت API سریع
+pip install fastapi uvicorn
+
+# اجرای سرور FastAPI
+uvicorn main:app --reload --host 0.0.0.0 --port 8080
+
+# نصب flask
+pip install flask
+
+# ایجاد سرور ساده Flask
+python3 - <<'PY'
+from flask import Flask
+app = Flask(__name__)
+@app.route("/")
+def home():
+    return "Hello Flask!"
+app.run(host="0.0.0.0", port=8080)
+PY
+
+# نصب gunicorn برای سرورهای تولید
+pip install gunicorn
+
+# اجرای اپ Flask با gunicorn
+gunicorn -w 4 app:app
+
+# نصب pytest برای تست
+pip install pytest
+
+# اجرای تست‌ها
+pytest -v
+
+# نصب jupyter
+pip install jupyter
+
+# اجرای jupyter notebook
+jupyter notebook --ip=0.0.0.0 --no-browser
+
+# نصب black برای فرمت کد
+pip install black
+
+# اجرای black روی پوشه پروژه
+black .
+
+# نصب flake8 برای lint
+pip install flake8
+
+# بررسی خطاهای استایل
+flake8 src/
+
+# نصب mypy برای بررسی type hint
+pip install mypy
+
+# اجرای mypy روی فایل‌ها
+mypy script.py
+
+# نصب poetry برای مدیریت پکیج‌ها
+curl -sSL https://install.python-poetry.org | python3 -
+
+# نصب pipx برای اجرای جداگانه ابزارها
+python3 -m pip install --user pipx
+python3 -m pipx ensurepath
+
+# نصب ابزار با pipx
+pipx install httpie
+
+# نصب jupyterlab
+pip install jupyterlab
+
+# نصب scrapy برای خزش وب
+pip install scrapy
+
+# نصب opencv برای پردازش تصویر
+pip install opencv-python
+
+# نصب tensorflow
+pip install tensorflow
+
+# نصب torch و torchvision
+pip install torch torchvision torchaudio
+
+# نصب transformers برای NLP
+pip install transformers
+
+# نصب sentencepiece (پیش‌نیاز)
+pip install sentencepiece
+
+# نصب fastapi-users برای احراز هویت
+pip install fastapi-users
+
+# نصب pydantic برای مدل داده‌ها
+pip install pydantic
+
+# نصب uvloop برای بهینه‌سازی asyncio
+pip install uvloop
+
+# نصب loguru برای لاگ حرفه‌ای
+pip install loguru
+
+# نصب rich-click برای CLI رنگی
+pip install rich-click
+
+# نصب typer برای CLI مدرن
+pip install typer
+
+# نصب click
+pip install click
+
+# نصب paramiko برای SSH
+pip install paramiko
+
+# نصب fabric برای مدیریت سرورها
+pip install fabric
+
+# نصب celery برای Task Queue
+pip install celery
+
+# نصب fastapi-mail برای ایمیل
+pip install fastapi-mail
+
+# نصب aiofiles برای async file IO
+pip install aiofiles
+
+# نصب uvicorn-worker برای Gunicorn
+pip install uvicorn[standard]
+
+# پایان بخش ۸ — پکیج‌ها و کتابخانه‌های پایتون (۳۲۱–۴۰۰)
+# ===== بخش ۹ — Git ، SSH ، Docker ، DevTools و شبکه (دستورات ۴۰۱–۵۰۰) =====
+
+# بررسی نسخه Git
+git --version
+
+# تنظیم نام کاربر Git
+git config --global user.name "Almasi98"
+
+# تنظیم ایمیل Git
+git config --global user.email "example@email.com"
+
+# ایجاد ریپازیتوری جدید
+git init
+
+# کلون کردن ریپو از GitHub
+git clone https://github.com/user/repo.git
+
+# نمایش وضعیت ریپو
+git status
+
+# افزودن فایل به stage
+git add file.py
+
+# افزودن همه فایل‌ها
+git add .
+
+# کامیت با پیام
+git commit -m "Initial commit"
+
+# مشاهده تاریخچه کامیت‌ها
+git log --oneline
+
+# بازگردانی فایل به نسخه قبلی
+git checkout HEAD~1 file.py
+
+# ساخت برنچ جدید
+git branch new-feature
+
+# سوئیچ به برنچ جدید
+git checkout new-feature
+
+# ادغام برنچ در main
+git merge new-feature
+
+# حذف برنچ
+git branch -d new-feature
+
+# تنظیم ریپوی remote
+git remote add origin https://github.com/user/repo.git
+
+# پوش به GitHub
+git push origin main
+
+# کشیدن تغییرات
+git pull origin main
+
+# ذخیره موقت تغییرات
+git stash
+
+# اعمال تغییرات ذخیره شده
+git stash pop
+
+# مشاهده تفاوت فایل‌ها
+git diff
+
+# حذف فایل از git بدون حذف از سیستم
+git rm --cached filename
+
+# مشاهده برنچ‌های موجود
+git branch -a
+
+# مشاهده ریموت‌ها
+git remote -v
+
+# تنظیم کش برای Git Credential
+git config --global credential.helper store
+
+# تولید SSH key جدید
+ssh-keygen -t ed25519 -C "example@email.com"
+
+# مشاهده کلید عمومی برای GitHub
+cat ~/.ssh/id_ed25519.pub
+
+# تست اتصال SSH
+ssh -T git@github.com
+
+# اتصال SSH به سرور
+ssh user@host
+
+# انتقال فایل با SCP
+scp file.txt user@192.168.1.10:/home/user/
+
+# تونل SSH
+ssh -L 8080:localhost:80 user@remote_host
+
+# کپی از سرور با rsync
+rsync -avz user@host:/path /local/path
+
+# ایجاد Docker container
+docker run -it ubuntu bash
+
+# مشاهده کانتینرها
+docker ps -a
+
+# متوقف کردن کانتینر
+docker stop <id>
+
+# حذف کانتینر
+docker rm <id>
+
+# ساخت ایمیج
+docker build -t myapp .
+
+# مشاهده ایمیج‌ها
+docker images
+
+# اجرای docker-compose
+docker-compose up -d
+
+# متوقف کردن سرویس‌ها
+docker-compose down
+
+# وارد شدن به container
+docker exec -it <id> bash
+
+# Pull آخرین ایمیج از Docker Hub
+docker pull nginx:latest
+
+# Push ایمیج به Docker Hub
+docker push user/myapp:latest
+
+# حذف همه ایمیج‌ها و کانتینرها
+docker system prune -a
+
+# مشاهده لاگ‌ها
+docker logs <id>
+
+# ایجاد شبکه Docker
+docker network create mynet
+
+# اتصال container به شبکه
+docker network connect mynet <id>
+
+# نصب nmap برای اسکن شبکه
+pkg install nmap -y
+
+# اسکن سریع پورت‌ها
+nmap -F 192.168.1.1
+
+# اسکن کامل پورت‌ها
+nmap -p- 192.168.1.1
+
+# اسکن سیستم عامل
+nmap -O 192.168.1.1
+
+# نصب netcat
+pkg install netcat -y
+
+# گوش دادن روی پورت 4444
+nc -lvnp 4444
+
+# اتصال به سرور
+nc 192.168.1.10 4444
+
+# ارسال فایل از کلاینت
+cat file.txt | nc 192.168.1.10 4444
+
+# دریافت فایل در سرور
+nc -lvnp 4444 > received.txt
+
+# نصب curl
+pkg install curl -y
+
+# ارسال درخواست GET
+curl https://httpbin.org/get
+
+# ارسال POST با داده JSON
+curl -X POST -H "Content-Type: application/json" -d '{"user":"ali"}' https://httpbin.org/post
+
+# ذخیره خروجی در فایل
+curl -o output.html https://example.com
+
+# نصب wget
+pkg install wget -y
+
+# دانلود فایل
+wget https://example.com/file.zip
+
+# ادامه دانلود قطع شده
+wget -c https://example.com/file.zip
+
+# نصب openssh
+pkg install openssh -y
+
+# اجرای سرور SSH در ترموکس
+sshd
+
+# مشاهده IP برای اتصال
+ip addr show wlan0
+
+# اتصال از لپ‌تاپ:
+# ssh user@<IP> -p 8022
+
+# تنظیم پسورد برای ترموکس SSH
+passwd
+
+# نصب http.server برای هاست ساده
+python3 -m http.server 8080
+
+# مشاهده IP و پورت لوکال
+ifconfig | grep inet
+
+# نصب ngrok برای تونل HTTP
+pkg install wget unzip -y
+wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm.zip
+unzip ngrok-stable-linux-arm.zip
+./ngrok authtoken <YOUR_TOKEN>
+./ngrok http 8080
+
+# نصب openssl
+pkg install openssl -y
+
+# تولید کلید RSA
+openssl genrsa -out private.key 2048
+
+# تولید CSR
+openssl req -new -key private.key -out request.csr
+
+# تولید گواهی self-signed
+openssl x509 -req -days 365 -in request.csr -signkey private.key -out cert.crt
+
+# ساخت سرور HTTPS ساده
+python3 - <<'PY'
+import http.server, ssl
+server = http.server.HTTPServer(('0.0.0.0', 4443), http.server.SimpleHTTPRequestHandler)
+server.socket = ssl.wrap_socket(server.socket, certfile='cert.crt', keyfile='private.key', server_side=True)
+server.serve_forever()
+PY
+
+# نصب net-tools
+pkg install net-tools -y
+
+# بررسی پورت‌های باز
+netstat -tuln
+
+# پینگ سرور
+ping -c 4 8.8.8.8
+
+# traceroute مسیر
+pkg install traceroute -y
+traceroute google.com
+
+# نمایش اتصالات فعال
+ss -tuln
+
+# اسکن شبکه محلی
+arp -a
+
+# نمایش مسیر اینترنتی
+ip route show
+
+# نصب tcpdump
+pkg install tcpdump -y
+
+# کپچر بسته‌ها روی wlan0
+tcpdump -i wlan0 -c 10
+
+# ===== پایان بخش ۹ — Git, SSH, Docker, Network =====
+
+# ===== بخش ۱۰ — File Management, Terminal, Alias, Bash Scripting, Automation (دستورات ۵۰۱–۶۰۰) =====
+
+# نمایش مسیر فعلی
+pwd
+
+# نمایش لیست فایل‌ها
+ls -la
+
+# تغییر مسیر
+cd /storage/emulated/0/Download
+
+# بازگشت به مسیر قبلی
+cd -
+
+# رفتن به مسیر خانگی
+cd ~
+
+# ساخت پوشه جدید
+mkdir myfolder
+
+# ساخت چند پوشه هم‌زمان
+mkdir -p project/src/assets
+
+# حذف فایل
+rm file.txt
+
+# حذف پوشه به‌همراه محتوایش
+rm -rf myfolder
+
+# تغییر نام فایل
+mv old.txt new.txt
+
+# انتقال فایل
+mv file.txt /storage/emulated/0/Documents/
+
+# کپی فایل
+cp file.txt backup.txt
+
+# کپی پوشه کامل
+cp -r project backup_project
+
+# مشاهده محتویات فایل
+cat file.txt
+
+# مشاهده صفحه‌به‌صفحه محتوا
+less longfile.txt
+
+# جستجو درون فایل
+grep "keyword" file.txt
+
+# جستجو درون چند فایل
+grep -r "error" /data/logs/
+
+# پیدا کردن فایل در مسیر
+find . -name "*.py"
+
+# پیدا کردن و حذف فایل خاص
+find . -name "*.tmp" -delete
+
+# نمایش حجم فایل‌ها
+du -h
+
+# نمایش حجم کل پوشه
+du -sh .
+
+# نمایش فضای دیسک
+df -h
+
+# فشرده‌سازی فایل با tar
+tar -czvf backup.tar.gz folder/
+
+# استخراج فایل tar.gz
+tar -xzvf backup.tar.gz
+
+# فشرده‌سازی با zip
+zip -r backup.zip folder/
+
+# استخراج فایل zip
+unzip backup.zip
+
+# تغییر دسترسی فایل
+chmod 755 script.sh
+
+# دادن مجوز اجرا به فایل
+chmod +x run.sh
+
+# تغییر مالک فایل
+chown user:user file.txt
+
+# مشاهده تاریخچه دستورات
+history
+
+# اجرای دستور خاص از history
+!15
+
+# پاک کردن تاریخچه
+history -c
+
+# ساخت alias برای دستورات پرکاربرد
+alias gs='git status'
+
+# حذف alias
+unalias gs
+
+# مشاهده aliasها
+alias
+
+# ذخیره alias در bashrc برای دائمی شدن
+echo "alias update='pkg update && pkg upgrade -y'" >> ~/.bashrc
+
+# به‌روزرسانی محیط bash
+source ~/.bashrc
+
+# ایجاد فایل bash جدید
+nano myscript.sh
+
+# نمونه اسکریپت ساده
+# اجرای خودکار بروزرسانی سیستم
+#!/bin/bash
+pkg update -y && pkg upgrade -y
+echo "System updated!"
+
+# اجرای اسکریپت
+bash myscript.sh
+
+# اجرای اسکریپت با مجوز اجرا
+./myscript.sh
+
+# اجرای همزمان چند دستور
+ls && pwd && whoami
+
+# اجرای دستور در پس‌زمینه
+sleep 30 &
+
+# مشاهده پردازش‌ها
+ps aux
+
+# توقف پردازش با PID
+kill -9 1234
+
+# اجرای دستور هر ۵ ثانیه
+watch -n 5 "df -h"
+
+# افزودن تسک به cron برای اجرا زمان‌بندی شده
+crontab -e
+
+# لیست تسک‌های cron
+crontab -l
+
+# مثال cron job هر روز ساعت ۲ بامداد:
+# 0 2 * * * /data/data/com.termux/files/home/backup.sh
+
+# بررسی زمان سیستم
+date
+
+# تغییر زمان
+date -s "2025-10-16 12:00:00"
+
+# نمایش تقویم
+cal
+
+# نصب tree
+pkg install tree -y
+
+# نمایش ساختار پوشه
+tree .
+
+# نصب htop (مانیتور منابع)
+pkg install htop -y
+
+# اجرای htop
+htop
+
+# بررسی حافظه
+free -h
+
+# بررسی CPU
+top
+
+# مشاهده uptime سیستم
+uptime
+
+# اجرای دستور با sudo (اگر نصب شده)
+termux-chroot
+sudo apt update
+
+# نصب termux-api برای کنترل موبایل
+pkg install termux-api -y
+
+# نمایش اعلان در نوار بالا
+termux-notification --title "Done" --content "Backup finished!"
+
+# گفتن متن با بلندگو
+termux-tts-speak "Your system has been updated"
+
+# خواندن متن از فایل
+termux-tts-speak "$(cat message.txt)"
+
+# باز کردن URL در مرورگر
+termux-open-url https://example.com
+
+# ارسال فایل از ترموکس به برنامه‌های دیگر
+termux-share file.txt
+
+# گرفتن مکان جغرافیایی
+termux-location
+
+# گرفتن اطلاعات باتری
+termux-battery-status
+
+# گرفتن اطلاعات دستگاه
+termux-info
+
+# ضبط صدا
+termux-microphone-record -d 10 output.wav
+
+# پخش صدای ضبط‌شده
+termux-media-player play output.wav
+
+# توقف پخش
+termux-media-player stop
+
+# عکس گرفتن با دوربین
+termux-camera-photo -c 0 photo.jpg
+
+# لیست دوربین‌ها
+termux-camera-info
+
+# ذخیره خروجی دستور در فایل
+echo "Backup completed at $(date)" >> /storage/emulated/0/almasi98/logs.txt
+
+# شمارش خطوط در فایل
+wc -l file.txt
+
+# شمارش کلمات
+wc -w file.txt
+
+# مقایسه دو فایل
+diff file1.txt file2.txt
+
+# بررسی فایل با sha256
+sha256sum file.txt
+
+# بررسی اتصال اینترنت
+ping -c 2 google.com && echo "Online" || echo "Offline"
+
+# اجرای آپدیت خودکار سیستم
+pkg update -y && pkg upgrade -y && apt autoremove -y
+
+# نصب همه ابزارهای پایه
+pkg install git python nodejs vim wget curl zip unzip openssh clang make -y
+
+# نصب nano برای ویرایش فایل‌ها
+pkg install nano -y
+
+# خروج از ترموکس
+exit
+
+# ===== پایان بخش ۱۰ — Bash, Files, Termux API, Automation =====
+
+# ===== بخش ۱۱ — Python Networking, APIs, Web Scraping, Encryption, Automation (دستورات ۶۰۱–۷۰۰) =====
+
+# استفاده از requests برای درخواست GET ساده
+python3 - <<'PY'
+import requests
+res = requests.get("https://api.ipify.org?format=json")
+print("Your Public IP:", res.json()["ip"])
+PY
+
+# ارسال داده با POST
+python3 - <<'PY'
+import requests
+payload = {"name": "Ali", "job": "developer"}
+res = requests.post("https://reqres.in/api/users", json=payload)
+print(res.json())
+PY
+
+# استفاده از requests برای دانلود فایل
+python3 - <<'PY'
+import requests
+url = "https://example.com/sample.jpg"
+open("sample.jpg", "wb").write(requests.get(url).content)
+print("Download Complete!")
+PY
+
+# استفاده از urllib برای پارس URL
+python3 - <<'PY'
+from urllib.parse import urlparse, parse_qs
+u = urlparse("https://example.com/page?id=123&name=Ali")
+print(u.netloc, parse_qs(u.query))
+PY
+
+# ارسال درخواست با header سفارشی
+python3 - <<'PY'
+import requests
+r = requests.get("https://httpbin.org/headers", headers={"User-Agent": "MyApp/1.0"})
+print(r.text)
+PY
+
+# Web scraping با BeautifulSoup
+python3 - <<'PY'
+from bs4 import BeautifulSoup
+import requests
+html = requests.get("https://example.com").text
+soup = BeautifulSoup(html, "html.parser")
+for link in soup.find_all("a"):
+    print(link.get("href"))
+PY
+
+# ذخیره داده به JSON
+python3 - <<'PY'
+import json
+data = {"user": "Ali", "age": 25}
+open("/storage/emulated/0/almasi98/data.json","w").write(json.dumps(data, indent=2))
+PY
+
+# خواندن فایل JSON
+python3 - <<'PY'
+import json
+data = json.load(open("/storage/emulated/0/almasi98/data.json"))
+print(data)
+PY
+
+# استفاده از threading برای چند وظیفه همزمان
+python3 - <<'PY'
+import threading, time
+def work(n):
+    time.sleep(2)
+    print(f"Done {n}")
+for i in range(3):
+    threading.Thread(target=work, args=(i,)).start()
+PY
+
+# استفاده از concurrent.futures برای اجرای موازی
+python3 - <<'PY'
+from concurrent.futures import ThreadPoolExecutor
+import time
+def run(n): time.sleep(1); return f"Task {n} done"
+with ThreadPoolExecutor(max_workers=3) as ex:
+    for r in ex.map(run, range(5)):
+        print(r)
+PY
+
+# رمزنگاری ساده با base64
+python3 - <<'PY'
+import base64
+msg = "secret123"
+enc = base64.b64encode(msg.encode()).decode()
+print("Encoded:", enc)
+print("Decoded:", base64.b64decode(enc).decode())
+PY
+
+# رمزنگاری قوی با cryptography
+python3 - <<'PY'
+from cryptography.fernet import Fernet
+key = Fernet.generate_key()
+f = Fernet(key)
+token = f.encrypt(b"My secret data")
+print("Key:", key.decode())
+print("Encrypted:", token)
+print("Decrypted:", f.decrypt(token))
+PY
+
+# تولید هش SHA256
+python3 - <<'PY'
+import hashlib
+print(hashlib.sha256(b"password").hexdigest())
+PY
+
+# پینگ با subprocess
+python3 - <<'PY'
+import subprocess
+r = subprocess.run(["ping","-c","1","google.com"], capture_output=True, text=True)
+print(r.stdout)
+PY
+
+# اجرای دستور در ترمینال با os.system
+python3 - <<'PY'
+import os
+os.system("ls -la")
+PY
+
+# بررسی پورت باز با socket
+python3 - <<'PY'
+import socket
+s = socket.socket()
+if s.connect_ex(("google.com", 80)) == 0:
+    print("Port 80 is open")
+s.close()
+PY
+
+# ساخت سرور ساده HTTP
+python3 - <<'PY'
+from http.server import SimpleHTTPRequestHandler, HTTPServer
+HTTPServer(("0.0.0.0", 8080), SimpleHTTPRequestHandler).serve_forever()
+PY
+
+# اجرای درخواست SSH با paramiko
+python3 - <<'PY'
+import paramiko
+ssh = paramiko.SSHClient()
+ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+ssh.connect("example.com", username="user", password="pass")
+stdin, stdout, stderr = ssh.exec_command("ls")
+print(stdout.read().decode())
+ssh.close()
+PY
+
+# ارسال ایمیل ساده با smtplib
+python3 - <<'PY'
+import smtplib
+from email.mime.text import MIMEText
+msg = MIMEText("Hello from Termux!")
+msg["Subject"] = "Test"
+msg["From"] = "you@gmail.com"
+msg["To"] = "target@example.com"
+s = smtplib.SMTP("smtp.gmail.com", 587)
+s.starttls()
+s.login("you@gmail.com", "app_password")
+s.send_message(msg)
+s.quit()
+PY
+
+# استفاده از schedule برای اجرای زمان‌بندی‌شده
+python3 - <<'PY'
+import schedule, time
+def job(): print("Running job...")
+schedule.every(5).seconds.do(job)
+while True: schedule.run_pending(); time.sleep(1)
+PY
+
+# اتومات دانلود چند فایل
+python3 - <<'PY'
+import requests, concurrent.futures
+urls = ["https://httpbin.org/image/png","https://httpbin.org/image/jpeg"]
+def download(u): open(u.split("/")[-1],"wb").write(requests.get(u).content)
+with concurrent.futures.ThreadPoolExecutor() as e: e.map(download, urls)
+print("Downloads done")
+PY
+
+# ذخیره لاگ رویدادها
+python3 - <<'PY'
+import logging
+logging.basicConfig(filename="/storage/emulated/0/almasi98/logs.txt", level=logging.INFO)
+logging.info("Script started successfully")
+PY
+
+# اجرای تسک خودکار هنگام بوت (با termux-service)
+mkdir -p ~/.termux/boot/
+echo "bash /data/data/com.termux/files/home/autostart.sh" > ~/.termux/boot/start.sh
+chmod +x ~/.termux/boot/start.sh
+
+# دانلود فایل از GitHub با curl
+curl -L -o script.py https://raw.githubusercontent.com/user/repo/main/script.py
+
+# نصب Python module محلی
+pip install ./my_package/
+
+# ایجاد سرور HTTPS محلی
+python3 - <<'PY'
+from http.server import HTTPServer, SimpleHTTPRequestHandler
+import ssl
+httpd = HTTPServer(("0.0.0.0", 4443), SimpleHTTPRequestHandler)
+httpd.socket = ssl.wrap_socket(httpd.socket, certfile="cert.pem", keyfile="key.pem", server_side=True)
+httpd.serve_forever()
+PY
+
+# بررسی پاسخ وب‌سایت
+curl -I https://google.com
+
+# ارسال POST JSON با curl
+curl -X POST -H "Content-Type: application/json" -d '{"user":"Ali"}' https://httpbin.org/post
+
+# ===== پایان بخش ۱۱ — Networking, Encryption, API, Automation =====
+
+# ===== بخش ۱۲ — Docker, Git, SSH, DevOps, مجازی‌سازی، استقرار و ابزارهای برنامه‌نویسی (دستورات ۷۰۱–۸۰۰) =====
+
+# نصب Docker در سیستم (در محیط Proot یا Debian)
+pkg install proot-distro -y
+proot-distro install debian
+proot-distro login debian -- pkg install docker.io -y
+
+# بررسی وضعیت Docker
+docker ps -a
+
+# حذف همه کانتینرها
+docker rm -f $(docker ps -aq)
+
+# حذف همه ایمیج‌ها
+docker rmi -f $(docker images -q)
+
+# ساخت ایمیج جدید از Dockerfile
+docker build -t myapp:latest .
+
+# اجرای کانتینر جدید
+docker run -d -p 8080:80 myapp:latest
+
+# وارد شدن به داخل کانتینر در حال اجرا
+docker exec -it myapp bash
+
+# بررسی حجم دیسک Docker
+docker system df
+
+# پاکسازی کش Docker
+docker system prune -af
+
+# اتصال SSH ایمن به سرور
+ssh user@192.168.1.10 -p 22
+
+# کپی فایل به سرور
+scp file.zip user@server:/var/www/
+
+# کپی فایل از سرور به لوکال
+scp user@server:/etc/nginx/nginx.conf .
+
+# فوروارد پورت با SSH
+ssh -L 8080:localhost:80 user@server
+
+# اجرای دستور از راه دور SSH
+ssh user@server "ls -la /home"
+
+# تنظیم کلید SSH بدون رمز
+ssh-keygen -t ed25519 -C "you@example.com"
+
+# کپی کلید به سرور
+ssh-copy-id user@server
+
+# بررسی fingerprint سرور SSH
+ssh-keyscan server.com
+
+# ساخت تونل دائمی SSH
+autossh -M 0 -N -L 8080:localhost:80 user@server
+
+# تنظیم Git user global
+git config --global user.name "Ali Developer"
+
+# تنظیم Git email global
+git config --global user.email "ali@example.com"
+
+# ساخت ریپوی جدید
+git init myproject && cd myproject
+
+# افزودن همه فایل‌ها
+git add .
+
+# ساخت commit اولیه
+git commit -m "Initial commit"
+
+# اتصال به مخزن ریموت
+git remote add origin https://github.com/ali/myproject.git
+
+# push اولیه
+git push -u origin main
+
+# pull از مخزن
+git pull origin main
+
+# مشاهده وضعیت تغییرات
+git status
+
+# مشاهده تاریخچه
+git log --oneline --graph --decorate
+
+# مشاهده تفاوت فایل‌ها
+git diff
+
+# ری‌ست به آخرین commit
+git reset --hard HEAD~1
+
+# حذف شاخه محلی
+git branch -d test-branch
+
+# حذف شاخه در ریموت
+git push origin --delete test-branch
+
+# stash موقت تغییرات
+git stash
+
+# برگرداندن تغییرات stash
+git stash pop
+
+# مشاهده stashها
+git stash list
+
+# ایجاد تگ نسخه
+git tag -a v1.0 -m "First release"
+
+# ارسال تگ‌ها به ریموت
+git push origin --tags
+
+# ایجاد alias در git
+git config --global alias.st status
+
+# اجرای تست با pytest
+pytest -v --maxfail=2
+
+# بررسی استایل کد با flake8
+flake8 my_project/
+
+# قالب‌بندی خودکار کد با black
+black my_project/
+
+# بررسی typeها با mypy
+mypy my_project/
+
+# ساخت venv محیط مجازی
+python3 -m venv .venv
+
+# فعال‌سازی محیط venv
+source .venv/bin/activate
+
+# خروج از محیط venv
+deactivate
+
+# نصب بسته‌ها در venv
+pip install requests flask numpy pandas
+
+# ذخیره بسته‌های نصب‌شده
+pip freeze > requirements.txt
+
+# نصب از فایل requirements
+pip install -r requirements.txt
+
+# اجرای Flask app
+python3 - <<'PY'
+from flask import Flask
+app = Flask(__name__)
+@app.route("/")
+def home(): return "Hello from Flask!"
+app.run(host="0.0.0.0", port=8080)
+PY
+
+# اجرای FastAPI با uvicorn
+python3 - <<'PY'
+from fastapi import FastAPI
+import uvicorn
+app = FastAPI()
+@app.get("/")
+def read_root(): return {"msg":"Hello FastAPI"}
+uvicorn.run(app, host="0.0.0.0", port=8000)
+PY
+
+# ساخت بسته Python wheel
+python3 setup.py sdist bdist_wheel
+
+# آپلود بسته به PyPI
+python3 -m twine upload dist/*
+
+# نصب Node.js و npm
+pkg install nodejs-lts -y
+
+# ایجاد پروژه Node جدید
+npm init -y
+
+# نصب ExpressJS
+npm install express
+
+# اجرای سرور Express
+node - <<'JS'
+const express = require("express");
+const app = express();
+app.get("/", (req,res)=>res.send("Hello Express"));
+app.listen(8080, ()=>console.log("Running on 8080"));
+JS
+
+# نصب Yarn
+npm install -g yarn
+
+# نصب TypeScript
+npm install -g typescript
+
+# کامپایل فایل .ts
+tsc app.ts
+
+# نصب GitHub CLI
+pkg install gh -y
+
+# ورود به GitHub CLI
+gh auth login
+
+# ایجاد ریپوی جدید از CLI
+gh repo create myrepo --public --source=. --remote=origin
+
+# بررسی سرعت شبکه با speedtest-cli
+pkg install speedtest-cli -y
+speedtest-cli
+
+# مانیتور زنده منابع
+top
+
+# بررسی فضای دیسک
+df -h
+
+# بررسی استفاده حافظه
+free -h
+
+# بررسی نسخه کرنل
+uname -a
+
+# بررسی زمان سیستم
+date
+
+# تنظیم ساعت سیستم
+date -s "2025-10-16 10:00:00"
+
+# خاموش‌کردن دستگاه
+termux-wake-lock || true
+termux-vibrate 300
+
+# اجرای سرویس پس‌زمینه
+nohup python3 app.py &
+
+# بررسی پروسس‌ها
+ps aux | grep python
+
+# توقف پروسس
+kill -9 <PID>
+
+# خروجی زنده لاگ‌ها
+tail -f /storage/emulated/0/almasi98/logs.txt
+
+# بررسی اتصالات شبکه
+ss -tunap
+
+# نمایش IP عمومی
+curl ifconfig.me
+
+# ایجاد alias برای اجرای سریع‌تر
+echo "alias runapp='python3 /data/data/com.termux/files/home/app.py'" >> ~/.bashrc
+
+# بارگذاری مجدد aliasها
+source ~/.bashrc
+
+# ===== پایان بخش ۱۲ — DevOps, Git, Docker, Virtualenv =====
+
+# ===== بخش ۱۳ — Termux API پیشرفته، امنیت شبکه، رمزنگاری، بکاپ و اتوماسیون (دستورات ۸۰۱–۹۰۰) =====
+
+# بررسی وضعیت باتری
+termux-battery-status
+
+# فعال کردن ویبره کوتاه
+termux-vibrate -d 150
+
+# ارسال نوتیفیکیشن سفارشی
+termux-notification --title "Termux Alert" --content "Task completed successfully" --priority high
+
+# خواندن محتوای کلیپ‌بورد
+termux-clipboard-get
+
+# قرار دادن متن در کلیپ‌بورد
+termux-clipboard-set "Hello from Termux"
+
+# باز کردن URL در مرورگر
+termux-open-url https://google.com
+
+# گرفتن عکس با دوربین جلو
+termux-camera-photo -c 1 /sdcard/DCIM/selfie.jpg
+
+# ضبط صدا ۵ ثانیه‌ای
+termux-audio-record -o /sdcard/record.wav -t 5
+
+# پخش صدا
+termux-media-player play /sdcard/record.wav
+
+# متوقف کردن پخش صدا
+termux-media-player stop
+
+# ضبط صفحه (در دستگاه‌های پشتیبانی‌شده)
+termux-screenrecord -f /sdcard/video.mp4 -t 10
+
+# بررسی وضعیت شبکه WiFi
+termux-wifi-connectioninfo
+
+# بررسی وضعیت سیگنال شبکه موبایل
+termux-telephony-cellinfo
+
+# ارسال پیام SMS
+termux-sms-send -n 09120000000 "Hello from Termux!"
+
+# خواندن پیام‌های SMS اخیر
+termux-sms-list -l 5
+
+# نمایش پیام روی صفحه
+termux-toast "Welcome to Termux!"
+
+# دریافت موقعیت مکانی
+termux-location
+
+# بررسی حافظه ذخیره‌سازی
+termux-storage-get
+
+# بررسی مجوزها
+termux-permission-request READ_EXTERNAL_STORAGE
+
+# اجرای دستور خودکار هر ساعت با termux-job-scheduler
+termux-job-scheduler --period-ms 3600000 --job-id 1 --command "bash /data/data/com.termux/files/home/backup.sh"
+
+# اجرای برنامه زمان‌بندی‌شده
+termux-job-run 1
+
+# مشاهده لیست jobها
+termux-job-list
+
+# حذف job خاص
+termux-job-cancel 1
+
+# ساخت بکاپ از پوشه پروژه
+tar -czvf /sdcard/almasi98/backup_$(date +%F).tar.gz /data/data/com.termux/files/home/project
+
+# بازگردانی بکاپ
+tar -xzvf /sdcard/almasi98/backup_2025-10-16.tar.gz -C /data/data/com.termux/files/home/
+
+# رمزنگاری فایل با openssl AES256
+openssl enc -aes-256-cbc -salt -in secret.txt -out secret.enc
+
+# رمزگشایی فایل
+openssl enc -d -aes-256-cbc -in secret.enc -out secret_decrypted.txt
+
+# تولید هش SHA256 برای فایل
+sha256sum secret.txt
+
+# بررسی صحت هش
+sha256sum -c secret.txt.sha256
+
+# تولید کلید RSA 4096بیتی
+openssl genrsa -out private.pem 4096
+
+# استخراج کلید عمومی از کلید خصوصی
+openssl rsa -in private.pem -pubout -out public.pem
+
+# رمزنگاری فایل با کلید عمومی
+openssl rsautl -encrypt -inkey public.pem -pubin -in secret.txt -out encrypted.bin
+
+# رمزگشایی با کلید خصوصی
+openssl rsautl -decrypt -inkey private.pem -in encrypted.bin -out decrypted.txt
+
+# تولید رشته تصادفی ۳۲بایتی
+openssl rand -base64 32
+
+# رمزگذاری Base64
+base64 file.txt > encoded.txt
+
+# رمزگشایی Base64
+base64 -d encoded.txt > decoded.txt
+
+# بررسی باز بودن پورت‌ها
+nmap -sS localhost
+
+# اسکن شبکه داخلی
+nmap -sn 192.168.1.0/24
+
+# تست پورت HTTP با curl
+curl -v http://127.0.0.1:8080
+
+# بررسی SSL certificate دامنه
+openssl s_client -connect example.com:443 -showcerts
+
+# جستجو برای subdomainها (basic)
+for sub in www mail ftp test api; do host "$sub.example.com"; done
+
+# دریافت IP عمومی سیستم
+curl ifconfig.me
+
+# بررسی وضعیت اینترنت
+ping -c 4 8.8.8.8
+
+# بررسی DNSها
+nslookup example.com
+
+# بررسی latency بین پورت‌ها
+hping3 -S -p 443 example.com -c 5
+
+# نصب ابزار امنیتی nmap و hydra
+pkg install nmap hydra -y
+
+# brute-force تست (نمونه)
+hydra -l admin -P passwords.txt ftp://192.168.1.5
+
+# نصب sqlmap برای تست SQLi
+pkg install sqlmap -y
+
+# اجرای sqlmap ساده
+sqlmap -u "http://example.com/page?id=1" --batch
+
+# نصب whois برای دامنه
+pkg install whois -y
+whois example.com
+
+# بررسی نسخه Apache/Nginx
+curl -I http://localhost | grep Server
+
+# نصب tcpdump برای شنود بسته‌ها
+pkg install tcpdump -y
+tcpdump -i any -c 10
+
+# فیلتر بسته‌های DNS
+tcpdump -i any port 53
+
+# نصب ngrok جهت تونل
+pkg install wget -y
+wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm.zip
+unzip ngrok-stable-linux-arm.zip
+./ngrok authtoken <your_token>
+./ngrok http 8080
+
+# نصب termux-api (درصورت عدم وجود)
+pkg install termux-api -y
+
+# تنظیم خودکار backup روزانه با cron-like job
+echo "0 0 * * * bash /data/data/com.termux/files/home/backup.sh" >> ~/.crontab
+crontab ~/.crontab
+
+# حذف فایل‌های قدیمی‌تر از ۷ روز
+find /sdcard/almasi98/backup_* -mtime +7 -delete
+
+# ارسال فایل به تلگرام از طریق curl API
+curl -F "chat_id=<YOUR_CHAT_ID>" -F "document=@/sdcard/almasi98/backup_$(date +%F).tar.gz" https://api.telegram.org/bot<YOUR_TOKEN>/sendDocument
+
+# بکاپ خودکار sqlite
+sqlite3 mydb.db ".backup '/sdcard/almasi98/mydb_backup.db'"
+
+# فشرده‌سازی همه logها
+tar -czvf logs_$(date +%F).tar.gz /data/data/com.termux/files/home/logs/
+
+# حذف لاگ‌های قدیمی‌تر از ۵ روز
+find /data/data/com.termux/files/home/logs -type f -mtime +5 -delete
+
+# ارسال نوتیفیکیشن بعد از اتمام backup
+termux-notification --title "Backup" --content "All backups completed!" --sound
+
+# اجرای دستورات همزمان (multithread با xargs)
+cat urls.txt | xargs -P 4 -I {} curl -O {}
+
+# اجرای موازی در Bash
+for i in {1..5}; do (sleep $i; echo "Task $i done") & done; wait
+
+# بررسی سرعت CPU
+termux-info | grep "CPU"
+
+# بررسی دمای باتری
+termux-battery-status | grep temperature
+
+# ارسال خروجی به فایل log
+bash script.sh > /sdcard/almasi98/log_$(date +%F).txt 2>&1
+
+# بررسی زمان اجرا دستور
+time bash script.sh
+
+# اجرای دستور در زمان خاص (تاخیر)
+sleep 60 && termux-toast "Time’s up!"
+
+# بررسی حافظه رم
+free -m
+
+# بررسی مصرف CPU توسط هر پروسس
+top -n 1 | head -20
+
+# بررسی پورت‌های باز در Termux
+ss -tuln
+
+# اجرای cron-like با at (در سیستم‌های دارای busybox)
+echo "termux-toast 'Reminder!'" | at now + 1 minute
+
+# ===== پایان بخش ۱۳ — امنیت، رمزنگاری، API و بکاپ =====
+
+# ===== بخش ۱۴ — برنامه‌نویسی پیشرفته، Python، Threading، Async، و ابزارهای توسعه (دستورات ۹۰۱–۱۰۰۰) =====
+
+# ایجاد فایل جدید پایتون
+nano app.py
+
+# اجرای فایل پایتون
+python app.py
+
+# نصب پایتون در Termux
+pkg install python -y
+
+# بررسی نسخه پایتون
+python --version
+
+# نصب pip (درصورت عدم وجود)
+pkg install python-pip -y
+
+# بروزرسانی pip به آخرین نسخه
+pip install --upgrade pip
+
+# نصب کتابخانه requests
+pip install requests
+
+# نصب کتابخانه rich برای رنگی کردن خروجی
+pip install rich
+
+# نصب کتابخانه numpy برای محاسبات ریاضی
+pip install numpy
+
+# نصب کتابخانه pandas برای مدیریت داده‌ها
+pip install pandas
+
+# نصب matplotlib برای رسم نمودارها
+pip install matplotlib
+
+# نصب beautifulsoup برای scraping
+pip install beautifulsoup4
+
+# نصب aiohttp برای درخواست‌های async
+pip install aiohttp
+
+# نصب tqdm برای نمایش نوار پیشرفت
+pip install tqdm
+
+# نصب paramiko برای SSH
+pip install paramiko
+
+# نصب pycryptodome برای رمزنگاری
+pip install pycryptodome
+
+# نصب flask برای ساخت API
+pip install flask
+
+# نصب fastapi برای APIهای سریع
+pip install fastapi uvicorn
+
+# نصب scapy برای کار با شبکه
+pip install scapy
+
+# نصب selenium برای اتوماسیون مرورگر
+pip install selenium
+
+# نصب pillow برای پردازش تصویر
+pip install pillow
+
+# نصب opencv برای پردازش ویدیو و تصویر
+pip install opencv-python
+
+# نصب pyinstaller برای ساخت فایل exe از پایتون
+pip install pyinstaller
+
+# ساخت فایل اجرایی از اسکریپت
+pyinstaller --onefile app.py
+
+# ایجاد مجازی‌ساز محیط پایتون
+python -m venv venv
+
+# فعال‌سازی محیط مجازی
+source venv/bin/activate
+
+# غیرفعال کردن محیط مجازی
+deactivate
+
+# اجرای threading ساده در Python
+python -c "import threading; [threading.Thread(target=lambda: print('Hi')).start() for i in range(5)]"
+
+# اجرای async نمونه
+python -c "import asyncio; async def main(): await asyncio.sleep(1); print('Done'); asyncio.run(main())"
+
+# ایجاد سرور ساده HTTP با پایتون
+python -m http.server 8080
+
+# اجرای Flask نمونه
+python -c 'from flask import Flask; app=Flask(__name__); @app.route("/")\ndef home(): return "Hello Flask!"; app.run(host="0.0.0.0", port=8080)'
+
+# اجرای FastAPI نمونه
+python -c 'from fastapi import FastAPI; import uvicorn; app=FastAPI(); @app.get("/")\ndef root(): return {"msg":"Hello FastAPI"}; uvicorn.run(app, host="0.0.0.0", port=8000)'
+
+# اجرای SSH command با Paramiko
+python -c "import paramiko; c=paramiko.SSHClient(); c.set_missing_host_key_policy(paramiko.AutoAddPolicy()); c.connect('host', username='user', password='pass'); stdin, stdout, stderr = c.exec_command('ls'); print(stdout.read().decode()); c.close()"
+
+# دانلود فایل با requests
+python -c "import requests; open('file.txt','wb').write(requests.get('https://example.com').content)"
+
+# ارسال JSON POST request
+python -c 'import requests; r=requests.post("https://httpbin.org/post", json={"key":"value"}); print(r.json())'
+
+# بارگذاری JSON از فایل
+python -c "import json; print(json.load(open('config.json')))"
+
+# رمزگذاری Base64 در Python
+python -c "import base64; print(base64.b64encode(b'hello').decode())"
+
+# رمزگشایی Base64
+python -c "import base64; print(base64.b64decode('aGVsbG8=').decode())"
+
+# اجرای subprocess برای اجرای دستورات bash از Python
+python -c "import subprocess; print(subprocess.getoutput('ls'))"
+
+# اجرای چند پروسس با concurrent futures
+python -c 'from concurrent.futures import ThreadPoolExecutor; import time; def work(i): time.sleep(1); return i; print(list(ThreadPoolExecutor().map(work, range(5))))'
+
+# ایجاد جدول رنگی با rich
+python -c 'from rich.table import Table; from rich.console import Console; t=Table(title="Example"); t.add_column("ID"); t.add_column("Name"); t.add_row("1","Ali"); Console().print(t)'
+
+# نصب jupyter برای نوت‌بوک
+pip install jupyterlab
+
+# اجرای jupyter
+jupyter notebook --ip=0.0.0.0 --port=8888
+
+# نصب virtualenv
+pip install virtualenv
+
+# نصب autopep8 برای فرمت کردن کد
+pip install autopep8
+
+# اجرای فرمت خودکار روی فایل
+autopep8 --in-place --aggressive script.py
+
+# بررسی خطاهای PEP8
+pip install flake8
+flake8 script.py
+
+# نصب mypy برای تایپ‌چک
+pip install mypy
+mypy script.py
+
+# بررسی عملکرد برنامه با cProfile
+python -m cProfile script.py
+
+# تست سرعت عملکرد تابع
+python -m timeit -s "a=range(1000)" "sum(a)"
+
+# تست HTTP با curl از داخل Python subprocess
+python -c "import subprocess; print(subprocess.getoutput('curl -I https://example.com'))"
+
+# ذخیره خروجی پایتون در فایل
+python script.py > output.txt
+
+# نصب wheel برای ساخت پکیج
+pip install wheel
+
+# ساخت بسته Python
+python setup.py sdist bdist_wheel
+
+# نصب بسته محلی
+pip install dist/*.whl
+
+# نصب git package مستقیم
+pip install git+https://github.com/user/repo.git
+
+# حذف کتابخانه
+pip uninstall package-name -y
+
+# لیست کتابخانه‌ها
+pip list
+
+# خروجی گرفتن از لیست کتابخانه‌ها
+pip freeze > requirements.txt
+
+# نصب از requirements
+pip install -r requirements.txt
+
+# تست کتابخانه‌ها
+python -c "import requests, rich, pandas, numpy, flask; print('All imported successfully!')"
+
+# اجرای پروژه پایتون خودکار با termux boot
+pkg install termux-services -y
+sv-enable boot
+
+# ===== پایان بخش ۱۴ — Python، Async، Threading، Flask، API، Automation =====
+
+# ===== بخش ۱۵ — DevOps، Docker، CI/CD، Networking، Automation، و امنیت (دستورات ۱۰۰۱–۱۱۰۰) =====
+
+# نصب Docker در محیط Termux Proot (Debian)
+pkg install proot-distro -y
+proot-distro install debian
+proot-distro login debian -- pkg install docker.io -y
+
+# فعال کردن سرویس Docker
+sudo systemctl start docker
+
+# بررسی وضعیت سرویس Docker
+sudo systemctl status docker
+
+# لیست ایمیج‌های Docker
+docker images
+
+# لیست کانتینرهای فعال
+docker ps
+
+# مشاهده همه کانتینرها (فعال + غیرفعال)
+docker ps -a
+
+# حذف همه کانتینرها
+docker rm -f $(docker ps -aq)
+
+# حذف همه ایمیج‌ها
+docker rmi -f $(docker images -q)
+
+# ساخت ایمیج از Dockerfile
+docker build -t myapp:v1 .
+
+# اجرای کانتینر جدید با پورت مشخص
+docker run -d -p 8080:80 myapp:v1
+
+# اتصال به کانتینر فعال
+docker exec -it myapp /bin/bash
+
+# بررسی حجم دیسک مصرفی Docker
+docker system df
+
+# پاک‌سازی کش و فایل‌های بلااستفاده Docker
+docker system prune -af
+
+# مشاهده لاگ‌های کانتینر خاص
+docker logs myapp
+
+# مشاهده نسخه Docker
+docker version
+
+# Pull یک ایمیج آماده
+docker pull nginx:latest
+
+# اجرای سریع Nginx در Termux با Docker
+docker run -d -p 8080:80 nginx:latest
+
+# نصب kubectl (برای Kubernetes)
+pkg install curl -y
+curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/arm64/kubectl"
+chmod +x kubectl
+mv kubectl /data/data/com.termux/files/usr/bin/
+
+# بررسی نسخه Kubernetes CLI
+kubectl version --client
+
+# مشاهده Pods در namespace پیش‌فرض
+kubectl get pods
+
+# ساخت namespace جدید
+kubectl create namespace test-env
+
+# حذف namespace
+kubectl delete namespace test-env
+
+# ساخت Deployment ساده
+kubectl create deployment web --image=nginx
+
+# مشاهده وضعیت Deployment
+kubectl get deployments
+
+# حذف Deployment
+kubectl delete deployment web
+
+# مشاهده لاگ Pod خاص
+kubectl logs <pod_name>
+
+# اعمال manifest از فایل YAML
+kubectl apply -f deployment.yaml
+
+# حذف منابع از فایل YAML
+kubectl delete -f deployment.yaml
+
+# بررسی وضعیت Nodeها
+kubectl get nodes -o wide
+
+# نصب Jenkins در Debian Termux
+pkg install openjdk-17 -y
+wget https://get.jenkins.io/war-stable/2.426.3/jenkins.war
+java -jar jenkins.war --httpPort=8080
+
+# مشاهده Admin password Jenkins
+cat /root/.jenkins/secrets/initialAdminPassword
+
+# نصب GitLab Runner CLI
+curl -L https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.deb.sh | bash
+apt install gitlab-runner -y
+
+# ثبت runner جدید در GitLab
+gitlab-runner register
+
+# شروع سرویس runner
+systemctl start gitlab-runner
+
+# مشاهده وضعیت runner
+systemctl status gitlab-runner
+
+# نصب Ansible
+pip install ansible
+
+# اجرای playbook
+ansible-playbook playbook.yml
+
+# اجرای دستور ساده در همه hostها
+ansible all -m ping
+
+# بررسی ssh بین hostها
+ansible all -m shell -a "uptime"
+
+# نصب Terraform
+pkg install wget unzip -y
+wget https://releases.hashicorp.com/terraform/1.8.0/terraform_1.8.0_linux_arm64.zip
+unzip terraform_1.8.0_linux_arm64.zip
+mv terraform /data/data/com.termux/files/usr/bin/
+
+# بررسی نسخه Terraform
+terraform version
+
+# مقداردهی اولیه پروژه Terraform
+terraform init
+
+# بررسی تغییرات قبل از اعمال
+terraform plan
+
+# اعمال تغییرات زیرساخت
+terraform apply -auto-approve
+
+# حذف زیرساخت
+terraform destroy -auto-approve
+
+# نصب nginx در Debian ترموکس
+apt install nginx -y
+
+# اجرای nginx
+service nginx start
+
+# بررسی وضعیت nginx
+service nginx status
+
+# نمایش فایل تنظیمات nginx
+cat /etc/nginx/nginx.conf
+
+# نصب MariaDB (MySQL)
+apt install mariadb-server -y
+
+# اجرای MariaDB
+service mysql start
+
+# ورود به MySQL CLI
+mysql -u root -p
+
+# ساخت دیتابیس جدید
+CREATE DATABASE mydb;
+
+# نمایش دیتابیس‌ها
+SHOW DATABASES;
+
+# حذف دیتابیس
+DROP DATABASE mydb;
+
+# ساخت کاربر جدید در MySQL
+CREATE USER 'user'@'localhost' IDENTIFIED BY 'pass';
+
+# دادن مجوز دسترسی
+GRANT ALL PRIVILEGES ON *.* TO 'user'@'localhost';
+
+# بروزرسانی مجوزها
+FLUSH PRIVILEGES;
+
+# پشتیبان‌گیری از دیتابیس
+mysqldump -u root -p mydb > backup.sql
+
+# بازیابی بکاپ
+mysql -u root -p mydb < backup.sql
+
+# نصب PostgreSQL
+apt install postgresql -y
+
+# اجرای PostgreSQL
+service postgresql start
+
+# ورود به PostgreSQL
+su - postgres
+psql
+
+# ساخت دیتابیس جدید
+CREATE DATABASE sampledb;
+
+# مشاهده دیتابیس‌ها
+\l
+
+# ساخت کاربر جدید
+CREATE USER ali WITH PASSWORD '12345';
+
+# دادن دسترسی
+GRANT ALL PRIVILEGES ON DATABASE sampledb TO ali;
+
+# خروج از PostgreSQL
+\q
+
+# بکاپ دیتابیس PostgreSQL
+pg_dump sampledb > backup.sql
+
+# بازیابی بکاپ PostgreSQL
+psql sampledb < backup.sql
+
+# نصب Redis
+apt install redis -y
+service redis-server start
+
+# تست اتصال Redis
+redis-cli ping
+
+# مشاهده کلیدها
+redis-cli keys *
+
+# ذخیره مقدار
+redis-cli set name Ali
+
+# بازیابی مقدار
+redis-cli get name
+
+# حذف کلید
+redis-cli del name
+
+# حذف همه داده‌ها
+redis-cli flushall
+
+# ===== پایان بخش ۱۵ — DevOps, Docker, Kubernetes, Database, Networking =====
+
+# ===== بخش ۱۶ — امنیت، رمزنگاری، تست نفوذ، و ابزارهای امنیت شبکه (دستورات ۱۱۰۱–۱۲۰۰) =====
+
+# نصب ابزارهای امنیتی پایه در Termux
+pkg install nmap hydra sqlmap nikto whois netcat curl wget openssl -y
+
+# بررسی باز بودن پورت خاص با nmap
+nmap -p 22 192.168.1.10
+
+# اسکن همه پورت‌ها در یک IP
+nmap -p- 192.168.1.10
+
+# اسکن نسخه سرویس‌ها
+nmap -sV 192.168.1.10
+
+# اسکن تشخیص سیستم‌عامل
+nmap -O 192.168.1.10
+
+# اسکن سریع شبکه داخلی
+nmap -sn 192.168.1.0/24
+
+# ذخیره خروجی اسکن در فایل
+nmap -oN scan_results.txt 192.168.1.10
+
+# بررسی دامنه با whois
+whois example.com
+
+# بررسی DNS دامنه
+dig example.com
+
+# بررسی رکوردهای DNS
+nslookup -type=ANY example.com
+
+# درخواست HTTP با curl
+curl -I https://example.com
+
+# نمایش Headerهای پاسخ
+curl -v https://example.com
+
+# دانلود فایل بزرگ با wget
+wget -c https://example.com/file.zip
+
+# رمزگذاری متن با base64
+echo "secret" | base64
+
+# رمزگشایی base64
+echo "c2VjcmV0" | base64 --decode
+
+# رمزگذاری با OpenSSL (AES-256-CBC)
+echo "MySecretData" | openssl enc -aes-256-cbc -a -salt -pass pass:12345
+
+# رمزگشایی AES-256-CBC
+echo "<encoded_text>" | openssl enc -aes-256-cbc -d -a -pass pass:12345
+
+# تولید کلید خصوصی RSA
+openssl genrsa -out private.key 2048
+
+# استخراج کلید عمومی از کلید خصوصی
+openssl rsa -in private.key -pubout -out public.key
+
+# رمزگذاری فایل با کلید عمومی
+openssl rsautl -encrypt -inkey public.key -pubin -in secret.txt -out secret.enc
+
+# رمزگشایی فایل با کلید خصوصی
+openssl rsautl -decrypt -inkey private.key -in secret.enc -out secret.txt
+
+# بررسی هش فایل SHA256
+sha256sum file.txt
+
+# بررسی هش فایل MD5
+md5sum file.txt
+
+# تولید هش SHA512
+echo "mypassword" | sha512sum
+
+# ساخت پسورد تصادفی با OpenSSL
+openssl rand -base64 16
+
+# اسکن وب‌سرور با Nikto
+nikto -h https://example.com
+
+# تزریق SQL تستی با sqlmap
+sqlmap -u "https://example.com/login.php?id=1" --batch --random-agent
+
+# بروت فورس SSH با hydra (تست)
+hydra -l root -P passwords.txt ssh://192.168.1.10
+
+# بروت فورس FTP با hydra
+hydra -L users.txt -P pass.txt ftp://192.168.1.20
+
+# تست SSL با openssl
+openssl s_client -connect example.com:443 -showcerts
+
+# بررسی اعتبار گواهی SSL
+echo | openssl s_client -servername example.com -connect example.com:443 2>/dev/null | openssl x509 -noout -dates
+
+# بررسی SSL با sslyze (در محیط Proot)
+python3 -m pip install sslyze
+sslyze example.com
+
+# اسکن آسیب‌پذیری HTTP Headerها با curl
+curl -s -D- -o /dev/null https://example.com | grep -i "X-Frame-Options"
+
+# تست پینگ شبکه داخلی
+ping -c 4 192.168.1.1
+
+# بررسی latency سرور
+ping -c 10 8.8.8.8
+
+# traceroute مسیر ارتباط
+traceroute google.com
+
+# بررسی ترافیک پورت‌ها با ss
+ss -tuln
+
+# بررسی اتصالات زنده با netstat
+netstat -tulpn
+
+# بررسی listening ports با lsof
+lsof -i -P -n | grep LISTEN
+
+# ضبط ترافیک شبکه با tcpdump (نیاز به root یا proot)
+tcpdump -i any -c 100 -w capture.pcap
+
+# مشاهده فایل pcap با tshark
+tshark -r capture.pcap
+
+# اسکن باز بودن پورت HTTP
+nc -zv example.com 80
+
+# اسکن همه پورت‌ها با netcat
+for port in {1..1024}; do nc -zv example.com $port 2>&1 | grep succeeded; done
+
+# بررسی DNS با dig reverse lookup
+dig -x 8.8.8.8
+
+# چک IP عمومی کاربر
+curl ifconfig.me
+
+# مشاهده IPهای داخلی
+ip addr show
+
+# نمایش مسیر شبکه
+ip route show
+
+# ایجاد SSH Key جدید
+ssh-keygen -t rsa -b 4096 -C "termux_user"
+
+# ارسال کلید عمومی به سرور
+ssh-copy-id user@server
+
+# اتصال به سرور SSH
+ssh user@server
+
+# اجرای دستور از راه دور SSH
+ssh user@server "uptime"
+
+# انتقال فایل با SCP
+scp localfile.txt user@server:/home/user/
+
+# دانلود فایل از سرور با SCP
+scp user@server:/var/log/syslog ./syslog
+
+# همگام‌سازی پوشه با rsync
+rsync -avz ./backup user@server:/remote/backup
+
+# نصب fail2ban در Debian (Proot)
+apt install fail2ban -y
+service fail2ban start
+
+# مشاهده لاگ fail2ban
+cat /var/log/fail2ban.log
+
+# بلاک آی‌پی در iptables
+iptables -A INPUT -s 192.168.1.100 -j DROP
+
+# حذف بلاک آی‌پی
+iptables -D INPUT -s 192.168.1.100 -j DROP
+
+# نمایش قوانین فایروال
+iptables -L -v -n
+
+# ذخیره تنظیمات فایروال
+iptables-save > /etc/iptables/rules.v4
+
+# بازیابی تنظیمات فایروال
+iptables-restore < /etc/iptables/rules.v4
+
+# نصب Tor
+pkg install tor -y
+
+# اجرای سرویس Tor
+tor &
+
+# استفاده از proxy socks5
+curl --socks5 127.0.0.1:9050 https://check.torproject.org/
+
+# بررسی IP از طریق Tor
+curl --socks5 127.0.0.1:9050 https://api.ipify.org
+
+# نصب proxychains
+pkg install proxychains-ng -y
+
+# اجرای دستور از طریق proxychains
+proxychains curl https://example.com
+
+# نصب metasploit-framework
+pkg install unstable-repo -y
+pkg install metasploit -y
+
+# اجرای msfconsole
+msfconsole
+
+# جستجوی اکسپلویت
+search ssh
+
+# استفاده از اکسپلویت نمونه
+use exploit/unix/ftp/vsftpd_234_backdoor
+
+# تنظیم هدف
+set RHOST 192.168.1.10
+
+# اجرای اکسپلویت
+run
+
+# بروزرسانی پایگاه داده metasploit
+msfupdate
+
+# بررسی سیستم با lynis (در proot)
+apt install lynis -y
+lynis audit system
+
+# رمزنگاری فایل با GPG
+gpg -c secret.txt
+
+# رمزگشایی فایل GPG
+gpg -d secret.txt.gpg
+
+# تولید کلید GPG جدید
+gpg --full-generate-key
+
+# مشاهده کلیدهای GPG
+gpg --list-keys
+
+# حذف کلید GPG
+gpg --delete-secret-and-public-key user@example.com
+
+# خروجی fingerprint کلید
+gpg --fingerprint
+
+# پایان بخش ۱۶ — امنیت، رمزنگاری، شبکه، تست نفوذ، و رمزنگاری داده‌ها
+
+# ===== بخش ۱۸ — DevOps, SSH, Network, Security, Git, Docker (دستورات ۱۳۰۱–۱۴۰۰) =====
+
+# نصب openssh برای دسترسی SSH
+pkg install openssh -y
+
+# بررسی سرویس SSH در Termux
+sshd
+
+# مشاهده آدرس IP برای اتصال SSH
+ifconfig
+
+# اجرای SSH Server روی پورت 8022 (پیش‌فرض Termux)
+sshd -p 8022
+
+# ورود به Termux از رایانه دیگر
+ssh -p 8022 username@DEVICE_IP
+
+# ساخت کلید جدید SSH (برای GitHub یا سرور)
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+
+# نمایش کلید عمومی جهت افزودن به GitHub
+cat ~/.ssh/id_rsa.pub
+
+# افزودن کلید به SSH Agent
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
+
+# تست ارتباط SSH با GitHub
+ssh -T git@github.com
+
+# افزودن Remote جدید به Repo
+git remote add origin git@github.com:user/repo.git
+
+# کلون مخزن Git
+git clone https://github.com/user/repo.git
+
+# Pull تغییرات جدید
+git pull origin main
+
+# Push تغییرات به GitHub
+git push origin main
+
+# بررسی ریموت‌ها
+git remote -v
+
+# حذف و اضافه مجدد Remote در صورت نیاز
+git remote remove origin
+git remote add origin https://github.com/user/repo.git
+
+# Commit سریع با پیام خودکار
+git add .
+git commit -m "auto update"
+git push
+
+# برسی لاگ commit
+git log --oneline --graph
+
+# لغو آخرین commit بدون حذف تغییرات
+git reset --soft HEAD~1
+
+# لغو commit و تغییرات
+git reset --hard HEAD~1
+
+# ذخیره موقت تغییرات بدون commit
+git stash
+
+# بازگرداندن stash ذخیره‌شده
+git stash pop
+
+# حذف stash
+git stash clear
+
+# نمایش وضعیت Repo
+git status
+
+# مقایسه تفاوت فایل‌ها با HEAD
+git diff
+
+# نمایش فایل‌ها در آخرین commit
+git ls-tree --name-only HEAD
+
+# حذف فایل از Repo ولی نگه‌داشتن در لوکال
+git rm --cached filename
+
+# نصب net-tools برای ابزارهای شبکه
+pkg install net-tools -y
+
+# بررسی پورت‌های باز
+netstat -tuln
+
+# اسکن پورت‌های یک IP با nmap
+pkg install nmap -y
+nmap -p 1-1024 192.168.1.1
+
+# تست اتصال به هاست
+ping google.com -c 4
+
+# بررسی latency شبکه
+ping -c 10 8.8.8.8
+
+# تست سرعت اینترنت با speedtest-cli
+pip install speedtest-cli
+speedtest-cli
+
+# مشاهده DNS فعلی
+getprop net.dns1
+
+# تغییر DNS به Cloudflare
+setprop net.dns1 1.1.1.1
+
+# بررسی زمان پاسخ HTTP
+curl -o /dev/null -s -w '%{time_total}\n' https://google.com
+
+# دانلود فایل با wget
+wget https://example.com/file.zip
+
+# ادامه دانلود فایل نیمه‌کاره
+wget -c https://example.com/file.zip
+
+# مشاهده Header فقط
+curl -I https://example.com
+
+# ارسال POST با JSON
+curl -X POST -H "Content-Type: application/json" -d '{"msg":"hello"}' https://api.example.com
+
+# دریافت IP خارجی شما
+curl ifconfig.me
+
+# نصب Docker (در محیط PRoot فقط)
+pkg install proot-distro -y
+proot-distro install ubuntu
+proot-distro login ubuntu
+
+# در محیط Ubuntu نصب Docker
+apt update && apt install docker.io -y
+systemctl start docker
+
+# اجرای container ساده
+docker run hello-world
+
+# لیست containerها
+docker ps -a
+
+# حذف container
+docker rm <id>
+
+# حذف image
+docker rmi <image_name>
+
+# Pull image از DockerHub
+docker pull ubuntu
+
+# اجرای container با interactive shell
+docker run -it ubuntu /bin/bash
+
+# خروج از container بدون توقف
+Ctrl + P + Q
+
+# توقف container
+docker stop <id>
+
+# حذف تمام containerها
+docker rm -f $(docker ps -aq)
+
+# نمایش log container
+docker logs <id>
+
+# نمایش disk usage docker
+docker system df
+
+# پاکسازی کامل docker
+docker system prune -a -f
+
+# نصب curl, wget, openssl برای امنیت ارتباطات
+pkg install curl wget openssl -y
+
+# رمزگذاری فایل با openssl
+openssl enc -aes-256-cbc -salt -in file.txt -out file.enc
+
+# رمزگشایی فایل
+openssl enc -d -aes-256-cbc -in file.enc -out file.txt
+
+# تولید هش SHA256 از فایل
+sha256sum file.txt
+
+# تولید پسورد تصادفی
+openssl rand -base64 12
+
+# ایجاد HTTPS Server ساده با Python
+python -m http.server 8443 --directory /sdcard/almasi98
+
+# ایجاد SSH Tunnel بین دو سیستم
+ssh -L 8080:localhost:80 user@remotehost
+
+# انتقال فایل با scp
+scp /sdcard/file.txt user@192.168.1.10:/home/user/
+
+# انتقال پوشه کامل با scp
+scp -r /sdcard/almasi98 user@192.168.1.10:/data/
+
+# اتصال امن SFTP
+sftp user@192.168.1.10
+
+# مرورگر فایل از راه دور با SFTP
+ls
+get file.txt
+put file.txt
+exit
+
+# نصب fail2ban برای امنیت SSH
+apt install fail2ban -y
+
+# مشاهده logهای ssh
+tail -n 50 /data/data/com.termux/files/home/.ssh/logs/sshd.log
+
+# ایجاد backup از کل تنظیمات Termux
+tar -czvf termux_backup.tar.gz /data/data/com.termux/files/home/
+
+# بازیابی backup
+tar -xzvf termux_backup.tar.gz -C /
+
+# پایان بخش ۱۸ — DevOps / SSH / Network / Git / Docker / Security
+
+# ===== بخش ۲۰ — DevOps, Advanced Python, Async, Logging, Cryptography, Regex, Automation =====
+
+# نصب ماژول asyncio برای اجرای غیرهمزمان
+pip install asyncio
+
+# نمونه کد اجرای async در Python
+python3 - <<'PY'
+import asyncio
+async def hello():
+    print("Start async task")
+    await asyncio.sleep(2)
+    print("Task complete")
+asyncio.run(hello())
+PY
+
+# اجرای چند coroutine همزمان
+python3 - <<'PY'
+import asyncio
+async def t(n):
+    await asyncio.sleep(n)
+    print(f"Done {n}s")
+async def main():
+    await asyncio.gather(t(1), t(2), t(3))
+asyncio.run(main())
+PY
+
+# نصب aiohttp برای درخواست‌های async
+pip install aiohttp
+
+# اجرای درخواست‌های HTTP به‌صورت async
+python3 - <<'PY'
+import aiohttp, asyncio
+async def main():
+    async with aiohttp.ClientSession() as s:
+        async with s.get('https://api.github.com') as r:
+            print(await r.text())
+asyncio.run(main())
+PY
+
+# نصب logging برای کنترل logهای حرفه‌ای
+pip install loguru
+
+# مثال لاگ با loguru
+python3 - <<'PY'
+from loguru import logger
+logger.add("/storage/emulated/0/Download/almasi98/log.txt")
+logger.info("Start process...")
+logger.warning("Low memory!")
+logger.error("Critical error!")
+PY
+
+# نصب cryptography برای رمزنگاری
+pip install cryptography
+
+# رمزنگاری و رمزگشایی با Fernet
+python3 - <<'PY'
+from cryptography.fernet import Fernet
+key = Fernet.generate_key()
+f = Fernet(key)
+token = f.encrypt(b"Secret Message")
+print("Encrypted:", token)
+print("Decrypted:", f.decrypt(token))
+PY
+
+# ایجاد رمز عبور هش شده SHA256
+python3 - <<'PY'
+import hashlib
+print(hashlib.sha256(b'almasi98').hexdigest())
+PY
+
+# تولید رمز تصادفی قوی
+python3 - <<'PY'
+import secrets
+print(secrets.token_hex(16))
+PY
+
+# رمزنگاری فایل با openssl
+openssl enc -aes-256-cbc -in file.txt -out file.enc -k mypassword
+
+# رمزگشایی فایل
+openssl enc -d -aes-256-cbc -in file.enc -out decrypted.txt -k mypassword
+
+# نصب regex برای تطبیق حرفه‌ای متون
+pip install regex
+
+# جستجوی الگو در متن
+python3 - <<'PY'
+import regex as re
+data = "User: almasi98, Email: test@example.com"
+print(re.findall(r"[\\w.-]+@[\\w.-]+", data))
+PY
+
+# جایگزینی با regex
+python3 - <<'PY'
+import regex as re
+s = "My number: 123-456-7890"
+print(re.sub(r"\\d", "*", s))
+PY
+
+# نصب watchdog برای مانیتور تغییر فایل
+pip install watchdog
+
+# مانیتور فولدر با watchdog
+python3 - <<'PY'
+from watchdog.observers import Observer
+from watchdog.events import FileSystemEventHandler
+import time
+class Watch(FileSystemEventHandler):
+    def on_modified(self, event): print(f"Modified: {event.src_path}")
+obs = Observer()
+obs.schedule(Watch(), path="/storage/emulated/0/Download/almasi98", recursive=False)
+obs.start()
+try: 
+    while True: time.sleep(1)
+except KeyboardInterrupt: obs.stop()
+obs.join()
+PY
+
+# نصب schedule برای اجرای خودکار دستورات
+pip install schedule
+
+# زمان‌بندی اجرای دستورات
+python3 - <<'PY'
+import schedule, time, os
+def task(): os.system("date >> /storage/emulated/0/Download/almasi98/times.txt")
+schedule.every(5).seconds.do(task)
+while True:
+    schedule.run_pending()
+    time.sleep(1)
+PY
+
+# استفاده از threading برای اجرای چند تابع هم‌زمان
+python3 - <<'PY'
+import threading, time
+def work(n):
+    print(f"Start {n}")
+    time.sleep(2)
+    print(f"Done {n}")
+threads = [threading.Thread(target=work, args=(i,)) for i in range(5)]
+[t.start() for t in threads]
+[t.join() for t in threads]
+PY
+
+# استفاده از multiprocessing برای پردازش موازی
+python3 - <<'PY'
+from multiprocessing import Pool
+def square(x): return x*x
+with Pool(4) as p:
+    print(p.map(square, range(10)))
+PY
+
+# نصب paramiko برای اتصال SSH
+pip install paramiko
+
+# اتصال SSH و اجرای دستور
+python3 - <<'PY'
+import paramiko
+ssh = paramiko.SSHClient()
+ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+ssh.connect('your-server.com', username='root', password='12345')
+stdin, stdout, stderr = ssh.exec_command('ls -l')
+print(stdout.read().decode())
+ssh.close()
+PY
+
+# ایجاد keypair SSH
+ssh-keygen -t rsa -b 4096 -C "almasi@termux"
+
+# نمایش fingerprint کلید
+ssh-keygen -lf ~/.ssh/id_rsa.pub
+
+# کپی کلید به سرور
+ssh-copy-id user@ip_address
+
+# اتصال به سرور با کلید
+ssh -i ~/.ssh/id_rsa user@ip_address
+
+# بررسی پورت باز با nmap
+pkg install nmap -y
+nmap -p 22,80,443 target.com
+
+# اجرای دستور از راه دور با curl
+curl -X GET https://ifconfig.me
+
+# بررسی IP عمومی
+wget -qO- https://api.ipify.org
+
+# مشاهده ترافیک شبکه
+pkg install tcpdump -y
+tcpdump -i any -c 10
+
+# نصب fail2ban برای جلوگیری از brute-force (در proot ubuntu)
+apt install fail2ban -y
+
+# ایجاد cron job در Termux
+crontab -e
+
+# افزودن job برای اجرای هر دقیقه
+* * * * * echo "Ping $(date)" >> /storage/emulated/0/Download/almasi98/pings.txt
+
+# نمایش jobهای فعال
+crontab -l
+
+# نصب docker در proot-distro
+apt install docker.io -y
+
+# اجرای container ساده
+docker run hello-world
+
+# مشاهده کانتینرهای فعال
+docker ps
+
+# حذف همه‌ی کانتینرها
+docker rm $(docker ps -aq)
+
+# پاک کردن تمام ایمیج‌ها
+docker rmi $(docker images -q)
+
+# نصب ansible برای DevOps اتوماتیک
+pip install ansible
+
+# اجرای playbook ansible
+ansible-playbook deploy.yml
+
+# نصب gitpython برای خودکارسازی Git
+pip install gitpython
+
+# commit خودکار
+python3 - <<'PY'
+from git import Repo
+repo = Repo('/data/data/com.termux/files/home/project')
+repo.git.add('--all')
+repo.index.commit('auto commit')
+origin = repo.remote(name='origin')
+origin.push()
+PY
+
+# نصب rich برای خروجی رنگی (پیشرفته)
+pip install rich
+
+# نمایش جدول با rich
+python3 - <<'PY'
+from rich.table import Table
+from rich.console import Console
+table = Table(title="System Info")
+table.add_column("Key"); table.add_column("Value")
+table.add_row("OS","Android/Termux")
+table.add_row("User","almasi98")
+Console().print(table)
+PY
+
+# پایان بخش ۲۰ — DevOps, Advanced Python, Security, Automation, SSH, Logging, Crypto
+
+# ===== بخش ۲۲ — امنیت، رمزنگاری، بکاپ، مانیتورینگ و ابزارهای مدیریت سیستم (دستورات ۱۶۰۱–۱۷۰۰) =====
+
+# نصب ابزارهای امنیتی پایه
+pkg install openssl nmap netcat -y
+
+# بررسی نسخه OpenSSL
+openssl version
+
+# ایجاد کلید خصوصی RSA
+openssl genrsa -out private.key 2048
+
+# ایجاد کلید عمومی از کلید خصوصی
+openssl rsa -in private.key -pubout -out public.key
+
+# رمزنگاری فایل با کلید عمومی
+openssl rsautl -encrypt -inkey public.key -pubin -in secret.txt -out secret.enc
+
+# رمزگشایی فایل با کلید خصوصی
+openssl rsautl -decrypt -inkey private.key -in secret.enc -out secret.dec.txt
+
+# رمزگذاری با AES-256
+openssl enc -aes-256-cbc -salt -in data.txt -out data.enc -k "password"
+
+# رمزگشایی فایل AES-256
+openssl enc -aes-256-cbc -d -in data.enc -out data.dec.txt -k "password"
+
+# تولید هش SHA256 برای فایل
+sha256sum data.txt
+
+# بررسی یکپارچگی فایل با هش ذخیره‌شده
+sha256sum -c data.txt.sha256 || true
+
+# لیست گواهی‌های نصب‌شده در سیستم
+ls /etc/ssl/certs 2>/dev/null || echo "No certs path"
+
+# مشاهده اطلاعات گواهی PEM
+openssl x509 -in cert.pem -text -noout
+
+# تولید CSR برای صدور گواهی SSL
+openssl req -new -key private.key -out request.csr
+
+# آزمایش ارتباط SSL به یک دامنه
+openssl s_client -connect example.com:443 -showcerts
+
+# مانیتورینگ شبکه با tcpdump (در صورت نصب)
+pkg install tcpdump -y || true
+tcpdump -n -c 20
+
+# بررسی پورت‌های باز
+ss -tuln
+
+# جستجوی فایل‌های با مجوز خطرناک (777)
+find /data/data/com.termux/files/home -type f -perm 0777
+
+# نمایش لیست پروسس‌های در حال اجرا
+ps aux
+
+# فیلتر کردن پروسس‌های python
+ps aux | grep python
+
+# توقف پروسس با PID
+kill -9 <PID>
+
+# اجرای دستور با اولویت کمتر
+nice -n 10 long_task.sh
+
+# بررسی استفاده حافظه
+free -h
+
+# بررسی فضای دیسک
+df -h
+
+# بررسی فضای در پوشه خاص
+du -sh /storage/emulated/0/Download
+
+# پیدا کردن فایل‌های بزرگتر از 100MB
+find . -type f -size +100M -exec ls -lh {} \;
+
+# بکاپ‌گیری فشرده از پوشه home
+tar -czvf home_backup_$(date +%F).tar.gz $HOME
+
+# بازیابی بکاپ
+tar -xzvf home_backup_*.tar.gz -C /
+
+# همگام‌سازی بکاپ با rsync
+rsync -avz --progress ~/projects /storage/emulated/0/Backup/
+
+# بکاپ پایگاه داده SQLite
+sqlite3 mydb.db ".backup '/storage/emulated/0/Backup/mydb_backup.db'"
+
+# بررسی سلامتی بکاپ SQLite
+sqlite3 /storage/emulated/0/Backup/mydb_backup.db "pragma integrity_check;"
+
+# مانیتورینگ ساده منابع با top
+top -n 1 -b | head -n 20
+
+# مشاهده اطلاعات CPU
+cat /proc/cpuinfo | head -n 10
+
+# مشاهده اطلاعات حافظه
+cat /proc/meminfo | head -n 15
+
+# اندازه کل حافظه در Termux
+awk '/MemTotal/ {print $2/1024 " MB"}' /proc/meminfo
+
+# مانیتورینگ شبکه (در صورت نصب iftop)
+pkg install iftop -y || true
+
+# اجرای iftop برای بررسی مصرف شبکه
+iftop -n -P
+
+# مانیتورینگ لحظه‌ای فرآیند خاص
+watch -n 1 "ps aux | grep python"
+
+# مانیتورینگ حافظه فرآیند خاص
+watch -n 1 "pmap <PID> | tail -n 1"
+
+# مشاهده لاگ syslog (در Termux محدود است)
+logcat -d | head -n 50
+
+# بررسی لاگ‌های اپلیکیشن در ترموکس
+cat ~/.termux/termux.properties 2>/dev/null || echo "No props file"
+
+# تغییر پسورد SSH (درصورت فعال بودن)
+passwd
+
+# تنظیم بنر ورود SSH
+echo "Welcome to Termux Secure Shell" > $PREFIX/etc/motd
+
+# تغییر پورت SSH
+sed -i 's/#Port 22/Port 2222/' $PREFIX/etc/ssh/sshd_config
+
+# راه‌اندازی مجدد sshd
+pkill sshd || true && sshd
+
+# ایجاد کلید SSH برای ورود بدون پسورد
+ssh-keygen -t rsa -b 4096 -f ~/.ssh/id_rsa
+
+# کپی کلید عمومی به سرور
+ssh-copy-id user@remotehost || true
+
+# تنظیم ssh-agent
+eval "$(ssh-agent -s)"
+
+# افزودن کلید به ssh-agent
+ssh-add ~/.ssh/id_rsa
+
+# اسکن پورت‌های باز سرور
+nmap -p 1-1024 remotehost
+
+# شناسایی سیستم عامل با nmap
+nmap -O remotehost
+
+# بررسی اسکن سریع
+nmap -T4 -F remotehost
+
+# ذخیره خروجی nmap در فایل
+nmap -sV remotehost -oN scan.txt
+
+# بررسی سرویس‌های در حال اجرا
+netstat -tuln
+
+# بررسی ارتباط با یک IP خاص
+ping -c 4 8.8.8.8
+
+# بررسی مسیر به یک مقصد (traceroute)
+traceroute google.com || true
+
+# مشاهده زمان و تاریخ سیستم
+date
+
+# تنظیم ساعت سیستم
+date -s "2025-10-16 14:00:00"
+
+# همگام‌سازی ساعت با NTP
+ntpdate -q pool.ntp.org || true
+
+# بررسی دما در سیستم (درصورت پشتیبانی)
+cat /sys/class/thermal/thermal_zone0/temp 2>/dev/null || echo "N/A"
+
+# لیست کاربران سیستم
+who
+
+# لیست نشست‌های فعال
+w
+
+# نمایش آخرین ورودها
+last || echo "Not available"
+
+# نمایش نام میزبان سیستم
+hostname
+
+# تغییر نام میزبان
+hostnamectl set-hostname termux-host || true
+
+# بررسی اتصال اینترنت
+ping -c 2 google.com && echo "Connected" || echo "No Internet"
+
+# بررسی IP عمومی
+curl -s ifconfig.me
+
+# بررسی IP داخلی
+ip addr show wlan0 | grep "inet "
+
+# خروج از نشست SSH
+exit
+
+# اطمینان از امنیت فایل‌ها (خواندنی فقط کاربر)
+chmod 600 ~/.ssh/id_rsa
+
+# پنهان کردن فایل حساس
+mv private.key .private.key
+
+# قفل‌گذاری روی فایل با gpg (در صورت نصب)
+pkg install gnupg -y || true
+gpg -c secret.txt
+
+# رمزگشایی فایل gpg
+gpg secret.txt.gpg
+
+# حذف امن فایل حساس
+shred -u secret.txt
+
+# پاکسازی تاریخچه دستورات
+history -c
+
+# خروج امن از Termux
+exit
+
+# پایان بخش ۲۲ — امنیت، رمزنگاری، بکاپ، مانیتورینگ، SSH
+
+# ===== بخش ۲۳ — DevOps، Docker، CI/CD، و مدیریت سرور (دستورات ۱۷۰۱–۱۸۰۰) =====
+
+# نصب Docker در سیستم لینوکس (نیازمند محیط root، در ترموکس شبیه‌سازی)
+pkg install docker -y || echo "Docker simulated only"
+
+# بررسی نسخه Docker
+docker --version || echo "Docker not available in Termux"
+
+# مشاهده اطلاعات Docker
+docker info || echo "Docker not supported natively on Android"
+
+# لیست کانتینرهای در حال اجرا
+docker ps
+
+# لیست همه کانتینرها (حتی متوقف‌شده)
+docker ps -a
+
+# ساخت ایمیج از Dockerfile
+docker build -t myimage .
+
+# اجرای کانتینر جدید از ایمیج
+docker run -d -p 8080:80 myimage
+
+# توقف کانتینر
+docker stop <container_id>
+
+# حذف کانتینر
+docker rm <container_id>
+
+# حذف ایمیج
+docker rmi myimage
+
+# مشاهده لاگ کانتینر
+docker logs -f <container_id>
+
+# اتصال به ترمینال کانتینر
+docker exec -it <container_id> /bin/bash
+
+# خروج از ترمینال کانتینر
+exit
+
+# دانلود ایمیج از Docker Hub
+docker pull nginx:latest
+
+# مشاهده ایمیج‌های دانلود‌شده
+docker images
+
+# ایجاد شبکه Docker اختصاصی
+docker network create mynet
+
+# اتصال کانتینر به شبکه
+docker network connect mynet <container_id>
+
+# تنظیم Volume برای اشتراک فایل
+docker volume create myvolume
+
+# اتصال Volume به کانتینر
+docker run -v myvolume:/data myimage
+
+# اجرای سرویس Compose (در محیط لینوکس)
+docker-compose up -d
+
+# توقف سرویس‌های Compose
+docker-compose down
+
+# بازسازی سرویس‌ها با کش جدید
+docker-compose build --no-cache
+
+# بررسی لاگ CI/CD در GitHub Actions
+curl -s -H "Authorization: token <TOKEN>" \
+  https://api.github.com/repos/<user>/<repo>/actions/runs | jq '.workflow_runs[] | .name, .status'
+
+# نصب Jenkins (در سرور واقعی)
+pkg install openjdk-17 -y
+wget http://mirrors.jenkins.io/war-stable/latest/jenkins.war
+java -jar jenkins.war --httpPort=8080
+
+# بررسی وضعیت Jenkins
+curl http://localhost:8080/login
+
+# توقف Jenkins
+pkill -f jenkins.war
+
+# نصب GitLab Runner (در محیط لینوکس)
+curl -L https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.deb.sh | bash
+apt install gitlab-runner -y
+
+# ثبت Runner جدید
+gitlab-runner register
+
+# شروع Runner
+gitlab-runner start
+
+# مشاهده لاگ Runner
+gitlab-runner status
+
+# نصب Ansible برای اتوماسیون سرور
+pip install ansible
+
+# بررسی نسخه Ansible
+ansible --version
+
+# پینگ همه هاست‌های موجود در inventory
+ansible all -m ping -i hosts.ini
+
+# اجرای دستور روی سرورهای مشخص
+ansible servers -m shell -a "uptime" -i hosts.ini
+
+# اجرای playbook
+ansible-playbook deploy.yml -i hosts.ini
+
+# بررسی صحت playbook
+ansible-playbook --syntax-check deploy.yml
+
+# استفاده از Terraform (در سرور لینوکس)
+wget https://releases.hashicorp.com/terraform/1.9.5/terraform_1.9.5_linux_amd64.zip
+unzip terraform_1.9.5_linux_amd64.zip
+mv terraform /usr/local/bin/
+terraform --version
+
+# ایجاد فایل پیکربندی Terraform
+cat <<EOF > main.tf
+provider "aws" {
+  region = "us-east-1"
+}
+EOF
+
+# مقداردهی اولیه پروژه Terraform
+terraform init
+
+# بررسی تغییرات
+terraform plan
+
+# اجرای تغییرات
+terraform apply -auto-approve
+
+# حذف منابع
+terraform destroy -auto-approve
+
+# نصب Helm برای Kubernetes
+pkg install helm -y || true
+
+# لیست چارتی‌های نصب‌شده
+helm list
+
+# نصب چارتی جدید
+helm install myapp ./chart
+
+# حذف چارتی
+helm uninstall myapp
+
+# بررسی وضعیت پادها در Kubernetes
+kubectl get pods
+
+# مشاهده لاگ‌های پاد
+kubectl logs mypod
+
+# اتصال به پوسته پاد
+kubectl exec -it mypod -- /bin/sh
+
+# مقیاس‌دهی Deployment
+kubectl scale deployment myapp --replicas=3
+
+# اعمال تنظیمات جدید
+kubectl apply -f deployment.yaml
+
+# حذف منابع
+kubectl delete -f deployment.yaml
+
+# مشاهده همه namespaceها
+kubectl get ns
+
+# تغییر namespace پیش‌فرض
+kubectl config set-context --current --namespace=myspace
+
+# بررسی مصرف منابع پادها
+kubectl top pods
+
+# بررسی سرویس‌های در حال اجرا
+kubectl get svc
+
+# نمایش رویدادهای اخیر
+kubectl get events --sort-by=.metadata.creationTimestamp
+
+# مانیتورینگ زنده Deployment
+watch -n 2 kubectl get pods
+
+# پاک‌سازی همه پادهای متوقف‌شده
+kubectl delete pod --field-selector=status.phase=Succeeded
+
+# خروج از namespace خاص
+kubectl config unset contexts.current.namespace
+
+# نصب CI ابزار CircleCI (شبیه‌سازی)
+echo "CircleCI requires external environment"
+
+# فایل پیکربندی YAML نمونه برای CI
+cat <<EOF > .circleci/config.yml
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: cimg/python:3.10
+    steps:
+      - checkout
+      - run: pip install -r requirements.txt
+      - run: pytest
+EOF
+
+# اجرای تست‌های Pytest
+pytest -v || echo "pytest not installed"
+
+# تولید پوشش کد (coverage)
+pytest --cov=myproject
+
+# ارسال گزارش به Codecov
+bash <(curl -s https://codecov.io/bash)
+
+# اجرای Lint برای بررسی کیفیت کد
+flake8 myproject/
+
+# اجرای سیاه‌سازی (Black) برای قالب‌دهی کد
+black myproject/
+
+# بررسی امنیت پکیج‌ها با bandit
+bandit -r myproject/
+
+# استفاده از pre-commit hooks
+pre-commit install
+pre-commit run --all-files
+
+# بررسی تغییرات commitها برای CI
+git diff --name-only HEAD~1 HEAD
+
+# اعمال اتوماتیک deploy پس از merge
+bash deploy_prod.sh
+
+# بررسی وضعیت نهایی سرویس‌ها
+systemctl status nginx || echo "manual check required"
+
+# پایان بخش ۲۳ — DevOps، Docker، CI/CD، و مدیریت سرور
+
