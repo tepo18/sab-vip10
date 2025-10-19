@@ -1,0 +1,35 @@
+name: Auto Update Repo
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt || true
+
+      - name: Run update script
+        run: |
+          echo "Running auto update script..."
+          python cl2.py || true
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "tepo18"
+          git config --global user.email "almasi.ali98@gmail.com"
+          git add .
+          git commit -m "auto update from workflow [skip ci]" || echo "No changes"
+          git push origin main
