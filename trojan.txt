@@ -1,0 +1,2 @@
+trojan://YwuvGJk36B@creativecommons.org:2053?path=%2Fyamtekodasayahhh&security=tls&alpn=http%2F1.1&host=kotlet.arshiacomplus.dpdns.org&fp=chrome&type=ws&sni=kotlet.arshiacomplus.dpdns.org#hamedp71%3A%3A%F0%9F%8F%B4%E2%80%8D%E2%98%A0%EF%B8%8F
+trojan://N0R3eiSMlv8UybTC@154.93.37.169:16526?security=tls&host=glowingpickle.bananatornado.click&headerType=none&type=tcp&sni=glowingpickle.bananatornado.click#hamedp71%3A%3A%F0%9F%87%AE%F0%9F%87%B6
