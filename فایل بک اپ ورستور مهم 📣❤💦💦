@@ -1,0 +1,102 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+import os
+import shutil
+from datetime import datetime
+from rich.console import Console
+from rich.prompt import Prompt
+from rich.table import Table
+
+console = Console()
+
+BASE_BACKUP_DIR = "/sdcard/Download/akbar98"
+TERMUX_HOME = "/data/data/com.termux/files/home"
+
+os.makedirs(BASE_BACKUP_DIR, exist_ok=True)
+
+def should_backup(filename):
+    if filename.endswith((".py", ".sh")):
+        return True
+
+    if filename.startswith("final") and filename.endswith(".txt"):
+        return True
+
+    if filename.startswith("final") and filename.endswith(".json"):
+        return True
+
+    return False
+
+def backup_selected():
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    backup_dir = os.path.join(BASE_BACKUP_DIR, f"backup_{timestamp}")
+    os.makedirs(backup_dir, exist_ok=True)
+
+    count = 0
+    for root, dirs, files in os.walk(TERMUX_HOME):
+        for f in files:
+            if should_backup(f):
+                src = os.path.join(root, f)
+                dst = os.path.join(backup_dir, f)
+                shutil.copy(src, dst)
+                count += 1
+
+    console.print(f"[green]Backup complete: {count} files saved to {backup_dir}[/green]")
+
+def restore_files():
+    backups = sorted([d for d in os.listdir(BASE_BACKUP_DIR) if d.startswith("backup_")], reverse=True)
+
+    if not backups:
+        console.print("[red]No backups found.[/red]")
+        return
+
+    table = Table(title="Backups")
+    table.add_column("No")
+    table.add_column("Folder")
+
+    for i, b in enumerate(backups):
+        table.add_row(str(i + 1), b)
+
+    console.print(table)
+    choice = Prompt.ask("Select backup number (0=cancel)", default="0")
+
+    if choice == "0":
+        console.print("Cancelled.")
+        return
+
+    try:
+        idx = int(choice) - 1
+        backup_dir = os.path.join(BASE_BACKUP_DIR, backups[idx])
+    except:
+        console.print("Invalid selection.")
+        return
+
+    for f in os.listdir(backup_dir):
+        if should_backup(f):
+            src = os.path.join(backup_dir, f)
+            dst = os.path.join(TERMUX_HOME, f)
+            shutil.copy(src, dst)
+
+    console.print("[green]Restore completed.[/green]")
+
+def main():
+    while True:
+        console.print("\n[bold yellow]Termux Backup Manager[/bold yellow]")
+        console.print("1: Backup files")
+        console.print("2: Restore")
+        console.print("0: Exit")
+
+        choice = Prompt.ask("Select", default="0")
+
+        if choice == "1":
+            backup_selected()
+        elif choice == "2":
+            restore_files()
+        elif choice == "0":
+            console.print("Exit.")
+            break
+        else:
+            console.print("Invalid option.")
+
+if __name__ == "__main__":
+    main()
