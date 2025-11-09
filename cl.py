@@ -15,21 +15,25 @@ TEXT_NORMAL = "normal.txt"
 TEXT_FINAL = "final.txt"
 
 LINKS_PATH = [
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/vmess.txt",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/vless.txt",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/trojan.txt",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/ss.txt",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/h2.txt",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/vip.txt",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/vip10.txt",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/vip20.txt",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/vip30.txt",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/vip40.txt",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/vip50.txt",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/vip60.txt",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/vip70.txt",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/vip80.txt",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/vip90.txt"
+"https://raw.githubusercontent.com/tepo18/tepo90/main/final.txt",
+"https://raw.githubusercontent.com/tepo18/sab-vip10/main/final3.txt",
+"https://raw.githubusercontent.com/tepo18/sab-vip10/main/final2.txt",
+"https://raw.githubusercontent.com/tepo18/reza-shah1320/main/final.txt",
+"https://raw.githubusercontent.com/tepo18/online-sshmax98/main/final.txt",
+"https://raw.githubusercontent.com/tepo98/kv98/main/final.txt",
+"https://raw.githubusercontent.com/almasi98/omax98/main/final.txt",
+"https://raw.githubusercontent.com/tepo18/reza-shah1320/main/final1.txt",
+"https://raw.githubusercontent.com/tepo18/sab-vip10/main/final1.txt",
+"https://raw.githubusercontent.com/tepo80/tepo80/main/final2.txt",
+"https://raw.githubusercontent.com/tepo18/sab-vip10/main/final10.txt",
+"https://raw.githubusercontent.com/tepo80/tepo80/main/final.txt",
+"https://raw.githubusercontent.com/tepo80/tepo18/main/final.txt",
+"https://raw.githubusercontent.com/tepo80/tepo18/main/final2.txt",
+"https://raw.githubusercontent.com/tepo80/sab-vip90/main/vip.txt",
+"https://raw.githubusercontent.com/tepo80/sab-vip90/main/vip2.txt",
+"https://raw.githubusercontent.com/tepo80/Trojan/main/hp.txt",
+"https://chine-panel.ahsan-tepo98.workers.dev/c808ce19-f298-4087-9bf1-27a5649fc307/sub",
+"https://almasi-1990.almasi-ali98.workers.dev/522e8484-53de-41a1-a5ba-92e2ec3b7b26/ty"
 ]
 
 MAX_THREADS = 20
