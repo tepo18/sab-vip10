@@ -11,8 +11,8 @@ import threading
 import re
 
 # ---------------- مسیر فایل‌ها ----------------
-TEXT_NORMAL = "normal2.txt"
-TEXT_FINAL = "final2.txt"
+TEXT_NORMAL = "normal10.txt"
+TEXT_FINAL = "final10.txt"
 
 LINKS_PATH = [
     "https://raw.githubusercontent.com/tepo18/sab-vip10/main/vmess.txt",
