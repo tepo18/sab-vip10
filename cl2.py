@@ -14,16 +14,14 @@ TEXT_NORMAL = "normal2.txt"
 TEXT_FINAL = "final2.txt"
 
 LINKS_PATH = [
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/vip5.txt",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/vip15.txt",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/vip25.txt",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/vip35.txt",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/vip45.txt",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/vip55.txt",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/vip65.txt",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/vip75.txt",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/vip85.txt",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/vip95.txt"
+"https://raw.githubusercontent.com/tepo18/tepo90/main/final.txt",
+"https://raw.githubusercontent.com/tepo18/sab-vip10/main/final3.txt",
+"https://raw.githubusercontent.com/tepo18/reza-shah1320/main/final.txt",
+"https://raw.githubusercontent.com/tepo18/online-sshmax98/main/final.txt",
+"https://raw.githubusercontent.com/tepo98/kv98/main/final.txt",
+"https://raw.githubusercontent.com/almasi98/omax98/main/final.txt",
+"https://raw.githubusercontent.com/tepo18/reza-shah1320/main/final1.txt",
+"https://raw.githubusercontent.com/tepo18/sab-vip10/main/final1.txt"
 ]
 
 MAX_THREADS = 20
