@@ -15,21 +15,16 @@ TEXT_NORMAL = "normal20.txt"
 TEXT_FINAL = "final20.txt"
 
 LINKS_PATH = [
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/vmess.txt",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/vless.txt",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/trojan.txt",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/ss.txt",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/h2.txt",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/vip.txt",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/vip10.txt",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/vip20.txt",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/vip30.txt",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/vip40.txt",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/vip50.txt",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/vip60.txt",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/vip70.txt",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/vip80.txt",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/vip90.txt"
+    "https://almasi-1990.almasi-ali98.workers.dev/522e8484-53de-41a1-a5ba-92e2ec3b7b26/ty",
+    "https://chine-panel.ahsan-tepo98.workers.dev/c808ce19-f298-4087-9bf1-27a5649fc307/sub",
+    "https://raw.githubusercontent.com/parvinxs/Fssociety/refs/heads/main/Fssociety.sub",
+    "https://raw.githubusercontent.com/parvinxs/Submahsanetxsparvin/refs/heads/main/Sub.mahsa.xsparvin",
+    "https://raw.githubusercontent.com/arshiacomplus/v2rayExtractor/main/hy2.html",
+    "https://raw.githubusercontent.com/coldwater-10/V2Hub/main/Split/Base64/reality",
+    "https://raw.githubusercontent.com/Surfboardv2ray/TGParse/main/python/hy2",
+    "https://raw.githubusercontent.com/coldwater-10/V2ray-Config-Lite/main/Splitted-By-Protocol/hysteria2.txt",
+    "https://raw.githubusercontent.com/tepo80/Trojan/main/hp.txt",
+    "https://raw.githubusercontent.com/hamedp-71/v2go_NEW/main/Splitted-By-Protocol/hy2.txt"
 ]
 
 MAX_THREADS = 20
