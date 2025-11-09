@@ -15,15 +15,6 @@ TEXT_NORMAL = "normal.txt"
 TEXT_FINAL = "final.txt"
 
 LINKS_PATH = [
-"https://raw.githubusercontent.com/tepo18/tepo90/main/final.txt",
-"https://raw.githubusercontent.com/tepo18/sab-vip10/main/final3.txt",
-"https://raw.githubusercontent.com/tepo18/sab-vip10/main/final2.txt",
-"https://raw.githubusercontent.com/tepo18/reza-shah1320/main/final.txt",
-"https://raw.githubusercontent.com/tepo18/online-sshmax98/main/final.txt",
-"https://raw.githubusercontent.com/tepo98/kv98/main/final.txt",
-"https://raw.githubusercontent.com/almasi98/omax98/main/final.txt",
-"https://raw.githubusercontent.com/tepo18/reza-shah1320/main/final1.txt",
-"https://raw.githubusercontent.com/tepo18/sab-vip10/main/final1.txt",
 "https://raw.githubusercontent.com/tepo80/tepo80/main/final2.txt",
 "https://raw.githubusercontent.com/tepo18/sab-vip10/main/final10.txt",
 "https://raw.githubusercontent.com/tepo80/tepo80/main/final.txt",
