@@ -1,1 +1,1 @@
-#33
+vless://7558bd01-db7f-48ee-8bb6-4b91c84b2bab@127.0.0.1:1234?encryption=none&security=tls&sni=etunel.pages.dev&fp=random&type=ws&host=etunel.pages.dev&path=%2F%3Fed%3D2560&allowInsecure=1&fragment=1%2C40-60%2C30-50%2Ctlshello#CFnat
