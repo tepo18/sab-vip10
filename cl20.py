@@ -15,12 +15,9 @@ TEXT_NORMAL = "normal20.txt"
 TEXT_FINAL = "final20.txt"
 
 LINKS_PATH = [
-    "https://almasi-1990.almasi-ali98.workers.dev/522e8484-53de-41a1-a5ba-92e2ec3b7b26/ty",
-    "https://chine-panel.ahsan-tepo98.workers.dev/c808ce19-f298-4087-9bf1-27a5649fc307/sub",
     "https://raw.githubusercontent.com/parvinxs/Fssociety/refs/heads/main/Fssociety.sub",
-    "https://raw.githubusercontent.com/parvinxs/Submahsanetxsparvin/refs/heads/main/Sub.mahsa.xsparvin",
+    "https://raw.githubusercontent.com/parvinxs/Submahsanetxsparvin/main/Sub.mahsa.xsparvin",
     "https://raw.githubusercontent.com/arshiacomplus/v2rayExtractor/main/hy2.html",
-    "https://raw.githubusercontent.com/coldwater-10/V2Hub/main/Split/Base64/reality",
     "https://raw.githubusercontent.com/Surfboardv2ray/TGParse/main/python/hy2",
     "https://raw.githubusercontent.com/coldwater-10/V2ray-Config-Lite/main/Splitted-By-Protocol/hysteria2.txt",
     "https://raw.githubusercontent.com/tepo80/Trojan/main/hp.txt",
