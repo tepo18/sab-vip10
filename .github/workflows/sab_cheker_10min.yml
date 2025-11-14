@@ -3,7 +3,7 @@ name: Sub Checker CL20
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/10 * * * *"   # اجرای cl20.py هر ۱۰ دقیقه
+    - cron: "*/2 * * * *"   # اجرای cl20.py هر ۱۰ دقیقه
 
 permissions:
   contents: write
