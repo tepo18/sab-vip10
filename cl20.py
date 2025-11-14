@@ -15,7 +15,10 @@ TEXT_NORMAL = "normal20.txt"
 TEXT_FINAL = "final20.txt"
 
 LINKS_PATH = [
-    "https://raw.githubusercontent.com/parvinxs/Fssociety/refs/heads/main/Fssociety.sub",
+    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/shah.txt",
+    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/shah10.txt",
+    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/shah20.txt",
+    "https://raw.githubusercontent.com/parvinxs/Fssociety/main/Fssociety.sub",
     "https://raw.githubusercontent.com/parvinxs/Submahsanetxsparvin/main/Sub.mahsa.xsparvin",
     "https://raw.githubusercontent.com/arshiacomplus/v2rayExtractor/main/hy2.html",
     "https://raw.githubusercontent.com/Surfboardv2ray/TGParse/main/python/hy2",
