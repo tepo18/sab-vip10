@@ -19,7 +19,6 @@ LINKS_PATH = [
     "https://raw.githubusercontent.com/parvinxs/Submahsanetxsparvin/main/Sub.mahsa.xsparvin",
     "https://raw.githubusercontent.com/arshiacomplus/v2rayExtractor/main/hy2.html",
     "https://raw.githubusercontent.com/Surfboardv2ray/TGParse/main/python/hy2",
-    "https://raw.githubusercontent.com/coldwater-10/V2ray-Config-Lite/main/Splitted-By-Protocol/hysteria2.txt",
     "https://raw.githubusercontent.com/tepo80/Trojan/main/hp.txt",
     "https://raw.githubusercontent.com/hamedp-71/v2go_NEW/main/Splitted-By-Protocol/hy2.txt"
 ]
