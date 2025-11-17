@@ -1,0 +1,504 @@
+proxies:
+- name: ss-92.112.126.90-443 3
+  type: ss
+  server: 92.112.126.90
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: 9tqhMdIrTkgQ46PvhyAtMH
+  udp: true
+  ping: 17
+  status: ok
+- name: vmess-57.129.25.22-75d581 2
+  type: vmess
+  server: 57.129.25.22
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: o.metuji.com
+  tls: true
+  sni: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  ping: 19
+  status: ok
+- name: ss-212.34.140.184-443
+  type: ss
+  server: 212.34.140.184
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: 0NeN5ta7FLa5B9DLytU0um
+  udp: true
+  ping: 21
+  status: ok
+- name: ss-134.255.210.49-990
+  type: ss
+  server: 134.255.210.49
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: f8f7aCzcPKbsF8p3
+  udp: true
+  ping: 24
+  status: ok
+- name: vless-104.21.3.219-a805b8
+  type: vless
+  server: 104.21.3.219
+  port: 8443
+  uuid: 57ba2ab1-a283-42eb-82ee-dc3561a805b8
+  encryption: none
+  udp: true
+  network: ws
+  ws-opts:
+    path: /57ba2ab1
+    headers:
+      Host: ovhwuxian.pai50288.uk
+  tls: true
+  sni: ovhwuxian.pai50288.uk
+  servername: ovhwuxian.pai50288.uk
+  ping: 20
+  status: ok
+- name: ss-92.112.126.90-443
+  type: ss
+  server: 92.112.126.90
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: 9tqhMdIrTkgQ46PvhyAtMH
+  udp: true
+  ping: 24
+  status: ok
+- name: vless-172.67.153.156-a805b8
+  type: vless
+  server: 172.67.153.156
+  port: 8443
+  uuid: 57ba2ab1-a283-42eb-82ee-dc3561a805b8
+  encryption: none
+  udp: true
+  network: ws
+  ws-opts:
+    path: /57ba2ab1
+    headers:
+      Host: ovhwuxian.pai50288.uk
+  tls: true
+  sni: ovhwuxian.pai50288.uk
+  servername: ovhwuxian.pai50288.uk
+  ping: 18
+  status: ok
+- name: vmess-172.111.146.64-679f6a
+  type: vmess
+  server: 172.111.146.64
+  port: 80
+  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /vmess/?ed=2048@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN
+  ping: 20
+  status: ok
+- name: vmess-57.129.25.22-75d581
+  type: vmess
+  server: 57.129.25.22
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  tls: true
+  sni: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  ping: 23
+  status: ok
+- name: ss-160.19.78.75-443
+  type: ss
+  server: 160.19.78.75
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: Nk9asglDzHzjktVzTkvhaA
+  udp: true
+  ping: 25
+  status: ok
+- name: ss-92.112.126.90-443 2
+  type: ss
+  server: 92.112.126.90
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: 9tqhMdIrTkgQ46PvhyAtMH
+  udp: true
+  ping: 23
+  status: ok
+- name: vless-5.253.41.237-7607d9
+  type: vless
+  server: 5.253.41.237
+  port: 8443
+  uuid: eb42c1ce-5ab3-41f0-95ad-80fa467607d9
+  encryption: none
+  udp: true
+  network: ws
+  ws-opts:
+    path: /vless/
+  tls: true
+  sni: pq-japan3.09vpn.com
+  servername: pq-japan3.09vpn.com
+  ping: 23
+  status: ok
+- name: ss-92.112.126.90-443 4
+  type: ss
+  server: 92.112.126.90
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: 9tqhMdIrTkgQ46PvhyAtMH
+  udp: true
+  ping: 26
+  status: ok
+- name: ss-promo1o.bystrivpn.ru-443
+  type: ss
+  server: promo1o.bystrivpn.ru
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: 0NeN5ta7FLa5B9DLytU0um
+  udp: true
+  ping: 27
+  status: ok
+- name: vless-172.111.146.64-7840ec
+  type: vless
+  server: 172.111.146.64
+  port: 80
+  uuid: 904f8ffa-4652-4076-8f2f-e586807840ec
+  encryption: none
+  udp: true
+  network: ws
+  ws-opts:
+    path: /vless/
+  ping: 22
+  status: ok
+- name: ss-arxfw2b78fi2q9hzylhn.freesocks.work-443
+  type: ss
+  server: arxfw2b78fi2q9hzylhn.freesocks.work
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: Nk9asglDzHzjktVzTkvhaA
+  udp: true
+  ping: 27
+  status: ok
+- name: ss-160.19.78.75-443 2
+  type: ss
+  server: 160.19.78.75
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: Nk9asglDzHzjktVzTkvhaA
+  udp: true
+  ping: 23
+  status: ok
+- name: vless-172.111.146.64-7840ec 2
+  type: vless
+  server: 172.111.146.64
+  port: 80
+  uuid: 904f8ffa-4652-4076-8f2f-e586807840ec
+  encryption: none
+  udp: true
+  network: ws
+  ws-opts:
+    path: /vless/
+  ping: 21
+  status: ok
+- name: vless-thailandnet65.ir-3f33bb
+  type: vless
+  server: thailandnet65.ir
+  port: 443
+  uuid: 7d18fc67-1994-4f7e-8ff8-c024223f33bb
+  encryption: none
+  udp: true
+  network: ws
+  ws-opts:
+    path: /cbde4058-6b81-432b-8689-dd7ce10e479c
+    headers:
+      Host: revcloud.migacpi.org
+  tls: true
+  sni: revcloud.migacpi.org
+  servername: revcloud.migacpi.org
+  ping: 25
+  status: ok
+- name: vless-5.253.41.223-154419
+  type: vless
+  server: 5.253.41.223
+  port: 80
+  uuid: a0a866bd-8c0c-464c-9b96-c6dafa154419
+  encryption: none
+  udp: true
+  network: ws
+  ws-opts:
+    path: /vless/?ed=2048
+  ping: 20
+  status: ok
+- name: vless-172.111.146.64-7840ec 3
+  type: vless
+  server: 172.111.146.64
+  port: 80
+  uuid: 904f8ffa-4652-4076-8f2f-e586807840ec
+  encryption: none
+  udp: true
+  network: ws
+  ws-opts:
+    path: /vless/
+  ping: 22
+  status: ok
+- name: vless-92.118.228.154-b1de0c
+  type: vless
+  server: 92.118.228.154
+  port: 443
+  uuid: 8250d638-45df-41fa-b06f-160d1cb1de0c
+  encryption: none
+  udp: true
+  network: ws
+  ws-opts:
+    path: /YnqGMcAt/
+    headers:
+      Host: abc.vpneee.top
+  tls: true
+  sni: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  ping: 23
+  status: ok
+- name: vless-vpn-srv-2.circlevpn.net-3b2910
+  type: vless
+  server: vpn-srv-2.circlevpn.net
+  port: 37096
+  uuid: c30ec165-fcb4-47af-8e68-70d88a3b2910
+  encryption: none
+  udp: true
+  network: tcp
+  tls: true
+  sni: vpn-srv-2.circlevpn.net
+  servername: vpn-srv-2.circlevpn.net
+  ping: 27
+  status: ok
+- name: ss-arxfw2b78fi2q9hzylhn.freesocks.work-443 2
+  type: ss
+  server: arxfw2b78fi2q9hzylhn.freesocks.work
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: Nk9asglDzHzjktVzTkvhaA
+  udp: true
+  ping: 26
+  status: ok
+- name: ss-switcher-nick-croquet.freesocks.work-443
+  type: ss
+  server: switcher-nick-croquet.freesocks.work
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: 9tqhMdIrTkgQ46PvhyAtMH
+  udp: true
+  ping: 12
+  status: ok
+- name: vless-kifpool.me-2aa63f
+  type: vless
+  server: kifpool.me
+  port: 443
+  uuid: b754b53a-aaf5-475c-eeed-46806c2aa63f
+  encryption: none
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: nkang2replace.airlineshoma.com
+  tls: true
+  sni: nkang2replace.airlineshoma.com
+  servername: nkang2replace.airlineshoma.com
+  ping: 13
+  status: ok
+- name: vless-ovhwuxian.pai50288.uk-a805b8
+  type: vless
+  server: ovhwuxian.pai50288.uk
+  port: 8443
+  uuid: 57ba2ab1-a283-42eb-82ee-dc3561a805b8
+  encryption: none
+  udp: true
+  network: ws
+  ws-opts:
+    path: /57ba2ab1
+    headers:
+      Host: ovhwuxian.pai50288.uk
+  tls: true
+  sni: ovhwuxian.pai50288.uk
+  servername: ovhwuxian.pai50288.uk
+  ping: 10
+  status: ok
+proxy-groups:
+- name: 📌سریع ترین📌
+  type: select
+  proxies: &id001
+  - ss-92.112.126.90-443 3
+  - vmess-57.129.25.22-75d581 2
+  - ss-212.34.140.184-443
+  - ss-134.255.210.49-990
+  - vless-104.21.3.219-a805b8
+  - ss-92.112.126.90-443
+  - vless-172.67.153.156-a805b8
+  - vmess-172.111.146.64-679f6a
+  - vmess-57.129.25.22-75d581
+  - ss-160.19.78.75-443
+  - ss-92.112.126.90-443 2
+  - vless-5.253.41.237-7607d9
+  - ss-92.112.126.90-443 4
+  - ss-promo1o.bystrivpn.ru-443
+  - vless-172.111.146.64-7840ec
+  - ss-arxfw2b78fi2q9hzylhn.freesocks.work-443
+  - ss-160.19.78.75-443 2
+  - vless-172.111.146.64-7840ec 2
+  - vless-thailandnet65.ir-3f33bb
+  - vless-5.253.41.223-154419
+  - vless-172.111.146.64-7840ec 3
+  - vless-92.118.228.154-b1de0c
+  - vless-vpn-srv-2.circlevpn.net-3b2910
+  - ss-arxfw2b78fi2q9hzylhn.freesocks.work-443 2
+  - ss-switcher-nick-croquet.freesocks.work-443
+  - vless-kifpool.me-2aa63f
+  - vless-ovhwuxian.pai50288.uk-a805b8
+- name: 🔗🚀T🚀🔗
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 125
+  tolerance: 10
+  proxies: *id001
+- name: ✏️🎀T1🎀✏️
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 95
+  tolerance: 20
+  proxies: *id001
+- name: 🌐🎯T2🎯🌐
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 85
+  tolerance: 30
+  proxies: *id001
+- name: 🌟 🔆T3🔆🌟
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 75
+  tolerance: 40
+  proxies: *id001
+- name: 🌟🌟T4🌟🌟
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 65
+  tolerance: 50
+  proxies: *id001
+- name: 🪄♂️T5♂️🪄
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 55
+  tolerance: 60
+  proxies: *id001
+- name: 💦♨️T6♨️💦
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 45
+  tolerance: 70
+  proxies: *id001
+- name: 🔆🧩T7🧩🔆
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 35
+  tolerance: 80
+  proxies: *id001
+- name: 🪄♂️T18♂️🪄
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 25
+  tolerance: 90
+  proxies: *id001
+- name: 💦♨️T9♨️💦
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 15
+  tolerance: 100
+  proxies: *id001
+- name: 🔆🧩T10🧩🔆
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 5
+  tolerance: 110
+  proxies: *id001
+- name: ♨️اتوماتیک♨️
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 25
+  tolerance: 50
+  proxies:
+  - ss-134.255.210.49-990
+  - ss-arxfw2b78fi2q9hzylhn.freesocks.work-443
+  - ss-switcher-nick-croquet.freesocks.work-443
+  - ss-92.112.126.90-443
+  - ss-promo1o.bystrivpn.ru-443
+  - ss-92.112.126.90-443 2
+  - ss-212.34.140.184-443
+  - ss-92.112.126.90-443 3
+  - vmess-172.111.146.64-679f6a
+  - ss-160.19.78.75-443
+  - ss-92.112.126.90-443 4
+  - vmess-57.129.25.22-75d581
+  - vless-thailandnet65.ir-3f33bb
+  - vmess-57.129.25.22-75d581 2
+  - vless-104.21.3.219-a805b8
+  - vless-172.67.153.156-a805b8
+  - vless-5.253.41.237-7607d9
+  - vless-172.111.146.64-7840ec
+  - ss-160.19.78.75-443 2
+  - ss-arxfw2b78fi2q9hzylhn.freesocks.work-443 2
+  - vless-ovhwuxian.pai50288.uk-a805b8
+  - vless-5.253.41.223-154419
+  - vless-kifpool.me-2aa63f
+  - vless-vpn-srv-2.circlevpn.net-3b2910
+  - vless-172.111.146.64-7840ec 2
+  - vless-172.111.146.64-7840ec 3
+  - vless-92.118.228.154-b1de0c
+- name: 🌐انتخاب دستی🌐
+  type: select
+  proxies:
+  - ss-134.255.210.49-990
+  - ss-arxfw2b78fi2q9hzylhn.freesocks.work-443
+  - ss-switcher-nick-croquet.freesocks.work-443
+  - ss-92.112.126.90-443
+  - ss-promo1o.bystrivpn.ru-443
+  - ss-92.112.126.90-443 2
+  - ss-212.34.140.184-443
+  - ss-92.112.126.90-443 3
+  - vmess-172.111.146.64-679f6a
+  - ss-160.19.78.75-443
+  - ss-92.112.126.90-443 4
+  - vmess-57.129.25.22-75d581
+  - vless-thailandnet65.ir-3f33bb
+  - vmess-57.129.25.22-75d581 2
+  - vless-104.21.3.219-a805b8
+  - vless-172.67.153.156-a805b8
+  - vless-5.253.41.237-7607d9
+  - vless-172.111.146.64-7840ec
+  - ss-160.19.78.75-443 2
+  - ss-arxfw2b78fi2q9hzylhn.freesocks.work-443 2
+  - vless-ovhwuxian.pai50288.uk-a805b8
+  - vless-5.253.41.223-154419
+  - vless-kifpool.me-2aa63f
+  - vless-vpn-srv-2.circlevpn.net-3b2910
+  - vless-172.111.146.64-7840ec 2
+  - vless-172.111.146.64-7840ec 3
+  - vless-92.118.228.154-b1de0c
+- name: ♂️فالبک♂️
+  type: select
+  proxies:
+  - REJECT
+  - DIRECT
+rules:
+- MATCH,♨️اتوماتیک♨️
+- MATCH,🌐انتخاب دستی🌐
