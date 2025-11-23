@@ -1,19 +1,21 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-import time
+import os
 import json
-import base64
-import urllib.request
-import subprocess
-import platform
 import threading
-import re
+import time
+import requests
+import base64
+import urllib.parse
+import socket
+from typing import List
 
-TEXT_NORMAL = "normal90.json"
-TEXT_FINAL = "final90.json"
+# ===================== تنظیمات =====================
+TEXT_PATH = "normal90.json"
+FIN_PATH = "final90.json"
 
-LINKS_PATH = [
+LINK_PATH = [
     "https://raw.githubusercontent.com/tepo18/sab-vip10/main/final.json",
     "https://raw.githubusercontent.com/tepo18/sab-vip10/main/final2.json",
     "https://raw.githubusercontent.com/tepo18/sab-vip10/main/final4.json",
@@ -28,107 +30,148 @@ LINKS_PATH = [
     "https://raw.githubusercontent.com/tepo98/kv98/main/final.json"
 ]
 
-MAX_THREADS = 20
-MAX_PING_MS = 1200
+FILE_HEADER_TEXT = "//profile-title: base64:2YfZhduM2LTZhyDZgdi52KfZhCDwn5iO8J+YjvCfmI4gaGFtZWRwNzE="
 
-def fetch_lines(url):
+# ===================== توابع =====================
+
+def fetch_link(url: str) -> List[str]:
+    """دریافت خطوط از یک لینک"""
     try:
-        with urllib.request.urlopen(url, timeout=20) as resp:
-            lines = resp.read().decode(errors="ignore").splitlines()
-            return [line.strip() for line in lines if line.strip()]
+        time.sleep(0.5)  # جلوگیری از اسپم درخواست‌ها
+        r = requests.get(url, timeout=15)
+        if r.status_code == 200:
+            lines = r.text.splitlines()
+            return [l.strip() for l in lines if l.strip()]
+        else:
+            print(f"[⚠️] {url} returned status {r.status_code}")
     except Exception as e:
-        print(f"[ERROR] Cannot fetch {url}: {e}")
-        return []
+        print(f"[⚠️] Cannot fetch {url}: {e}")
+    return []
 
-def unique_lines(lines):
-    seen = set()
-    result = []
-    for line in lines:
-        if line not in seen:
-            result.append(line)
-            seen.add(line)
-    return result
 
-def ping(host, count=1, timeout=1):
-    param_count = "-n" if platform.system().lower() == "windows" else "-c"
-    param_timeout = "-w" if platform.system().lower() == "windows" else "-W"
+def is_valid_config(line: str) -> bool:
+    """بررسی اولیه اعتبار کانفیگ"""
+    line = line.strip()
+    if not line or len(line) < 5:
+        return False
+    lower = line.lower()
+    if "pin=0" in lower or "pin=red" in lower or "pin=قرمز" in lower:
+        return False
+    return True
+
+
+def parse_config_line(line: str):
+    """تجزیه خط برای شناسایی نوع پروتکل"""
     try:
-        cmd = ["ping", param_count, str(count), param_timeout, str(timeout), host]
-        result = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
-        output = result.stdout
-        match = re.search(r'time[=<]\s*(\d+\.?\d*)', output)
-        if match:
-            return float(match.group(1))
+        line = urllib.parse.unquote(line.strip())
+        for p in ["vmess", "vless", "trojan", "hy2", "hysteria2", "ss", "socks", "wireguard"]:
+            if line.startswith(p + "://"):
+                return line
     except:
         pass
-    return float('inf')
+    return None
 
-def extract_address(config_line):
+
+def tcp_test(host: str, port: int, timeout=3) -> bool:
+    """تست TCP برای بررسی پورت و اتصال"""
     try:
-        if config_line.startswith("vmess://"):
-            encoded = config_line.split("://", 1)[1].split("#")[0]
-            missing_padding = len(encoded) % 4
-            if missing_padding:
-                encoded += "=" * (4 - missing_padding)
-            data = json.loads(base64.b64decode(encoded).decode('utf-8', errors="ignore"))
-            host = data.get("add") or data.get("address")
-            port = int(data.get("port", 443))
-            return host, port
-        elif config_line.startswith("vless://") or config_line.startswith("trojan://"):
-            match = re.match(r'^[^:]+://[^@]+@([^:]+):(\d+)', config_line)
-            if match:
-                return match.group(1), int(match.group(2))
-        elif config_line.startswith("hy2://") or config_line.startswith("hysteria2://"):
-            match = re.match(r'^[^:]+://([^:]+):(\d+)', config_line)
-            if match:
-                return match.group(1), int(match.group(2))
+        with socket.create_connection((host, port), timeout=timeout):
+            return True
     except:
-        pass
-    return None, None
+        return False
 
-def process_ping(configs):
-    results = []
+
+def process_configs(lines: List[str], precise_test=False) -> List[str]:
+    """پردازش کانفیگ‌ها با فیلتر و تست شبکه"""
+    valid_configs = []
     lock = threading.Lock()
+
+    def worker(line):
+        cfg = parse_config_line(line)
+        passed = False
+
+        if cfg:
+            try:
+                import re
+                m = re.search(r"@([^:]+):(\d+)", cfg)
+                host, port = (m.group(1), int(m.group(2))) if m else ("", 443)
+
+                if precise_test and host:
+                    passed = tcp_test(host, port)
+                else:
+                    passed = True
+            except:
+                passed = False
+
+        if passed and is_valid_config(line):
+            with lock:
+                valid_configs.append(line)
+
     threads = []
-    def worker(cfg_line):
-        host, port = extract_address(cfg_line)
-        if host:
-            ping_time = ping(host)
-            if ping_time < MAX_PING_MS:
-                with lock:
-                    results.append((cfg_line, ping_time))
-    for line in configs:
+    for line in lines:
         t = threading.Thread(target=worker, args=(line,))
         threads.append(t)
         t.start()
-        if len(threads) >= MAX_THREADS:
-            for th in threads: th.join()
-            threads = []
-    for t in threads: t.join()
-    results.sort(key=lambda x: x[1])
-    return [cfg for cfg, _ in results]
 
-def save_files(normal_lines, final_lines):
-    with open(TEXT_NORMAL, "w", encoding="utf-8") as f:
-        f.write("\n".join(normal_lines))
-    with open(TEXT_FINAL, "w", encoding="utf-8") as f:
-        f.write("\n".join(final_lines))
+    # جلوگیری از گیرکردن threadها
+    for t in threads:
+        t.join(timeout=10)
 
-def update_all():
-    print("[*] Fetching sources for cl90.py ...")
+    # حذف تکراری‌ها
+    final_list = list(dict.fromkeys(valid_configs))
+    return final_list
+
+
+def save_outputs(lines: List[str]):
+    """ذخیره نهایی فایل‌ها"""
+    try:
+        if not lines:
+            print("[❌] No valid lines to save.")
+            return
+
+        # مرحله ۱: نرمال
+        normal_lines = lines
+        with open(TEXT_PATH, "w", encoding="utf-8") as f:
+            f.write("\n".join([FILE_HEADER_TEXT] + normal_lines))
+        print(f"[ℹ️] Stage 1: {len(normal_lines)} configs saved to {TEXT_PATH}")
+
+        # مرحله ۲: فینال با تست دقیق
+        final_lines = process_configs(normal_lines, precise_test=True)
+        with open(FIN_PATH, "w", encoding="utf-8") as f:
+            f.write("\n".join(final_lines))
+        print(f"[ℹ️] Stage 2: {len(final_lines)} configs saved to {FIN_PATH}")
+
+        print(f"[✅] Update complete. Total sources: {len(lines)}")
+        print(f"  -> Normal90 configs: {len(normal_lines)}")
+        print(f"  -> Final90 configs: {len(final_lines)}")
+
+    except Exception as e:
+        print(f"[❌] Error saving files: {e}")
+
+
+def update_subs():
+    """دریافت و پردازش منابع"""
     all_lines = []
-    for link in LINKS_PATH:
-        all_lines.extend(fetch_lines(link))
-    print(f"[*] Total lines fetched: {len(all_lines)}")
-    all_lines = unique_lines(all_lines)
-    print("[*] Stage 1: First ping check...")
-    normal_lines = process_ping(all_lines)
-    print(f"[INFO] Saved {len(normal_lines)} configs to {TEXT_NORMAL}")
-    print("[*] Stage 2: Detailed ping check...")
-    final_lines = process_ping(normal_lines)
-    print(f"[INFO] Saved {len(final_lines)} configs to {TEXT_FINAL}")
-    save_files(normal_lines, final_lines)
-    print("[✅] cl90.py update complete.")
 
+    for url in LINK_PATH:
+        fetched = fetch_link(url)
+        if not fetched:
+            print(f"[⚠️] Cannot fetch or empty source: {url}")
+        else:
+            all_lines.extend(fetched)
+
+    print(f"[*] Total lines fetched from sources: {len(all_lines)}")
+    all_lines = process_configs(all_lines)
+
+    if not all_lines:
+        print("[❌] No valid configs fetched.")
+        return
+
+    save_outputs(all_lines)
+
+
+# ===================== اجرای دستی =====================
 if __name__ == "__main__":
-    update_all()
+    print("[*] Starting manual subscription update...")
+    update_subs()
+    print("[*] Done. Run this script manually whenever needed.")
