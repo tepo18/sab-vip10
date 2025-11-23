@@ -16,7 +16,15 @@ TEXT_PATH = "normal20.txt"
 FIN_PATH = "final20.txt"
 
 LINK_PATH = [
-    
+    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/shah.txt",
+    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/shah10.txt",
+    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/shah20.txt",
+    "https://raw.githubusercontent.com/parvinxs/Fssociety/main/Fssociety.sub",
+    "https://raw.githubusercontent.com/parvinxs/Submahsanetxsparvin/main/Sub.mahsa.xsparvin",
+    "https://raw.githubusercontent.com/arshiacomplus/v2rayExtractor/main/hy2.html",
+    "https://raw.githubusercontent.com/Surfboardv2ray/TGParse/main/python/hy2",
+    "https://raw.githubusercontent.com/tepo80/Trojan/main/hp.txt",
+    "https://raw.githubusercontent.com/hamedp-71/v2go_NEW/main/Splitted-By-Protocol/hy2.txt"
 ]
 
 FILE_HEADER_TEXT = "//profile-title: base64:2YfZhduM2LTZhyDZgdi52KfZhCDwn5iO8J+YjvCfmI4gaGFtZWRwNzE="
