@@ -3,7 +3,7 @@ name: Sub Checker CL90
 on:
   workflow_dispatch:
   schedule:
-    - cron: " */9 * * * *"   # اجرای cl90.py هر ۱ ساعت
+    - cron: "0 */9 * * *"   # اجرای cl90.py هر ۱ ساعت
 
 permissions:
   contents: write
