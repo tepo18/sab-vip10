@@ -1078,7 +1078,4 @@ hy2://dongtaiwang.com@195.154.206.231:33880/?insecure=1&sni=apple.com#%253E%253E
 hy2://9772ecf2-6732-4bfb-a8b1-f48af577c76c@113.192.61.19:63979/?insecure=1&sni=www.bing.com#%253E%253E%2540ShadowsocksM%3A%3AUS
 hysteria2://a084933d-0b41-4571-ae0c-7163b8c71ed1@de.eyucdn.xyz:2056?security=tls&insecure=1&sni=de.eyucdn.xyz#%253E%253E%2540FreakConfig%3A%3ADE
 hy2://a2678c97b8d79059@46.62.152.236:443/?insecure=1&obfs=salamander&obfs-password=9242a8bf#@NoForcedheaven
-hy2://de8854c7-fa17-4266-ae18-50a9732a0c4e@it1.1010991.xyz:3001?insecure=1&sni=it1.1010991.xyz#%E2%9D%94%20XX%20%7C%20%F0%9F%94%92%20HY2%20%7C%20%40msv2flyng%20%5B2%5D
-hy2://a16d62f6-048d-11f0-af5a-f23c93136cb3@b9c3912b-t07z40-t1l1nh-d6ar.la.shifen.uk:1743?sni=b9c3912b-t07z40-t1l1nh-d6ar.la.shifen.uk#%F0%9F%87%BA%F0%9F%87%B8%20US%20%7C%20%F0%9F%94%92%20HY2%20%7C%20%40msv2flyng%20%5B3%5D
-hy2://d5488371-4d89-4699-890f-7abeb28c4076@hsmg.huasuan666.top:22151?insecure=1&sni=hsmg.huasuan666.top#%F0%9F%87%BA%F0%9F%87%B8%20US%20%7C%20%F0%9F%94%92%20HY2%20%7C%20%40msv2flyng%20%5B5%5D
 hy2://Yet-Another-Public-Config-1@yapc-1.adamhayward.co.uk:35200?obfs=salamander&obfs-password=Yet-Another-Public-Config-1&sni=YAPC-1.afshin.ir#%F0%9F%87%B3%F0%9F%87%B1%20NL%20%7C%20%F0%9F%94%92%20HY2%20%7C%20%40v2ray_collector%20%5B9%5D
