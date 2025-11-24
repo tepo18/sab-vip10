@@ -1068,14 +1068,12 @@ vless://e60c6be1-42cc-472e-b35d-6568fe8a49b2@104.17.147.22:2096?path=%2F&securit
 vless://2bd6f1bd-378e-40ad-8981-229800f1340e@norman.ns.cloudflare.com:443?path=%2Fljrnxaws&security=tls&encryption=none&type=ws&sni=638990351320529492.prius-amshz.info#@proxy_kafee
 vless://40d7798a-6c76-4298-a9d4-9e6181cd2dd7@nld26.luckernld.org:443?security=reality&encryption=none&pbk=BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs&headerType=none&fp=chrome&spx=%2F&type=tcp&flow=xtls-rprx-vision&sni=www.cybo.com#@proxy_kafee
 vless://1edafc20-cffb-4921-bb2b-f00ce9864c5c@45.88.183.157:23803?security=&encryption=none&headerType=none&type=tcp#@proxy_kafee
-hysteria2://16955d72-1794-11f0-a035-f23c95b6f51d@107.167.18.123:1743?security=tls&insecure=0&sni=fecc1dc4-t4v9c0-t5ht86-dnss.la.shifen.uk#%253E%253E%2540FreakConfig%3A%3AUS
-hy2://dongtaiwang.com@208.87.243.187:22222/?insecure=1&sni=%F0%9F%94%92#%253E%253E%2540oneclickvpnkeys%3A%3AUS
 hy2://17cdeb6c-f046-11ee-bdac-f23c93141fad@c37b0be5n-t3kyo0-t3lvgh-2gok.la.shifen.uk:1743/?sni=c37b0be5-t3kyo0-t3lvgh-2gok.la.shifen.uk#%253E%253E%2540ShadowsocksM%3A%3AUS
+hysteria2://16955d72-1794-11f0-a035-f23c95b6f51d@107.167.18.123:1743?security=tls&insecure=0&sni=fecc1dc4-t4v9c0-t5ht86-dnss.la.shifen.uk#%253E%253E%2540FreakConfig%3A%3AUS
 hysteria2://17cdeb6c-f046-11ee-bdac-f23c93141fad@6adab57e-t53wg0-tdvgqe-2gok.la.shifen.uk:1743?security=tls&insecure=0&sni=6adab57e-t53wg0-tdvgqe-2gok.la.shifen.uk#%253E%253E%2540FreakConfig%3A%3AUS
-hy2://a084933d-0b41-4571-ae0c-7163b8c71ed1@de.eyucdn.xyz:2056/?insecure=1&sni=de.eyucdn.xyz#%253E%253E%2540ShadowsocksM%3A%3ADE
+hy2://dongtaiwang.com@208.87.243.187:22222/?insecure=1&sni=%F0%9F%94%92#%253E%253E%2540oneclickvpnkeys%3A%3AUS
 hy2://dongtaiwang.com@163.172.21.105:5355/?insecure=1&sni=www.bing.com#%253E%253E%2540oneclickvpnkeys%3A%3AFR
-hy2://dongtaiwang.com@195.154.206.231:33880/?insecure=1&sni=apple.com#%253E%253E%2540oneclickvpnkeys%3A%3AFR
 hy2://9772ecf2-6732-4bfb-a8b1-f48af577c76c@113.192.61.19:63979/?insecure=1&sni=www.bing.com#%253E%253E%2540ShadowsocksM%3A%3AUS
-hysteria2://a084933d-0b41-4571-ae0c-7163b8c71ed1@de.eyucdn.xyz:2056?security=tls&insecure=1&sni=de.eyucdn.xyz#%253E%253E%2540FreakConfig%3A%3ADE
+hy2://dongtaiwang.com@195.154.206.231:33880/?insecure=1&sni=apple.com#%253E%253E%2540oneclickvpnkeys%3A%3AFR
 hy2://a2678c97b8d79059@46.62.152.236:443/?insecure=1&obfs=salamander&obfs-password=9242a8bf#@NoForcedheaven
 hy2://Yet-Another-Public-Config-1@yapc-1.adamhayward.co.uk:35200?obfs=salamander&obfs-password=Yet-Another-Public-Config-1&sni=YAPC-1.afshin.ir#%F0%9F%87%B3%F0%9F%87%B1%20NL%20%7C%20%F0%9F%94%92%20HY2%20%7C%20%40v2ray_collector%20%5B9%5D
