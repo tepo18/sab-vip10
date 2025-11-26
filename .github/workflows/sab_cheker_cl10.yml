@@ -31,10 +31,10 @@ jobs:
           pip install requests PyYAML || echo "skip install"
 
       # 4) اجرای cl90.py
-      - name: Run cl90.py
+      - name: Run cl10.py
         run: |
-          echo "[*] Running cl90.py..."
-          python cl90.py || echo "❌ cl90.py failed"
+          echo "[*] Running cl10.py..."
+          python cl10.py || echo "❌ cl10.py failed"
 
       # 5) Commit و Push خروجی‌ها
       - name: Commit and push results
