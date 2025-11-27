@@ -1094,6 +1094,11 @@ hysteria2://da9adc6f-03ca-4d32-9e93-7b2bdbc9b00d@my.xn--gmq00sc0nuve.shop:21812?
 hy2://da9adc6f-03ca-4d32-9e93-7b2bdbc9b00d@jp.xn--gmq00sc0nuve.shop:21917/#%253E%253E%2540oneclickvpnkeys%3A%3AJP
 hy2://da9adc6f-03ca-4d32-9e93-7b2bdbc9b00d@tr.xn--gmq00sc0nuve.shop:21105/#%253E%253E%2540oneclickvpnkeys%3A%3ATR
 hysteria2://da9adc6f-03ca-4d32-9e93-7b2bdbc9b00d@tr.xn--gmq00sc0nuve.shop:21105?security=tls&insecure=0#%253E%253E%2540configV2rayNG%3A%3ATR
+hy2://331cae90-f7e9-11ed-b4e2-f23c913c8d2b@bb06bea8-t6e740-tb3p3s-lj7z.hk1.hyhuawei.com:443/?mport=30000-60000&sni=bb06bea8-t6e740-tb3p3s-lj7z.hk1.hyhuawei.com#👉🆔@v2ray_configs_pool📡🇭🇰®️Hong Kong©️Central🅿️ping:113ms
+hy2://537d7098-fdbe-11ef-8ebc-f23c93141fad@eca509d2-t56dc0-tcjtj6-d70y.la.shifen.uk:443/?mport=20000-50000&sni=eca509d2-t56dc0-tcjtj6-d70y.la.shifen.uk#👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Los Angeles (Downtown Los Angeles)🅿️ping:116ms
+hy2://7a2512b4-09ee-11f0-8d46-f23c9313b177@8b56a93d-t58800-tcm6ys-deip.la.shifen.uk:443/?mport=20000-50000&sni=8b56a93d-t58800-tcm6ys-deip.la.shifen.uk#👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Los Angeles (Downtown Los Angeles)🅿️ping:115ms
+hy2://Telegram-->@Ln2Ray@206.71.158.23:45000/?insecure=1&sni=gavazn.55994421.xyz&obfs=salamander&obfs-password=Telegram-->@Ln2Ray#👉🆔@v2ray_configs_pool📡🇳🇱®️The Netherlands©️Amsterdam🅿️ping:169ms
+hy2://Yet-Another-Public-Config-1@206.71.158.37:35000/?insecure=1&sni=YAPC-1.afshin.ir&obfs=salamander&obfs-password=Yet-Another-Public-Config-1#👉🆔@v2ray_configs_pool📡🇳🇱®️The Netherlands©️Amsterdam🅿️ping:174ms
 hy2://a2678c97b8d79059@46.62.152.236:443/?insecure=1&obfs=salamander&obfs-password=9242a8bf#@NoForcedheaven
 hy2://Telegram--%3E%40Ln2Ray@206.71.158.23:45000/?insecure=1&sni=gavazn.55994421.xyz&obfs=salamander&obfs-password=Telegram--%3E%40Ln2Ray#%F0%9F%87%B3%F0%9F%87%B1%40FREE2CONFIG%20%20
 hy2://Yet-Another-Public-Config-1@206.71.158.37:35000/?insecure=1&sni=YAPC-1.afshin.ir&obfs=salamander&obfs-password=Yet-Another-Public-Config-1#%F0%9F%87%B3%F0%9F%87%B1%40FREE2CONFIG%20%20
