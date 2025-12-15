@@ -1227,10 +1227,12 @@ vless://1b2c91ab-f6c9-42f8-b2c6-8de0ac133d63@108.162.194.176:443?encryption=none
 vless://febbc960-a868-4e9a-a93b-aa52308b1452@trt.fastlynew.hosting-ip.com:80?encryption=none&security=none&type=xhttp&host=maxpl165.global.ssl.fastly.net&path=%2F%3Fed%3D2560&mode=auto#%40Daily_Configs
 vless://1b2c91ab-f6c9-42f8-b2c6-8de0ac133d63@brenna.ns.cloudflare.com:443?encryption=none&security=tls&sni=terazhedi.info&insecure=0&allowInsecure=0&type=ws&host=terazhedi.info&path=%2Fsghiyws#%40Daily_Configs
 vless://7ac65633-fc3c-4a97-b010-421816210b0b@64.188.115.181:26968?encryption=none&security=reality&sni=stackoverflow.com&fp=firefox&pbk=EgoxLYZ4OrrYTBL_WzWNkY-W3w2P9aEXRkyMp6sjqD8&sid=04&type=tcp&headerType=none#%40Daily_Configs
-hy2://dongtaiwang.com@163.172.21.105:5355/?insecure=1&sni=www.bing.com#%3E%3E%40oneclickvpnkeys%3A%3AXX
-hy2://dongtaiwang.com@51.159.111.32:5355/?insecure=1&sni=www.bing.com#%3E%3E%40oneclickvpnkeys%3A%3AXX
-hy2://dongtaiwang.com@208.87.243.187:22222/?insecure=1&sni=www.bing.com#%3E%3E%40oneclickvpnkeys%3A%3AUS
 hy2://17cdeb6c-f046-11ee-bdac-f23c93141fad@c37b0be5n-t3kyo0-t3lvgh-2gok.la.shifen.uk:1743/?sni=c37b0be5-t3kyo0-t3lvgh-2gok.la.shifen.uk#%3E%3E%40ShadowsocksM%3A%3AUS
+hy2://dongtaiwang.com@208.87.243.187:22222/?insecure=1&sni=www.bing.com#%3E%3E%40oneclickvpnkeys%3A%3AUS
+hy2://dongtaiwang.com@51.159.111.32:5355/?insecure=1&sni=www.bing.com#%3E%3E%40oneclickvpnkeys%3A%3AFR
+hy2://dongtaiwang.com@163.172.21.105:5355/?insecure=1&sni=www.bing.com#%3E%3E%40oneclickvpnkeys%3A%3AFR
+hysteria2://dongtaiwang.com@51.159.111.32:5355?security=tls&insecure=1&sni=www.bing.com#%3E%3E%40V2rayNG3%3A%3AFR
+hy2://dongtaiwang.com@62.210.99.49:40088/?insecure=1&sni=apple.com#%3E%3E%40oneclickvpnkeys%3A%3AFR
 hy2://dongtaiwang.com@195.154.206.231:33880/?insecure=1&sni=apple.com#%3E%3E%40oneclickvpnkeys%3A%3AFR
 hy2://01537f15-1251-4345-a9fb-d152274bac2e@fr.axcc.top:7896/?insecure=1&obfs=salamander&obfs-password=ZDQxZDhjZDk4ZjAwYjIwNA==#⚙️19@oneclickvpnkeys
 hy2://16461a78-363c-457a-92f9-83b0a68edc37@de.eyucdn.xyz:2056/?insecure=1&sni=de.eyucdn.xyz#法兰克福
@@ -1243,7 +1245,6 @@ hy2://3C8h8X6kimbOX68joVe3kTERw@206.189.20.193:7197/?insecure=1&sni=bing.com#UK
 hy2://3hszBhqVsUhqOOFWJlev6k6Tkc@47.129.217.4:22509/?insecure=1&sni=bing.com#SG
 hy2://3hszBhqVsUhqOOFWJlev6k6Tkc@47.129.224.62:22509/?insecure=1&sni=bing.com#SG
 hy2://45b46edb-679b-4ea5-befd-88c05bb94f80@de.eyucdn.xyz:2056/?insecure=1&sni=de.eyucdn.xyz#FR
-hy2://51362ab6-b5e6-11ea-ad28-f23c913c8d2b@1bb8296b-t75z40-tnkuks-wujn.hk2.hyhuawei.com:443/?mport=30000-60000&insecure=1#💠84@oneclickvpnkeys
 hy2://5OiuCsPmULZ0lJwts89fegLJE@47.129.100.149:17193/?insecure=1&sni=bing.com#SG
 hy2://5OiuCsPmULZ0lJwts89fegLJE@52.221.210.182:17193/?insecure=1&sni=bing.com#SG
 hy2://78c2bad7-f5f3-41f2-88cc-81de9d05040b@cc1.mangshe.xyz:2056/?insecure=1&sni=cc1.mangshe.xyz#KR
@@ -1273,7 +1274,6 @@ hy2://a084933d-0b41-4571-ae0c-7163b8c71ed1@de.eyucdn.xyz:2056/?insecure=1&sni=de
 hy2://a305ac08-d136-11ee-b6db-f23c91cfbbc9@ffc60249-t53wg0-t92wi1-1qkeg.hk2.hyhuawei.com:443/?sni=ffc60249-t53wg0-t92wi1-1qkeg.hk2.hyhuawei.com#🇭🇰 HK
 hy2://a52663f7-bd8e-4553-a5de-ff6403a0ccfc@192.9.165.40:443/?mport=51000-53000&insecure=1&sni=cn.cremedelamer.com#🇦🇺澳大利亚
 hy2://b4bd0613-ff7c-4f2f-954d-185915e6ddad@206.71.158.40:35000/?insecure=1&sni=api.kermanshahi.org&obfs=salamander&obfs-password=@JavidnamanIran-Javid-SHAH-KingRezaPahlavi&note=@freeOnlineVPN#🇳🇱 - NL - @freeOnlineVPN
-hy2://b4bd0613-ff7c-4f2f-954d-185915e6ddad@206.71.158.41:35000/?insecure=1&sni=api.kermanshahi.org&obfs=salamander&obfs-password=@JavidnamanIran-Javid-SHAH-KingRezaPahlavi#⚛️10@oneclickvpnkeys
 hy2://b4bd0613-ff7c-4f2f-954d-185915e6ddad@206.71.158.41:35000/?insecure=1&sni=api.kermanshahi.org&obfs=salamander&obfs-password=@JavidnamanIran-Javid-SHAH-KingRezaPahlavi&note=@freeOnlineVPN#🇳🇱 - NL - @freeOnlineVPN
 hy2://b4bd0613-ff7c-4f2f-954d-185915e6ddad@77.90.41.197:35000/?insecure=1&sni=api.kermanshahi.org&obfs=salamander&obfs-password=@JavidnamanIran-Javid-SHAH-KingRezaPahlavi&note=@freeOnlineVPN#🇩🇪 - DE - @freeOnlineVPN
 hy2://b4bd0613-ff7c-4f2f-954d-185915e6ddad@77.90.41.197:35000/?insecure=1&sni=jnir.pichondan.com&obfs=salamander&obfs-password=@JavidnamanIran-Javid-SHAH-KingRezaPahlavi&note=@freeOnlineVPN#🇩🇪 - DE - @freeOnlineVPN
