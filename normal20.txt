@@ -1261,8 +1261,9 @@ ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpMUXlBVUl0YWZVbW1PM0VaWng5VWJpWDZJR3lkU0JnTA@
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpwNzhuYUNmMkVmT2xSU0xUWDB3RlZ4@71.19.148.143:443#Channel%20id%3A%20%40@proxy_kafee%20%F0%9F%87%BA%F0%9F%87%B8
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBeXlhUGpuS0Z0SjZNU2RVR0cwcFdu@138.124.67.26:443#Channel%20id%3A%20%40@proxy_kafee%20%F0%9F%87%BA%F0%9F%87%A6
 hy2://dongtaiwang.com@208.87.243.187:22222/?insecure=1&sni=www.bing.com#%3E%3E%40oneclickvpnkeys%3A%3AUS
+hysteria2://6286105c-fb6d-11ef-be96-f23c93136cb3@227fd503-t4ssg0-t5vo4i-4550.la.shifen.uk:1743?security=tls&sni=227fd503-t4ssg0-t5vo4i-4550.la.shifen.uk&allowInsecure=true#%3E%3E%40ShadowsocksM%3A%3AUS
 hy2://17cdeb6c-f046-11ee-bdac-f23c93141fad@c37b0be5n-t3kyo0-t3lvgh-2gok.la.shifen.uk:1743/?sni=c37b0be5-t3kyo0-t3lvgh-2gok.la.shifen.uk#%3E%3E%40ShadowsocksM%3A%3AUS
-hy2://dongtaiwang.com@195.154.206.231:33880/?insecure=1&sni=apple.com#%3E%3E%40oneclickvpnkeys%3A%3AFR
+hysteria2://17cdeb6c-f046-11ee-bdac-f23c93141fad@c37b0be5n-t3kyo0-t3lvgh-2gok.la.shifen.uk:1743?security=tls&sni=c37b0be5-t3kyo0-t3lvgh-2gok.la.shifen.uk#%3E%3E%40ShadowsocksM%3A%3AUS
 hy2://dongtaiwang.com@62.210.99.49:40088/?insecure=1&sni=apple.com#%3E%3E%40oneclickvpnkeys%3A%3AFR
 hy2://274691f9-e6c0-46ff-82f2-3a9062872a04@it1.miyazono-kaori.com:443/?mport=40000-50000&insecure=1&sni=it1.miyazono-kaori.com&obfs=salamander&obfs-password=GyiIHT0mOkKCiq0Q#🎨4@oneclickvpnkeys
 hy2://693a3ce6-2188-4fe9-82c0-c5c289532534@hl.dabache.top:20000/#🎨2@oneclickvpnkeys
