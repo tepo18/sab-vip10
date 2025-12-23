@@ -1261,9 +1261,12 @@ ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpMUXlBVUl0YWZVbW1PM0VaWng5VWJpWDZJR3lkU0JnTA@
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpwNzhuYUNmMkVmT2xSU0xUWDB3RlZ4@71.19.148.143:443#Channel%20id%3A%20%40@proxy_kafee%20%F0%9F%87%BA%F0%9F%87%B8
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBeXlhUGpuS0Z0SjZNU2RVR0cwcFdu@138.124.67.26:443#Channel%20id%3A%20%40@proxy_kafee%20%F0%9F%87%BA%F0%9F%87%A6
 hy2://dongtaiwang.com@208.87.243.187:22222/?insecure=1&sni=www.bing.com#%3E%3E%40oneclickvpnkeys%3A%3AUS
-hysteria2://6286105c-fb6d-11ef-be96-f23c93136cb3@227fd503-t4ssg0-t5vo4i-4550.la.shifen.uk:1743?security=tls&sni=227fd503-t4ssg0-t5vo4i-4550.la.shifen.uk&allowInsecure=true#%3E%3E%40ShadowsocksM%3A%3AUS
 hy2://17cdeb6c-f046-11ee-bdac-f23c93141fad@c37b0be5n-t3kyo0-t3lvgh-2gok.la.shifen.uk:1743/?sni=c37b0be5-t3kyo0-t3lvgh-2gok.la.shifen.uk#%3E%3E%40ShadowsocksM%3A%3AUS
+hysteria2://6286105c-fb6d-11ef-be96-f23c93136cb3@227fd503-t4ssg0-t5vo4i-4550.la.shifen.uk:1743?security=tls&sni=227fd503-t4ssg0-t5vo4i-4550.la.shifen.uk&allowInsecure=true#%3E%3E%40ShadowsocksM%3A%3AUS
+hy2://9ad05870-d8c5-11ef-9f1c-f23c913c8d2b@974e2823-t6ngg0-t7j1ub-g3b3.us.hyhuawei.com:443/?mport=30000-60000&insecure=1#%3E%3E%40oneclickvpnkeys%3A%3AUS
 hysteria2://17cdeb6c-f046-11ee-bdac-f23c93141fad@c37b0be5n-t3kyo0-t3lvgh-2gok.la.shifen.uk:1743?security=tls&sni=c37b0be5-t3kyo0-t3lvgh-2gok.la.shifen.uk#%3E%3E%40ShadowsocksM%3A%3AUS
+hy2://f02ee2b4-d760-11ec-bd7c-f23c913c8d2b@4859e911-t6ngg0-t7hsj2-1gevg.us.hyhuawei.com:443/?mport=30000-60000&insecure=1#%3E%3E%40oneclickvpnkeys%3A%3AUS
+hy2://989aa406-ea9b-11ef-97da-f23c91cfbbc9@41f54602-t6ngg0-t7m3jq-1rnrp.us.hyhuawei.com:443/?mport=30000-60000&insecure=1#%3E%3E%40oneclickvpnkeys%3A%3AUS
 hy2://dongtaiwang.com@62.210.99.49:40088/?insecure=1&sni=apple.com#%3E%3E%40oneclickvpnkeys%3A%3AFR
 hy2://36097cf0-8f15-4697-8825-b21e6ec9e551@185.181.10.186:443/?insecure=1&obfs=salamander&obfs-password=NDhhNmY5YTY0MGYzOTgxYQ==#❄️11@oneclickvpnkeys
 hy2://36097cf0-8f15-4697-8825-b21e6ec9e551@185.181.10.186:443/?insecure=1&obfs=salamander&obfs-password=NDhhNmY5YTY0MGYzOTgxYQ==&note=@freeOnlineVPN#🇩🇪 - DE - @freeOnlineVPN
@@ -1276,12 +1279,10 @@ hy2://9ad05870-d8c5-11ef-9f1c-f23c913c8d2b@974e2823-t6ngg0-t7j1ub-g3b3.us.hyhuaw
 hy2://Telegram-->@Ln2Ray@206.71.158.23:45000/?insecure=1&sni=gavazn.55994421.xyz&obfs=salamander&obfs-password=Telegram-->@Ln2Ray#❄️32@oneclickvpnkeys
 hy2://Telegram-->@Ln2Ray@[2a14:3f87:f001:9::a]:45000/?insecure=1&sni=gavazn.55994421.xyz&obfs=salamander&obfs-password=Telegram-->@Ln2Ray#🎲33@oneclickvpnkeys
 hy2://Yet-Another-Public-Config-1@206.71.158.37:35000/?insecure=1&sni=YAPC-1.afshin.ir&obfs=salamander&obfs-password=Yet-Another-Public-Config-1#📡19@oneclickvpnkeys
-hy2://Yet-Another-Public-Config-1@206.71.158.37:35000/?insecure=1&sni=YAPC-1.afshin.ir&obfs=salamander&obfs-password=Yet-Another-Public-Config-1&note=@freeOnlineVPN#🇳🇱 - NL - @freeOnlineVPN
 hy2://b4bd0613-ff7c-4f2f-954d-185915e6ddad@206.71.158.40:35000/?insecure=1&sni=api.kermanshahi.org&obfs=salamander&obfs-password=@JavidnamanIran-Javid-SHAH-KingRezaPahlavi&note=@freeOnlineVPN#🇳🇱 - NL - @freeOnlineVPN
 hy2://b4bd0613-ff7c-4f2f-954d-185915e6ddad@206.71.158.41:35000/?insecure=1&sni=api.kermanshahi.org&obfs=salamander&obfs-password=@JavidnamanIran-Javid-SHAH-KingRezaPahlavi#📡78@oneclickvpnkeys
 hy2://b4bd0613-ff7c-4f2f-954d-185915e6ddad@206.71.158.41:35000/?insecure=1&sni=api.kermanshahi.org&obfs=salamander&obfs-password=@JavidnamanIran-Javid-SHAH-KingRezaPahlavi&note=@freeOnlineVPN#🇳🇱 - NL - @freeOnlineVPN
 hy2://b4bd0613-ff7c-4f2f-954d-185915e6ddad@77.90.41.197:35000/?insecure=1&sni=api.kermanshahi.org&obfs=salamander&obfs-password=@JavidnamanIran-Javid-SHAH-KingRezaPahlavi#📡61@oneclickvpnkeys
-hy2://b4bd0613-ff7c-4f2f-954d-185915e6ddad@77.90.41.197:35000/?insecure=1&sni=api.kermanshahi.org&obfs=salamander&obfs-password=@JavidnamanIran-Javid-SHAH-KingRezaPahlavi&note=@freeOnlineVPN#🇩🇪 - DE - @freeOnlineVPN
 hy2://d18bcaf4-1323-11ec-a0fc-f23c913c8d2b@a6a24529-t6ngg0-t7fz1r-8rja.us.hyhuawei.com:443/?mport=30000-60000&insecure=1#🎄80@oneclickvpnkeys
 hy2://dongtaiwang.com@[2001:bc8:32d7:234::5]:40088/?insecure=1&sni=apple.com#🎄2@oneclickvpnkeys
 hy2://dongtaiwang.com@[2001:bc8:32d7:302::11]:20088/?insecure=1&sni=apple.com#🎲76@oneclickvpnkeys
