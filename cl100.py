@@ -12,8 +12,8 @@ import base64
 import json
 
 # ---------------- مسیر خروجی ----------------
-NORMAL_FILE = "Normal10.txt"  # فایل خروجی نهایی
-FINAL_FILE = "Final10.txt"    # فایل خروجی فینال
+NORMAL_FILE = "normal100.txt"  # فایل خروجی نهایی
+FINAL_FILE = "final100.txt"    # فایل خروجی فینال
 
 # ---------------- منابع ساب لینک ----------------
 LINKS_PATH = [
@@ -34,33 +34,26 @@ FILE_HEADER_TEXT = "//profile-title: base64:2YfZhduM2LTZhyDZgdi52KfZhCDwn5iO8J+Y
 def fetch_link(url: str) -> List[str]:
     """دریافت داده‌ها از لینک و نادیده گرفتن لینک‌های با مشکلات فرمت"""
     try:
-        # دریافت داده از لینک
         r = requests.get(url, timeout=15)
         
         if r.status_code == 200:
-            # تلاش برای تشخیص نوع محتوا
             content = r.text.strip()
 
             # بررسی اگر محتوای لینک JSON باشد
             try:
-                # اگر محتوا JSON است
                 json_data = json.loads(content)
-                # در صورتی که درست JSON باشه
                 return [l.strip() for l in json_data if l.strip()]
             except json.JSONDecodeError:
                 # اگر نتوانستیم به JSON تبدیل کنیم، بررسی کنیم که Base64 است یا نه
                 try:
-                    # تلاش برای دی‌کد Base64
-                    decoded = base64.b64decode(content)
+                    base64.b64decode(content)
                     return []  # لینک Base64 را رد می‌کنیم
                 except:
-                    # اگر نه، لینک را به‌طور معمول بررسی می‌کنیم
-                    return [content]
+                    return [content]  # در صورتی که لینک مشکل نداشت
         else:
             print(f"[⚠️] Failed to fetch {url}: Status Code {r.status_code}")
             return []
     except Exception as e:
-        # خطا را در صورت بروز به‌طور عمومی گزارش می‌دهیم و لینک را رد می‌کنیم
         print(f"[⚠️] Cannot fetch {url}: {e}")
         return []
 
@@ -135,7 +128,6 @@ def process_configs(lines: List[str], precise_test=False) -> List[str]:
 def save_outputs(lines: List[str]):
     """ذخیره خروجی‌ها به فایل‌ها"""
     try:
-        # ابتدا فایل‌ها را خالی می‌کنیم
         with open(NORMAL_FILE, "w", encoding="utf-8") as f:
             f.write("")
         with open(FINAL_FILE, "w", encoding="utf-8") as f:
