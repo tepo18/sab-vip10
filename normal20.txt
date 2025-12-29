@@ -1260,8 +1260,8 @@ ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpwbDJYdFIwcHp3a25RT0d3ZXdid1h0UFlEdzF6bjlWdQ@
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpMUXlBVUl0YWZVbW1PM0VaWng5VWJpWDZJR3lkU0JnTA@45.12.144.18:443#Channel%20id%3A%20%40@proxy_kafee%20%F0%9F%87%B1%F0%9F%87%BA
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpwNzhuYUNmMkVmT2xSU0xUWDB3RlZ4@71.19.148.143:443#Channel%20id%3A%20%40@proxy_kafee%20%F0%9F%87%BA%F0%9F%87%B8
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBeXlhUGpuS0Z0SjZNU2RVR0cwcFdu@138.124.67.26:443#Channel%20id%3A%20%40@proxy_kafee%20%F0%9F%87%BA%F0%9F%87%A6
-hysteria2://17cdeb6c-f046-11ee-bdac-f23c93141fad@c37b0be5n-t3kyo0-t3lvgh-2gok.la.shifen.uk:1743?security=tls&sni=c37b0be5-t3kyo0-t3lvgh-2gok.la.shifen.uk#%3E%3E%40ShadowsocksM%3A%3AUS
 hy2://dongtaiwang.com@208.87.243.187:22222/?insecure=1&sni=%F0%9F%94%92#%3E%3E%40oneclickvpnkeys%3A%3AUS
+hysteria2://17cdeb6c-f046-11ee-bdac-f23c93141fad@c37b0be5n-t3kyo0-t3lvgh-2gok.la.shifen.uk:1743?security=tls&sni=c37b0be5-t3kyo0-t3lvgh-2gok.la.shifen.uk#%3E%3E%40ShadowsocksM%3A%3AUS
 hy2://36097cf0-8f15-4697-8825-b21e6ec9e551@185.181.10.186:443/?insecure=1&obfs=salamander&obfs-password=NDhhNmY5YTY0MGYzOTgxYQ==&note=@freeOnlineVPN#🇩🇪 - DE - @freeOnlineVPN
 hy2://71504eaf-29ac-4190-89d1-dd9ce2c9ee14@[2001:bc8:1640:50eb:dc00:ff:fe57:dd6f]:443/?mport=50000-60000&insecure=1&sni=Ab.ac&obfs=salamander&obfs-password=FnFgQIckcMRtKq7i#🧊15@oneclickvpnkeys
 hy2://Telegram-->@Ln2Ray@206.71.158.23:45000/?insecure=1&sni=gavazn.55994421.xyz&obfs=salamander&obfs-password=Telegram-->@Ln2Ray#🟩21@oneclickvpnkeys
@@ -1277,6 +1277,20 @@ hy2://b4bd0613-ff7c-4f2f-954d-185915e6ddad@206.71.158.41:35000/?insecure=1&sni=a
 hy2://b4bd0613-ff7c-4f2f-954d-185915e6ddad@77.90.41.197:35000/?insecure=1&sni=api.kermanshahi.org&obfs=salamander&obfs-password=@JavidnamanIran-Javid-SHAH-KingRezaPahlavi#🟩19@oneclickvpnkeys
 hy2://bb780ec8-8c7b-4830-9902-880bdbbd4704@129.151.251.122:443/?mport=35000-39000&insecure=1&sni=www.lamer.com.hk#🧊40@oneclickvpnkeys
 hy2://bb780ec8-8c7b-4830-9902-880bdbbd4704@143.47.32.143:443/?mport=35000-39000&insecure=1&sni=www.lamer.com.hk#🧊49@oneclickvpnkeys
+hy2://d9812081-7f61-456d-9340-a1fb8dfd603b@129.151.115.91:443/?mport=50000-65535&insecure=1&sni=glby1.nezhasu.com#🌨️21@oneclickvpnkeys
+hy2://d9812081-7f61-456d-9340-a1fb8dfd603b@137.131.149.26:443/?mport=50000-65535&insecure=1&sni=bx1.nezhasu.com#🌨️23@oneclickvpnkeys
+hy2://d9812081-7f61-456d-9340-a1fb8dfd603b@140.238.247.224:443/?mport=50000-65535&insecure=1&sni=mumbai-2.nezhasu.com#🌨️14@oneclickvpnkeys
+hy2://d9812081-7f61-456d-9340-a1fb8dfd603b@141.148.246.181:443/?mport=50000-65535&insecure=1&sni=amsterdam.nezhasu.com#🌨️22@oneclickvpnkeys
+hy2://d9812081-7f61-456d-9340-a1fb8dfd603b@144.24.181.150:443/?mport=50000-65535&insecure=1&sni=falankefu1.nezhasu.com#🌨️24@oneclickvpnkeys
+hy2://d9812081-7f61-456d-9340-a1fb8dfd603b@145.241.187.70:443/?mport=50000-65535&insecure=1&sni=johannesburg-2.nezhasu.com#🌨️18@oneclickvpnkeys
+hy2://d9812081-7f61-456d-9340-a1fb8dfd603b@152.67.50.33:443/?mport=50000-65535&insecure=1&sni=gysbl-2.nezhasu.com#🌨️25@oneclickvpnkeys
+hy2://d9812081-7f61-456d-9340-a1fb8dfd603b@161.153.219.158:443/?mport=50000-65535&insecure=1&sni=gysdyg-2.nezhasu.com#🌨️26@oneclickvpnkeys
+hy2://d9812081-7f61-456d-9340-a1fb8dfd603b@80.225.196.14:443/?mport=50000-65535&insecure=1&sni=mumbai-3.nezhasu.com#🌨️15@oneclickvpnkeys
+hy2://d9812081-7f61-456d-9340-a1fb8dfd603b@80.225.253.247:443/?mport=50000-65535&insecure=1&sni=mumbai-4.nezhasu.com#🌨️16@oneclickvpnkeys
+hy2://d9812081-7f61-456d-9340-a1fb8dfd603b@84.8.134.187:443/?mport=50000-65535&insecure=1&sni=johannesburg-3.nezhasu.com#🌨️19@oneclickvpnkeys
+hy2://d9812081-7f61-456d-9340-a1fb8dfd603b@84.8.134.242:443/?mport=50000-65535&insecure=1&sni=johannesburg-4.nezhasu.com#🌨️20@oneclickvpnkeys
+hy2://d9812081-7f61-456d-9340-a1fb8dfd603b@84.8.138.123:443/?mport=50000-65535&insecure=1&sni=johannesburg-1.nezhasu.com#🌨️17@oneclickvpnkeys
+hy2://d9812081-7f61-456d-9340-a1fb8dfd603b@89.168.80.242:443/?mport=50000-65535&insecure=1&sni=gydeguo-4.nezhasu.com#🌨️27@oneclickvpnkeys
 hy2://dongtaiwang.com@208.87.243.187:22222/?insecure=1&sni=🔒#🟩96@oneclickvpnkeys
 hy2://dongtaiwang.com@[2001:bc8:32d7:234::5]:40088/?insecure=1&sni=apple.com#🎄2@oneclickvpnkeys
 hy2://e6499c55-5a54-4a2b-a1f8-725a17b4ae85@85.209.53.170:80/?insecure=1&obfs=salamander&obfs-password=NDhhNmY5YTY0MGYzOTgxYQ==&note=@freeOnlineVPN#🇩🇪 - DE - @freeOnlineVPN
