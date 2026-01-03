@@ -1,14 +1,13 @@
 //profile-title: base64:2YfZhduM2LTZhyDZgdi52KfZhCDwn5iO8J+YjvCfmI4gaGFtZWRwNzE=
-hy2://Telegram-->@Ln2Ray@[2a14:3f87:f001:9::a]:45000/?insecure=1&sni=gavazn.55994421.xyz&obfs=salamander&obfs-password=Telegram-->@Ln2Ray#🎉52@oneclickvpnkeys
+hy2://71504eaf-29ac-4190-89d1-dd9ce2c9ee14@[2001:bc8:1640:50eb:dc00:ff:fe57:dd6f]:443/?mport=50000-60000&insecure=1&sni=Ab.ac&obfs=salamander&obfs-password=FnFgQIckcMRtKq7i#🛡️7@oneclickvpnkeys
 hy2://b4bd0613-ff7c-4f2f-954d-185915e6ddad@135.125.204.154:35000/?insecure=1&sni=api.kermanshahi.org&obfs=salamander&obfs-password=@JavidnamanIran-Javid-SHAH-KingRezaPahlavi#🚩36@oneclickvpnkeys
-hy2://b4bd0613-ff7c-4f2f-954d-185915e6ddad@[2a0c:4ac1:8::121]:35000/?insecure=1&sni=api.kermanshahi.org&obfs=salamander&obfs-password=@JavidnamanIran-Javid-SHAH-KingRezaPahlavi#🎉61@oneclickvpnkeys
-hy2://b4bd0613-ff7c-4f2f-954d-185915e6ddad@[2a14:3f87:f001:1a::a]:35000/?insecure=1&sni=api.kermanshahi.org&obfs=salamander&obfs-password=@JavidnamanIran-Javid-SHAH-KingRezaPahlavi#🎉36@oneclickvpnkeys
 hy2://b4bd0613-ff7c-4f2f-954d-185915e6ddad@updates.kermanshahi.org:33500/?insecure=1&sni=updates.kermanshahi.org&obfs=salamander&obfs-password=@JavidnamanIran-Javid-SHAH-KingRezaPahlavi#🚩53@oneclickvpnkeys
 hy2://d9812081-7f61-456d-9340-a1fb8dfd603b@141.148.246.181:443/?mport=50000-65535&insecure=1&sni=amsterdam.nezhasu.com#🌨️22@oneclickvpnkeys
 hy2://d9812081-7f61-456d-9340-a1fb8dfd603b@89.168.80.242:443/?mport=50000-65535&insecure=1&sni=gydeguo-4.nezhasu.com#🌨️27@oneclickvpnkeys
 hy2://d9812081-7f61-456d-9340-a1fb8dfd603b@falankefu1.nezhasu.com:443/?mport=50000-65535&insecure=1&sni=falankefu1.nezhasu.com#🎊1@oneclickvpnkeys
 hy2://dongtaiwang.com@[2001:bc8:32d7:302::11]:20088/?insecure=1&sni=apple.com#🚩1@oneclickvpnkeys
 hy2://e343471a-aad3-40da-9dea-72cc8c7dce5f@152.67.95.183:443/?mport=35000-39000&insecure=1&sni=www.apple.com#🚩41@oneclickvpnkeys
+hy2://e343471a-aad3-40da-9dea-72cc8c7dce5f@152.67.95.183:443/?mport=35000-39000&insecure=1&sni=www.apple.com&note=@freeOnlineVPN#🇨🇭 - CH - @freeOnlineVPN
 vless://5b44fc89-c5be-48e6-aa2e-0f90ff733390@norman.ns.cloudflare.com:443?path=%2Fdndgjqws&security=tls&alpn=h2&encryption=none&fp=chrome&type=ws&sni=638981351826446112.insight-amshd.com#Channel%20%3A%20%40SHOP_GAMING1011%20%F0%9F%8F%B4%F0%9F%8F%B3
 
 vless://602b380a-9fdf-4425-bc07-aae9a95cfc4b@27.50.48.8:443?security=tls&alpn=h3&encryption=none&fp=chrome&type=ws&sni=vless.hubp.de#Channel%20%3A%20%40SHOP_GAMING1011%20%F0%9F%8F%B4%F0%9F%8F%B3
@@ -929,6 +928,22 @@ hy2://b4bd0613-ff7c-4f2f-954d-185915e6ddad@77.90.41.197:35000/?insecure=1&sni=ap
 hy2://b4bd0613-ff7c-4f2f-954d-185915e6ddad@51.178.55.157:35000/?insecure=1&sni=api.kermanshahi.org&obfs=salamander&obfs-password=%40JavidnamanIran-Javid-SHAH-KingRezaPahlavi#%F0%9F%A7%91%E2%80%8D%F0%9F%8E%84%40AzarAndoozVPNbot
 hy2://b4bd0613-ff7c-4f2f-954d-185915e6ddad@206.71.158.41:35000/?sni=api.kermanshahi.org&obfs=salamander&obfs-password=%40JavidnamanIran-Javid-SHAH-KingRezaPahlavi#%F0%9F%A7%91%E2%80%8D%F0%9F%8E%84%40AzarAndoozVPNbot
 hy2://b4bd0613-ff7c-4f2f-954d-185915e6ddad@77.90.41.197:35000/?sni=api.kermanshahi.org&obfs=salamander&obfs-password=%40JavidnamanIran-Javid-SHAH-KingRezaPahlavi#%F0%9F%A7%91%E2%80%8D%F0%9F%8E%84%40AzarAndoozVPNbot
+hy2://KevinZakarian@kevin.serverv.net:8443?amp%3Binsecure=1&amp%3Bobfs=salamander&amp%3Bobfs-password=KevinZakarian#%F0%9F%87%BD%F0%9F%87%BD%20XX%20%7C%20HY2%20%7C%20%40buffalo_vpn
+hy2://b4bd0613-ff7c-4f2f-954d-185915e6ddad@206.71.158.40:35000?obfs=salamander&amp%3Bobfs-password=%40JavidnamanIran-Javid-SHAH-KingRezaPahlavi&amp%3Bsni=api.kermanshahi.org&amp%3Binsecure=0#%F0%9F%87%B3%F0%9F%87%B1%20NL%20%7C%20HY2%20%7C%20%40kafing_2
+hy2://b4bd0613-ff7c-4f2f-954d-185915e6ddad@135.125.204.154:35000?security=tls&amp%3Bobfs=salamander&amp%3Bobfs-password=%40JavidnamanIran-Javid-SHAH-KingRezaPahlavi&amp%3Binsecure=1&amp%3Bsni=api.kermanshahi.org#%F0%9F%87%AB%F0%9F%87%B7%20FR%20%7C%20HY2%20%7C%20%40outline_ir
+hy2://b4bd0613-ff7c-4f2f-954d-185915e6ddad@77.90.41.197:35000?security=tls&amp%3Bobfs=salamander&amp%3Bobfs-password=%40JavidnamanIran-Javid-SHAH-KingRezaPahlavi&amp%3Binsecure=1&amp%3Bsni=api.kermanshahi.org#%F0%9F%87%A9%F0%9F%87%AA%20DE%20%7C%20HY2%20%7C%20%40outline_ir
+hy2://b4bd0613-ff7c-4f2f-954d-185915e6ddad@206.71.158.40:35000?security=tls&amp%3Bobfs=salamander&amp%3Bobfs-password=%40JavidnamanIran-Javid-SHAH-KingRezaPahlavi&amp%3Binsecure=0&amp%3Bsni=api.kermanshahi.org#%F0%9F%87%B3%F0%9F%87%B1%20NL%20%7C%20HY2%20%7C%20%40selinc
+hy2://Telegram--%3E%40Ln2Ray@gavazn.lnmarketplace.net:45000?security=tls&amp%3Bobfs=salamander&amp%3Bobfs-password=Telegram--%3E%40Ln2Ray&amp%3Binsecure=1&amp%3Bsni=gavazn.55994421.xyz#%F0%9F%87%B3%F0%9F%87%B1%20NL%20%7C%20HY2%20%7C%20%40v2aryng_vpn
+hy2://8864aa9f-7517-4fd5-aef1-32050eb3095d@net2025.afsharidempire.uk:30205?obfs=salamander&amp%3Bobfs-password=GdQ4bgvT8RFwuWi2&amp%3Binsecure=1&amp%3Bsni=net2025.afsharidempire.uk#%F0%9F%87%B3%F0%9F%87%B1%20NL%20%7C%20HY2%20%7C%20%40v2ray_collector
+hy2://78c2bad7-f5f3-41f2-88cc-81de9d05040b@xg1.mangshe.xyz:2056?insecure=1#%F0%9F%87%AD%F0%9F%87%B0%20HK%20%7C%20HY2%20%7C%20%40v2ray_collector
+hy2://Yet-Another-Public-Config-1@yapc-1.adamhayward.co.uk:35200?obfs=salamander&amp%3Bobfs-password=Yet-Another-Public-Config-1&amp%3Bsni=YAPC-1.afshin.ir#%F0%9F%87%B3%F0%9F%87%B1%20NL%20%7C%20HY2%20%7C%20%40v2ray_collector
+hy2://b4bd0613-ff7c-4f2f-954d-185915e6ddad@77.90.41.197:35000?sni=jnir.pichondan.com&amp%3Bobfs=salamander&amp%3Bobfs-password=%40JavidnamanIran-Javid-SHAH-KingRezaPahlavi&amp%3Binsecure=1#%F0%9F%87%A9%F0%9F%87%AA%20DE%20%7C%20HY2%20%7C%20%40v2ray_youtube
+hy2://b4bd0613-ff7c-4f2f-954d-185915e6ddad@206.71.158.41:35000?security=tls&amp%3Bobfs=salamander&amp%3Bobfs-password=%40JavidnamanIran-Javid-SHAH-KingRezaPahlavi&amp%3Binsecure=1&amp%3Bsni=jnir.pichondan.com#%F0%9F%87%B3%F0%9F%87%B1%20NL%20%7C%20HY2%20%7C%20%40v2rayng3
+hy2://afc8e385-dc0f-4b26-a5ed-b0fbf08b9df6@tr.xn--9kqx4sc0n.shop:21325?security=tls&amp%3Binsecure=0#%F0%9F%87%BD%F0%9F%87%BD%20XX%20%7C%20HY2%20%7C%20%40v2rayprotocol
+hy2://Yet-Another-Public-Config-1@206.71.158.37:35000?security=tls&amp%3Bobfs=salamander&amp%3Bobfs-password=Yet-Another-Public-Config-1&amp%3Binsecure=1&amp%3Bsni=YAPC-1.afshin.ir#%F0%9F%87%B3%F0%9F%87%B1%20NL%20%7C%20HY2%20%7C%20%40v2rayprotocol
+hy2://dongtaiwang.com@51.158.54.46:44550?insecure=1&amp%3Bsni=bing.com#%F0%9F%87%AB%F0%9F%87%B7%20FR%20%7C%20HY2%20%7C%20%40vipv2rey
+hy2://y0qochAspE+u-HLfrip-@45.32.234.211:443?insecure=1&amp%3Bsni=Google.com&amp%3Bobfs=salamander&amp%3Bobfs-password=2pU%21%26Brls%210exuP%2B%214so#%F0%9F%87%B3%F0%9F%87%B1%20NL%20%7C%20HY2%20%7C%20%40vipv2rey
+hy2://b4bd0613-ff7c-4f2f-954d-185915e6ddad@updates.kermanshahi.org:33500?security=tls&amp%3Bobfs=salamander&amp%3Bobfs-password=%40JavidnamanIran-Javid-SHAH-KingRezaPahlavi&amp%3Binsecure=1&amp%3Bsni=updates.kermanshahi.org#%F0%9F%87%A9%F0%9F%87%AA%20DE%20%7C%20HY2%20%7C%20%40vmesc
 hy2://Telegram--%3E%40Ln2Ray@206.71.158.23:45000/?insecure=1&sni=gavazn.55994421.xyz&obfs=salamander&obfs-password=Telegram--%3E%40Ln2Ray#%F0%9F%87%BA%F0%9F%87%B8%40FREE2CONFIG%20
 hy2://b4bd0613-ff7c-4f2f-954d-185915e6ddad@206.71.158.40:35000/?insecure=1&sni=api.kermanshahi.org&obfs=salamander&obfs-password=%40JavidnamanIran-Javid-SHAH-KingRezaPahlavi#%F0%9F%87%B3%F0%9F%87%B1%40FREE2CONFIG%20
 hy2://Yet-Another-Public-Config-1@206.71.158.37:36400/?insecure=1&sni=YAPC-1.afshin.ir&obfs=salamander&obfs-password=Yet-Another-Public-Config-1#%F0%9F%87%B3%F0%9F%87%B1%40FREE2CONFIG%20
@@ -952,22 +967,6 @@ hy2://dongtaiwang.com@[2001:bc8:32d7:302::11]:20088/?insecure=1&sni=%F0%9F%94%92
 hy2://71504eaf-29ac-4190-89d1-dd9ce2c9ee14@[2001:bc8:1640:50eb:dc00:ff:fe57:dd6f]:443/?mport=50000-60000&insecure=1&sni=Ab.ac&obfs=salamander&obfs-password=FnFgQIckcMRtKq7i#%F0%9F%87%B3%F0%9F%87%B1%40FREE2CONFIG%20%20%20%20
 hy2://Yet-Another-Public-Config-1@[2a14:3f87:f001:13::a]:35200/?insecure=1&sni=YAPC-1.afshin.ir&obfs=salamander&obfs-password=Yet-Another-Public-Config-1#%F0%9F%87%B3%F0%9F%87%B1%40FREE2CONFIG%20%20%20
 hy2://Telegram--%3E%40Ln2Ray@[2a14:3f87:f001:9::a]:45000/?insecure=1&sni=gavazn.55994421.xyz&obfs=salamander&obfs-password=Telegram--%3E%40Ln2Ray#%F0%9F%87%B3%F0%9F%87%B1%40FREE2CONFIG%20%20%20
-hy2://KevinZakarian@kevin.serverv.net:8443?amp%3Binsecure=1&amp%3Bobfs=salamander&amp%3Bobfs-password=KevinZakarian#%F0%9F%87%BD%F0%9F%87%BD%20XX%20%7C%20HY2%20%7C%20%40buffalo_vpn
-hy2://b4bd0613-ff7c-4f2f-954d-185915e6ddad@206.71.158.40:35000?obfs=salamander&amp%3Bobfs-password=%40JavidnamanIran-Javid-SHAH-KingRezaPahlavi&amp%3Bsni=api.kermanshahi.org&amp%3Binsecure=0#%F0%9F%87%B3%F0%9F%87%B1%20NL%20%7C%20HY2%20%7C%20%40kafing_2
-hy2://b4bd0613-ff7c-4f2f-954d-185915e6ddad@135.125.204.154:35000?security=tls&amp%3Bobfs=salamander&amp%3Bobfs-password=%40JavidnamanIran-Javid-SHAH-KingRezaPahlavi&amp%3Binsecure=1&amp%3Bsni=api.kermanshahi.org#%F0%9F%87%AB%F0%9F%87%B7%20FR%20%7C%20HY2%20%7C%20%40outline_ir
-hy2://b4bd0613-ff7c-4f2f-954d-185915e6ddad@77.90.41.197:35000?security=tls&amp%3Bobfs=salamander&amp%3Bobfs-password=%40JavidnamanIran-Javid-SHAH-KingRezaPahlavi&amp%3Binsecure=1&amp%3Bsni=api.kermanshahi.org#%F0%9F%87%A9%F0%9F%87%AA%20DE%20%7C%20HY2%20%7C%20%40outline_ir
-hy2://b4bd0613-ff7c-4f2f-954d-185915e6ddad@206.71.158.40:35000?security=tls&amp%3Bobfs=salamander&amp%3Bobfs-password=%40JavidnamanIran-Javid-SHAH-KingRezaPahlavi&amp%3Binsecure=0&amp%3Bsni=api.kermanshahi.org#%F0%9F%87%B3%F0%9F%87%B1%20NL%20%7C%20HY2%20%7C%20%40selinc
-hy2://Telegram--%3E%40Ln2Ray@gavazn.lnmarketplace.net:45000?security=tls&amp%3Bobfs=salamander&amp%3Bobfs-password=Telegram--%3E%40Ln2Ray&amp%3Binsecure=1&amp%3Bsni=gavazn.55994421.xyz#%F0%9F%87%B3%F0%9F%87%B1%20NL%20%7C%20HY2%20%7C%20%40v2aryng_vpn
-hy2://8864aa9f-7517-4fd5-aef1-32050eb3095d@net2025.afsharidempire.uk:30205?obfs=salamander&amp%3Bobfs-password=GdQ4bgvT8RFwuWi2&amp%3Binsecure=1&amp%3Bsni=net2025.afsharidempire.uk#%F0%9F%87%B3%F0%9F%87%B1%20NL%20%7C%20HY2%20%7C%20%40v2ray_collector
-hy2://78c2bad7-f5f3-41f2-88cc-81de9d05040b@xg1.mangshe.xyz:2056?insecure=1#%F0%9F%87%AD%F0%9F%87%B0%20HK%20%7C%20HY2%20%7C%20%40v2ray_collector
-hy2://Yet-Another-Public-Config-1@yapc-1.adamhayward.co.uk:35200?obfs=salamander&amp%3Bobfs-password=Yet-Another-Public-Config-1&amp%3Bsni=YAPC-1.afshin.ir#%F0%9F%87%B3%F0%9F%87%B1%20NL%20%7C%20HY2%20%7C%20%40v2ray_collector
-hy2://b4bd0613-ff7c-4f2f-954d-185915e6ddad@77.90.41.197:35000?sni=jnir.pichondan.com&amp%3Bobfs=salamander&amp%3Bobfs-password=%40JavidnamanIran-Javid-SHAH-KingRezaPahlavi&amp%3Binsecure=1#%F0%9F%87%A9%F0%9F%87%AA%20DE%20%7C%20HY2%20%7C%20%40v2ray_youtube
-hy2://b4bd0613-ff7c-4f2f-954d-185915e6ddad@206.71.158.41:35000?security=tls&amp%3Bobfs=salamander&amp%3Bobfs-password=%40JavidnamanIran-Javid-SHAH-KingRezaPahlavi&amp%3Binsecure=1&amp%3Bsni=jnir.pichondan.com#%F0%9F%87%B3%F0%9F%87%B1%20NL%20%7C%20HY2%20%7C%20%40v2rayng3
-hy2://afc8e385-dc0f-4b26-a5ed-b0fbf08b9df6@tr.xn--9kqx4sc0n.shop:21325?security=tls&amp%3Binsecure=0#%F0%9F%87%BD%F0%9F%87%BD%20XX%20%7C%20HY2%20%7C%20%40v2rayprotocol
-hy2://Yet-Another-Public-Config-1@206.71.158.37:35000?security=tls&amp%3Bobfs=salamander&amp%3Bobfs-password=Yet-Another-Public-Config-1&amp%3Binsecure=1&amp%3Bsni=YAPC-1.afshin.ir#%F0%9F%87%B3%F0%9F%87%B1%20NL%20%7C%20HY2%20%7C%20%40v2rayprotocol
-hy2://dongtaiwang.com@51.158.54.46:44550?insecure=1&amp%3Bsni=bing.com#%F0%9F%87%AB%F0%9F%87%B7%20FR%20%7C%20HY2%20%7C%20%40vipv2rey
-hy2://y0qochAspE+u-HLfrip-@45.32.234.211:443?insecure=1&amp%3Bsni=Google.com&amp%3Bobfs=salamander&amp%3Bobfs-password=2pU%21%26Brls%210exuP%2B%214so#%F0%9F%87%B3%F0%9F%87%B1%20NL%20%7C%20HY2%20%7C%20%40vipv2rey
-hy2://b4bd0613-ff7c-4f2f-954d-185915e6ddad@updates.kermanshahi.org:33500?security=tls&amp%3Bobfs=salamander&amp%3Bobfs-password=%40JavidnamanIran-Javid-SHAH-KingRezaPahlavi&amp%3Binsecure=1&amp%3Bsni=updates.kermanshahi.org#%F0%9F%87%A9%F0%9F%87%AA%20DE%20%7C%20HY2%20%7C%20%40vmesc
 hy2://e343471a-aad3-40da-9dea-72cc8c7dce5f@152.67.95.183:443/?mport=35000-39000&insecure=1&sni=www.apple.com#%3E%3E%40oneclickvpnkeys%3A%3ACH
 hy2://YwuvGJk36B@81.168.83.89:2083?obfs=salamander&obfs-password=khameniiko%40smad%40ret&insecure=1&sni=kotlet.arshiacomplus.dpdns.org#🇬🇧%20United%20Kingdom%20-%2027
 hy2://YwuvGJk36B@81.168.83.89:2083?obfs=salamander&obfs-password=khameniiko%40smad%40ret&insecure=1&sni=kotlet.arshiacomplus.dpdns.org@V2rayNGVPN%3C%3D%DA%A9%D8%A7%D9%86%D9%81%DB%8C%DA%AF%D8%B1%D8%A7%DB%8C%DA%AF%D8%A7%D9%86#🇬🇧%20United%20Kingdom%20-%2028
