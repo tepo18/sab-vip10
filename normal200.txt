@@ -1189,7 +1189,7 @@ hy2://afc8e385-dc0f-4b26-a5ed-b0fbf08b9df6@tr.xn--9kqx4sc0n.shop:21325?security=
 hy2://Yet-Another-Public-Config-1@206.71.158.37:35000?security=tls&amp%3Bobfs=salamander&amp%3Bobfs-password=Yet-Another-Public-Config-1&amp%3Binsecure=1&amp%3Bsni=YAPC-1.afshin.ir#%F0%9F%87%B3%F0%9F%87%B1%20NL%20%7C%20HY2%20%7C%20%40v2rayprotocol
 hy2://dongtaiwang.com@51.158.54.46:44550?insecure=1&amp%3Bsni=bing.com#%F0%9F%87%AB%F0%9F%87%B7%20FR%20%7C%20HY2%20%7C%20%40vipv2rey
 hy2://y0qochAspE+u-HLfrip-@45.32.234.211:443?insecure=1&amp%3Bsni=Google.com&amp%3Bobfs=salamander&amp%3Bobfs-password=2pU%21%26Brls%210exuP%2B%214so#%F0%9F%87%B3%F0%9F%87%B1%20NL%20%7C%20HY2%20%7C%20%40vipv2rey
-hy2://e343471a-aad3-40da-9dea-72cc8c7dce5f@152.67.95.183:443/?mport=35000-39000&insecure=1&sni=www.apple.com#%3E%3E%40oneclickvpnkeys%3A%3ACH
-hy2://e343471a-aad3-40da-9dea-72cc8c7dce5f@193.123.76.84:443/?mport=35000-39000&insecure=1&sni=www.apple.com#%3E%3E%40oneclickvpnkeys%3A%3AAE
 hy2://9f73c619627d6a5d@66.245.192.15:443?insecure=1&amp%3Bsni=www.apple.com&amp%3Bobfs=salamander&amp%3Bobfs-password=bd7f765e#%F0%9F%87%BA%F0%9F%87%B8%20US%20%7C%20HY2%20%7C%20%40vipv2rey
 hy2://f6e4b19a3110d19d@66.135.28.59:443?insecure=1&amp%3Bsni=www.apple.com%0A&amp%3Bobfs=salamander&amp%3Bobfs-password=8c3ce17b#%F0%9F%87%BA%F0%9F%87%B8%20US%20%7C%20HY2%20%7C%20%40vipv2rey
+hy2://e343471a-aad3-40da-9dea-72cc8c7dce5f@152.67.95.183:443/?mport=35000-39000&insecure=1&sni=www.apple.com#%3E%3E%40oneclickvpnkeys%3A%3ACH
+hy2://e343471a-aad3-40da-9dea-72cc8c7dce5f@193.123.76.84:443/?mport=35000-39000&insecure=1&sni=www.apple.com#%3E%3E%40oneclickvpnkeys%3A%3AAE
