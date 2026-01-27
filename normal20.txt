@@ -1953,10 +1953,11 @@ vless://739b8e9b-f1da-449a-8bfe-bf7b102b7751@iran.zanbor.de:443?type=tcp&encrypt
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpRQ1hEeHVEbFRUTUQ3anRnSFVqSW9q@193.29.139.199:8080#🇳🇱NL
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.204:8080#🇳🇱NL
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.240:8080#🇳🇱NL
-hy2://28a8a4d0-3e02-11eb-a8bf-f23c91cfbbc9@1ee38495-t6t0g0-t94bdb-mrtr.hk1.hyhuawei.com:443/?insecure=1&sni=1ee38495-t6t0g0-t94bdb-mrtr.hk1.hyhuawei.com#%3E%3E%40oneclickvpnkeys%3A%3AXX
 hy2://17cdeb6c-f046-11ee-bdac-f23c93141fad@c37b0be5n-t3kyo0-t3lvgh-2gok.la.shifen.uk:1743/?insecure=1&sni=c37b0be5-t3kyo0-t3lvgh-2gok.la.shifen.uk#%3E%3E%40oneclickvpnkeys%3A%3AUS
-hy2://2c833c5d-cbcc-4afb-89ba-d17dc39db6f0@75.127.13.83:47974/?insecure=1&sni=www.bing.com#%3E%3E%40oneclickvpnkeys%3A%3AUS
 hy2://6286105c-fb6d-11ef-be96-f23c93136cb3@227fd503-t4ssg0-t5vo4i-4550.la.shifen.uk:1743/?insecure=1&sni=227fd503-t4ssg0-t5vo4i-4550.la.shifen.uk#%3E%3E%40oneclickvpnkeys%3A%3AUS
+hy2://2c833c5d-cbcc-4afb-89ba-d17dc39db6f0@75.127.13.83:47974/?insecure=1&sni=www.bing.com#%3E%3E%40oneclickvpnkeys%3A%3AUS
+hy2://28a8a4d0-3e02-11eb-a8bf-f23c91cfbbc9@1ee38495-t6t0g0-t94bdb-mrtr.hk1.hyhuawei.com:443/?insecure=1&sni=1ee38495-t6t0g0-t94bdb-mrtr.hk1.hyhuawei.com#%3E%3E%40oneclickvpnkeys%3A%3AXX
+hysteria2://28a8a4d0-3e02-11eb-a8bf-f23c91cfbbc9@1ee38495-t6t0g0-t94bdb-mrtr.hk1.hyhuawei.com:443/?insecure=1&sni=1ee38495-t6t0g0-t94bdb-mrtr.hk1.hyhuawei.com#%3E%3E%40oneclickvpnkeys%3A%3AXX
 hy2://dongtaiwang.com@89.144.35.25:33550/?insecure=1&sni=apple.com#%3E%3E%40oneclickvpnkeys%3A%3ANL
 hy2://78c2bad7-f5f3-41f2-88cc-81de9d05040b@mg2.mangshe.xyz:2056/?insecure=1&sni=mg2.mangshe.xyz#美国2
 hy2://78c2bad7-f5f3-41f2-88cc-81de9d05040b@xjp1.mangshe.xyz:2055/?insecure=1&sni=xjp1.mangshe.xyz#新加坡1
