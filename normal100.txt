@@ -1,16 +1,16 @@
 //profile-title: base64:2YfZhduM2LTZhyDZgdi52KfZhCDwn5iO8J+YjvCfmI4gaGFtZWRwNzE=
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.124:8080#👉🆔@v2ray_configs_pool📡🇳🇱®️The Netherlands©️Amsterdam🅿️ping:30.8ms
-vless://3f0f36f5-f091-45c5-88c9-4bcc545b922c@172.64.158.2:2096?path=%2F45.76.183.217%3D49292&security=tls&encryption=none&insecure=0&host=hetz.x-smm.com&type=ws&allowInsecure=0&sni=hetz.x-smm.com#👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:21.74ms
-vless://3f0f36f5-f091-45c5-88c9-4bcc545b922c@brenna.ns.cloudflare.com:2096?path=%2F45.76.183.217%3D49292&security=tls&encryption=none&insecure=0&host=hetz.x-smm.com&fp=chrome&type=ws&allowInsecure=0&sni=hetz.x-smm.com#👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:46.56ms
-vless://54c85e0d-2b86-4109-8cbc-41526c1e38a7@poli.appleseraj.ir:443?path=%2F%3Fed%3D2048&security=tls&encryption=none&insecure=0&host=duseldorf.appleseraj.ir&type=ws&allowInsecure=0&sni=duseldorf.appleseraj.ir#👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️New York🅿️ping:54.3ms
-vless://54c85e0d-2b86-4109-8cbc-41526c1e38a7@poli.appleseraj.ir:2096?path=%2F%3Fed%3D2048&security=tls&encryption=none&insecure=0&host=nurenburs.appleseraj.ir&type=ws&allowInsecure=0&sni=nurenburs.appleseraj.ir#👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️New York🅿️ping:48.29ms
-vless://54c85e0d-2b86-4109-8cbc-41526c1e38a7@poli.appleseraj.ir:8443?path=%2F%3Fed%3D2048&security=tls&encryption=none&insecure=0&host=france.mastermarly.ir&fp=chrome&type=ws&allowInsecure=0&sni=france.mastermarly.ir#👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️New York🅿️ping:43.96ms
-vless://54c85e0d-2b86-4109-8cbc-41526c1e38a7@belnn.appleseraj.ir:2053?path=%2F%3Fed%3D2048&security=tls&encryption=none&insecure=0&host=chz.mastermarly.ir&fp=chrome&type=ws&allowInsecure=0&sni=chz.mastermarly.ir#👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️New York🅿️ping:47.37ms
-vless://54c85e0d-2b86-4109-8cbc-41526c1e38a7@poli.appleseraj.ir:443?path=%2F%3Fed%3D2048&security=tls&encryption=none&insecure=1&host=finlo.appleseraj.ir&type=ws&allowInsecure=1&sni=finlo.appleseraj.ir#👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️New York🅿️ping:54.3ms
-vless://54c85e0d-2b86-4109-8cbc-41526c1e38a7@belnn.appleseraj.ir:2053?path=%2F%3Fed%3D2048&security=tls&encryption=none&insecure=0&host=rau.mastermarly.ir&fp=chrome&type=ws&allowInsecure=0&sni=rau.mastermarly.ir#👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️New York🅿️ping:47.37ms
-vless://54c85e0d-2b86-4109-8cbc-41526c1e38a7@ip3.kakeroo.ir:80?path=%2F&security=none&encryption=none&host=kemetall.global.ssl.fastly.net&type=ws#👉🆔@v2ray_configs_pool📡🇬🇧®️United Kingdom©️London🅿️ping:164.39ms
-vless://54c85e0d-2b86-4109-8cbc-41526c1e38a7@poli.appleseraj.ir:443?path=%2F%3Fed%3D2048&security=tls&encryption=none&insecure=1&host=nigeria.mastermarly.ir&type=ws&allowInsecure=1&sni=nigeria.mastermarly.ir#👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️New York🅿️ping:54.3ms
-vless://54c85e0d-2b86-4109-8cbc-41526c1e38a7@ip3.kakeroo.ir:80?path=%2F&security=none&encryption=none&host=army90.global.ssl.fastly.net&type=ws#👉🆔@v2ray_configs_pool📡🇬🇧®️United Kingdom©️London🅿️ping:164.39ms
-vless://54c85e0d-2b86-4109-8cbc-41526c1e38a7@poli.appleseraj.ir:2096?path=%2F%3Fed%3D2048&security=tls&encryption=none&insecure=0&host=isranrol.appleseraj.ir&type=ws&allowInsecure=0&sni=isranrol.appleseraj.ir#👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️New York🅿️ping:48.29ms
-vless://e39b2db3-ad43-48d5-8d57-22e4998702b7@194.164.33.237:8443?security=reality&encryption=none&pbk=Cxvc5bVMKln6RxPs5MtviUZNDsmpfuYUK8UFBlcBaS0&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=tradingview.com&sid=808e2d36726ee97e#👉🆔@v2ray_configs_pool📡🇳🇱®️The Netherlands©️Amsterdam🅿️ping:70.26ms
-vless://a44e0875-210f-4941-9062-89b6361a14c6@77.238.233.188:443?security=reality&encryption=none&pbk=i5a8i2AWUSMZ-rYA6hGBRCBBoe7W5ah33SCdF5JkMk4&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=apple.com&sid=8bcfe256cf216fd8#👉🆔@v2ray_configs_pool📡🇳🇱®️The Netherlands©️Amsterdam🅿️ping:71.41ms
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.235:8080?prefix=%16%03%01%00%C2%A8%01%01#👉🆔@v2ray_configs_pool📡🇳🇱®️The Netherlands©️Amsterdam (Amsterdam-Noord)🅿️ping:31ms
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.235:8080#👉🆔@v2ray_configs_pool📡🇳🇱®️The Netherlands©️Amsterdam (Amsterdam-Noord)🅿️ping:31ms
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.202:8080#👉🆔@v2ray_configs_pool📡🇳🇱®️The Netherlands©️Amsterdam (Amsterdam-Noord)🅿️ping:31ms
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpsanFkYWx1MTMuLg@3.112.130.53:8319#👉🆔@v2ray_configs_pool📡🇯🇵®️Japan©️Shibuya City🅿️ping:252ms
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpsanFkYWx1MTMuLg@3.112.130.53:8316?#👉🆔@v2ray_configs_pool📡🇯🇵®️Japan©️Shibuya City🅿️ping:255ms
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpsanFkYWx1MTMuLg@3.112.130.53:8316#👉🆔@v2ray_configs_pool📡🇯🇵®️Japan©️Shibuya City🅿️ping:383ms
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpsanFkYWx1MTMuLg@3.112.130.53:8313?#👉🆔@v2ray_configs_pool📡🇯🇵®️Japan©️Shibuya City🅿️ping:254ms
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpsanFkYWx1MTMuLg@3.112.130.53:8313#👉🆔@v2ray_configs_pool📡🇯🇵®️Japan©️Shibuya City🅿️ping:272ms
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpsanFkYWx1MTMuLg@3.1.195.148:8319?#👉🆔@v2ray_configs_pool📡🇸🇬®️Singapore©️Singapore🅿️ping:178ms
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpsanFkYWx1MTMuLg@3.1.195.148:8319#👉🆔@v2ray_configs_pool📡🇸🇬®️Singapore©️Singapore🅿️ping:178ms
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpsanFkYWx1MTMuLg@3.1.195.148:8316?#👉🆔@v2ray_configs_pool📡🇸🇬®️Singapore©️Singapore🅿️ping:174ms
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpsanFkYWx1MTMuLg@3.1.195.148:8316#👉🆔@v2ray_configs_pool📡🇸🇬®️Singapore©️Singapore🅿️ping:179ms
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpsanFkYWx1MTMuLg@3.1.195.148:8313#👉🆔@v2ray_configs_pool📡🇸🇬®️Singapore©️Singapore🅿️ping:185ms
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.151:8080#👉🆔@v2ray_configs_pool📡🇳🇱®️The Netherlands©️Amsterdam (Amsterdam-Noord)🅿️ping:31ms
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpsanFkYWx1MTMuLg%3D%3D@3.112.130.53:8319#👉🆔@v2ray_configs_pool📡🇯🇵®️Japan©️Shibuya City🅿️ping:262ms
