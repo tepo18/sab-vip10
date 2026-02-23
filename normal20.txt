@@ -1975,9 +1975,7 @@ vless://739b8e9b-f1da-449a-8bfe-bf7b102b7751@iran.zanbor.de:443?type=tcp&encrypt
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpRQ1hEeHVEbFRUTUQ3anRnSFVqSW9q@193.29.139.199:8080#🇳🇱NL
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.204:8080#🇳🇱NL
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.240:8080#🇳🇱NL
-hy2://545fb4e9-5794-4e20-be0c-e6d8689f91ac@129.153.25.59:35000/?insecure=1&sni=www.lamer.com.hk#%3E%3E%40oneclickvpnkeys%3A%3AUS
-hy2://545fb4e9-5794-4e20-be0c-e6d8689f91ac@129.151.251.122:35000/?insecure=1&sni=www.lamer.com.hk#%3E%3E%40oneclickvpnkeys%3A%3AFR
-hy2://545fb4e9-5794-4e20-be0c-e6d8689f91ac@143.47.32.143:35000/?insecure=1&sni=www.lamer.com.hk#%3E%3E%40oneclickvpnkeys%3A%3AES
+hy2://1y4HweESOT@sss.ikun6.dpdns.org:27995/?insecure=1&sni=azure.microsoft.com#%3E%3E%40oneclickvpnkeys%3A%3AUS
 hy2://zhangyang@130.61.50.75:6443/?insecure=1&sni=dash.cloudflare.com#%3E%3E%40oneclickvpnkeys%3A%3ADE
 hy2://17cdeb6c-f046-11ee-bdac-f23c93141fad@c37b0be5n-t3kyo0-t3lvgh-2gok.la.shifen.uk:1743/?insecure=1&sni=🔒#@Trick_mobil
 hy2://1y4HweESOT@sss.ikun6.dpdns.org:27995/?insecure=1&sni=azure.microsoft.com#🪢95@oneclickvpnkeys
@@ -1995,7 +1993,6 @@ hy2://b4bd0613-ff7c-4f2f-954d-185915e6ddad@206.71.158.40:35000/?sni=api.kermansh
 hy2://b4bd0613-ff7c-4f2f-954d-185915e6ddad@206.71.158.41:35000/?sni=api.kermanshahi.org&obfs=salamander&obfs-password=@JavidnamanIran-Javid-SHAH-KingRezaPahlavi#HP71 (4)
 hy2://e7965e64-e001-4e8c-8273-39c61ff4a094@sg3.oomz.ru:30000/?insecure=1&sni=bing.com#SG
 hy2://e7965e64-e001-4e8c-8273-39c61ff4a094@tw.oomz.ru:30000/?insecure=1&sni=bing.com#TW
-hy2://9f73c619627d6a5d@66.245.192.15:443?insecure=1&amp%3Bsni=www.apple.com&amp%3Bobfs=salamander&amp%3Bobfs-password=bd7f765e#%F0%9F%87%BA%F0%9F%87%B8%20US%20%7C%20HY2%20%7C%20%40vipv2rey%20%231
 hy2://Telegram--%3E%40Ln2Ray@206.71.158.23:45000/?insecure=1&sni=gavazn.55994421.xyz&obfs=salamander&obfs-password=Telegram--%3E%40Ln2Ray#%F0%9F%87%BA%F0%9F%87%B8%40FREE2CONFIG%20
 hy2://b4bd0613-ff7c-4f2f-954d-185915e6ddad@206.71.158.40:35000/?insecure=1&sni=api.kermanshahi.org&obfs=salamander&obfs-password=%40JavidnamanIran-Javid-SHAH-KingRezaPahlavi#%F0%9F%87%B3%F0%9F%87%B1%40FREE2CONFIG%20
 hy2://b4bd0613-ff7c-4f2f-954d-185915e6ddad@206.71.158.41:35000/?insecure=1&sni=api.kermanshahi.org&obfs=salamander&obfs-password=%40JavidnamanIran-Javid-SHAH-KingRezaPahlavi#%F0%9F%87%B3%F0%9F%87%B1%40FREE2CONFIG%20
@@ -2017,20 +2014,15 @@ hy2://Telegram--%3E%40Ln2Ray@206.71.158.23:45000/?insecure=1&sni=gavazn.55994421
 hy2://71504eaf-29ac-4190-89d1-dd9ce2c9ee14@[2001:bc8:1640:50eb:dc00:ff:fe57:dd6f]:443/?mport=50000-60000&insecure=1&sni=Ab.ac&obfs=salamander&obfs-password=FnFgQIckcMRtKq7i#%F0%9F%87%B3%F0%9F%87%B1%40FREE2CONFIG%20%20%20%20
 hy2://Yet-Another-Public-Config-1@[2a14:3f87:f001:13::a]:35200/?insecure=1&sni=YAPC-1.afshin.ir&obfs=salamander&obfs-password=Yet-Another-Public-Config-1#%F0%9F%87%B3%F0%9F%87%B1%40FREE2CONFIG%20%20%20
 hy2://Telegram--%3E%40Ln2Ray@[2a14:3f87:f001:9::a]:45000/?insecure=1&sni=gavazn.55994421.xyz&obfs=salamander&obfs-password=Telegram--%3E%40Ln2Ray#%F0%9F%87%B3%F0%9F%87%B1%40FREE2CONFIG%20%20%20
-hy2://f40ca239-4a76-4808-b56c-84d4e9969939@129.151.193.163:50000/?insecure=1&sni=www.microsoft.com#📤35@oneclickvpnkeys
-hy2://545fb4e9-5794-4e20-be0c-e6d8689f91ac@129.151.251.122:35000/?insecure=1&sni=www.lamer.com.hk#📤44@oneclickvpnkeys
-hy2://f40ca239-4a76-4808-b56c-84d4e9969939@132.145.28.17:65535/?insecure=1&sni=www.microsoft.com#📤27@oneclickvpnkeys
-hy2://545fb4e9-5794-4e20-be0c-e6d8689f91ac@129.153.25.59:35000/?insecure=1&sni=www.lamer.com.hk#📤88@oneclickvpnkeys
-hy2://f40ca239-4a76-4808-b56c-84d4e9969939@132.145.52.10:65535/?insecure=1&sni=www.microsoft.com#📤30@oneclickvpnkeys
-hy2://w8P7v2K4v6Y1e@[2a12:bec0:165:1e8::]:33703/?insecure=1#🐊94@oneclickvpnkeys
-hy2://f40ca239-4a76-4808-b56c-84d4e9969939@152.70.176.68:1/?insecure=1&sni=www.bing.com#📤16@oneclickvpnkeys
-hy2://Telegram-->@Ln2Ray@206.71.158.23:45000/?insecure=1&sni=gavazn.55994421.xyz&obfs=salamander&obfs-password=Telegram-->@Ln2Ray#@Trick_mobil
-hy2://75193bef8d8fe82341e02dd083dc1399@dd.openaccessnode.com:989/?insecure=1&sni=dd.ircybersec.org&obfs=salamander&obfs-password=@JavidnamanIran-Javid-SHAH-King-Reza-Pahlavi#📤38@oneclickvpnkeys
-hy2://545fb4e9-5794-4e20-be0c-e6d8689f91ac@143.47.32.143:35000/?insecure=1&sni=www.lamer.com.hk#📤57@oneclickvpnkeys
+hy2://545fb4e9-5794-4e20-be0c-e6d8689f91ac@143.47.32.143:35000/?insecure=1&sni=www.lamer.com.hk#%3E%3E%40oneclickvpnkeys%3A%3AES
+hy2://9f73c619627d6a5d@66.245.192.15:443?insecure=1&amp%3Bsni=www.apple.com&amp%3Bobfs=salamander&amp%3Bobfs-password=bd7f765e#%F0%9F%87%BA%F0%9F%87%B8%20US%20%7C%20HY2%20%7C%20%40vipv2rey%20%231
 hy2://17cdeb6c-f046-11ee-bdac-f23c93141fad@c37b0be5n-t3kyo0-t3lvgh-2gok.la.shifen.uk:1743/?insecure=1&sni=🔒
+hy2://1y4HweESOT@sss.ikun6.dpdns.org:27995/?insecure=1&sni=azure.microsoft.com#%F0%9F%AA%A295%40oneclickvpnkeys
+hy2://1y4HweESOT@sss.ikun6.dpdns.org:27995/?insecure=1&sni=azure.microsoft.com#%F0%9F%AA%A295%40oneclickvpnkeystrojan://pYIoKUPGpWeTYXEx3HjR7s97B@free-de-2.undef.network:443/?type=tcp&security=tls&allowInsecure=1#%F0%9F%AA%A291%40oneclickvpnkeystrojan://adb13850-7e70-492e-85b2-01184801d587@us08.oportal.cc:443/?type=tcp&security=tls&allowInsecure=1#%F0%9F%AA%A297%40oneclickvpnkeysvless://1b0ad61b-1be2-4cda-9979-984a965b0da5@45.89.105.24:4443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=github.com&fp=chrome&security=reality&pbk=5XB_N3ATilH-6tp_MXht-84_y5YaJnx_Z7MbuY2otHE&sid=aa7e96542880027a#%F0%9F%AA%A2100%40oneclickvpnkeysvless://0adc7c2b-a11b-4470-964e-e79d256dd1d0@185.40.152.121:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=sun6-22.userapi.com&fp=chrome&security=reality&pbk=J5ITJbg5FQFembAfkogKHHQB6DigsFXQxK7xu-QMWUs&sid=a20d3ed244c76426#%F0%9F%AA%A299%40oneclickvpnkeys
+hy2://1y4HweESOT@sss.ikun6.dpdns.org:27995/?insecure=1&sni=azure.microsoft.com#%F0%9F%AA%A298%40oneclickvpnkeys
+hy2://1y4HweESOT@sss.ikun6.dpdns.org:27995/?insecure=1&sni=azure.microsoft.com#%F0%9F%AA%A298%40oneclickvpnkeysvless://01a57a60-2ac0-48ce-ba63-fd7946e89670@84.201.187.140:4443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=max.ru&fp=chrome&security=reality&pbk=g_akrJAfrYQ8E3TXBBMICs1hmG-anZHRg4izFbuJvxA&sid=c7a6e3adc1a8fff8#%F0%9F%AA%A293%40oneclickvpnkeys
 hy2://5046SHWqk6@91.132.51.160:844/
-hy2://545fb4e9-5794-4e20-be0c-e6d8689f91ac@129.153.25.59:35000/?insecure=1&sni=www.lamer.com.hk#%F0%9F%93%A488%40oneclickvpnkeys
-hy2://545fb4e9-5794-4e20-be0c-e6d8689f91ac@129.153.25.59:35000/?insecure=1&sni=www.lamer.com.hk#🌐
+hy2://545fb4e9-5794-4e20-be0c-e6d8689f91ac@129.153.25.59:35000/?insecure=1&sni=www.lamer.com.hk#%F0%9F%93%A488%40oneclickvpnkeysvless://03dd7e7c-8d2a-4cd2-b920-f5ed564fc8c4@77.110.114.1:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=srv27.outlinekeys.com&fp=chrome&security=reality&pbk=3zn513ilYXOJngXLRP0MUnK23HuB9TKLjQ7YG20dzTQ&sid=#%F0%9F%93%A485%40oneclickvpnkeysvless://5e18094c-18b1-4198-b211-96b40518cecf@107.181.147.22:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=www.techradar.com&fp=chrome&security=reality&pbk=Cs45TZ-4YKa8fWZ72YJcIcQCKipWsoYNZHEqFvs-PTE&sid=f6e197a0b9f2#%F0%9F%93%A478%40oneclickvpnkeys
 hy2://Telegram--%3E%40Ln2Ray@206.71.158.23:45000/?insecure=1&sni=🔒
 hy2://Telegram--%3E%40Ln2Ray@gavazn.lnmarketplace.net:45000/?insecure=1&sni=🔒
 hy2://Yet-Another-Public-Config-1@206.71.158.37:36400/?insecure=1&sni=YAPC-1.afshin.ir&obfs=salamander&obfs-password=Yet-Another-Public-Config-1#HP71
@@ -2045,4 +2037,3 @@ hy2://f40ca239-4a76-4808-b56c-84d4e9969939@132.145.28.17:65535/?insecure=1&sni=w
 hy2://f40ca239-4a76-4808-b56c-84d4e9969939@132.145.52.10:65535/?insecure=1&sni=www.microsoft.com#@v2source🇳🇱4
 hy2://f40ca239-4a76-4808-b56c-84d4e9969939@152.70.176.68:1/?insecure=1&sni=www.bing.com#@v2source🇳🇱2
 hy2://zhangyang@130.61.50.75:6443/
-hy2://zhangyang@130.61.50.75:6443/?insecure=1&sni=dash.cloudflare.com#%F0%9D%99%82%F0%9D%99%9A%F0%9D%99%A7%F0%9D%99%A2%F0%9D%99%96%F0%9D%99%A3%F0%9D%99%AE🇩🇪
