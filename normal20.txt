@@ -1975,9 +1975,8 @@ vless://739b8e9b-f1da-449a-8bfe-bf7b102b7751@iran.zanbor.de:443?type=tcp&encrypt
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpRQ1hEeHVEbFRUTUQ3anRnSFVqSW9q@193.29.139.199:8080#🇳🇱NL
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.204:8080#🇳🇱NL
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.240:8080#🇳🇱NL
-hy2://zhangyang@130.61.50.75:6443/#%3E%3E%40oneclickvpnkeys%3A%3ADE
 hy2://0b8a288c@107.174.181.241:65160/?insecure=1&sni=en.snu.ac.kr#%3E%3E%40oneclickvpnkeys%3A%3AUS
-hy2://5046SHWqk6@91.132.51.160:844/#%3E%3E%40oneclickvpnkeys%3A%3ATR
+hy2://zhangyang@130.61.50.75:6443/#%3E%3E%40oneclickvpnkeys%3A%3ADE
 hy2://0b8a288c@107.174.181.241:65160/?insecure=1&sni=en.snu.ac.kr#@Trick_mobil
 hy2://17cdeb6c-f046-11ee-bdac-f23c93141fad@c37b0be5n-t3kyo0-t3lvgh-2gok.la.shifen.uk:1743/?insecure=1&sni=🔒#@Trick_mobil
 hy2://5046SHWqk6@91.132.51.160:844/#@Trick_mobil
