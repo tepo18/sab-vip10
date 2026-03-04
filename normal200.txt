@@ -1628,7 +1628,6 @@ hy2://Telegram--%3E%40Ln2Ray@[2a14:3f87:f001:9::a]:45000/?insecure=1&sni=gavazn.
 hy2://9f73c619627d6a5d@66.245.192.15:443?insecure=1&amp%3Bsni=www.apple.com&amp%3Bobfs=salamander&amp%3Bobfs-password=bd7f765e#%F0%9F%87%BA%F0%9F%87%B8%20US%20%7C%20HY2%20%7C%20%40vipv2rey%20%231
 hy2://95D27EEF-B7AE-4076-BA39-40FDFA3D0F61@jp7.dexlos.com:13778/?insecure=1#JP
 hy2://Yet-Another-Public-Config-1@206.71.158.37:36400?obfs=salamander&obfs-password=Yet-Another-Public-Config-1&insecure=1&sni=YAPC-1.afshin.ir#Server 54
-hy2://0b8a288c@107.174.181.241:65160/?insecure=1&sni=en.snu.ac.kr#%F0%9D%99%90%F0%9D%99%A3%F0%9D%99%9E%F0%9D%99%A9%F0%9D%99%9A%F0%9D%99%99%20%F0%9D%99%8E%F0%9D%99%A9%F0%9D%99%96%F0%9D%99%A9%F0%9D%99%9A%F0%9D%99%A8🇺🇸
 hy2://0b8a288c@107.174.181.241:65160/?insecure=1&sni=en.snu.ac.kr#@Trick_mobil
 hy2://17cdeb6c-f046-11ee-bdac-f23c93141fad@c37b0be5n-t3kyo0-t3lvgh-2gok.la.shifen.uk:1743/?insecure=1&sni=🔒
 hy2://17cdeb6c-f046-11ee-bdac-f23c93141fad@c37b0be5n-t3kyo0-t3lvgh-2gok.la.shifen.uk:1743/?insecure=1&sni=🔒#@Trick_mobil
