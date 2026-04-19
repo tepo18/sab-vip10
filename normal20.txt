@@ -1979,6 +1979,7 @@ hy2://123456789StrongPass@144.31.224.14:443/?insecure=1&sni=www.cloudflare.com#%
 hysteria2://dongtaiwang.com@163.172.113.118:40022/?insecure=1&sni=www.microsoft.com#%3E%3E%40oneclickvpnkeys%3A%3AFR
 hysteria2://4d092122-268a-4a1a-b23f-83931c5abc3a@37.114.49.38:2056/?insecure=1&sni=flkf.mangshe.xyz#%3E%3E%40oneclickvpnkeys%3A%3ADE
 hysteria2://dongtaiwang.com@62.210.124.146:22000/?insecure=1&sni=www.microsoft.com#%3E%3E%40oneclickvpnkeys%3A%3AFR
+hy2://3780fcbcddd107f7d7c727eb18e28f4c@20.230.191.53:8443/?insecure=1#@anonymouskeys
 hy2://Telegram--%3E%40Ln2Ray@206.71.158.23:45000/?insecure=1&sni=gavazn.55994421.xyz&obfs=salamander&obfs-password=Telegram--%3E%40Ln2Ray#%F0%9F%87%BA%F0%9F%87%B8%40FREE2CONFIG%20
 hy2://b4bd0613-ff7c-4f2f-954d-185915e6ddad@206.71.158.40:35000/?insecure=1&sni=api.kermanshahi.org&obfs=salamander&obfs-password=%40JavidnamanIran-Javid-SHAH-KingRezaPahlavi#%F0%9F%87%B3%F0%9F%87%B1%40FREE2CONFIG%20
 hy2://b4bd0613-ff7c-4f2f-954d-185915e6ddad@206.71.158.41:35000/?insecure=1&sni=api.kermanshahi.org&obfs=salamander&obfs-password=%40JavidnamanIran-Javid-SHAH-KingRezaPahlavi#%F0%9F%87%B3%F0%9F%87%B1%40FREE2CONFIG%20
