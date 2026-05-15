@@ -1,7 +1,7 @@
 //profile-title: base64:2YfZhduM2LTZhyDZgdi52KfZhCDwn5iO8J+YjvCfmI4gaGFtZWRwNzE=
-hy2://qQe1z5kU8kN6SlKnDt9Ru3Qp@13.126.66.208:443/?insecure=1&sni=https://t.me/WangCai2рҹҮЁрҹҮі#рҹҮ®рҹҮіIN_@WangCai_8
-hy2://qQe1z5kU8kN6SlKnDt9Ru3Qp@3.110.31.6:443/?insecure=1&sni=https://t.me/WangCai2рҹҮЁрҹҮі#рҹҮ®рҹҮіIN_@WangCai_8
-hy2://qQe1z5kU8kN6SlKnDt9Ru3Qp@3.6.91.169:443/?insecure=1&sni=https://t.me/WangCai2рҹҮЁрҹҮі#рҹҮ®рҹҮіIN_@WangCai_8
+hy2://qQe1z5kU8kN6SlKnDt9Ru3Qp@13.126.66.208:443/?insecure=1&sni=https://t.me/WangCai2🇨🇳#🇮🇳IN_@WangCai_8
+hy2://qQe1z5kU8kN6SlKnDt9Ru3Qp@3.110.31.6:443/?insecure=1&sni=https://t.me/WangCai2🇨🇳#🇮🇳IN_@WangCai_8
+hy2://qQe1z5kU8kN6SlKnDt9Ru3Qp@3.6.91.169:443/?insecure=1&sni=https://t.me/WangCai2🇨🇳#🇮🇳IN_@WangCai_8
 vless://626a9750-0de3-4762-b040-7149f72e422f@online2.moyanri.org:4025?type=tcp&security=none&headerType=http&path=/&host=#
 
 vmess://eyJhZGQiOiJkZS56YXJhc2l0ZS5pciIsImFpZCI6IjAiLCJhbHBuIjoiIiwiZnAiOiIiLCJob3N0IjoiZGUuemFyYXNpdGUuaXIiLCJpZCI6IjdmZWE3NTM4LWUzMjEtNDFkZS1hMzk1LTNhZmNiZDdlYzI3YyIsIm5ldCI6InRjcCIsInBhdGgiOiIvIiwicG9ydCI6IjY1MzMiLCJwcyI6Itin2K7Yqti12KfYtduMIDogTkFTQSBWUE4gLSBEcm92b25lIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJub25lIiwidiI6IjIifQ==
