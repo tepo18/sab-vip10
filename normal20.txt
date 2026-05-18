@@ -1983,9 +1983,8 @@ hy2://2545ab46-6306-4f2b-badd-5531f384d55f@212.192.13.242:4433/?insecure=1&sni=h
 hy2://2545ab46-6306-4f2b-badd-5531f384d55f@68.233.103.254:4433/?insecure=1&sni=ln4.xiaoliyu.cyou#👀6@oneclickvpnkeys
 hy2://4d092122-268a-4a1a-b23f-83931c5abc3a@166.88.142.205:2056/?insecure=1&sni=mg6.mangshe.xyz#👀4@oneclickvpnkeys
 hy2://4d092122-268a-4a1a-b23f-83931c5abc3a@193.123.78.85:2056/?insecure=1&sni=db1.mangshe.xyz#👀7@oneclickvpnkeys
-hy2://qQe1z5kU8kN6SlKnDt9Ru3Qp@13.207.60.235:443/?insecure=1&sni=https://t.me/WangCai2🇨🇳#🇮🇳IN_@WangCai_8
+hy2://qQe1z5kU8kN6SlKnDt9Ru3Qp@13.233.127.26:443/?insecure=1&sni=https://t.me/WangCai2🇨🇳#🇮🇳IN_@WangCai_8
 hy2://qQe1z5kU8kN6SlKnDt9Ru3Qp@202.146.222.30:443/?insecure=1&sni=https://t.me/WangCai2🇨🇳#🇭🇰HK_@WangCai_8
-hy2://qQe1z5kU8kN6SlKnDt9Ru3Qp@43.205.210.56:443/?insecure=1&sni=https://t.me/WangCai2🇨🇳#🇮🇳IN_@WangCai_8
 hy2://Telegram--%3E%40Ln2Ray@206.71.158.23:45000/?insecure=1&sni=gavazn.55994421.xyz&obfs=salamander&obfs-password=Telegram--%3E%40Ln2Ray#%F0%9F%87%BA%F0%9F%87%B8%40FREE2CONFIG%20
 hy2://b4bd0613-ff7c-4f2f-954d-185915e6ddad@206.71.158.40:35000/?insecure=1&sni=api.kermanshahi.org&obfs=salamander&obfs-password=%40JavidnamanIran-Javid-SHAH-KingRezaPahlavi#%F0%9F%87%B3%F0%9F%87%B1%40FREE2CONFIG%20
 hy2://b4bd0613-ff7c-4f2f-954d-185915e6ddad@206.71.158.41:35000/?insecure=1&sni=api.kermanshahi.org&obfs=salamander&obfs-password=%40JavidnamanIran-Javid-SHAH-KingRezaPahlavi#%F0%9F%87%B3%F0%9F%87%B1%40FREE2CONFIG%20
@@ -2016,3 +2015,5 @@ hy2://2545ab46-6306-4f2b-badd-5531f384d55f@212.192.13.242:4433/?insecure=1&sni=h
 hy2://2545ab46-6306-4f2b-badd-5531f384d55f@68.233.103.254:4433/?insecure=1&sni=ln4.xiaoliyu.cyou#%F0%9F%91%806%40oneclickvpnkeys
 hy2://4d092122-268a-4a1a-b23f-83931c5abc3a@166.88.142.205:2056/?insecure=1&sni=mg6.mangshe.xyz#%F0%9F%91%804%40oneclickvpnkeys
 hy2://4d092122-268a-4a1a-b23f-83931c5abc3a@193.123.78.85:2056/?insecure=1&sni=db1.mangshe.xyz#%F0%9F%91%807%40oneclickvpnkeys
+hy2://qQe1z5kU8kN6SlKnDt9Ru3Qp@13.207.60.235:443/?insecure=1&sni=https://t.me/WangCai2🇨🇳#🇮🇳IN_@WangCai_8
+hy2://qQe1z5kU8kN6SlKnDt9Ru3Qp@43.205.210.56:443/?insecure=1&sni=https://t.me/WangCai2🇨🇳#🇮🇳IN_@WangCai_8
