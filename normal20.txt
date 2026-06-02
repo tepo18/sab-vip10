@@ -1998,6 +1998,5 @@ hy2://Telegram--%3E%40Ln2Ray@206.71.158.23:45000/?insecure=1&sni=gavazn.55994421
 hy2://71504eaf-29ac-4190-89d1-dd9ce2c9ee14@[2001:bc8:1640:50eb:dc00:ff:fe57:dd6f]:443/?mport=50000-60000&insecure=1&sni=Ab.ac&obfs=salamander&obfs-password=FnFgQIckcMRtKq7i#%F0%9F%87%B3%F0%9F%87%B1%40FREE2CONFIG%20%20%20%20
 hy2://Yet-Another-Public-Config-1@[2a14:3f87:f001:13::a]:35200/?insecure=1&sni=YAPC-1.afshin.ir&obfs=salamander&obfs-password=Yet-Another-Public-Config-1#%F0%9F%87%B3%F0%9F%87%B1%40FREE2CONFIG%20%20%20
 hy2://Telegram--%3E%40Ln2Ray@[2a14:3f87:f001:9::a]:45000/?insecure=1&sni=gavazn.55994421.xyz&obfs=salamander&obfs-password=Telegram--%3E%40Ln2Ray#%F0%9F%87%B3%F0%9F%87%B1%40FREE2CONFIG%20%20%20
-hy2://t8667063839:6vKyNTx3vuJeAGEpoJtE6gauKZ5OPiok@vids.jibijij.top:27039?obfs=salamander&obfs-password=OzJ10Bk1Z9MfaTDFAgDX0HldGsMiI7C2&pinSHA256=D4:21:07:A8:C0:73:FB:35:55:78:4A:82:CD:26:20:A5:1B:81:1F:92:56:EB:39:B1:B9:65:4A:39:B5:95:06:58&sni=bts.com&insecure=1#IPv4.@Vasl_b
-hy2://Masir_Sefid@18.194.238.82:444/?sni=qus.masir-sefid.shop&obfs=salamander&obfs-password=Masir_Sefid#t.me/FREECONFIGSPLUS
 hy2://b4bd0613-ff7c-4f2f-954d-185915e6ddad@181.214.99.162:35000/?insecure=1&sni=api.kermanshahi.org&obfs=salamander&obfs-password=@JavidnamanIran-Javid-SHAH-KingRezaPahlavi&note=@FreeOnlineVPN#🇩🇪
+hy2://Masir_Sefid@18.194.238.82:444/?sni=qus.masir-sefid.shop&obfs=salamander&obfs-password=Masir_Sefid#t.me/FREECONFIGSPLUS کانفیگ های رایگان
