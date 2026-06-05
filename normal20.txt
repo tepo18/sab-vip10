@@ -2009,4 +2009,5 @@ hy2://18cf8030-1ceb-4b7d-8c0c-c036413c144e@202.61.205.86:4433/?insecure=1&sni=de
 hy2://rstnnl2705:56Uhk1CcaR5mCmGpaN0AsOAmRscZSIaM@musicclips.videolinks.ru:8443/?insecure=1&sni=musicclips.videolinks.ru&obfs=salamander&obfs-password=hH0l2Acqz3RtodoSCNCpNJqDSZtp4Qw#🇫🇮FI%20%20ROSE—09
 hy2://rstnnl2705:ZmRjX7MkeEqZ5GQUIT5VO53ARuy6nrmQ@nrealistic.nn-foto.ru:8932/?insecure=1&sni=nrealistic.nn-foto.ru&obfs=salamander&obfs-password=CvxXZnSth1bVJKGFP2cof4rI52ifHJ2W#🇳🇱NL%20%20ROSE—10
 hy2://b4bd0613-ff7c-4f2f-954d-185915e6ddad@181.214.99.162:35000/?insecure=1&sni=api.kermanshahi.org&obfs=salamander&obfs-password=@JavidnamanIran-Javid-SHAH-KingRezaPahlavi&note=@FreeOnlineVPN#🇩🇪
+hy2://bce6c821-200d-421f-bf3d-7159e5246ea0@155.248.209.237:33333/?insecure=1#%F0%9F%87%BA%F0%9F%87%B8US%20%20ROSE%E2%80%9
 hy2://zhangyang@130.61.50.75:6443/?insecure=1&sni=dash.cloudflare.com#%F0%9F%87%A9%F0%9F%87%AADE%20%20ROSE%E2%80%9403
