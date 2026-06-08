@@ -1,0 +1,993 @@
+#!/data/data/com.termux/files/usr/bin/python3
+# -*- coding: utf-8 -*-
+"""
+Ultra Live AutoSwitch Parser – Clash Meta Generator
+با سوئیچینگ زنده و خودکار
+"""
+# ====================== IMPORTS ======================
+import time
+import yaml
+from concurrent.futures import ThreadPoolExecutor
+import threading
+import threading
+import os
+import sys
+import re
+import socket
+import time
+import json
+import base64
+import yaml
+import subprocess
+
+from urllib.parse import (
+    urlparse,
+    parse_qs,
+    unquote
+)
+
+from concurrent.futures import (
+    ThreadPoolExecutor,
+    as_completed
+)
+
+
+# ---------------- Paths ----------------
+BASE_DIR = "/storage/emulated/0/Download/ClashMetaParser"
+os.makedirs(BASE_DIR, exist_ok=True)
+INPUT_PATH = os.path.join(BASE_DIR, "input.txt")
+
+# باز کردن nano برای ورودی
+with open(INPUT_PATH,"w",encoding="utf-8") as f: f.write("")
+try: subprocess.call(["nano", INPUT_PATH])
+except: pass
+
+# مسیر خروجی
+out_folder = input("Enter output folder name in Download: ").strip() or "ClashMetaExport"
+OUT_DIR = os.path.join("/storage/emulated/0/Download", out_folder)
+os.makedirs(OUT_DIR, exist_ok=True)
+out_file = input("Enter output file name (without extension): ").strip() or "proxies"
+OUT_PATH = os.path.join(OUT_DIR, f"{out_file}.yaml")
+
+# ---------------- Helpers ----------------
+def b64fix(s):
+    if not s:
+        return ""
+    s = str(s).strip().replace("\n", "").replace(" ", "")
+    s = s.replace("-", "+").replace("_", "/")
+    pad = len(s) % 4
+    if pad:
+        s += "=" * (4 - pad)
+    return s
+
+def is_probably_base64(s):
+    if not isinstance(s, str): return False
+    s = s.strip()
+    if len(s) < 8: return False
+    try:
+        base64.b64decode(b64fix(s))
+        return True
+    except Exception:
+        return False
+
+def safe_int(v, default=0):
+    try:
+        return int(v)
+    except Exception:
+        try:
+            return int(float(v))
+        except Exception:
+            return default
+
+def sanitize(s):
+    if not s: return ""
+    return re.sub(r"[^A-Za-z0-9_\- .]", "", str(s)).strip()
+
+_used_names = set()
+def uniq_name(base):
+    base = sanitize(str(base)) or "Proxy"
+    name = base
+    i = 2
+    while name in _used_names:
+        name = f"{base} {i}"
+        i += 1
+    _used_names.add(name)
+    return name
+
+def tail(s, n=6):
+    if not s: return ""
+    s2 = re.sub(r"[-]", "", str(s))
+    return s2[-n:] if len(s2) >= n else s2
+    def b64fix(s): return s.replace("-", "+").replace("_", "/") + "=" * (-len(s) % 4)
+    
+def safe_int(x,d=0): 
+    try: return int(x)
+    except: return d
+def sanitize(s): return re.sub(r'[\n\r]+','',str(s).strip())
+
+_used_names=set()
+def uniq_name(base):
+    name=base; c=1
+    while name in _used_names:
+        name=f"{base}-{c}"; c+=1
+    _used_names.add(name)
+    return name
+
+def split_host_port(hostport):
+    if ":" in hostport: h,p=hostport.split(":",1); return h.strip(), safe_int(p)
+    return hostport.strip(), None
+    
+    # ---------------- TCP Ping ----------------
+def tcp_ping_once(host,port,timeout=1.0):
+    try:
+        s=socket.socket(); s.settimeout(timeout)
+        t0=time.time(); s.connect((host,port)); s.close()
+        return int((time.time()-t0)*1000)
+    except: return None
+
+def tcp_ping_median(host,port,n=3):
+    results=[p for _ in range(n) if (p:=tcp_ping_once(host,port))]
+    if not results: return None
+    results.sort(); m=len(results)//2
+    return results[m] if len(results)%2 else (results[m-1]+results[m])//2
+
+def attach_ping(proxy):
+    proxy["ping"]=tcp_ping_median(proxy["server"],proxy["port"])
+    proxy["status"]="ok" if proxy["ping"] is not None else "fail"
+    return proxy
+
+# --------- JSON fragments extractor (for YAML/JSON bundles) ----------
+def extract_json_objects(text):
+    objs = []
+    stack = []
+    start = None
+    for i, c in enumerate(text):
+        if c == "{":
+            if not stack:
+                start = i
+            stack.append("{")
+        elif c == "}":
+            if stack:
+                stack.pop()
+                if not stack and start is not None:
+                    objs.append(text[start:i+1])
+                    start = None
+    return objs
+
+# --------- PARSERS for many link types ----------
+
+# VLESS
+def parse_vless(line):
+    try:
+        parsed = urlparse(line)
+        # urlparse breaks vless sometimes; fallback to manual split
+        raw = line[8:]
+        frag = ""
+        if "#" in raw:
+            raw, frag = raw.split("#", 1)
+            frag = unquote(frag)
+        if "?" in raw:
+            main, qs = raw.split("?", 1)
+        else:
+            main, qs = raw, ""
+        if "@" not in main:
+            return None
+        uid, rest = main.split("@", 1)
+        hostport = rest
+        host, port = hostport.split(":", 1) if ":" in hostport else (hostport, "443")
+        q = dict(x.split("=", 1) for x in qs.split("&") if "=" in x) if qs else {}
+        net = (q.get("type") or q.get("network") or "tcp").lower()
+        sec = (q.get("security") or "").lower()
+        name = frag or q.get("remark") or f"vless-{host}-{tail(uid)}"
+        p = {
+            "name": uniq_name(name),
+            "type": "vless",
+            "server": host,
+            "port": safe_int(port, 443),
+            "uuid": uid,
+            "encryption": q.get("encryption") or "none",
+            "network": net,
+            "udp": True
+        }
+        if sec in ("tls", "reality"):
+            p["tls"] = True
+            p["servername"] = q.get("sni") or q.get("host") or host
+        if net == "ws":
+            ws_path = q.get("path") or "/"
+            hosth = q.get("host") or q.get("Host") or ""
+            p["ws-opts"] = {"path": ws_path}
+            if hosth:
+                p["ws-opts"]["headers"] = {"Host": hosth}
+        if net in ("grpc",):
+            svc = q.get("serviceName") or q.get("service") or ""
+            if svc:
+                p["grpc-opts"] = {"grpc-service-name": svc}
+        # reality specific params
+        if sec == "reality" or q.get("pbk") or q.get("sid"):
+            p["tls"] = True
+            p["reality-opts"] = {"public-key": q.get("pbk", ""), "short-id": q.get("sid", ""), "server-name": q.get("sni") or host}
+        return p
+    except Exception:
+        return None
+
+# VMESS
+def parse_vmess(line):
+    try:
+        raw = line[8:].strip()
+        # sometimes people put plain json or urlencoded json
+        decoded = None
+        try:
+            decoded = base64.b64decode(b64fix(raw)).decode("utf-8", "ignore")
+            js = json.loads(decoded)
+        except Exception:
+            try:
+                js = json.loads(unquote(raw))
+            except Exception:
+                return None
+        host = js.get("add") or js.get("address") or js.get("server")
+        port = safe_int(js.get("port") or js.get("ps") or 0)
+        uid = js.get("id") or js.get("uuid")
+        if not (host and port and uid):
+            return None
+        net = (js.get("net") or "tcp").lower()
+        name = js.get("ps") or f"vmess-{host}-{tail(uid)}"
+        p = {
+            "name": uniq_name(name),
+            "type": "vmess",
+            "server": host,
+            "port": port,
+            "uuid": uid,
+            "alterId": safe_int(js.get("aid", js.get("alterId", 0))),
+            "cipher": js.get("cipher") or js.get("scy") or "auto",
+            "network": net,
+            "udp": True
+        }
+        if js.get("tls") == "tls":
+            p["tls"] = True
+            p["servername"] = js.get("sni") or js.get("host") or host
+        if net == "ws":
+            p["ws-opts"] = {"path": js.get("path") or "/", "headers": {"Host": js.get("host") or ""}}
+        if net == "grpc":
+            svc = js.get("serviceName") or ""
+            if svc:
+                p["grpc-opts"] = {"grpc-service-name": svc}
+        return p
+    except Exception:
+        return None
+
+# TROJAN
+def parse_trojan(line):
+    try:
+        parsed = urlparse(line)
+        pwd = parsed.username or parsed.netloc.split("@")[0] if "@" in parsed.netloc else parsed.username
+        host = parsed.hostname or ""
+        port = parsed.port or safe_int(parse_qs(parsed.query).get("port", [443])[0], 443)
+        frag = parsed.fragment or ""
+        if not host:
+            return None
+        name = frag or f"trojan-{host}"
+        p = {"name": uniq_name(name), "type": "trojan", "server": host, "port": port, "password": pwd, "udp": True, "network": "tcp"}
+        q = parse_qs(parsed.query)
+        if q.get("sni"): p["sni"] = q.get("sni")[0]
+        if q.get("type", ["tcp"])[0] == "ws":
+            p["network"] = "ws"
+            p["ws-opts"] = {"path": q.get("path", ["/"])[0], "headers": {"Host": q.get("host", [""])[0]}}
+        return p
+    except Exception:
+        return None
+
+# SHADOWSOCKS (ss://)
+def parse_ss(line):
+    try:
+        body = line[5:]
+        frag = ""
+        if "#" in body:
+            body, frag = body.split("#", 1)
+            frag = unquote(frag)
+        # two modes: method:pass@host:port OR base64-encoded userinfo@host:port
+        if "@" in body and ":" in body.split("@", 1)[0]:
+            creds, hostport = body.split("@", 1)
+            # creds might be base64 or plain user:pass
+            try:
+                decoded = base64.b64decode(b64fix(creds)).decode("utf-8", "ignore")
+                if ":" in decoded:
+                    method, password = decoded.split(":", 1)
+                else:
+                    method, password = creds.split(":", 1)
+            except Exception:
+                try:
+                    method, password = creds.split(":", 1)
+                except Exception:
+                    return None
+            host, port = hostport.split(":", 1)
+        else:
+            # whole thing base64 encoded: base64(method:pwd@host:port)
+            try:
+                decoded = base64.b64decode(b64fix(body)).decode("utf-8", "ignore")
+                pre, addr = decoded.split("@", 1)
+                method, password = pre.split(":", 1)
+                host, port = addr.split(":", 1)
+            except Exception:
+                return None
+        if not (host and port):
+            return None
+        name = frag or f"ss-{host}-{port}"
+        p = {"name": uniq_name(name), "type": "ss", "server": host, "port": safe_int(port), "cipher": method, "password": password, "udp": True}
+        return p
+    except Exception:
+        return None
+
+# SSR (ssr://)
+def parse_ssr(line):
+    try:
+        raw = line[6:]
+        dec = base64.b64decode(b64fix(raw)).decode("utf-8", "ignore")
+        parts = dec.split("/?")
+        main = parts[0]
+        params = parts[1] if len(parts) > 1 else ""
+        server, port, proto, method, obfs, pwd_b64 = main.split(":")
+        password = base64.b64decode(b64fix(pwd_b64)).decode("utf-8", "ignore")
+        q = {}
+        if params:
+            qs = parse_qs(params)
+            for k, v in qs.items():
+                try:
+                    q[k] = base64.b64decode(b64fix(v[0])).decode("utf-8", "ignore")
+                except Exception:
+                    q[k] = v[0]
+        name = q.get("remarks") or f"ssr-{server}-{port}"
+        p = {"name": uniq_name(name), "type": "ssr", "server": server, "port": safe_int(port), "cipher": method, "password": password, "protocol": proto, "obfs": obfs, "obfs-param": q.get("obfsparam", ""), "protocol-param": q.get("protoparam", ""), "udp": True}
+        return p
+    except Exception:
+        return None
+
+# HYSTERIA (hy://)
+def parse_hysteria1(line):
+    try:
+        raw = line[len("hy://"):]
+        frag = ""
+        if "#" in raw:
+            raw, frag = raw.split("#", 1)
+            frag = unquote(frag)
+        if "?" in raw:
+            main, qs = raw.split("?", 1)
+        else:
+            main, qs = raw, ""
+        if "@" not in main:
+            return None
+        auth, hostport = main.split("@", 1)
+        host, port = hostport.split(":", 1)
+        q = dict(x.split("=", 1) for x in qs.split("&") if "=" in qs) if qs else {}
+        name = frag or f"hysteria-{host}"
+        p = {"name": uniq_name(name), "type": "hysteria", "server": host, "port": safe_int(port), "auth": auth, "sni": q.get("sni", host), "alpn": q.get("alpn", "").split(",") if q.get("alpn") else [], "udp": True}
+        return p
+    except Exception:
+        return None
+
+# HYSTERIA2 (hy2:// or hysteria2://)
+def parse_hysteria2(line):
+    try:
+        raw = line
+        if line.startswith("hysteria2://"):
+            raw = line[len("hysteria2://"):]
+        elif line.startswith("hy2://"):
+            raw = line[len("hy2://"):]
+        frag = ""
+        if "#" in raw:
+            raw, frag = raw.split("#", 1); frag = unquote(frag)
+        if "?" in raw:
+            main, qs = raw.split("?", 1)
+        else:
+            main, qs = raw, ""
+        if "@" not in main:
+            return None
+        auth, hostport = main.split("@", 1)
+        host, port = hostport.split(":", 1)
+        user = ""
+        pwd = ""
+        if ":" in auth:
+            user, pwd = auth.split(":", 1)
+        else:
+            pwd = auth
+        q = dict(x.split("=", 1) for x in qs.split("&") if "=" in qs) if qs else {}
+        name = frag or f"hysteria2-{host}"
+        p = {"name": uniq_name(name), "type": "hysteria2", "server": host, "port": safe_int(port), "password": pwd, "sni": q.get("sni", host), "alpn": q.get("alpn", "").split(",") if q.get("alpn") else [], "udp": True}
+        return p
+    except Exception:
+        return None
+
+# TUIC
+def parse_tuic(line):
+    try:
+        raw = line[len("tuic://"):]
+        frag = ""
+        if "#" in raw:
+            raw, frag = raw.split("#", 1); frag = unquote(frag)
+        if "?" in raw:
+            main, qs = raw.split("?", 1)
+        else:
+            main, qs = raw, ""
+        if "@" not in main:
+            return None
+        uidpwd, hostport = main.split("@", 1)
+        if ":" in uidpwd:
+            uuid, pwd = uidpwd.split(":", 1)
+        else:
+            uuid, pwd = uidpwd, ""
+        host, port = hostport.split(":", 1)
+        q = dict(x.split("=", 1) for x in qs.split("&") if "=" in qs) if qs else {}
+        name = frag or f"tuic-{host}"
+        p = {"name": uniq_name(name), "type": "tuic", "server": host, "port": safe_int(port), "uuid": uuid, "password": pwd, "congestion-controller": q.get("congestion", "bbr"), "alpn": q.get("alpn", "").split(",") if q.get("alpn") else ["h3"], "sni": q.get("sni", host), "udp": True}
+        if q.get("zerortt"): p["zeroRTT"] = True
+        return p
+    except Exception:
+        return None
+
+# WIREGUARD (wg:// or inline config)
+def parse_wireguard(line):
+    try:
+        if line.startswith("wg://"):
+            parsed = urlparse(line)
+            pub = parsed.username
+            host = parsed.hostname
+            port = parsed.port
+            q = parse_qs(parsed.query)
+            name = parsed.fragment or f"wg-{host}"
+            p = {"name": uniq_name(name), "type": "wireguard", "server": host, "port": port or 51820, "public_key": pub or "", "private_key": q.get("privateKey", [""])[0], "address": q.get("address", [""])[0], "mtu": safe_int(q.get("mtu", [1280])[0]), "udp": True}
+            if "dns" in q: p["dns"] = q["dns"]
+            if "allowedIPs" in q: p["allowed-ips"] = q["allowedIPs"][0].split(",")
+            return p
+        else:
+            # try parsing inline config: look for PublicKey and Endpoint lines
+            cfg = line
+            pub = re.search(r"PublicKey\s*=\s*([A-Za-z0-9+/=]+)", cfg)
+            endpoint = re.search(r"Endpoint\s*=\s*([^:\n\r]+):?(\d+)?", cfg)
+            if endpoint:
+                host = endpoint.group(1)
+                port = safe_int(endpoint.group(2) or 51820)
+            else:
+                return None
+            pubk = pub.group(1) if pub else ""
+            name = f"wg-{host}"
+            p = {"name": uniq_name(name), "type": "wireguard", "server": host, "port": port, "public_key": pubk, "udp": True}
+            return p
+    except Exception:
+        return None
+
+# H2 (http2)
+def parse_h2(line):
+    try:
+        parsed = urlparse(line)
+        host = parsed.hostname
+        port = parsed.port or 443
+        q = parse_qs(parsed.query)
+        name = parsed.fragment or f"h2-{host}"
+        p = {"name": uniq_name(name), "type": "h2", "server": host, "port": port, "tls": True, "servername": q.get("sni", [host])[0], "path": q.get("path", ["/"])[0], "host": q.get("host", [host])[0], "alpn": ["h2"], "udp": True}
+        return p
+    except Exception:
+        return None
+
+# QUIC
+def parse_quic(line):
+    try:
+        parsed = urlparse(line)
+        host = parsed.hostname
+        port = parsed.port or 443
+        q = parse_qs(parsed.query)
+        name = parsed.fragment or f"quic-{host}"
+        p = {"name": uniq_name(name), "type": "quic", "server": host, "port": port, "key": q.get("key", [""])[0], "alpn": q.get("alpn", ["h3"])[0].split(","), "udp": True}
+        if q.get("security", [""])[0] == "reality":
+            p["reality"] = {"enabled": True, "public-key": q.get("pbk", [""])[0], "short-id": q.get("sid", [""])[0], "server-name": q.get("sni", [host])[0]}
+        return p
+    except Exception:
+        return None
+
+
+# GRPC (standalone)
+def parse_grpc(line):
+    try:
+        parsed = urlparse(line)
+        host = parsed.hostname
+        port = parsed.port or 443
+        q = parse_qs(parsed.query)
+        name = parsed.fragment or f"grpc-{host}"
+        p = {"name": uniq_name(name), "type": "grpc", "server": host, "port": port, "service": q.get("service", [""])[0], "sni": q.get("sni", [host])[0], "udp": True}
+        return p
+    except Exception:
+        return None
+
+# HTTP / SOCKS quick parsers
+def parse_http(line):
+    try:
+        parsed = urlparse(line)
+        host = parsed.hostname
+        port = parsed.port
+        if not (host and port): return None
+        user = parsed.username or ""
+        pwd = parsed.password or ""
+        name = parsed.fragment or f"http-{host}"
+        return {"name": uniq_name(name), "type": "http", "server": host, "port": port, "username": user, "password": pwd, "udp": False}
+    except Exception:
+        return None
+
+def parse_socks(line):
+    try:
+        parsed = urlparse(line)
+        host = parsed.hostname
+        port = parsed.port
+        if not (host and port): return None
+        user = parsed.username or ""
+        pwd = parsed.password or ""
+        name = parsed.fragment or f"socks-{host}"
+        return {"name": uniq_name(name), "type": "socks5", "server": host, "port": port, "username": user, "password": pwd, "udp": True}
+    except Exception:
+        return None
+
+# --------- Parse JSON node (xray / sing-box style) ----------
+def parse_json_node(obj):
+    out = []
+    try:
+        if not isinstance(obj, dict):
+            return out
+        outbounds = obj.get("outbounds") or obj.get("proxy") or []
+        if isinstance(outbounds, dict):
+            outbounds = [outbounds]
+        for ob in outbounds:
+            if not isinstance(ob, dict):
+                continue
+            proto = (ob.get("protocol") or ob.get("type") or "").lower()
+            # handle vless/vmess
+            if proto in ("vless", "vmess"):
+                settings = ob.get("settings") or {}
+                vnext = settings.get("vnext") or settings.get("servers") or []
+                v0 = vnext[0] if vnext else {}
+                users = v0.get("users") or v0.get("users", []) or [{}]
+                user = users[0] if users else {}
+                server = v0.get("address") or v0.get("server") or v0.get("host") or ob.get("address") or ""
+                port = safe_int(v0.get("port") or settings.get("port") or ob.get("port") or 0)
+                uid = user.get("id") or user.get("uuid") or ""
+                if not (server and port):
+                    continue
+                net = (ob.get("streamSettings") or {}).get("network") or (settings.get("network") or "tcp")
+                name = ob.get("tag") or f"{proto}-{server}"
+                p = {"name": uniq_name(name), "type": proto, "server": server, "port": port, "network": net, "udp": True}
+                if proto == "vless":
+                    if uid: p["uuid"] = uid
+                    p["encryption"] = "none"
+                else:
+                    if uid: p["uuid"] = uid
+                    p["alterId"] = safe_int(user.get("alterId", user.get("aid", 0)))
+                    p["cipher"] = user.get("cipher") or user.get("scy") or "auto"
+                # stream settings
+                stream = ob.get("streamSettings") or {}
+                sec = (stream.get("security") or "").lower()
+                if sec in ("tls", "reality"):
+                    p["tls"] = True
+                    p["servername"] = (stream.get("tlsSettings") or {}).get("serverName") or server
+                if net == "ws":
+                    wsset = stream.get("wsSettings") or {}
+                    p["ws-opts"] = {"path": wsset.get("path", "/")}
+                    if wsset.get("headers"): p["ws-opts"]["headers"] = wsset.get("headers")
+                if net == "grpc":
+                    g = stream.get("grpcSettings") or {}
+                    svc = g.get("serviceName") or ""
+                    if svc: p["grpc-opts"] = {"grpc-service-name": svc}
+                out.append(p)
+            elif proto == "trojan":
+                settings = ob.get("settings") or {}
+                servers = settings.get("servers") or []
+                s0 = servers[0] if servers else {}
+                server = s0.get("address") or s0.get("server") or ob.get("address") or ""
+                port = safe_int(s0.get("port") or ob.get("port") or 443)
+                pwd = s0.get("password") or s0.get("pass") or ""
+                if not (server and port and pwd): continue
+                name = ob.get("tag") or f"trojan-{server}"
+                p = {"name": uniq_name(name), "type": "trojan", "server": server, "port": port, "password": pwd, "udp": True}
+                out.append(p)
+            elif proto in ("shadowsocks", "ss"):
+                settings = ob.get("settings") or {}
+                servers = settings.get("servers") or []
+                s0 = servers[0] if servers else {}
+                server = s0.get("address") or s0.get("server") or ob.get("address") or ""
+                port = safe_int(s0.get("port") or ob.get("port") or 0)
+                method = s0.get("method") or s0.get("cipher") or ""
+                pwd = s0.get("password") or s0.get("passwd") or ""
+                if not (server and port and method and pwd): continue
+                name = ob.get("tag") or f"ss-{server}"
+                p = {"name": uniq_name(name), "type": "ss", "server": server, "port": port, "cipher": method, "password": pwd, "udp": True}
+                out.append(p)
+            elif proto == "ssr":
+                # simplified handling if present as servers list
+                settings = ob.get("settings") or {}
+                servers = settings.get("servers") or []
+                s0 = servers[0] if servers else {}
+                server = s0.get("address") or ""
+                port = safe_int(s0.get("port") or 0)
+                method = s0.get("method") or ""
+                pwd = s0.get("password") or ""
+                proto_s = s0.get("protocol") or ""
+                obfs = s0.get("obfs") or ""
+                if server and port and pwd:
+                    name = ob.get("tag") or f"ssr-{server}"
+                    p = {"name": uniq_name(name), "type": "ssr", "server": server, "port": port, "cipher": method, "password": pwd, "protocol": proto_s, "obfs": obfs, "udp": True}
+                    out.append(p)
+            # additional protocols could be added here similarly...
+        return out
+    except Exception:
+        return []
+
+# --------- YAML nodes parser ----------
+def parse_yaml_nodes(text):
+    out = []
+    try:
+        docs = list(yaml.safe_load_all(text))
+        for doc in docs:
+            if not isinstance(doc, dict): continue
+            proxies = doc.get("proxies") or doc.get("proxy") or []
+            if isinstance(proxies, dict): proxies = [proxies]
+            for p in proxies:
+                if isinstance(p, dict) and p.get("type") and p.get("server"):
+                    # normalize keys
+                    out.append(p)
+        return out
+    except Exception:
+        return []
+
+# --------- base64 subscription bundles (one line may be base64 of newline-delimited links)
+def parse_base64_bundle(line):
+    out = []
+    try:
+        raw = b64fix(line.strip())
+        dec = base64.b64decode(raw).decode("utf-8", "ignore")
+        # if it's JSON
+        try:
+            js = json.loads(dec)
+            out += parse_json_node(js)
+        except Exception:
+            # treat as lines of url links
+            for ln in dec.splitlines():
+                ln = ln.strip()
+                if not ln: continue
+                out += parse_line_any(ln)
+        return out
+    except Exception:
+        return []
+
+# helper to parse one single line into proxy(s)
+def parse_line_any(line):
+    line = line.strip()
+    if not line:
+        return []
+    line_l = line.lower()
+    try:
+        if line_l.startswith("vless://"):
+            p = parse_vless(line)
+            return [p] if p else []
+        if line_l.startswith("vmess://"):
+            p = parse_vmess(line)
+            return [p] if p else []
+        if line_l.startswith("trojan://"):
+            p = parse_trojan(line)
+            return [p] if p else []
+        if line_l.startswith("ss://"):
+            p = parse_ss(line)
+            return [p] if p else []
+        if line_l.startswith("ssr://"):
+            p = parse_ssr(line)
+            return [p] if p else []
+        if line_l.startswith("hy://") or line_l.startswith("hysteria://"):
+            p = parse_hysteria1(line)
+            return [p] if p else []
+        if line_l.startswith("hy2://") or line_l.startswith("hysteria2://"):
+            p = parse_hysteria2(line)
+            return [p] if p else []
+        if line_l.startswith("tuic://"):
+            p = parse_tuic(line)
+            return [p] if p else []
+        if line_l.startswith("wg://") or ("[Interface]" in line and "[Peer]" in line):
+            p = parse_wireguard(line)
+            return [p] if p else []
+        if line_l.startswith("h2://"):
+            p = parse_h2(line)
+            return [p] if p else []
+        if line_l.startswith("quic://"):
+            p = parse_quic(line)
+            return [p] if p else []
+        if line_l.startswith("grpc://"):
+            p = parse_grpc(line)
+            return [p] if p else []
+        if line_l.startswith("http://") or line_l.startswith("https://"):
+            # could be a clash raw yaml location or http proxy line
+            # try to treat as http proxy url
+            p = parse_http(line)
+            return [p] if p else []
+        if line_l.startswith("socks://") or line_l.startswith("socks5://"):
+            p = parse_socks(line)
+            return [p] if p else []
+        # fallback: check if it's a base64 subscription
+        if is_probably_base64(line):
+            return parse_base64_bundle(line)
+        # fallback: JSON or YAML block
+        if line.startswith("{") and line.endswith("}"):
+            try:
+                js = json.loads(line)
+                return parse_json_node(js)
+            except Exception:
+                return []
+        if ":" in line and "\n" in line:
+            return parse_yaml_nodes(line)
+    except Exception:
+        return []
+    return []
+
+# --------- MASTER: parse_any (accepts whole input text) ----------
+def parse_any(text):
+    proxies = []
+    if not text or not text.strip():
+        return []
+    # first try to find JSON fragments inside text
+    for frag in extract_json_objects(text):
+        try:
+            js = json.loads(frag)
+            proxies += parse_json_node(js)
+        except Exception:
+            pass
+    # then treat the whole text as potential YAML
+    try:
+        yaml_nodes = parse_yaml_nodes(text)
+        if yaml_nodes:
+            proxies += yaml_nodes
+    except Exception:
+        pass
+    # treat as possible base64-only single line
+    lines = [ln.strip() for ln in text.splitlines() if ln.strip()]
+    for ln in lines:
+        # if line looks like a base64 subscription that decodes to many lines, handle it specially
+        if is_probably_base64(ln) and not ln.lower().startswith(("vmess://","vless://","ss://","trojan://","ssr://")):
+            proxies += parse_base64_bundle(ln)
+            continue
+        proxies += parse_line_any(ln)
+    # final filter: keep only validated format (we will ping later)
+    normalized = []
+    for p in proxies:
+        if not isinstance(p, dict):
+            continue
+        # normalize port to int
+        p["port"] = int(safe_int(p.get("port", 0)))
+        # set default name if missing
+        if not p.get("name"):
+            p["name"] = uniq_name(f"{p.get('type')}-{p.get('server')}-{tail(p.get('port'))}")
+        else:
+            p["name"] = uniq_name(p["name"])
+        # keep it, will be validated/pinged later
+        normalized.append(p)
+    return normalized
+
+# --------- dedupe and keep only alive proxies ----------
+def dedupe_proxies(proxies):
+    final = []
+    seen = set()
+    for p in proxies:
+        if not isinstance(p, dict):
+            continue
+        key = (p.get("type"), p.get("server"), int(safe_int(p.get("port"))), p.get("uuid") or p.get("password") or "")
+        if key in seen:
+            continue
+        seen.add(key)
+        final.append(p)
+    return final
+
+# --------- Convert to Clash Meta compatible entries (some normalization) ----------
+def to_clash_meta_entry(p):
+    # user's p is expected validated and alive
+    t = p.get("type").lower()
+    base = {
+        "name": p.get("name"),
+        "type": t,
+        "server": p.get("server"),
+        "port": int(safe_int(p.get("port"))),
+    }
+    if t in ("vless",):
+        base["uuid"] = p.get("uuid")
+        base["encryption"] = p.get("encryption", "none")
+        if p.get("network"): base["network"] = p.get("network")
+        if p.get("tls"): base["tls"] = True
+        if p.get("ws-opts"): base["ws-opts"] = p.get("ws-opts")
+        if p.get("grpc-opts"): base["grpc-opts"] = p.get("grpc-opts")
+        if p.get("reality-opts"): base["reality-opts"] = p.get("reality-opts")
+    elif t in ("vmess",):
+        base["uuid"] = p.get("uuid")
+        base["alterId"] = safe_int(p.get("alterId", p.get("aid", 0)))
+        base["cipher"] = p.get("cipher", "auto")
+        if p.get("network"): base["network"] = p.get("network")
+        if p.get("ws-opts"): base["ws-opts"] = p.get("ws-opts")
+        if p.get("grpc-opts"): base["grpc-opts"] = p.get("grpc-opts")
+        if p.get("tls"): base["tls"] = True
+    elif t in ("trojan",):
+        base["password"] = p.get("password")
+        if p.get("sni"): base["sni"] = p.get("sni")
+        if p.get("ws-opts"): base["ws-opts"] = p.get("ws-opts")
+    elif t in ("ss",):
+        base["cipher"] = p.get("cipher")
+        base["password"] = p.get("password")
+    elif t in ("ssr",):
+        base["cipher"] = p.get("cipher")
+        base["password"] = p.get("password")
+        base["protocol"] = p.get("protocol")
+        base["obfs"] = p.get("obfs")
+    elif t in ("hysteria","hysteria2"):
+        if p.get("password"): base["password"] = p.get("password")
+        if p.get("auth"): base["password"] = p.get("auth")
+        if p.get("alpn"): base["alpn"] = p.get("alpn")
+        if p.get("sni"): base["sni"] = p.get("sni")
+    elif t in ("tuic",):
+        base["uuid"] = p.get("uuid")
+        base["password"] = p.get("password")
+        base["congestion-controller"] = p.get("congestion-controller")
+        if p.get("alpn"): base["alpn"] = p.get("alpn")
+    elif t in ("wireguard",):
+        if p.get("public_key"): base["public_key"] = p.get("public_key")
+        if p.get("private_key"): base["private_key"] = p.get("private_key")
+        if p.get("address"): base["address"] = p.get("address")
+    # other fields are preserved if present
+    for k in ("udp","network","servername","sni","reality-opts"):
+        if k in p and k not in base:
+            base[k] = p[k]
+    return base
+    
+    # --------- Validation (keeps only likely-valid proxies) ----------
+def validate_proxy(p):
+    if not isinstance(p, dict): return False
+    if not p.get("type"): return False
+    if not p.get("server"): return False
+    port = safe_int(p.get("port", 0))
+    if not (1 <= port <= 65535): return False
+    t = p.get("type").lower()
+    if t in ("vless", "vmess") and not p.get("uuid"): return False
+    if t == "trojan" and not p.get("password"): return False
+    if t == "ss" and (not p.get("cipher") or not p.get("password")): return False
+    if t == "ssr" and (not p.get("password")): return False
+    # for wireguard allow public/private key presence or at least server
+    if t == "wireguard" and not (p.get("public_key") or p.get("private_key") or p.get("server")): return False
+    return True
+
+# --------- MAIN flow ----------
+def process_input_and_write(input_text, out_path=OUT_PATH, safe_mode=True, ping_attempts=3, ping_timeout=0.3):
+    print("[*] Parsing input...")
+    parsed = parse_eny(input_text)
+    if not parsed:
+        print("[!] No proxies parsed from input.")
+        return False
+    print(f"[*] Parsed {len(parsed)} raw proxies. Deduplicating...")
+    parsed = dedupe_proxies(parsed)
+    print(f"[*] {len(parsed)} unique candidates after dedupe. Validating formats...")
+    parsed = [p for p in parsed if validate_proxy(p)]
+    print(f"[*] {len(parsed)} candidates passed basic validation. Performing SAFE checks (ping)...")
+    alive = []
+    # ping in parallel with conservative timeouts (safe mode)
+    with ThreadPoolExecutor(max_workers=min(40, max(4, len(parsed)))) as ex:
+        futures = { ex.submit(attach_ping, p, attempts=ping_attempts, timeout=ping_timeout): p for p in parsed }
+        for fut in as_completed(futures):
+            try:
+                result = fut.result()
+                if result and result.get("status") == "ok":
+                    alive.append(result)
+            except Exception:
+                pass
+    if not alive:
+        print("[!] No alive proxies found after SAFE checks. Exiting without writing file.")
+        return False
+    print(f"[*] {len(alive)} alive proxies remain. Converting to Clash Meta entries...")
+    # convert and prepare final list (keep only validated again)
+    final_entries = []
+    for p in alive:
+        if not validate_proxy(p): continue
+        final_entries.append(to_clash_meta_entry(p))
+    # final dedupe by key again
+    final_entries = dedupe_proxies(final_entries)
+    # final sanity: ensure each has name/server/port
+    final_entries = [e for e in final_entries if e.get("name") and e.get("server") and 1 <= safe_int(e.get("port")) <= 65535]
+    if not final_entries:
+        print("[!] After conversion no valid final proxies remain.")
+        return False
+    # prepare proxy names for groups
+    proxy_names = [p["name"] for p in final_entries]
+    
+    # ====================== UNIVERSAL PARSE =========================
+
+PARSE_FUNCS = [
+    parse_vless,
+    parse_trojan,
+    parse_ss,
+    parse_hysteria1,
+    parse_hysteria2,
+    parse_tuic,
+    parse_wireguard,
+    parse_h2,
+    parse_quic,
+    parse_grpc,
+    parse_http,
+    parse_socks
+]
+
+def parse_any(l):
+    for p in PARSE_FUNCS:
+        r = p(l)
+        if r:
+            return r
+    return None
+
+
+# ====================== MAIN PROCESS =========================
+
+
+def live_autoswitch(proxies):
+    ok = [p for p in proxies if p["status"] == "ok"]
+    ok.sort(key=lambda x: x["ping"] if x["ping"] else 9999)
+    fast3 = ok
+
+    groups = [
+        {
+            "name": "🔰 Select",
+            "type": "select",
+            "proxies": [p["name"] for p in ok]
+        },
+        {
+            "name": "🏆 BestPing",
+            "type": "fallback",
+            "proxies": [p["name"] for p in ok],
+            "url": "https://www.gstatic.com/generate_204",
+            "interval": 1000
+        },
+        {
+            "name": "🛡Global3",
+            "type": "fallback",
+            "proxies": [p["name"] for p in ok],
+             "url": "http://cp.cloudflare.com/generate_204",
+            "interval": 300
+        },
+        {
+            "name": "🌟Stable Fallback",
+            "type": "fallback",
+            "proxies": [p["name"] for p in ok],
+            "url": "http://www.google.com/generate_204",
+            "interval": 200
+        }
+    ]
+
+    return {
+        "proxies": ok,
+        "proxy-groups": groups
+    }
+    
+    # ---------------- Main ----------------
+if __name__=="__main__":
+    import threading
+    lines=open(INPUT_PATH,"r",encoding="utf-8").read().splitlines()
+    raw_proxies=[p for ln in lines if (p:=parse_any(ln))]
+
+    def update_loop():
+        while True:
+            with ThreadPoolExecutor(max_workers=30) as exe:
+                final=list(exe.map(attach_ping, raw_proxies))
+            data=live_autoswitch(final)
+            with open(OUT_PATH,"w",encoding="utf-8") as f: yaml.dump(data,f,allow_unicode=True)
+            print(f"[Ultra Rapid] YAML updated at {time.strftime('%H:%M:%S')}")
+            time.sleep(2)
+
+    threading.Thread(target=update_loop, daemon=True).start()
+    print(f"\n✅ Ultra Live Rapid AutoSwitch running. Output: {OUT_PATH}")
+    print("Press Ctrl-C to stop live updates.")
+    try: 
+        while True: time.sleep(1)
+    except KeyboardInterrupt:
+        print("\nStopped by user.")
+
+
+    
+ 
+
+
+
+
+
