@@ -1567,14 +1567,6 @@ vless://739b8e9b-f1da-449a-8bfe-bf7b102b7751@iran.zanbor.de:443?type=tcp&encrypt
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpRQ1hEeHVEbFRUTUQ3anRnSFVqSW9q@193.29.139.199:8080#🇳🇱NL
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.204:8080#🇳🇱NL
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.240:8080#🇳🇱NL
-hy2://bce6c821-200d-421f-bf3d-7159e5246ea0@hy2.123266.xyz:33333/?insecure=1&sni=hy2.123266.xyz#🇺🇸US%20%20ROSE—04
-hy2://zhangyang@130.61.50.75:6443/?insecure=1&sni=dash.cloudflare.com#🇩🇪DE%20%20ROSE—05
-hy2://e4e7866d-920b-4a53-a8e2-6ae9b2a42fc2@185.227.108.195:11000/?sni=de-node.farnet.top#🇩🇪DE%20%20ROSE—06
-hy2://rstnnl2705:QtmSqzxgO95zXwNcgVYSjDl02aRsjrrl@reddeadfan.rd-team.ru:2026/?insecure=1&sni=reddeadfan.rd-team.ru&obfs=salamander&obfs-password=FxZylbqClUqVqAs2nezW9kPyFb2edZ2#🇫🇮FI%20%20ROSE—07
-hy2://rstnnl2705:56Uhk1CcaR5mCmGpaN0AsOAmRscZSIaM@musicclips.videolinks.ru:8443/?insecure=1&sni=musicclips.videolinks.ru&obfs=salamander&obfs-password=hH0l2Acqz3RtodoSCNCpNJqDSZtp4Qw#🇳🇱NL%20%20ROSE—08
-hy2://github.com%2FAlvin9999-newpac%2Ffanqiang@62.210.26.173:64772/?insecure=1&sni=bing.com#🇫🇷FR%20%20ROSE—09
-hy2://18cf8030-1ceb-4b7d-8c0c-c036413c144e@202.61.205.86:4433/?insecure=1&sni=de1.xiaoliyu.cyou#🇩🇪DE%20%20ROSE—10
-hy2://18cf8030-1ceb-4b7d-8c0c-c036413c144e@185.228.139.247:4433/?insecure=1&sni=de2.xiaoliyu.cyou#🇩🇪DE%20%20ROSE—11
 hy2://Telegram--%3E%40Ln2Ray@206.71.158.23:45000/?insecure=1&sni=gavazn.55994421.xyz&obfs=salamander&obfs-password=Telegram--%3E%40Ln2Ray#%F0%9F%87%BA%F0%9F%87%B8%40FREE2CONFIG%20
 hy2://b4bd0613-ff7c-4f2f-954d-185915e6ddad@206.71.158.40:35000/?insecure=1&sni=api.kermanshahi.org&obfs=salamander&obfs-password=%40JavidnamanIran-Javid-SHAH-KingRezaPahlavi#%F0%9F%87%B3%F0%9F%87%B1%40FREE2CONFIG%20
 hy2://Yet-Another-Public-Config-1@206.71.158.37:36400/?insecure=1&sni=YAPC-1.afshin.ir&obfs=salamander&obfs-password=Yet-Another-Public-Config-1#%F0%9F%87%B3%F0%9F%87%B1%40FREE2CONFIG%20
@@ -1598,6 +1590,14 @@ hy2://dongtaiwang.com@[2001:bc8:32d7:302::11]:20088/?insecure=1&sni=%F0%9F%94%92
 hy2://71504eaf-29ac-4190-89d1-dd9ce2c9ee14@[2001:bc8:1640:50eb:dc00:ff:fe57:dd6f]:443/?mport=50000-60000&insecure=1&sni=Ab.ac&obfs=salamander&obfs-password=FnFgQIckcMRtKq7i#%F0%9F%87%B3%F0%9F%87%B1%40FREE2CONFIG%20%20%20%20
 hy2://Yet-Another-Public-Config-1@[2a14:3f87:f001:13::a]:35200/?insecure=1&sni=YAPC-1.afshin.ir&obfs=salamander&obfs-password=Yet-Another-Public-Config-1#%F0%9F%87%B3%F0%9F%87%B1%40FREE2CONFIG%20%20%20
 hy2://Telegram--%3E%40Ln2Ray@[2a14:3f87:f001:9::a]:45000/?insecure=1&sni=gavazn.55994421.xyz&obfs=salamander&obfs-password=Telegram--%3E%40Ln2Ray#%F0%9F%87%B3%F0%9F%87%B1%40FREE2CONFIG%20%20%20
+hy2://bce6c821-200d-421f-bf3d-7159e5246ea0@hy2.123266.xyz:33333/?insecure=1&sni=hy2.123266.xyz#🇺🇸US%20%20ROSE—04
+hy2://zhangyang@130.61.50.75:6443/?insecure=1&sni=dash.cloudflare.com#🇩🇪DE%20%20ROSE—05
+hy2://e4e7866d-920b-4a53-a8e2-6ae9b2a42fc2@185.227.108.195:11000/?sni=de-node.farnet.top#🇩🇪DE%20%20ROSE—06
+hy2://rstnnl2705:QtmSqzxgO95zXwNcgVYSjDl02aRsjrrl@reddeadfan.rd-team.ru:2026/?insecure=1&sni=reddeadfan.rd-team.ru&obfs=salamander&obfs-password=FxZylbqClUqVqAs2nezW9kPyFb2edZ2#🇫🇮FI%20%20ROSE—07
+hy2://rstnnl2705:56Uhk1CcaR5mCmGpaN0AsOAmRscZSIaM@musicclips.videolinks.ru:8443/?insecure=1&sni=musicclips.videolinks.ru&obfs=salamander&obfs-password=hH0l2Acqz3RtodoSCNCpNJqDSZtp4Qw#🇳🇱NL%20%20ROSE—08
+hy2://github.com%2FAlvin9999-newpac%2Ffanqiang@62.210.26.173:64772/?insecure=1&sni=bing.com#🇫🇷FR%20%20ROSE—09
+hy2://18cf8030-1ceb-4b7d-8c0c-c036413c144e@202.61.205.86:4433/?insecure=1&sni=de1.xiaoliyu.cyou#🇩🇪DE%20%20ROSE—10
+hy2://18cf8030-1ceb-4b7d-8c0c-c036413c144e@185.228.139.247:4433/?insecure=1&sni=de2.xiaoliyu.cyou#🇩🇪DE%20%20ROSE—11
 hy2://YwuvGJk36B@81.168.83.89:2083?obfs=salamander&obfs-password=khameniiko%40smad%40ret&insecure=1&sni=kotlet.arshiacomplus.dpdns.org#🇬🇧%20United%20Kingdom%20-%2027
 hy2://YwuvGJk36B@81.168.83.89:2083?obfs=salamander&obfs-password=khameniiko%40smad%40ret&insecure=1&sni=kotlet.arshiacomplus.dpdns.org@V2rayNGVPN%3C%3D%DA%A9%D8%A7%D9%86%D9%81%DB%8C%DA%AF%D8%B1%D8%A7%DB%8C%DA%AF%D8%A7%D9%86#🇬🇧%20United%20Kingdom%20-%2028
 hy2://Yet-Another-Public-Config-1@206.71.158.37:36600?obfs=salamander&obfs-password=Yet-Another-Public-Config-1&sni=YAPC-1.afshin.ir#🇳🇱%20Netherlands%20-%201
@@ -1630,7 +1630,6 @@ hy2://95D27EEF-B7AE-4076-BA39-40FDFA3D0F61@jp7.dexlos.com:13778/?insecure=1#JP
 hy2://a084933d-0b41-4571-ae0c-7163b8c71ed1@de.eyucdn.xyz:2056/?insecure=1&sni=de.eyucdn.xyz#DE
 hy2://a305ac08-d136-11ee-b6db-f23c91cfbbc9@ffc60249-t53wg0-t92wi1-1qkeg.hk2.hyhuawei.com:443/?sni=ffc60249-t53wg0-t92wi1-1qkeg.hk2.hyhuawei.com#🇭🇰
 hy2://b4bd0613-ff7c-4f2f-954d-185915e6ddad@181.214.99.162:35000/?insecure=1&sni=api.kermanshahi.org&obfs=salamander&obfs-password=@JavidnamanIran-Javid-SHAH-KingRezaPahlavi&note=@FreeOnlineVPN#🇩🇪
-hy2://bce6c821-200d-421f-bf3d-7159e5246ea0@155.248.209.237:33333/?insecure=1#%F0%9F%87%BA%F0%9F%87%B8US%20%20ROSE%E2%80%9
 hy2://e7965e64-e001-4e8c-8273-39c61ff4a094@sg3.oomz.ru:30000/?insecure=1&sni=bing.com#SG
 hy2://e7965e64-e001-4e8c-8273-39c61ff4a094@tw.oomz.ru:30000/?insecure=1&sni=bing.com#TW
 hy2://zhangyang@130.61.50.75:6443/?insecure=1&sni=dash.cloudflare.com#%F0%9F%87%A9%F0%9F%87%AADE%20%20ROSE%E2%80%9403
