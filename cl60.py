@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+تتعب #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 import os
@@ -16,28 +16,16 @@ TEXT_PATH = "normal60.txt"
 FIN_PATH = "final60.txt"
 
 LINK_PATH = [
-    "https://raw.githubusercontent.com/Surfboardv2ray/TGParse/main/python/hy2",
-    "https://raw.githubusercontent.com/coldwater-10/V2ray-Config-Lite/main/Splitted-By-Protocol/hysteria2.txt",
-    "https://raw.githubusercontent.com/coldwater-10/V2Hub/main/Split/Base64/reality",
-    "https://raw.githubusercontent.com/arshiacomplus/v2rayExtractor/main/hy2.html",
-    "https://almasi-1990.almasi-ali98.workers.dev/522e8484-53de-41a1-a5ba-92e2ec3b7b26/ty",
-    "https://chine-panel.ahsan-tepo98.workers.dev/c808ce19-f298-4087-9bf1-27a5649fc307/sub",
-    "https://raw.githubusercontent.com/parvinxs/Fssociety/refs/heads/main/Fssociety.sub",
-    "https://raw.githubusercontent.com/parvinxs/Submahsanetxsparvin/main/Sub.mahsa.xsparvin",
-    "https://raw.githubusercontent.com/tepo80/Trojan/main/hp.txt",
-    "https://raw.githubusercontent.com/hamedp-71/v2go_NEW/main/Splitted-By-Protocol/hy2.txt",
-    "https://almasi-9025.batool-sogeli.workers.dev/arista",
-
-    # ----------- لینک‌های جدید که در سورس نبودند و اضافه شدند -----------
-    "https://raw.githubusercontent.com/tepo18/tepo90/main/final2.txt",
-    "https://raw.githubusercontent.com/tepo80/sab-vip90/main/almasi.txt",
-    "https://raw.githubusercontent.com/hamedp-71/v2go_NEW/main/Splitted-By-Protocol/trojan.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo80/refs/heads/main/shah.txt",
-    "https://raw.githubusercontent.com/hamedp-71/v2go_NEW/main/Splitted-By-Protocol/ss.txt",
-    "https://raw.githubusercontent.com/hamedp-71/v2go_NEW/main/Splitted-By-Protocol/vmess.txt",
-    "https://raw.githubusercontent.com/hamedp-71/v2go_NEW/main/Splitted-By-Protocol/vless.txt",
-    "https://raw.githubusercontent.com/tepo98/kv98/main/final.txt"
+    "1) https://trojan1.ahsan-tepo1383online.workers.dev/sub/172.67.172.49",
+    "2) https://almasi.ahsan-tepo1383online.workers.dev/sub/sub",
+    "3) https://luffy-panel2.onrender.com/sub/Default",
+    "4) https://parsa-panel-ke449.ahsan-tepo1383online.workers.dev/sub?id=e1721c91-d9b0-452e-b7da-739b27f8e2bf",
+    "5) https://onkt1jnzjbwpxduq337o6t15ojy8kuxv.ahsan-tepo1383online.workers.dev/sub/normal/VqN7DVtTop%40lV0_l?app=xray#💦 BPB Normal",
+    "6) https://onkt1jnzjbwpxduq337o6t15ojy8kuxv.ahsan-tepo1383online.workers.dev/sub/raw/VqN7DVtTop%40lV0_l?app=xray#💦 BPB Raw",
+    "7) https://broad-hall-0e18.ahsan-tepo1383online.workers.dev/sync?sub=nahan",
+    "8) https://nahan206-sunset-ccff.ahsan-tepo1383online.workers.dev/sub?token=b2be217d6e2759813c2b2af7b02ab0f9"
 ]
+
 
 FILE_HEADER_TEXT = "//profile-title: base64:2YfZhduM2LTZhyDZgdi52KfZhCDwn5iO8J+YjvCfmI4gaGFtZWRwNzE="
 
