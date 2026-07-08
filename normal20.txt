@@ -2173,10 +2173,12 @@ hy2://qQe1z5kU8kN6SlKnDt9Ru3Qp@54.251.212.188:443/?insecure=1#🇸🇬SG  ROSE�
 hy2://qQe1z5kU8kN6SlKnDt9Ru3Qp@54.255.220.11:443/?insecure=1&sni=vpn-sg-001.fastervpn.world#🇸🇬SG  ROSE—90
 hy2://t-me-V2RayyNGvpn@91.107.152.188:40460/?insecure=1&sni=www.amd.com&obfs=salamander&obfs-password=t-me-V2RayyNGvpn#🇩🇪DE  ROSE—91
 hy2://zhangyang@130.61.50.75:6443/?insecure=1&sni=https%3A%2F%2Fwww.calmloud.com#🇩🇪DE  ROSE—92
+hy2://H7mP2xY9kJ4nQ8wR5tF6vB3z@103.115.109.49:443?sni=https%3a%2f%2ft.me%2foneclickvpnkeys&path=%2f&allow_insecure=1#%f0%9f%87%b9%f0%9f%87%bc%20TW%203
 hy2://78c2bad7-f5f3-41f2-88cc-81de9d05040b@mg2.mangshe.xyz:2056/?insecure=1&sni=mg2.mangshe.xyz#EPODONIOS
 hy2://78c2bad7-f5f3-41f2-88cc-81de9d05040b@xjp1.mangshe.xyz:2055/?insecure=1&sni=xjp1.mangshe.xyz#EPODONIOS
 hy2://95D27EEF-B7AE-4076-BA39-40FDFA3D0F61@jp7.dexlos.com:13778/?insecure=1#EPODONIOS
 hy2://H7mP2xY9kJ4nQ8wR5tF6vB3z@103.115.109.49:443/?insecure=1&sni=https%3A%2F%2Ft.me%2Foneclickvpnkeys#EPODONIOS
+hy2://H7mP2xY9kJ4nQ8wR5tF6vB3z@103.115.109.49:443/?insecure=1&sni=https%3A%2F%2Ft.me%2Foneclickvpnkeys#Taiwan%2C%20Province%20of%20China%20%F0%9F%87%B9%F0%9F%87%BC
 hy2://a084933d-0b41-4571-ae0c-7163b8c71ed1@de.eyucdn.xyz:2056/?insecure=1&sni=de.eyucdn.xyz#EPODONIOS
 hy2://a305ac08-d136-11ee-b6db-f23c91cfbbc9@ffc60249-t53wg0-t92wi1-1qkeg.hk2.hyhuawei.com:443/?sni=ffc60249-t53wg0-t92wi1-1qkeg.hk2.hyhuawei.com#EPODONIOS
 hy2://a305ac08-d136-11ee-b6db-f23c91cfbbc9@ffc60249-t53wg0-t92wi1-1qkeg.hk2.hyhuawei.com:443/?sni=ffc60249-t53wg0-t92wi1-1qkeg.hk2.hyhuawei.com#EPODONIOS#🌐سرور
@@ -2187,4 +2189,3 @@ hy2://e7965e64-e001-4e8c-8273-39c61ff4a094@sg3.oomz.ru:30000/?insecure=1&sni=bin
 hy2://e7965e64-e001-4e8c-8273-39c61ff4a094@tw.oomz.ru:30000/?insecure=1&sni=bing.com#EPODONIOS
 hy2://zhangyang@130.61.50.75:6443/?insecure=1&sni=dash.cloudflare.com#🇩🇪hamedvpns
 hy2://zhangyang@130.61.50.75:6443/?insecure=1&sni=https://www.calmloud.com#🇩🇪hamedvpns
-hy2://H7mP2xY9kJ4nQ8wR5tF6vB3z@103.115.109.49:443?sni=https%3a%2f%2ft.me%2foneclickvpnkeys&path=%2f&allow_insecure=1#%f0%9f%87%b9%f0%9f%87%bc%20TW%203
