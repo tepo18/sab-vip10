@@ -1788,11 +1788,13 @@ hy2://Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0@93.114.194.119:8443/?insecure=1&sni
 hy2://Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0@93.114.194.120:8443/?sni=grape-zet-ro-turbo.bumbleshrimp.com#EPODONIOS
 hy2://Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0@93.114.194.121:8443/?sni=grape-zet-ro-turbo.bumbleshrimp.com#EPODONIOS
 hy2://Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0@93.114.194.122:8443/?sni=grape-zet-ro-turbo.bumbleshrimp.com#EPODONIOS
+hy2://LzMWgm6LaNWCm11bFTbynDPq2TqQj03t@5.255.102.165:443/?insecure=1&security=tls&sni=www.microsoft.com#%E8%8D%B7%E5%85%B0+V2CROSS.COM
 hy2://Oz_Kx9342gefwJ89x3_M9z32kzf9KJq003_s@77.74.123.134:8443/?sni=grape-zet-turbo-nl.yyuyy.com#EPODONIOS
 hy2://Oz_Kx9342gefwJ89x3_M9z32kzf9KJq003_s@86.107.178.66:8443/?insecure=1&sni=grape-zet-turbo-nl.yyuyy.com#EPODONIOS
 hy2://Oz_Kx9342gefwJ89x3_M9z32kzf9KJq003_s@86.107.178.68:8443/?sni=grape-zet-turbo-nl.yyuyy.com#EPODONIOS
 hy2://Oz_Kx9342gefwJ89x3_M9z32kzf9KJq003_s@86.107.178.69:8443/?sni=grape-zet-turbo-nl.yyuyy.com#EPODONIOS
 hy2://STYyftThFn@freedom.chenlan.top:12765/?insecure=1&sni=freedom.chenlan.top#EPODONIOS
+hy2://STYyftThFn@freedom.chenlan.top:12765?insecure=1&sni=css.rbxcdn.com&type=tcp&allowInsecure=1&upmbps=10&downmbps=50#%F0%9F%87%B7%F0%9F%87%B4140869%20%7C%20%E2%9A%A1%EF%B8%8FTelegram%20%3D%20t.me%2FLonUp_M
 hy2://XhVX5cnBmJ@185.253.117.217:443/?insecure=1&sni=www.intel.com&obfs=salamander&obfs-password=TelEgRam=V2RayyNGvpn#EPODONIOS
 hy2://a000fb47-5dfd-4a6b-9739-2878883d6969@uswx4.wxgqlfx.vip:36253/?insecure=1&sni=144.225.187.153#美国4@wxgqlfx#EPODONIOS
 hy2://b4bd0613-ff7c-4f2f-954d-185915e6ddad@181.214.99.162:35000/?insecure=1&sni=api.kermanshahi.org&obfs=salamander&obfs-password=@JavidnamanIran-Javid-SHAH-KingRezaPahlavi&note=@FreeOnlineVPN#EPODONIOS
