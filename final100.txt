@@ -1,18 +1,3 @@
-trojan://FH72359861@engaging-toucan.rooster465.autos:443#👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Frankfurt am Main🅿️ping:22.18ms
-trojan://FH72359861@epic-iguana.rooster465.autos:443#👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Frankfurt am Main🅿️ping:21.79ms
-trojan://FH72359861@exciting-turtle.rooster465.autos:443#👉🆔@v2ray_configs_pool📡🇸🇬®️Singapore©️Singapore🅿️ping:175.74ms
-trojan://FH72359861@magnetic-caiman.rooster465.autos:443?allowInsecure=1#👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Neu-Isenburg (Zeppelinheim)🅿️ping:38.16ms
-trojan://FH72359861@relative-labrador.rooster465.autos:443#👉🆔@v2ray_configs_pool📡🇸🇬®️Singapore©️Singapore🅿️ping:177.22ms
-trojan://FH72359861@probable-weasel.rooster465.autos:443#👉🆔@v2ray_configs_pool📡🇸🇬®️Singapore©️Singapore🅿️ping:176.04ms
-trojan://FH72359861@nearby-cod.rooster465.autos:443#👉🆔@v2ray_configs_pool📡🇫🇷®️France©️Paris🅿️ping:28.99ms
-trojan://FH72359861@natural-swan.rooster465.autos:443#👉🆔@v2ray_configs_pool📡🇭🇰®️Hong Kong©️Hong Kong🅿️ping:191.77ms
-trojan://FH72359861@optimal-urchin.rooster465.autos:443#👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Neu-Isenburg (Zeppelinheim)🅿️ping:33.37ms
-trojan://FH72359861@pro-crane.rooster465.autos:443#👉🆔@v2ray_configs_pool📡🇳🇱®️The Netherlands©️Amsterdam🅿️ping:16.64ms
-trojan://FH72359861@primary-leech.rooster465.autos:443?allowInsecure=1#👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Neu-Isenburg (Zeppelinheim)🅿️ping:39.83ms
-trojan://FH72359861@stable-racer.rooster465.autos:443#👉🆔@v2ray_configs_pool📡🇸🇬®️Singapore©️Singapore🅿️ping:176.61ms
-trojan://FH72359861@summary-firefly.rooster465.autos:443#👉🆔@v2ray_configs_pool📡🇮🇪®️Ireland©️Dublin🅿️ping:60.65ms
-trojan://FH72359861@summary-lemming.rooster465.autos:443#👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Frankfurt am Main🅿️ping:21.49ms
-trojan://FH72359861@renewed-chigger.rooster465.autos:443#👉🆔@v2ray_configs_pool📡🇳🇱®️The Netherlands©️Amsterdam🅿️ping:20.95ms
 vless://2b8738de-1af5-4267-b101-c05707769ed4@fans.liverpool.qzz.io:2053?alpn=http%2F1.1&ed=2560&eh=Sec-WebSocket-Protocol&encryption=none&fp=chrome&host=fans.liverpool.qzz.io&path=%2FeyJqdW5rIjoiZXlpMnFWRURmWkp5ZCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0%3D&security=tls&sni=FaNs.livErpoOl.qZZ.io&type=ws#👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:17.36ms
 vless://2a77a470-315c-493d-b690-59b814a804cb@178.83.226.55:443?encryption=none&flow=xtls-rprx-vision&fp=&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&security=reality&sni=sellflow.org&type=tcp#👉🆔@v2ray_configs_pool📡🇨🇭®️Switzerland©️Bern🅿️ping:14.53ms
 vless://7074b9d7-2183-8919-fc11-ca5e00000000@104.21.200.243:2053?encryption=none&fp=chrome&host=netlivpn2584.vjvdgbc.workers.dev&path=%2FNetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN&security=tls&sni=netlivpn2584.vjvdgbc.workers.dev&type=ws#👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:2.84ms
